@@ -1,1 +1,36 @@
-site_name: My Docs
+theme:
+  name: material
+  font:
+    text: Hind
+    code: Overpass Mono
+  icon:
+    logo: material/account-group
+    repo: fontawesome/brands/github-square
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/vsrikrish
+
+site_name: Srikrishnan Group Lab Manual
+repo_name: srikrishnan-lab/lab-manual
+repo_url: https://github.com/srikrishnan-lab/lab-manual
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - smarty
+  - footnotes
+  - attr_list
+  - codehilite:
+      linenums: true
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - awesome-pages
+  - git-revision-date-localized:
+      type:
+  - pdf-export:
+      combined: true
