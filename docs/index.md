@@ -1,4 +1,4 @@
-# Welcome to the Srikrishnan Research Group
+# Welcome
 
 This manual details procedures and expectations for all members of the research group. It also includes quickstart guides for common lab tasks. Group and community members are welcome to view the manual, make comments, and propose changes.
 
