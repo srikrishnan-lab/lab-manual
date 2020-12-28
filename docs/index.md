@@ -14,22 +14,22 @@ Our mission is to support the resilience of societal units (from global to indiv
 
 Our research group adheres to several values which inform the procedures and expectations outlined in this manual.
 
-??? important "Excellence"
+!!! important "Excellence"
     We strive for excellence in all of our activities.
 
-??? important "Transparency"
+!!! important "Transparency"
     We do not hide our procedures or products. Our research is accessible to all levels of society. When we make mistakes, we recognize them and do our best to fix them.
 
-??? important "Diversity"
+!!! important "Diversity"
     We seek out members, collaborators, and community partners who represent diverse perspectives.
 
-??? important "Equity"
+!!! important "Equity"
     We recognize the existence and impacts of systematic inequalities and work to promote fairness and justice.
 
-??? important "Inclusivity"
+!!! important "Inclusivity"
     We seek to ensure that we treat everybody with whom we interact with dignity and respect and strike to support their needs to the best of our ability.
 
-??? important "Health and Well-Being"
+!!! important "Health and Well-Being"
     We recognize the essential importance of taking care of one's physical, mental, and emotional well-being.
 
 
