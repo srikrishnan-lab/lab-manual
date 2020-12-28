@@ -18,6 +18,8 @@ repo_url: https://github.com/srikrishnan-lab/lab-manual
 
 markdown_extensions:
   - admonition
+  - pymdownx.details
+  - smarty
   - footnotes
   - attr_list
   - codehilite:
