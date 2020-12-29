@@ -72,7 +72,7 @@ Vivek has a variety of responsibilities as the PI, in addition to those outlined
     ??? info "Be Mindful About Time Constraints"
         As a faculty member, Vivek has many demands on his time, including teaching and departmental and professional service. While Vivek will manage his time so that he can meet the listed expectations, he may not be able to provide immediate feedback during particularly busy periods. You will be given notice when this is the case as well as a rough timeline for when you can expect feedback.
 
-8. **Write recommendations**: Recommendation letters are required for career moves. Vivek will write an honest recommendation letter for you at any point.
+8. **Write recommendations**: Recommendation letters are required for career moves. Vivek will write an honest recommendation letter for you at any point. If you need a recommendation letter, please give Vivek any required information with a few week's advance notice. If you have been away from the group for some time, Vivek may ask you for some additional information to help write the letter.
 
 ## Postdocs
 
