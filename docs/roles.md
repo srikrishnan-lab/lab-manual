@@ -28,7 +28,7 @@ There are many roles within any research group, and each carries a different set
     - Putting in unreasonable or unsustainable hours;
     - Competing with your lab members to see who can work the hardest.
 
-2. **Take Time Off**
+2. **Take Time Off** <a id="timeoff"></a>
 
     It is of paramount importance that every lab member looks out for their health and well-being.
 
