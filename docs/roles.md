@@ -39,7 +39,7 @@ There are many roles within any research group, and each carries a different set
 
 3. **Treat Others With Respect**
 
-    Beyond our (the university's and this group's) policies on [harassment](harassment.html), we expect that you will treat every other member of the lab, as well as everyone else, with respect. We want to create an environment where everybody, regardless of background and personality, feels comfortable and valued. Discussions should always be constructive.
+    Beyond our (the university's and this group's) policies on [harassment](/harassment/), we expect that you will treat every other member of the lab, as well as everyone else, with respect. We want to create an environment where everybody, regardless of background and personality, feels comfortable and valued. Discussions should always be constructive.
 
 4. **Be Collaborative**
 
@@ -47,7 +47,7 @@ There are many roles within any research group, and each carries a different set
 
 5. **Scientific Integrity**
 
-    It is never okay to commit scientific misconduct. Even the slightest fudging of results to make them look better is unacceptable. We are here to gain scientific insights, not just publish papers, and nuanced and null results are still important findings. Our work will be completely [reproducible and open](open.html). We have a zero-tolerance policy towards [fabrication, falsification, and plagiarism](https://ori.hhs.gov/definition-misconduct). Make sure you familiarize yourself with the relevant portions of [Cornell's policies on responsible conduct of research](https://researchservices.cornell.edu/compliance/research-integrity) and alert Vivek if you are concerned about any research practices you observe. If Vivek is the cause of your concern or you would rather he not know of your complaint, you can use a [university-wide contact](https://researchservices.cornell.edu/resources/dealing-research-misconduct) instead.
+    It is never okay to commit scientific misconduct. Even the slightest fudging of results to make them look better is unacceptable. We are here to gain scientific insights, not just publish papers, and nuanced and null results are still important findings. Our work will be completely [reproducible and open](/openscience/). We have a zero-tolerance policy towards [fabrication, falsification, and plagiarism](https://ori.hhs.gov/definition-misconduct). Make sure you familiarize yourself with the relevant portions of [Cornell's policies on responsible conduct of research](https://researchservices.cornell.edu/compliance/research-integrity) and alert Vivek if you are concerned about any research practices you observe. If Vivek is the cause of your concern or you would rather he not know of your complaint, you can use a [university-wide contact](https://researchservices.cornell.edu/resources/dealing-research-misconduct) instead.
 
 6. **Open and Accessible Research Products**
 
@@ -61,7 +61,7 @@ Vivek has a variety of responsibilities as the PI, in addition to those outlined
 2. **Provide the research environment**: Our group's work is primarily computational. Providing and managing hardware and software resources to facilitate the group's research is Vivek's job.
 3. **Obtain funding**: It is Vivek's responsibility to obtain funding for research equipment, personnel, and other costs such as travel and publication fees. One of the Vivek's key goals is to never have to let someone go for lack of funding.
 4. **Provide material support**: You are never expected to spend your personal finances on anything related to research. Coordinate any upcoming expenses with Vivek and he will identify grant support for payment or reimbursement.
-5. **Provide moral support**: Academic life can be stressful, whether it's classwork, research, the paper submission process, or job searches. Vivek is always here to listen and provide advice (see also [Health Resources](health.html)).
+5. **Provide moral support**: Academic life can be stressful, whether it's classwork, research, the paper submission process, or job searches. Vivek is always here to listen and provide advice (see also [Health and Wellness](/health/)).
 6. **Provide mentoring**: One of Vivek's core jobs is to help junior researchers in the group mature into independent scientists. This mentoring role can continue, to the degree you wish, beyond your departure from the research group.
 
     ??? info "Please Ask to See Documents!"
