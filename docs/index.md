@@ -43,4 +43,6 @@ This organization and content of this lab manual borrows heavily from several do
 
 - the [Computer-Oriented Geoscience Lab](https://www.compgeolab.org/manual/) at the [University of Liverpool](https://www.liverpool.ac.uk/)
 
-- the [Aly Lab](https://github.com/alylab/labmanual) at [Columbia University](http://columbia.edu) and an associated [Nature article](https://www.nature.com/articles/d41586-018-06167-w)
+- the [Aly Lab](https://github.com/alylab/labmanual) at [Columbia University](http://columbia.edu)
+
+- the [Murdock Lab](https://www.themurdocklab.com/) here at Cornell.
