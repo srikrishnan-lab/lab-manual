@@ -8,50 +8,21 @@ There are many roles within any research group, and each carries a different set
 <a id="everyone"></a>
 ## Everyone
 
+1. **Be Present**: Everyone should maintain a [presence in the lab](/policies/availability/#presence).  
 
-1. **Be Present**
+2. **Work Professionally**: Academia provides a lot of freedom and flexibility, but you should treat this job as you would any other.
 
-    It is expected that all research group members will work consistently on their research and remain in communication and collaboration with the broader group.
+3. **Do Work You Are Proud Of**: We work on issues of societal relevance, and we are in academia to learn things and be creative. If you aren't proud of your work or you find yourself working on things that you don't find interesting or you don't think others will care about, let Vivek know as soon as possible.
 
-    ??? info "Working Remotely"
-        You do not have to be physically present on campus to be present within the research group. Occasional remote work is encouraged as it suits your personal and professional needs, and sustained remote work will generally be fine, though it should be discussed and approved with Vivek. If you will be working remotely for a sustained period, do not take equipment from campus without coordinating with Vivek.
+4. **Take Time Off**: [Take appropriate time off](/policies/timeoff/#timeoff) from work each day and each week, and [take vacation](/policies/timeoff/#vacation) to recharge.
 
-    What "working consistently" precisely means will vary based on your role - students have to balance classwork with research, while postdocs do not. Within that context, we can identify what working consistently means:
+5. **Treat Others With Respect**: Beyond our (the university's and this group's) policies on [harassment](/harassment/), we expect that you will treat every other member of the lab, as well as everyone else, with respect. We want to create an environment where everybody, regardless of background and personality, feels comfortable and valued. Discussions should always be constructive.
 
-    - Applying consistent and professional effort to your research;
-    - Sharing ideas and effort with your fellow lab members;
-    - Attending meetings (physically or remotely) with Vivek, the broader lab, or any other research groups;
-    - Staying in communication via email or Slack.
+6. **Be Collaborative**: This is likely to be a research group where everyone has different, but complementary, backgrounds, interests, and skills. Collaborations among group members is *strongly* encouraged. One of the goals of our regular lab meetings is to allow group members to ask questions, share where they might be stuck, and potentially get insights and advice from other members. You should never view any of your fellow group members as competition. All members of the group are expected to try to help if another member is stuck or otherwise needs advice.
 
-    Working consistently does *not* mean:
+7. **Scientific Integrity**: It is never okay to commit scientific misconduct. Even the slightest fudging of results to make them look better is unacceptable. We are here to gain scientific insights, not just publish papers, and nuanced and null results are still important findings. Our work will be completely [reproducible and open](/openscience/). We have a zero-tolerance policy towards [fabrication, falsification, and plagiarism](https://ori.hhs.gov/definition-misconduct). Make sure you familiarize yourself with the relevant portions of [Cornell's policies on responsible conduct of research](https://researchservices.cornell.edu/compliance/research-integrity) and alert Vivek if you are concerned about any research practices you observe. If Vivek is the cause of your concern or you would rather he not know of your complaint, you can use a [university-wide contact](https://researchservices.cornell.edu/resources/dealing-research-misconduct) instead.
 
-    - Putting in unreasonable or unsustainable hours;
-    - Competing with your lab members to see who can work the hardest.
-
-2. **Take Time Off** <a id="timeoff"></a>
-
-    It is of paramount importance that every lab member looks out for their health and well-being.
-
-    - ***Set boundaries each day***: No lab members are expected to work around the clock, and sleep and personal time are crucial for both your well-being and your productivity. Define what work hours make sense for you and turn off notifications during your personal time.
-    - ***Take time off each week***: Take a day or two off, as needed, each week. There may be some weeks where this doesn't feel necessary, but it is still encouraged to help prevent burnout.
-    - ***Take vacation***: Group members should aim to take 2-4 weeks off each year for vacation (4 is strongly encouraged). This is essential to help prevent burnout and refresh your creativity.
-    - ***Stay at home if you're sick***: This helps you recover more quickly and prevents potential spread to others. If you feel up to working remotely, great! If not, take care of yourself. Work can wait.
-
-3. **Treat Others With Respect**
-
-    Beyond our (the university's and this group's) policies on [harassment](/harassment/), we expect that you will treat every other member of the lab, as well as everyone else, with respect. We want to create an environment where everybody, regardless of background and personality, feels comfortable and valued. Discussions should always be constructive.
-
-4. **Be Collaborative**
-
-    This is likely to be a research group where everyone has different, but complementary, backgrounds, interests, and skills. Collaborations among group members is *strongly* encouraged. One of the goals of our regular lab meetings is to allow group members to ask questions, share where they might be stuck, and potentially get insights and advice from other members. You should never view any of your fellow group members as competition. All members of the group are expected to try to help if another member is stuck or otherwise needs advice.
-
-5. **Scientific Integrity**
-
-    It is never okay to commit scientific misconduct. Even the slightest fudging of results to make them look better is unacceptable. We are here to gain scientific insights, not just publish papers, and nuanced and null results are still important findings. Our work will be completely [reproducible and open](/openscience/). We have a zero-tolerance policy towards [fabrication, falsification, and plagiarism](https://ori.hhs.gov/definition-misconduct). Make sure you familiarize yourself with the relevant portions of [Cornell's policies on responsible conduct of research](https://researchservices.cornell.edu/compliance/research-integrity) and alert Vivek if you are concerned about any research practices you observe. If Vivek is the cause of your concern or you would rather he not know of your complaint, you can use a [university-wide contact](https://researchservices.cornell.edu/resources/dealing-research-misconduct) instead.
-
-6. **Open and Accessible Research Products**
-
-    As a lab, we are committed to the principles of open and transparent science. We want our peers and the public to be able to reproduce, improve upon, and critique our work. Moreover, as our work is funded by public institutions, our research products should be thought of as public property. More details on our approach to openness are provided [elsewhere](https://researchservices.cornell.edu/resources/dealing-research-misconduct), but all group members will make their models, data, and code publicly available and easily accessible.
+8. **Open and Accessible Research Products**: As a lab, we are committed to the principles of open and transparent science. We want our peers and the public to be able to reproduce, improve upon, and critique our work. Moreover, as our work is funded by public institutions, our research products should be thought of as public property. More details on our approach to openness are provided [elsewhere](/open/), but all group members will make their models, data, and code publicly available and easily accessible.
 
 ## Principal Investigator
 
