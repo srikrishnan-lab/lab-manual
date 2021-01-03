@@ -65,6 +65,14 @@ Many graphics packages use default settings which may not be the result of ideal
 
 8. ***Use color-blind palettes***: For example, avoid combining red and green in a colormap, as many individuals are red-green colorblind and will not be able to identify the intended differences. Some examples of color-blind palettes can be found at [ColorBrewer](https://colorbrewer2.org) and [Paul Tol's website](https://personal.sron.nl/~pault/).
 
+9. ***Experiment with different representations of uncertainty***: Uncertainty is difficult to communicate visually. Many different representations exist, including:
+    * ranges (*e.g.* intervals or boxplots)
+    * distributions (*e.g.* histograms or probability distribution functions)
+    * cumulative distribution functions
+    * traces of individual realizations.
+
+    Not all of these visualization types are relevant for all analyses. Each has its pros and cons. For example, ranges are relatively simple to interpret, but the type and extent of the range must be specified explicitly (*e.g.* 90% credible interval, or the range encoded by the box in a boxplot, as this can be non-standard). Distributions may be less intuitive  but include additional information about where probability mass is located. Cumulative distribution functions are useful for comparing or locating quantiles. Try out different plot types and see what works the best for the message you're trying to communicate, and possibly combine different types. Also, try to analyze figures that you find effective.
+
 [^munzer]: Munzner, T. (2014). Visualization Analysis & Design. Boca Raton: CRC Press.
 [^tufte]: Tufte, E. R. (1983). The Visual Display of Quantitative Information. Cheshire, Conn: Graphics Press.
 [^domain]: Misunderstanding needs is less likely to be a problem when creating figures for papers, as you've designed the figure within the context of the storyline, but can easily be a problem when communicating results to stakeholders.
