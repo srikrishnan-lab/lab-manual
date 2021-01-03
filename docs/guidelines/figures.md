@@ -49,7 +49,7 @@ Many graphics packages use default settings which may not be the result of ideal
     3. Motion
     4. Shape
 
-    The effectiveness of channels can be reduced through interference, where interactions between multiple channels make it difficult to preattentively identify patterns.
+    The effectiveness of channels can be reduced through interference, where interactions between multiple channels make it difficult to preattentively identify patterns. For example, differences in color saturation are more difficult to identify in small points or thin lines than in larger points or thicker lines.
 
 4. ***Use points and lines thoughtfully***: A common default is for lines to be used for all visual elements in some types of visualizations, such as time series plots. However, lines invite the viewer to interpolate between points. This is not necessarily appropriate for data points given observational uncertainties and nonlinearities, which mean they should be treated as discrete elements. Use points when individual elements should be treated discretely (or categorically) and lines or curves when you would like to suggest inter- or extrapolation, such as with continuous model output.
 
@@ -57,11 +57,13 @@ Many graphics packages use default settings which may not be the result of ideal
 
 5. ***Use 3D judiciously***: There are situations where 3D visualizations can be effective, such as when the key takeaway is the broad 3D structure of the data. Often it is more effective to use two spatial dimensions combined with other channels (but not too many!), or multiple projections of the underlying 3D space onto 2D planes.
 
-6. ***Use multiple panels when comparisons across multiple visualizations are desired***: Using the eyes to switch between panels which are simultaneously visible (preattentively) is less cognitively demanding than requiring the viewer to remember previous plots (attentively). 
+6. ***Use multiple panels when comparisons across multiple visualizations are desired***: Using the eyes to switch between panels which are simultaneously visible (preattentively) is less cognitively demanding than requiring the viewer to remember previous plots (attentively).
 
 6. ***Align panels along common axes***: Position along a common scale is the most effective channel. When multiple panels are required and they have common axes, alignment along one of these axes allows the eye to compare features more easily.
 
 7. ***Avoid chartjunk -- when it is chartjunk***: Chartjunk refers to extraneous elements of a plot that aren't essential for communicating the relevant information. Tufte (1983)[^tufte] argues strongly and convincingly against chartjunk. It complicates preattentive processing and increases cognitive load. However, what is chartjunk is contextual. In some cases, a background grid is chartjunk, but in others (such as multiple panels), the use of a grid or lines may help to align the eye and ease comparisons.
+
+8. ***Use color-blind palettes***: For example, avoid combining red and green in a colormap, as many individuals are red-green colorblind and will not be able to identify the intended differences. Some examples of color-blind palettes can be found at [ColorBrewer](https://colorbrewer2.org) and [Paul Tol's website](https://personal.sron.nl/~pault/).
 
 [^munzer]: Munzner, T. (2014). Visualization Analysis & Design. Boca Raton: CRC Press.
 [^tufte]: Tufte, E. R. (1983). The Visual Display of Quantitative Information. Cheshire, Conn: Graphics Press.
