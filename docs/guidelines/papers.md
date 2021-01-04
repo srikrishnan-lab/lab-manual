@@ -34,7 +34,7 @@ Aim to always follow the American Geophysical Union's author [guidelines](https:
 
 9. Report to the editor any changes made to the manuscript after acceptance.
 
-10. [Include as coauthors](../authorship/) only those persons who have made significant scientific contributions to the work and determine order of authorship in a manner appropriate to the contribution. All coauthors share responsibility for the quality and integrity of the submitted and published manuscript.
+10. [Include as coauthors](/lab-manual/authorship/) only those persons who have made significant scientific contributions to the work and determine order of authorship in a manner appropriate to the contribution. All coauthors share responsibility for the quality and integrity of the submitted and published manuscript.
 
 11. Reveal to the editor any potential conflict of interest for any author that might be affected by publication of the results contained in a manuscript or in the development of the research.
 
