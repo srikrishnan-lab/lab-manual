@@ -18,7 +18,7 @@ When doing any collaborative work, discussing research plans and expected contri
 3. Papers are dynamic until they are submitted, and the scope of a manuscript is likely to evolve from first outline to final draft. As a result, the author list is never truly final until the paper is ready to be submitted. Authors may be added or dropped as needed, but as with the previous point, it is good practice never to drop an author without a discussion with all authors.
 
 4. The junior researcher who leads the research will be first author unless they decline to take on the associated responsibilities. The first author:
-    * Drafts the [outline](/guidelines/papers/#outline) and [paper contract](/guidelines/papers/#contract); and
+    * Drafts the [outline](papers/#outline) and [paper contract](papers/#contract); and
     * Makes final decisions about the author line, scope of the paper, writing, and figure design;
     * Leads the revision process.
 
