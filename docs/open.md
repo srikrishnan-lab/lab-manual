@@ -57,7 +57,7 @@ We try to avoid proprietary software, which requires payment, as that reduces th
 We try not to be dogmatic about particular choices of tools for reproducibility. Our workflow is heavily inspired by
 > Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, Teal TK (2017) Good enough practices in scientific computing. PLoS Comput Biol 13(6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510
 
-which you should read before starting to use any particular set of tools to understand why we use them and how they fit into the workflow. While we have some default choices (such as GitHub for code repositories), these are not exclusive. If you prefer another tool, feel free to use it. You should, however, discuss those choices ahead of time with collaborators [as part of the paper-writing process](guidelines/papers/) to make sure everyone is comfortable with them.
+which you should read before starting to use any particular set of tools to understand why we use them and how they fit into the workflow. While we have some default choices (such as GitHub for code repositories), these are not exclusive. If you prefer another tool, feel free to use it. You should, however, discuss those choices ahead of time with collaborators [as part of the paper-writing process](../guidelines/papers/) to make sure everyone is comfortable with them.
 
 ## Communication and Outreach
 

@@ -21,7 +21,7 @@ The authors of the economics-department study found that "contrary to social sti
 
 ## Staying Healthy
 
-Our group will do everything possible to support lab members and ensure a healthy work-life balance. You will never be expected to respond to work communications or do work on your personal time or vacation, [which you should set aside](policies/timeoff/), and you should not, and will never be expected to, work unsustainable hours. If you have to work particularly hard one week, try to take additional time off the week after, so you maintain, on average, a roughly balanced schedule. Let Vivek know as soon as possible if you're unable to meet some deadlines or have to back off your work intensity, and he will work with you to help manage your workload and stress level.
+Our group will do everything possible to support lab members and ensure a healthy work-life balance. You will never be expected to respond to work communications or do work on your personal time or vacation, [which you should set aside](../policies/timeoff/), and you should not, and will never be expected to, work unsustainable hours. If you have to work particularly hard one week, try to take additional time off the week after, so you maintain, on average, a roughly balanced schedule. Let Vivek know as soon as possible if you're unable to meet some deadlines or have to back off your work intensity, and he will work with you to help manage your workload and stress level.
 
 Some other tips include:
 
