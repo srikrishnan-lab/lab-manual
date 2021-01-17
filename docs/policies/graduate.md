@@ -28,7 +28,7 @@ Putting together a graduate application is a lot of work, both for you and for y
     * "Are you still working on `<some topic>`>?" or "Are you interested in `<some topic`>?"
     * "Do you have funding for students in the fall?" (This will hopefully be made clear on the website, but it's ok to ask to be sure).
     * "Is `<this method>` something you use?"
-    
+
 If your only questions are "Should I apply?" or "Can you look at my application?", the only answers that I can give you are "It's up to you" and "If your application is in the pool, I will see it."
 
 ## What We're Looking For
@@ -38,9 +38,9 @@ If your only questions are "Should I apply?" or "Can you look at my application?
 !!! tip "Fit"
     It is essential that graduate students are a good fit for their research group. Graduate school is stressful enough: you don't want to be working on projects or in environments that you don't enjoy!
 
-A student will likely fit well in our group if they are broadly interested in climate risk management, want to learn how to do interdisciplinary, collaborative work, and [are committed to upholding a harassment-free environment](../harassment/).
+A student will likely fit well in our group if they are broadly interested in climate risk management, want to learn how to do interdisciplinary, collaborative work, and [are committed to upholding a harassment-free environment](/lab-manual/harassment/).
 
-We want our students (and everyone else!) to strike a healthy work-life balance. If you aren't sure whether you know how to find this balance, or know that you tend to get overwhelmed with your work, don't worry! Finding this balance is part of the maturing and mentoring process, and Vivek will do his best to help you, but you have to want to find it. [There is no virtue in burying yourself so deeply in your work that your mental, physical, and emotional well-being suffer](../health/). It helps if you have hobbies and interests outside of work. These will help keep you from burning out and increase your creativity and productivity!
+We want our students (and everyone else!) to strike a healthy work-life balance. If you aren't sure whether you know how to find this balance, or know that you tend to get overwhelmed with your work, don't worry! Finding this balance is part of the maturing and mentoring process, and Vivek will do his best to help you, but you have to want to find it. [There is no virtue in burying yourself so deeply in your work that your mental, physical, and emotional well-being suffer](/lab-manual/health/). It helps if you have hobbies and interests outside of work. These will help keep you from burning out and increase your creativity and productivity!
 
 Whether you will "click" with your mentor and other members of the group can be hard to predict ahead of time. We will try to evaluate this during the admissions process. If Vivek is looking for students, after you reach out to express interest (or after he sees your application), he will try to schedule a video chat with you to discuss your research interests and skills further. If there is still mutual interest in group membership, he might ask you to participate in some one-on-one discussions with other group members to get a sense of how you might work with them and how your interests align.
 
@@ -54,7 +54,7 @@ These skills are challenging to develop, except for a lucky few, and English-lan
 
 The work produced within our group is generally quantitative, though we are always open to collaborating on more-qualitative papers and projects. You are more likely to succeed if you have some of the following skills or are interested in developing them.
 
-1. ***Programming in some major language (C++, R, Python, etc)***: While we aren't sticklers for language (we want to use the right tool for a given job), we generally try to [avoid working with proprietary software](../open/), such as MATLAB and GAMS. It helps when the group focuses on a couple of programming languages to facilitate collaboration. We tend to focus on R, Python, and Julia, though there are times when C or C++ is required. However, if you know some other languages, you should be able to pick these up with some effort and code examples, so don't worry too much if you haven't used these specific languages before.
+1. ***Programming in some major language (C++, R, Python, etc)***: While we aren't sticklers for language (we want to use the right tool for a given job), we generally try to [avoid working with proprietary software](/lab-manual/open/), such as MATLAB and GAMS. It helps when the group focuses on a couple of programming languages to facilitate collaboration. We tend to focus on R, Python, and Julia, though there are times when C or C++ is required. However, if you know some other languages, you should be able to pick these up with some effort and code examples, so don't worry too much if you haven't used these specific languages before.
 
 2. ***Statistics, applied mathematics, and optimization***: Our work is fundamentally impacted by uncertainty. This means that we need to know how to develop or modify models to allow for uncertainty-characterization workflows, quantify uncertainty when we can, and perform sensitivity analyses. If you have a solid background in probability or statistics, it will help you hit the ground running. A lot of our work also involves decision-making, which means that it is helpful to have some exposure to or interest in optimization.
 
