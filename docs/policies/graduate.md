@@ -28,6 +28,7 @@ Putting together a graduate application is a lot of work, both for you and for y
     * "Are you still working on `<some topic>`>?" or "Are you interested in `<some topic`>?"
     * "Do you have funding for students in the fall?" (This will hopefully be made clear on the website, but it's ok to ask to be sure).
     * "Is `<this method>` something you use?"
+    
 If your only questions are "Should I apply?" or "Can you look at my application?", the only answers that I can give you are "It's up to you" and "If your application is in the pool, I will see it."
 
 ## What We're Looking For
