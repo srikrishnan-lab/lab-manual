@@ -1,6 +1,6 @@
 # Undergraduate Research
 
-!!! note Credit
+!!! info "Credit"
     Specific language on this page comes from the [Doss-Gollin Lab](https://dossgollin-lab.github.io/lab-guide).
 
 There are three main ways to do research in our group as an undergraduate:
@@ -9,7 +9,7 @@ There are three main ways to do research in our group as an undergraduate:
 2. As a senior thesis;
 3. For pay.
 
-!!! note Internships
+!!! important "Internships"
     We do not hire uncompensated interns. When funds are available, interns may be paid; otherwise, they will be given academic credit.
 
 Specifically advertised positions for pay will be publicized on the research group's ["Join Us"](https://srikrishnan-lab.github.io/join/) page. However, you may always contact Vivek if you have a specific idea (see [below](#apply)).
