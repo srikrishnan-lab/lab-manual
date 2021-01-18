@@ -14,23 +14,6 @@ When funding is available for M.S. and Ph.D students to do specific work, these 
 
 M.Eng. and M.P.S. students should [contact Vivek](mailto:viveks@cornell.edu) to [express interest](#interest) and ask if he has projects available. This does not need to be done too far ahead of the start of your first semester unless you specifically want to be supervised by Vivek, in which case you should inquire as early as possible.
 
-## How To Send An Email Expressing Interest <a name="interest"></a>
-
-Putting together a graduate application is a lot of work, both for you and for your recommenders, and it costs money. It's worth the time to reach out and get feedback on whether you should apply to work with a given supervisor. If you and Vivek have mutual interest in you joining the group ahead of time, it increases the chances of a successful admission more than a blind application. If you are interested in applying, but would like feedback on whether you would be a good fit with our group, take the following advice into consideration when writing your initial email expressing interest.
-
-* **Read the [group website](https://srikrishnan-lab.github.io/) and this lab manual thoroughly before you send an email**: You should have an awareness of what kind of work we do, what will be expected of you, and what you can expect from us. You can certainly ask questions to clarify these issues if something isn't expressed clearly enough, but it will become apparent if you haven't done this due diligence. You should also not ask questions that are included in the [FAQ](#faq) below, as this is a sign that you haven't looked closely at the manual, particularly this page.
-
-* **Attach relevant documents**: To get the most informed feedback, you should include your current CV or resume (as a `.pdf`), a draft of your personal statement or a statement of your research interests (ideally as a `pdf`), and any relevant prior work you'd like Vivek to see. This helps him get a sense of your interests and incoming skillset.
-
-* **Explain why you are reaching out to Vivek *specifically***: Did you read one of our group's papers (and if so, which one(s))? Was a project or opening listed on the website of particular interest? It's helpful for Vivek to know why our group appeared on your radar. For this reason, mass e-mails are unlikely to receive productive responses.
-
-* **Ask specific questions**: It's hard to provide feedback if your expression of interest is vague, and this can be a sign that you haven't fully thought through whether we would be a good fit for you. For example, you might ask questions like:
-    * "Are you still working on `<some topic>`>?" or "Are you interested in `<some topic`>?"
-    * "Do you have funding for students in the fall?" (This will hopefully be made clear on the website, but it's ok to ask to be sure).
-    * "Is `<this method>` something you use?"
-
-If your only questions are "Should I apply?" or "Can you look at my application?", the only answers that I can give you are "It's up to you" and "If your application is in the pool, I will see it."
-
 ## What We're Looking For
 
 ### Fit
@@ -69,7 +52,7 @@ Other skills, such as geospatial analysis, climate modeling, or hydrological or 
 
 Critical thinking is an important part of not just research, but life. We want to be cognizant of why we are doing science, both so we do it well and so we know it makes us happy. Part of your training will involve developing these skills! What is expected when you apply will depend on your background and what credential you are pursuing. If you want a Ph.D. and have an M.S., Vivek will expect that your critical thinking skills are relatively well-developed. If you're coming straight from undergrad, the expectations will not be as high, as you haven't had graduate training yet. It's ok if you don't quite meet Vivek's expectations at this stage so long as you demonstrate an interest and enthusiasm in developing these skills further.
 
-## Evaluation
+## Application Process
 
 !!! note
     This section is primarily aimed at students applying for thesis programs (M.S. and Ph.D.). Not all of these steps are relevant for M.Eng. and M.P.S. applicants, and we will note which ones are.
@@ -77,9 +60,27 @@ Critical thinking is an important part of not just research, but life. We want t
 !!! important "Admission"
     It would be unethical and unfair of Vivek to promise admission prior to seeing your completed application and those of other candidates. While the below-listed steps may go well, they may also go well for other applicants, and unfortunately resources are limited. In the unfortunate eventuality that you are not offered admission, hopefully the process will help you make your application(s) more attractive to other faculty at Cornell and other universities.
 
-After you express interest in working with our group, there are several steps that will be asked of you to maximize the chances of a quality fit and a successful graduate experience. These are not provided in any particular order, depending on whether you expressed interest ahead of submitting your application and how much lead time was provided before the deadline.
+Once you decide you are interested in working with our group, there are several steps that will be asked of you to maximize the chances of a quality fit and a successful graduate experience. These are not provided in any particular order, depending on how much lead time was provided before the deadline.
 
 All of these factors will be taken into account holistically, and none of them should be viewed as an individual deal-breaker. Try not to stress out! If you've gotten to this point, you and Vivek have likely corresponded and agreed that there is mutual interest in an application. The aim at this point is to maximize the odds that you will be happy and successful, and Vivek understands that all of the evaluated skills are things that can and will improve over time.
+
+## Send An Email Expressing Interest <a name="interest"></a>
+
+Putting together a graduate application is a lot of work, both for you and for your recommenders, and it costs money. It's worth the time to reach out and get feedback on whether you should apply to work with a given supervisor. If you and Vivek have mutual interest in you joining the group ahead of time, it increases the chances of a successful admission more than a blind application. If you are interested in applying, but would like feedback on whether you would be a good fit with our group, take the following advice into consideration when writing your initial email expressing interest.
+
+* **Read the [group website](https://srikrishnan-lab.github.io/) and this lab manual thoroughly before you send an email**: You should have an awareness of what kind of work we do, what will be expected of you, and what you can expect from us. You can certainly ask questions to clarify these issues if something isn't expressed clearly enough, but it will become apparent if you haven't done this due diligence. You should also not ask questions that are included in the [FAQ](#faq) below, as this is a sign that you haven't looked closely at the manual, particularly this page.
+
+* **Attach relevant documents**: To get the most informed feedback, you should include your current CV or resume (as a `.pdf`), a draft of your personal statement or a statement of your research interests (ideally as a `pdf`), and any relevant prior work you'd like Vivek to see. This helps him get a sense of your interests and incoming skillset.
+
+* **Explain why you are reaching out to Vivek *specifically***: Did you read one of our group's papers (and if so, which one(s))? Was a project or opening listed on the website of particular interest? It's helpful for Vivek to know why our group appeared on your radar. For this reason, mass e-mails are unlikely to receive productive responses.
+
+* **Ask specific questions**: It's hard to provide feedback if your expression of interest is vague, and this can be a sign that you haven't fully thought through whether we would be a good fit for you. For example, you might ask questions like:
+    * "Are you still working on `<some topic>`>?" or "Are you interested in `<some topic`>?"
+    * "Do you have funding for students in the fall?" (This will hopefully be made clear on the website, but it's ok to ask to be sure).
+    * "Is `<this method>` something you use?"
+
+If your only questions are "Should I apply?" or "Can you look at my application?", the only answers that I can give you are "It's up to you" and "If your application is in the pool, I will see it."
+
 
 ### Video Chats
 
