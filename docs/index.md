@@ -21,13 +21,13 @@ Our research group adheres to several values which inform the procedures and exp
     We do not hide our procedures or products. Our research is accessible to all levels of society. When we make mistakes, we recognize them and do our best to fix them.
 
 ??? important "Diversity"
-    We seek out members, collaborators, and community partners who represent diverse perspectives.
+    We seek out members, collaborators, and community partners from diverse backgrounds and who represent diverse perspectives and preferences.
 
 ??? important "Equity"
-    We recognize the existence and impacts of systematic inequalities and work to promote fairness and justice.
+    We recognize the existence and impacts of systematic inequalities and work to promote fairness and justice. We strive to provide all of our members, collaborators, and partners with equitable platforms for engagement.
 
 ??? important "Inclusivity"
-    We seek to ensure that we treat everybody with whom we interact with dignity and respect and strike to support their needs to the best of our ability.
+    We view scientific research as collaborative, not competitive, and want our group members and collaborators to have agency over and ownership of their research. We want the right people doing the right work at the right time. We leverage our differences and diversity to improve our capacity to achieve breakthroughs.
 
 ??? important "Health and Well-Being"
     We recognize the essential importance of taking care of one's physical, mental, and emotional well-being.
@@ -45,4 +45,6 @@ This organization and content of this lab manual borrows heavily from several do
 
 - the [Aly Lab](https://github.com/alylab/labmanual) at [Columbia University](http://columbia.edu)
 
-- the [Murdock Lab](https://www.themurdocklab.com/) here at Cornell.
+- the [Murdock Lab](https://www.themurdocklab.com/) here at Cornell
+
+- the [Kaleel Jamison Consulting Group](https://kjcg.com/).
