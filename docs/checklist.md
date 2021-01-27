@@ -7,16 +7,16 @@ Go through this document and complete or initiate the appropriate steps. Contact
     * [Github](http://github.com)
     * [Trello](http://trello.com)
     * [Zulip](https://zulip.com)
-    * [Zotero](https://www.zotero.org/)
+    * [Paperpile](https://www.zotero.org/)
 
 1. Get added to group-wide resources:
-    * Shared calendar
+    * Lab Meetings calendar
     * Github organization ([srikrishnan-lab](http://github.com/srikrishnan-lab))
     * Trello team
-    * Zulip
-    * Zotero
+    * Zulip team
 
-2. Send Vivek your information for the group website:
-    * Bio
-    * Research interests
-    * Photo
+2. Add your information to the group website using a [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests):
+    * Photo (upload to /assets/img/members)
+    * Website entry (in _data/people.yml):
+        * Bio/Research interests
+        * Contact and social media info
