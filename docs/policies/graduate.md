@@ -4,7 +4,9 @@ If you are unsure if your research interests would be a good fit for the researc
 
 ## How to Apply
 
-Cornell organizes its graduate admissions and supervision around graduate fields of study, rather than departments. Faculty who are members of a field can supervise students in that field, even if they are outside of their department. Vivek is a member of the graduate faculty in [Biological & Environmental Engineering field](https://gradschool.cornell.edu/academics/fields-of-study/subject/biological-and-environmental-engineering/biological-and-environmental-engineering-phd-ithaca/). He has been nominated for membership in [Environment & Water Resources Systems](https://gradschool.cornell.edu/academics/fields-of-study/field/civil-and-environmental-engineering/) concentration in Civil & Environmental Engineering.
+You can apply for graduate admission to Cornell at the [Graduate School's Admissions site](https://gradschool.cornell.edu/admissions/apply/).
+
+Cornell organizes its graduate admissions and supervision around graduate fields of study, rather than departments. Faculty who are members of a field can supervise students in that field, even if they are outside of their department. Vivek is a member of the graduate faculty in [Biological & Environmental Engineering](https://gradschool.cornell.edu/academics/fields-of-study/subject/biological-and-environmental-engineering/biological-and-environmental-engineering-phd-ithaca/) and [Civil & Environmental Engineering](https://gradschool.cornell.edu/academics/fields-of-study/field/civil-and-environmental-engineering/) (specifically the Environmental & Water Resources Concentration).
 
 ### Thesis Programs (M.S. and Ph.D)
 
