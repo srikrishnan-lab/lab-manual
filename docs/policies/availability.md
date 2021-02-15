@@ -26,7 +26,7 @@ You do not need to install email or specialized messaging apps on your phone. If
 
 ## PI Availability
 
-Vivek will be regularly working on campus, and will let you know on Zulip if he is working from home during the work week or if he is sick. Vivek's work schedule is from 8am-6pm each workday, and from 9am-4pm on Sunday. He does not work at all on Saturdays.
+Vivek will be regularly working on campus, and will let you know on Zulip if he is working from home during the work week or if he is sick. Vivek's work schedule is from 8am-5pm each workday, and from 9am-4pm on Sunday. He does not work at all on Saturdays.
 
 If his office door (318 Riley-Robb Hall) is open, feel free to ask if he can meet with you (though he may be in office hours if he is teaching).
 
