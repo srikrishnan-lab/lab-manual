@@ -12,7 +12,7 @@ Paper writing is essential for M.S. and Ph.D students as well as postdocs. While
 
 4. Our group's best practice is to do internal peer review before submitting a paper. After focusing on a piece of research, it is easy to believe that certain concepts can be taken as given or are implicit, which may limit the accessibility of the writing and complicate peer review. To reduce this risk, we will ask two or three group members who were not involved in the project to read the manuscript and provide feedback. If appropriate group members are not available, we will seek out external collaborators for this role. *Anyone who provides feedback should be listed in the Acknowledgements section*.
 
-5. Similarly, our group's best practice is to do an internal code review before submitting a paper. We want our work to be reproducible and to ensure that there are no bugs driving the results, so code should be accessible, well-documented, and presented with a clear workflow. We will ask one member of the group to reproduce the workflow to make sure that the results and figures are reproducible.
+5. Similarly, our group's best practice is to do an internal code review before submitting a paper. We want our work to be reproducible and to ensure that there are no bugs driving the results, so code should be accessible, well-documented, and presented with a clear workflow. We will ask one member of the group to reproduce the workflow to make sure that the results and figures are reproducible. *Anyone who helps with code reviewing should be listed in the Acknowledgements section*.
 
 ## Other Guidelines
 
