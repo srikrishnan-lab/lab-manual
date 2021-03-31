@@ -10,7 +10,7 @@ Here are some papers that are essential or useful reading for members of our gro
 * Schneider, S. H. (2002). Can we Estimate the Likelihood of Climatic Changes at 2100? *Climatic Change*, 52(4), 441–451. <https://doi.org/10.1023/A:1014276210717>
 
 
-# Statistics
+## Statistics
 * Box, G. E. P. (1976). Science and Statistics. *Journal of the American Statistical Association*, 71(356), 791–799. <https://doi.org/10.1080/01621459.1976.10480949>
 * O’Hagan, T. (2004). Dicing with the unknown. *Significance*, 1(3), 132–133. <https://doi.org/10.1111/j.1740-9713.2004.00050.x>
 * Kennedy, M. C., & O’Hagan, A. (2001). Bayesian calibration of computer models. *Journal of the Royal Statistical Society. Series B, Statistical Methodology*, 63(3), 425–464. <https://doi.org/10.1111/1467-9868.00294>
@@ -20,7 +20,7 @@ Here are some papers that are essential or useful reading for members of our gro
 * Gelman, A., & Shalizi, C. R. (2013). Philosophy and the practice of Bayesian statistics. *The British Journal of Mathematical and Statistical Psychology*, 66(1), 8–38. <https://doi.org/10.1111/j.2044-8317.2011.02037.x>
 * Brynjarsdóttir, J., & OʼHagan, A. (2014). Learning about physical parameters: the importance of model discrepancy. *Inverse Problems*, 30, 114007. <https://doi.org/10.1088/0266-5611/30/11/114007>
 
-# Modeling and Model Diagnostics
+## Modeling and Model Diagnostics
 
 * Helgeson, C., Srikrishnan, V., Keller, K., & Tuana, N. (forthcoming). Why Simpler Computer Simulation Models Can Be Epistemically Better for Informing Decisions. *Philosophy of Science*. Advance version: <https://www.journals.uchicago.edu/doi/10.1086/711501>
 * Bennett, N. D., Croke, B. F. W., Guariso, G., Guillaume, J. H. A., Hamilton, S. H., Jakeman, A. J., et al. (2013). Characterising performance of environmental models. *Environmental Modelling & Software*, 40, 1–20. https://doi.org/10.1016/j.envsoft.2012.09.011
@@ -29,13 +29,13 @@ Here are some papers that are essential or useful reading for members of our gro
 * Quinn, J. D., Reed, P. M., & Keller, K. (2017). Direct policy search for robust multi-objective management of deeply uncertain socio-ecological tipping points. *Environmental Modelling & Software*, 92, 125–141. <https://doi.org/10.1016/j.envsoft.2017.02.017>
 * Quinn, J. D., Reed, P. M., Giuliani, M., & Castelletti, A. (2017). Rival framings: A framework for discovering how problem formulation uncertainties shape risk management trade-offs in water resources systems. *Water Resources Research*, 53(8), 7208–7233. <https://doi.org/10.1002/2017WR020524>
 
-# Decision-Making Under Uncertainty
+## Decision-Making Under Uncertainty
 
 * Oddo, P. C., Lee, B. S., Garner, G. G., Srikrishnan, V., Reed, P. M., Forest, C. E., & Keller, K. (2020). Deep Uncertainties in Sea-Level Rise and Storm Surge Projections: Implications for Coastal Flood Risk Management. *Risk Analysis*, 40(1), 153–168. <https://doi.org/10.1111/risa.12888>
 * Herman, J. D., Quinn, J. D., Steinschneider, S., Giuliani, M., & Fletcher, S. (2020). Climate Adaptation as a Control Problem: Review and Perspectives on Dynamic Water Resources Planning Under Uncertainty. *Water Resources Research*, 56(2), 35. <https://doi.org/10.1029/2019WR025502>
 * Walker, W. E., Haasnoot, M., & Kwakkel, J. H. (2013). Adapt or Perish: A Review of Planning Approaches for Adaptation under Deep Uncertainty. *Sustainability: Science Practice and Policy*, 5(3), 955–979. <https://doi.org/10.3390/su5030955>
 
-# Social Impacts and Risk Perception
+## Social Impacts and Risk Perception
 
 * Wong-Parodi, G. (2020). When climate change adaptation becomes a “looming threat” to society: Exploring views and responses to California wildfires and public safety power shutoffs. *Energy Research & Social Science*, 70, 101757. <https://doi.org/10.1016/j.erss.2020.101757>
 * Kunreuther, H., Novemsky, N., & Kahneman, D. (2001). Making Low Probabilities Useful. *Journal of Risk and Uncertainty*, 23(2), 103–120. <https://doi.org/10.1023/A:1011111601406>
