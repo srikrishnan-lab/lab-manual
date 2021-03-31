@@ -1,21 +1,25 @@
 # Reading List
 
-Here are some papers that are essential or useful reading for members of our group.
+Here are some papers that are essential or useful reading for members of our group. Everyone should read the papers in <a href="#general">General</a> section, and the others are good starting points if the topic area is relevant or of interest.
 
-## General
-* Bankes, S. (1993). Exploratory Modeling for Policy Analysis. *Operations Research*, 41(3), 435–449. <https://doi.org/10.1287/opre.41.3.435>
-* Anderies, J. M., Rodriguez, A. A., Janssen, M. A., & Cifdaloz, O. (2007). Panaceas, uncertainty, and the robust control framework in sustainability science. *Proceedings of the National Academy of Sciences of the United States of America*, 104(39), 15194–15199. <https://doi.org/10.1073/pnas.0702655104>
-* Rittel, H. W. J., & Webber, M. M. (1973). Dilemmas in a general theory of planning. *Policy Sciences*, 4(2), 155–169. <https://doi.org/10.1007/BF01405730>
+## General <a name="general">
+
+* Bankes, S. (1993). Exploratory Modeling for Policy Analysis. *Operations Research*, 41(3), 435–449. <https://doi.org/10.1287/opre.41.3.435>**
 * Saltelli, A. (2019). A short comment on statistical versus mathematical modelling. *Nature Communications*, 10(1), 3870. <https://doi.org/10.1038/s41467-019-11865-8>
-* Schneider, S. H. (2002). Can we Estimate the Likelihood of Climatic Changes at 2100? *Climatic Change*, 52(4), 441–451. <https://doi.org/10.1023/A:1014276210717>
-
-
-## Statistics
-* Box, G. E. P. (1976). Science and Statistics. *Journal of the American Statistical Association*, 71(356), 791–799. <https://doi.org/10.1080/01621459.1976.10480949>
 * O’Hagan, T. (2004). Dicing with the unknown. *Significance*, 1(3), 132–133. <https://doi.org/10.1111/j.1740-9713.2004.00050.x>
+* Box, G. E. P. (1976). Science and Statistics. *Journal of the American Statistical Association*, 71(356), 791–799. <https://doi.org/10.1080/01621459.1976.10480949>
+
+## Complex Systems and Wicked Problems
+* Rittel, H. W. J., & Webber, M. M. (1973). Dilemmas in a general theory of planning. *Policy Sciences*, 4(2), 155–169. <https://doi.org/10.1007/BF01405730>
+* Carpenter, S. R., Brock, W. A., Folke, C., van Nes, E. H., & Scheffer, M. (2015). Allowing variance may enlarge the safe operating space for exploited ecosystems. Proceedings of the National Academy of Sciences of the United States of America, 112(46), 14384–14389. <https://doi.org/10.1073/pnas.1511804112>
+* Anderies, J. M., Rodriguez, A. A., Janssen, M. A., & Cifdaloz, O. (2007). Panaceas, uncertainty, and the robust control framework in sustainability science. *Proceedings of the National Academy of Sciences of the United States of America*, 104(39), 15194–15199. <https://doi.org/10.1073/pnas.0702655104>
+
+## Statistics and Uncertainty
+
+* Schneider, S. H. (2002). Can we Estimate the Likelihood of Climatic Changes at 2100? *Climatic Change*, 52(4), 441–451. <https://doi.org/10.1023/A:1014276210717>
+* Shmueli, G. (2010). To Explain or to Predict? *Statistical Science*, 25(3), 289–310. <https://doi.org/10.1214/10-STS330>
 * Kennedy, M. C., & O’Hagan, A. (2001). Bayesian calibration of computer models. *Journal of the Royal Statistical Society. Series B, Statistical Methodology*, 63(3), 425–464. <https://doi.org/10.1111/1467-9868.00294>
 * Hargreaves, J., & Annan, J. (2002). Assimilation of paleo-data in a simple Earth system model. *Climate Dynamics*, 19(5), 371–381. <https://doi.org/10.1007/s00382-002-0241-0>
-* Shmueli, G. (2010). To Explain or to Predict? *Statistical Science*, 25(3), 289–310. <https://doi.org/10.1214/10-STS330>
 * Draper, D. (1995). Assessment and Propagation of Model Uncertainty. *Journal of the Royal Statistical Society. Series B, Statistical Methodology*, 57(1), 45–97. <http://www.jstor.org/stable/2346087>
 * Gelman, A., & Shalizi, C. R. (2013). Philosophy and the practice of Bayesian statistics. *The British Journal of Mathematical and Statistical Psychology*, 66(1), 8–38. <https://doi.org/10.1111/j.2044-8317.2011.02037.x>
 * Brynjarsdóttir, J., & OʼHagan, A. (2014). Learning about physical parameters: the importance of model discrepancy. *Inverse Problems*, 30, 114007. <https://doi.org/10.1088/0266-5611/30/11/114007>
