@@ -1,9 +1,6 @@
-arrange:
+nav:
   - index.md
-  - checklist.md
-  - roles.md
-  - health.md
-  - harassment.md
-  - open.md
-  - policies
-  - guidelines
+  - Application Information: 'applying'
+  - Expectations and Conduct: 'expectations'
+  - Team Resources: 'resources'
+  - Coding Resources: 'coding'
