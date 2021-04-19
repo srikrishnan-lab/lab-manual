@@ -7,7 +7,7 @@ Go through this document and complete or initiate the appropriate steps. Contact
     * [Github](http://github.com)
     * [Trello](http://trello.com)
     * [Zulip](https://zulip.com)
-    * Some type of reference manager. Common choices are [Zotero](http://zotero.org]) and [Paperpile](http://paperpile.com).
+    * Some type of reference manager. Common choices are [Zotero](http://zotero.org) and [Paperpile](http://paperpile.com).
 
 
 2. Get added to group-wide resources:
@@ -22,4 +22,4 @@ Go through this document and complete or initiate the appropriate steps. Contact
         * Bio/Research interests
         * Contact and social media info
 
-4. Start reading the [onboarding papers](/lab-manual/resources/readinglist/#presence).
+4. Start reading the [onboarding papers](/lab-manual/resources/readinglist/#general).
