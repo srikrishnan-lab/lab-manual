@@ -22,8 +22,9 @@ markdown_extensions:
   - smarty
   - footnotes
   - attr_list
-  - codehilite:
-      linenums: true
+  - pymdownx.highlight:
+      linenums_style: pymdownx.inline
+  - pymdownx.superfences
   - toc:
       permalink: true
 
