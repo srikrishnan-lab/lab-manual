@@ -8,6 +8,7 @@ Here are some papers that are essential or useful reading for members of our gro
 * Saltelli, A. (2019). A short comment on statistical versus mathematical modelling. *Nature Communications*, 10(1), 3870. <https://doi.org/10.1038/s41467-019-11865-8>
 * O’Hagan, T. (2004). Dicing with the unknown. *Significance*, 1(3), 132–133. <https://doi.org/10.1111/j.1740-9713.2004.00050.x>
 * Box, G. E. P. (1976). Science and Statistics. *Journal of the American Statistical Association*, 71(356), 791–799. <https://doi.org/10.1080/01621459.1976.10480949>
+* Oreskes, N., Shrader-Frechette, K., & Belitz, K. (1994). Verification, validation, and confirmation of numerical models in the Earth sciences. Science, 263(5147), 641–646. <https://doi.org/10.1126/science.263.5147.641>
 
 ## Complex Systems and Wicked Problems
 * Rittel, H. W. J., & Webber, M. M. (1973). Dilemmas in a general theory of planning. *Policy Sciences*, 4(2), 155–169. <https://doi.org/10.1007/BF01405730>
