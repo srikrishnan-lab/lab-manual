@@ -6,7 +6,7 @@ When doing any collaborative work, discussing research plans and expected contri
 
 1. The following are the minimum standards to qualify for authorship:
 
-    1. ***Contribute meaningfully to the research***: All authors should have contributed substantially to the reported research. This can be understood broadly, as per [*Nature*'s guidelines](https://www.nature.com/nature-research/editorial-policies/authorship), where authors are expected to contribute:
+    1. ***Contribute meaningfully to the research***: All authors should have contributed substantially to the reported research. This can be understood broadly, as per [*Nature*'s guidelines](https://www.nature.com/nature-research/editorial-policies/authorship){:target="_blank"}, where authors are expected to contribute:
         * To the conception or design of the work;
         * To the acquisition, analysis, or interpretation of data; or
         * To the creation of new software.
@@ -18,7 +18,7 @@ When doing any collaborative work, discussing research plans and expected contri
 3. Papers are dynamic until they are submitted, and the scope of a manuscript is likely to evolve from first outline to final draft. As a result, the author list is never truly final until the paper is ready to be submitted. Authors may be added or dropped as needed, but as with the previous point, it is good practice never to drop an author without a discussion with all authors.
 
 4. The junior researcher who leads the research will be first author unless they decline to take on the associated responsibilities. The first author:
-    * Drafts the [outline](/lab-manual/resources/papers/#outline) and [paper contract](/lab-manual/resources/papers/#contract); and
+    * Drafts the [outline](/lab-manual/resources/papers/#outline){:target="_blank"} and [paper contract](/lab-manual/resources/papers/#contract){:target="_blank"}; and
     * Makes final decisions about the author line, scope of the paper, writing, and figure design;
     * Leads the revision process.
 

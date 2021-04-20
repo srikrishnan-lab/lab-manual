@@ -16,7 +16,7 @@ Paper writing is essential for M.S. and Ph.D students as well as postdocs. While
 
 ## Other Guidelines
 
-Aim to always follow the American Geophysical Union's author [guidelines](https://www.agu.org/Publish-with-AGU/Publish/Author-Resources/Policies/Scientific-ethics-policy) when writing, whether or not submitting to an AGU journal:
+Aim to always follow the American Geophysical Union's author [guidelines](https://www.agu.org/Publish-with-AGU/Publish/Author-Resources/Policies/Scientific-ethics-policy){:target="_blank"} when writing, whether or not submitting to an AGU journal:
 
 1. Present a precise and accurate account of the research performed and a clear, objective discussion of its significance.
 
@@ -28,7 +28,7 @@ Aim to always follow the American Geophysical Union's author [guidelines](https:
 
 5. Follow the appropriate procedures in force in their countries that govern the ethics of work done with human or animal subjects.[^humans]
 
-6. Never plagiarize the work or ideas of others or your own work. Always provide appropriate citation. [The AGU provides additional guidelines on plagiarism at [the same link](https://www.agu.org/Publish-with-AGU/Publish/Author-Resources/Policies/Scientific-ethics-policy).]
+6. Never plagiarize the work or ideas of others or your own work. Always provide appropriate citation. [The AGU provides additional guidelines on plagiarism at [the same link](https://www.agu.org/Publish-with-AGU/Publish/Author-Resources/Policies/Scientific-ethics-policy){:target="_blank"}.]
 
 7. Avoid unnecessary fragmentation or redundant publication of research reports to artificially increase the number of publications.[^minimum]
 
@@ -36,7 +36,7 @@ Aim to always follow the American Geophysical Union's author [guidelines](https:
 
 9. Report to the editor any changes made to the manuscript after acceptance.
 
-10. [Include as coauthors](/lab-manual/resources/authorship/) only those persons who have made significant scientific contributions to the work and determine order of authorship in a manner appropriate to the contribution. All coauthors share responsibility for the quality and integrity of the submitted and published manuscript.
+10. [Include as coauthors](/lab-manual/resources/authorship/){:target="_blank"} only those persons who have made significant scientific contributions to the work and determine order of authorship in a manner appropriate to the contribution. All coauthors share responsibility for the quality and integrity of the submitted and published manuscript.
 
 11. Reveal to the editor any potential conflict of interest for any author that might be affected by publication of the results contained in a manuscript or in the development of the research.
 
@@ -80,7 +80,7 @@ Outlines are dynamic documents and will evolve over the course of the research, 
 
 ## Useful Resources
 
-* Here are [some writing and formatting tips](https://twitter.com/MWClimateSci/status/1111773597184323584) from Michael White, a climate science editor for *Nature*.
+* Here are [some writing and formatting tips](https://twitter.com/MWClimateSci/status/1111773597184323584){:target="_blank"} from Michael White, a climate science editor for *Nature*.
 
 
 [^reproducibility]: Make sure that you also provide links to the code and data repositories.

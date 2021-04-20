@@ -1,7 +1,7 @@
 # Undergraduate Research
 
 !!! info "Credit"
-    Specific language on this page comes from the [Doss-Gollin Lab](https://dossgollin-lab.github.io/lab-guide).
+    Specific language on this page comes from the [Doss-Gollin Lab](https://dossgollin-lab.github.io/lab-guide){:target="_blank"}.
 
 There are three main ways to do research in our group as an undergraduate:
 
@@ -12,11 +12,11 @@ There are three main ways to do research in our group as an undergraduate:
 !!! important "Internships"
     We do not hire uncompensated interns. When funds are available, interns may be paid; otherwise, they will be given academic credit.
 
-Specifically advertised positions for pay will be publicized on the research group's ["Join Us"](https://srikrishnan-lab.github.io/join/) page. However, you may always contact Vivek if you have a specific idea (see [below](#apply)).
+Specifically advertised positions for pay will be publicized on the research group's ["Join Us"](https://srikrishnan-lab.github.io/join/){:target="_blank"} page. However, you may always contact Vivek if you have a specific idea (see [below](#apply)).
 
 ## Research for Credit
 
-Undergraduate research will be almost exclusively done for academic credit through BEE 4970 (individual study) or 4990 (undergraduate research). A maximum of 15 credit-hours of undergraduate research or individual study can be applied to your CALS degree, though other restrictions may apply for individual programs. You and Vivek will need to fill out a [Special Studies form](https://cals.cornell.edu/undergraduate-students/student-services/academic-resources).
+Undergraduate research will be almost exclusively done for academic credit through BEE 4970 (individual study) or 4990 (undergraduate research). A maximum of 15 credit-hours of undergraduate research or individual study can be applied to your CALS degree, though other restrictions may apply for individual programs. You and Vivek will need to fill out a [Special Studies form](https://cals.cornell.edu/undergraduate-students/student-services/academic-resources){:target="_blank"}.
 
 The typical conversion from credit-hours to work-hours is 3 hours of work each week for every 1 hour of credit. Vivek will not expect you to work more than this on average, though you may work more in a given week to make up for a week in which you did less research (such as during a heavy prelim period). Make sure to let him and other relevant group members know if you find yourself working more than this on average. You will also be expected to attend group meetings and meet with Vivek once a week to discuss your progress (it's ok if you haven't made any in a given week, but it's still useful to chat).
 
@@ -46,7 +46,7 @@ Follow the [same steps](#apply) as applying for research credit, but put "Honors
 
 ## Research for Pay
 
-If you want to work in the lab and earn money instead of academic credit, there are two options. When funds are available from a grant, the lab can pay you as a research assistant. These positions will typically be advertised on the group's ["Join Us!"](https://srikrishnan-lab.github.io/join/) page.
+If you want to work in the lab and earn money instead of academic credit, there are two options. When funds are available from a grant, the lab can pay you as a research assistant. These positions will typically be advertised on the group's ["Join Us!"](https://srikrishnan-lab.github.io/join/){:target="_blank"} page.
 
 Alternatively, we can explore undergraduate research fellowships.
 

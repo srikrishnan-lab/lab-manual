@@ -63,7 +63,7 @@ Many graphics packages use default settings which may not be the result of ideal
 
 7. ***Avoid chartjunk -- when it is chartjunk***: Chartjunk refers to extraneous elements of a plot that aren't essential for communicating the relevant information. Tufte (1983)[^tufte] argues strongly and convincingly against chartjunk. It complicates preattentive processing and increases cognitive load. However, what is chartjunk is contextual. In some cases, a background grid is chartjunk, but in others (such as multiple panels), the use of a grid or lines may help to align the eye and ease comparisons.
 
-8. ***Use color-blind palettes***: For example, avoid combining red and green in a colormap, as many individuals are red-green colorblind and will not be able to identify the intended differences. Some examples of color-blind palettes can be found at [ColorBrewer](https://colorbrewer2.org) and [Paul Tol's website](https://personal.sron.nl/~pault/).
+8. ***Use color-blind palettes***: For example, avoid combining red and green in a colormap, as many individuals are red-green colorblind and will not be able to identify the intended differences. Some examples of color-blind palettes can be found at [ColorBrewer](https://colorbrewer2.org){:target="_blank"} and [Paul Tol's website](https://personal.sron.nl/~pault/){:target="_blank"}.
 
 9. ***Experiment with different representations of uncertainty***: Uncertainty is difficult to communicate visually. Many different representations exist, including:
     * ranges (*e.g.* intervals or boxplots)

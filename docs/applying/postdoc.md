@@ -2,7 +2,7 @@
 
 ## Initial Inquiry
 
-You can inquire about a postdoc in response to a particular [opening](https://srikrishnan-lab.github.com/join/). Applying after an inquiry puts you in a better position than just submitting a blind application. To get the best feedback about whether you should apply, include the following information:
+You can inquire about a postdoc in response to a particular [opening](https://srikrishnan-lab.github.com/join/){:target="_blank"}. Applying after an inquiry puts you in a better position than just submitting a blind application. To get the best feedback about whether you should apply, include the following information:
 
 * Your current CV as a `.pdf`;
 * A summary of your past research as a `.pdf`;

@@ -3,7 +3,7 @@
 This manual details procedures and expectations for all members of the research group. It also includes quickstart guides for common lab tasks. Group and community members are welcome to view the manual, make comments, and propose changes.
 
 !!! info "Contributing"
-    Detailed instructions for commenting and proposing changes are provided in the README file of the [manual's GitHub repository](https://github.com/srikrishnan-lab/lab-manual).
+    Detailed instructions for commenting and proposing changes are provided in the README file of the [manual's GitHub repository](https://github.com/srikrishnan-lab/lab-manual){:target="_blank"}.
 
 ## Mission
 
@@ -37,14 +37,14 @@ Our research group adheres to several values which inform the procedures and exp
 
 This organization and content of this lab manual borrows heavily from several documents written by:
 
-- the [Doss-Gollin Research Group](https://jamesdossgollin.me/lab-guide/) at [Rice University](https://rice.edu)
+- the [Doss-Gollin Research Group](https://jamesdossgollin.me/lab-guide/){:target="_blank"} at [Rice University](https://rice.edu)
 
-- [Lab Carpentry](https://lab-carpentry.readthedocs.io/en/latest/)
+- [Lab Carpentry](https://lab-carpentry.readthedocs.io/en/latest/){:target="_blank"}
 
-- the [Computer-Oriented Geoscience Lab](https://www.compgeolab.org/manual/) at the [University of Liverpool](https://www.liverpool.ac.uk/)
+- the [Computer-Oriented Geoscience Lab](https://www.compgeolab.org/manual/){:target="_blank"} at the [University of Liverpool](https://www.liverpool.ac.uk/)
 
-- the [Aly Lab](https://github.com/alylab/labmanual) at [Columbia University](http://columbia.edu)
+- the [Aly Lab](https://github.com/alylab/labmanual){:target="_blank"} at [Columbia University](http://columbia.edu)
 
-- the [Murdock Lab](https://www.themurdocklab.com/) here at Cornell
+- the [Murdock Lab](https://www.themurdocklab.com/){:target="_blank"} here at Cornell
 
-- the [Kaleel Jamison Consulting Group](https://kjcg.com/).
+- the [Kaleel Jamison Consulting Group](https://kjcg.com/){:target="_blank"}.

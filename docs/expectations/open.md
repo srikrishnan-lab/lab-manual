@@ -1,6 +1,6 @@
 # Open and Reproducible Research
 
-According to [UNESCO](http://www.unesco.org/new/en/communication-and-information/portals-and-platforms/goap/open-science-movement/), open science
+According to [UNESCO](http://www.unesco.org/new/en/communication-and-information/portals-and-platforms/goap/open-science-movement/){:target="_blank"}, open science
 
 > is the movement to make scientific research and data accessible to all. It includes practices such as publishing open scientific research, campaigning for open access and generally making it easier to publish and communicate scientific knowledge. Additionally, it includes other ways to make science more transparent and accessible during the research process. This includes open notebook science, citizen science, and aspects of open source software and crowdfunded research projects.
 
@@ -11,7 +11,7 @@ According to [UNESCO](http://www.unesco.org/new/en/communication-and-information
 > * Greater reproducibility and transparency of scientific works;  
 > * Greater impact of scientific research.
 
-As [The Center for Open Science](https://www.cos.io/) says,
+As [The Center for Open Science](https://www.cos.io/){:target="_blank"} says,
 
 > Openness and reproducibility are core values of scholarship.  Scholarly claims become credible via transparent communication of the supporting evidence and the process of acquiring that evidence.  This way, independent observers can evaluate the quality of evidence for supporting the claim.  By making the evidence and the process of acquiring it transparent, others can confirm that the provided evidence is consistent with the claim, or reproduce independent evidence using the same process.  Ultimately, scholarly research is a public good.  Anyone should be able to examine the content of the evidence (open data), the process by which it was obtained (open workflows), and the outcomes that were observed (open access).
 
@@ -57,7 +57,7 @@ We try to avoid proprietary software, which requires payment, as that reduces th
 We try not to be dogmatic about particular choices of tools for reproducibility. Our workflow is heavily inspired by
 > Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, Teal TK (2017) Good enough practices in scientific computing. PLoS Comput Biol 13(6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510
 
-which you should read before starting to use any particular set of tools to understand why we use them and how they fit into the workflow. While we have some default choices (such as GitHub for code repositories), these are not exclusive. If you prefer another tool, feel free to use it. You should, however, discuss those choices ahead of time with collaborators [as part of the paper-writing process](/lab-manual/resources/papers/) to make sure everyone is comfortable with them.
+which you should read before starting to use any particular set of tools to understand why we use them and how they fit into the workflow. While we have some default choices (such as GitHub for code repositories), these are not exclusive. If you prefer another tool, feel free to use it. You should, however, discuss those choices ahead of time with collaborators [as part of the paper-writing process](/lab-manual/resources/papers/){:target="_blank"} to make sure everyone is comfortable with them.
 
 ## Communication and Outreach
 
