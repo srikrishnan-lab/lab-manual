@@ -4,6 +4,7 @@ Here are some papers that are essential or useful reading for members of our gro
 
 ## General <a name="general">
 
+* Keller, K., Helgeson, C., & Srikrishnan, V. (2021). Climate Risk Management. *Annual Review of Earth and Planetary Sciences*, 49(1), 95–116. <https://doi.org/10.1146/annurev-earth-080320-055847>{:target="_blank"}
 * Bankes, S. (1993). Exploratory Modeling for Policy Analysis. *Operations Research*, 41(3), 435–449. <https://doi.org/10.1287/opre.41.3.435>{:target="_blank"}
 * Saltelli, A. (2019). A short comment on statistical versus mathematical modelling. *Nature Communications*, 10(1), 3870. <https://doi.org/10.1038/s41467-019-11865-8>{:target="_blank"}
 * O’Hagan, T. (2004). Dicing with the unknown. *Significance*, 1(3), 132–133. <https://doi.org/10.1111/j.1740-9713.2004.00050.x>{:target="_blank"}
