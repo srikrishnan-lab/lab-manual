@@ -22,4 +22,4 @@ Go through this document and complete or initiate the appropriate steps. Contact
         * Bio/Research interests
         * Contact and social media info
 
-4. Start reading the [onboarding papers](/lab-manual/resources/readinglist/#general){:target="_blank"}.
+4. Start reading the [onboarding papers](/lab-manual/resources/readinglist.html#general){:target="_blank"}.
