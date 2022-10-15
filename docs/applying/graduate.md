@@ -10,7 +10,9 @@ Cornell organizes its graduate admissions and supervision around graduate fields
 
 ### Thesis Programs (M.S. and Ph.D)
 
-When funding is available for M.S. and Ph.D students to do specific work, these positions will be advertised on the group's ["Join Us"](https://srikrishnan-lab.github.io/join/){:target="_blank"} page. When projects allow for a broader scope, or more general funding is available, that same page will note how many students the group is looking to take on. You can apply to those fields without contacting faculty ahead of time, but it is recommended that you [email Vivek](mailto:viveks@cornell.edu) to [express interest](#interest) ahead of time (*well* ahead of time &mdash; make sure you can determine if the group is a good fit!).
+When funding is available for M.S. and Ph.D students to do specific work, these positions will be advertised on the group's ["Join Us"](https://srikrishnan-lab.github.io/join/){:target="_blank"} page. When projects allow for a broader scope, or more general funding is available, that same page will note how many students the group is looking to take on. If you are externally funded (through a graduate fellowship, such as the [NSF GRFP](https://www.nsfgrfp.org/) or others), feel free to reach out if you are interested in our research. If you are considering applying for a graduate fellowship, Vivek is also happy to work with you on developing your application. 
+
+You can apply to the aforementioned fields without contacting faculty ahead of time, but it is recommended that you [email Vivek](mailto:viveks@cornell.edu) to [express interest](#interest) ahead of time (*well* ahead of time &mdash; make sure you can determine if the group is a good fit!).
 
 ### Professional Programs (M.Eng. and M.P.S.)
 
