@@ -5,7 +5,7 @@ theme:
     code: Overpass Mono
   icon:
     logo: material/account-group
-    repo: fontawesome/brands/github-square
+    repo: fontawesome/brands/github
 
 extra:
   social:
