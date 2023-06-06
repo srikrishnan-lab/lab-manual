@@ -1,6 +1,6 @@
 nav:
   - index.md
+  - mission.md
   - Application Information: 'applying'
   - Expectations and Conduct: 'expectations'
-  - Team Resources: 'resources'
-  - Coding Resources: 'coding'
+  - Guides: 'resources'
