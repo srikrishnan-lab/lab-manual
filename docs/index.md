@@ -6,7 +6,7 @@ This manual details lab procedures, policies, and expectations for new and exist
 
 1. **Expectations and Conduct** outlines the expectations we have for each other and ourselves to ensure a functional, healthy, and productive lab group;
 2. **Guides** provides how-tos and resources for common lab tasks and materials;
-3. **Application Information** guides prospective and interested lab members through the process of joining the lab;
+3. **Joining the Group** guides prospective and interested lab members through the process of joining the lab;
 
 !!! info "Contributing"
     Detailed instructions for commenting and proposing changes are provided in the README file of the [manual's GitHub repository](https://github.com/srikrishnan-lab/lab-manual){:target="_blank"}.
