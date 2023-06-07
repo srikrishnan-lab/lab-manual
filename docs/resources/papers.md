@@ -94,7 +94,6 @@ Outlines are dynamic documents and will evolve over the course of the research, 
 
 Here are [some writing and formatting tips](https://twitter.com/MWClimateSci/status/1111773597184323584){:target="_blank"} from Michael White, a climate science editor for *Nature*.
 
-## Pap
 
 
 [^reproducibility]: Make sure that you also provide links to the code and data repositories.
