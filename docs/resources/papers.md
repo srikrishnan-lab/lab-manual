@@ -4,7 +4,7 @@ Paper writing is essential for M.S. and Ph.D students as well as postdocs. While
 
 ## Process Guidelines
 
-1. Start with an [outline](#outline) and [paper contract](#contract). This will help lay out the goals of the research and make sure all projected authors know their expected contributions and how key terms are being used (as vocabularies can vary across disciplines or even sub-disciplines).
+1. Start with an [outline](#outline) and [paper contract](#paper-contract). This will help lay out the goals of the research and make sure all projected authors know their expected contributions and how key terms are being used (as vocabularies can vary across disciplines or even sub-disciplines).
 
 2.  In our group, the first author (usually the junior researcher leading the research) has the final say on scope, wording, and figure design. These decisions should be made in consultation with the entire team, however.
 
@@ -44,7 +44,20 @@ Aim to always follow the American Geophysical Union's author [guidelines](https:
 
 13. In the role of corresponding author, ensure that all coauthors are fully cognizant of the steps and changes in the manuscript during the peer review process.
 
-<a id="contract"></a>
+## Selecting Journals
+
+Selecting journals for submission is a key part of the paper writing process. This should be done early on, as different journals have difference emphases and audiences, which can greatly impact writing style. 
+
+You should select 4-5 journals that you would like to submit to. These can range in terms of ambition and technical emphases --- for example, *Nature* is highly prestigious but more general, while the *Journal of Flood Risk Management* is a solid journal with a more specific and technical focus. Ask yourself the following questions (Vivek will help!):
+
+- What is the key question and hypothesized point of the paper? Is it a question that might get the attention of a more general audience, or is it addressing a more technical issue that specialists would be more interested in?
+- How well does the scope of the journal align with your key question? Have they published related work?
+- What are the word and figure limits of the journal and anticipated submission type? Tighter word limits can be difficult for more complex or technical analyses.
+- How much time do you want to invest in revisions and (if the paper is rejected) in reformatting/reframing the paper for a different journal? More selective journals can have a higher career payoff (though some of the more technical journals publish work that is at least as good and will generate citations over time) but have a higher probability of rejection.
+- How often have you published a paper in the journal? Over-publishing in the same journal can look strange, particularly if it isn't one of the top journals.
+
+Based on these considerations, come up with your journal submission sequence. You can sort these journals along various lines, including impact factor (as a proxy for ambition) or similarity of formatting (for example, going from *Nature* to *Nature Climate Change* instead of going from *Nature* to *PNAS* and then *Nature Climate Change*).
+
 ## Paper Contract
 
 Writing a paper contract early in the research design facilitates conversations about authorship, author contributions, research scope, and submission plans. This document should include:
@@ -57,7 +70,6 @@ Writing a paper contract early in the research design facilitates conversations 
 6. Methods (broadly speaking)
 7. Submission plan
 
-<a id="outline"></a>
 ## Outline
 
 Papers should be organized using an outline. How you incorporate this outline into the writing process is up to you: Vivek prefers to expand the outline to full detail, then convert items to sentences and paragraphs, but you might prefer to switch to sentences earlier. However, an outline provides an organized way to facilitate feedback, and we should converge on it before advancing in the writing process.
@@ -80,7 +92,9 @@ Outlines are dynamic documents and will evolve over the course of the research, 
 
 ## Useful Resources
 
-* Here are [some writing and formatting tips](https://twitter.com/MWClimateSci/status/1111773597184323584){:target="_blank"} from Michael White, a climate science editor for *Nature*.
+Here are [some writing and formatting tips](https://twitter.com/MWClimateSci/status/1111773597184323584){:target="_blank"} from Michael White, a climate science editor for *Nature*.
+
+## Pap
 
 
 [^reproducibility]: Make sure that you also provide links to the code and data repositories.

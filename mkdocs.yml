@@ -1,11 +1,20 @@
 theme:
   name: material
   font:
-    text: Hind
-    code: Overpass Mono
+    text: Open Sans
+    code: IBM Plex Mono
   icon:
     logo: material/account-group
     repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - search.highlight
+    - content.code.annotate
 
 extra:
   social:
@@ -19,17 +28,26 @@ repo_url: https://github.com/srikrishnan-lab/lab-manual
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - smarty
+  - md_in_html
+  - abbr
   - footnotes
   - attr_list
+  - def_list
   - pymdownx.highlight:
-      linenums_style: pymdownx.inline
+      linenums: true
+      linenums_style: pymdownx-inline
+      use_pygments: true
+  - pymdownx.inlinehilite
   - pymdownx.superfences
-  - toc:
-      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      permalink: true
 
 plugins:
   - search

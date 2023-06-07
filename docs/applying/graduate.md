@@ -6,13 +6,22 @@ If you are unsure if your research interests would be a good fit for the researc
 
 You can apply for graduate admission to Cornell at the [Graduate School's Admissions site](https://gradschool.cornell.edu/admissions/apply/){:target="_blank"}.
 
-Cornell organizes its graduate admissions and supervision around graduate fields of study, rather than departments. Faculty who are members of a field can supervise students in that field, even if they are outside of their department. Vivek is a member of the graduate faculty in [Biological & Environmental Engineering](https://gradschool.cornell.edu/academics/fields-of-study/subject/biological-and-environmental-engineering/biological-and-environmental-engineering-phd-ithaca/){:target="_blank"}, [Civil & Environmental Engineering](https://gradschool.cornell.edu/academics/fields-of-study/field/civil-and-environmental-engineering/){:target="_blank"}, and [Systems Engineering](https://www.systemseng.cornell.edu/se){:target="_blank"}.
+!!! info inline "Graduate Fields"
+
+    Cornell organizes its graduate admissions and supervision around graduate fields of study, rather than departments. Faculty who are members of a field can supervise students in that field, even if they are outside of their department. You can therefore apply to any of the fields in which Vivek is a member and be part of the group. Feel free to ask about more information of any of these fields to find which might be the best fit for your goals.
+
+Vivek is a member of the graduate faculty in [Biological & Environmental Engineering](https://gradschool.cornell.edu/academics/fields-of-study/subject/biological-and-environmental-engineering/biological-and-environmental-engineering-phd-ithaca/){:target="_blank"}, [Civil & Environmental Engineering](https://gradschool.cornell.edu/academics/fields-of-study/field/civil-and-environmental-engineering/){:target="_blank"}, and [Systems Engineering](https://www.systemseng.cornell.edu/se){:target="_blank"}.
 
 ### Thesis Programs (M.S. and Ph.D)
 
-When funding is available for M.S. and Ph.D students to do specific work, these positions will be advertised on the group's ["Join Us"](https://srikrishnan-lab.github.io/join/){:target="_blank"} page. When projects allow for a broader scope, or more general funding is available, that same page will note how many students the group is looking to take on. If you are externally funded (through a graduate fellowship, such as the [NSF GRFP](https://www.nsfgrfp.org/) or others), feel free to reach out if you are interested in our research. If you are considering applying for a graduate fellowship, Vivek is also happy to work with you on developing your application. 
+When funding is available for M.S. and Ph.D students to do specific work, these positions will be advertised on the group's ["Join Us"](https://srikrishnan-lab.github.io/join/){:target="_blank"} page. When projects allow for a broader scope, or more general funding is available, that same page will note how many students the group is looking to take on. 
 
-You can apply to the aforementioned fields without contacting faculty ahead of time, but it is recommended that you [email Vivek](mailto:viveks@cornell.edu) to [express interest](#interest) ahead of time (*well* ahead of time &mdash; make sure you can determine if the group is a good fit!).
+!!! important inline end "Graduate Fellowships"
+
+    - If you are externally funded (through a graduate fellowship, such as the [NSF GRFP](https://www.nsfgrfp.org/) or others), feel free to reach out if you are interested in our research, regardless of whether a position is advertised. 
+    - If you are considering applying for a graduate fellowship, Vivek is also happy to work with you on developing your application.
+
+You can apply to the aforementioned fields without contacting faculty ahead of time, but it is recommended that you [email Vivek](mailto:viveks@cornell.edu) to [express interest](#interest) ahead of time (*well* ahead of time &mdash; make sure you can determine if the group is a good fit!). This will ensure that we can [evaluate fit] and, if all goes well, your application will be given priority.
 
 ### Professional Programs (M.Eng. and M.P.S.)
 
@@ -76,7 +85,7 @@ Putting together a graduate application is a lot of work, both for you and for y
 
 * **Attach relevant documents**: To get the most informed feedback, you should include your current CV or resume (as a `.pdf`), a draft of your personal statement or a statement of your research interests (ideally as a `pdf`), and any relevant prior work you'd like Vivek to see. This helps him get a sense of your interests and incoming skillset.
 
-* **Explain why you are reaching out to Vivek *specifically***: Did you read one of our group's papers (and if so, which one(s))? Was a project or opening listed on the website of particular interest? It's helpful for Vivek to know why our group appeared on your radar. For this reason, mass e-mails are unlikely to receive productive responses.
+* **Explain why you are reaching out to Vivek *specifically***: Did you read one of our group's papers (and if so, which one(s))? Was a project or opening listed on the website of particular interest? It's helpful for Vivek to know why our group appeared on your radar. For this reason, mass e-mails are unlikely to receive productive responses. An inquiry that references a specific paper or material and ties it to your interests and what you hope to gain as a member of our group is the most likely to get a positive response.
 
 * **Ask specific questions**: It's hard to provide feedback if your expression of interest is vague, and this can be a sign that you haven't fully thought through whether we would be a good fit for you. For example, you might ask questions like:
     * "Are you still working on `<some topic>`>?" or "Are you interested in `<some topic`>?"
@@ -96,7 +105,7 @@ No judgement whatsoever will be made based on video background, and don't feel t
 
 Vivek will send you an email asking you to provide a written evaluation of a paper, which he will provide in that email. This paper will be selected based on your discussed interests. The goal of this response is to get a sense of your baseline writing skills, as well as your current ability to read and analyze a paper.
 
-Your evaluation should be no more than a page, and should touch on several of the following prompts:
+Your evaluation should be no more than two pages (no more than 12 point font and no less than one inch page margins), and should touch on several of the following prompts:
 
 * What are the main research questions and hypotheses of the paper?
 * What are the key results?
@@ -104,7 +113,20 @@ Your evaluation should be no more than a page, and should touch on several of th
 * How effective are the figures at communicating key points?
 * Can you think of a way to improve on the paper?
 
-You should return your response to Vivek within 24 hours. This doesn't need to be detailed or overly polished, and this isn't an exam.
+You should return your response to Vivek within 48 hours. This doesn't need to be detailed or overly polished, and this isn't an exam. However, if this is not possible due to time constraints, let Vivek know ASAP and we can find a suitable date.
+
+!!! danger inline end "Academic Integrity"
+
+    Vivek reserves the right to withdraw from the admissions process at any point if you are found to have violated the Academic Integrity Policy's letter or spirit. Integrity is a fundamental value, and if you behave dishonestly at this stage, with how low the stakes ultimately are, it is a bad signal for how ethically and well you might proceed with your research.
+
+This evaluation is governed by [Cornell's Academic Integrity Code](https://provost.cornell.edu/leadership/vp-undergrad-ed/academic-integrity/) In particular:
+
+1. You should do this work on your own, without communicating with advisors, colleagues, etc.
+2. You may use information that you find on the web so long as it is from a trustworthy source. However, you must attribute any sources that you draw from. Plagiarism is unacceptable, and simply paragraphing without attribution is still plagiarism.
+3. Please use a formal bibliographic style such as APA, AGU, or similar. References do not count toward the page limit. It doesn't matter which of these you use, but be consistent.
+4. You *may* use large language models (*e.g.*, ChatGPT) to help you write your evaluation. However, you should be prepared to answer detailed questions about what you have written and to explain your reasoning, which will be hard if you haven't read the paper carefully. You must also cite the model you used, the precise input(s) that you prompted it with, and provide a statement of how you fact-checked and integrated the output into your writing.[^1] 
+
+[^1]: All of this may be more work than just reading the paper and writing the response yourself, but your mileage may vary.
 
 ### Your Application
 
@@ -121,8 +143,29 @@ Your application will be evaluated holistically, though you should write your pe
 
 ## FAQ <a name="faq"></a>
 
+### Is the position fully funded?
+
+All Ph.D and M.S. positions are fully funded for the duration of your time, including stipends (including in the summer), tuition, and benefits. This may involve some combination of teaching assistantships and research assistantships. You should get more details in your offer letter and discussions with Vivek.
+
+M.Eng. positions are self-funded, however.
+
 ### Should I write a research proposal?
 
 This isn't necessary. As an incoming student, you aren't expected to have a detailed research plan. Your personal statement should include your research goals, some ideas you find interesting, and how those goals and interests relate to your career and life goals. Not including those in a personal statement because you want to write a separate research proposal would weaken your overall application.
 
 If you happen to have a clear and specific research proposal that demonstrates a clear understanding of the field, outlines specific and feasible research for which Vivek would be a suitable mentor, and builds on the discussion of your goals and interests in your personal statement, that could help your overall application. However, you are never expected to submit a proposal, and one which is weak may hurt instead of helping you. My recommendation is that you focus more on writing a compelling personal statement.
+
+### Will I be able to attend conferences?
+
+Yes! Attending conferences is an important part of professional development. Our goal is usually for students to attend one or two conferences each year --- usually the American Geophysical Union Fall Meeting in December and then a smaller one, such as the Society for Decision-Making for Deep Uncertainty Annual Meeting (usually in November). Other workshops and conferences may emerge, and you will be encouraged to submit abstracts or attend as appropriate. 
+
+!!! tip "Travel Support"
+
+You will never be expected to pay for travel expenses, though typically expenses are covered through a reimbursement model. If this is a problem (and there are many good reasons for it to be, particularly for students), talk to Vivek about directly booking your transportation and hotel, and we can discuss how to handle routine expenses such as food.
+
+### What do you wish students knew before joining your group/program?
+
+- Ultimately, graduate school is about gaining research skills, *not* your courses (M.Eng. students excepted). This is often a difficult change for new students, because doing well in coursework is largely what got you into a good graduate program! We'll pick classes which are appropriate for your work and your interests, but their ultimate purpose is to support your research. You should always prioritize your research if you have to make a choice between the two (though hopefully with good planning and time management, you won't have to).
+- Our work involves a lot of programming and statistics and applied mathematics. It is common to spend all day (or more) tracking down a bug or trying to understand a paper. This is progress, even if it doesn't feel like it.
+- You should be doing a lot of reading; if you think you might not be reading enough, there's a good chance you are not. This could be reading textbooks or papers. Finding and reading papers is a skill, and is the only way to build your knowledge about the area that you are working in.
+- Scientific writing is a skill that relatively few undergrads have had a chance to practice, and many academics are also not great at (Vivek certainly has a lot to improve on as well!). Your initial papers, abstracts, and other products will likely need a fair amount of editing and iterations, so make sure that you start writing early and leave plenty of time for revisions. Your drafts will also probably come back with a lot of feedback, which can be jarring, but it is all intended constructively.

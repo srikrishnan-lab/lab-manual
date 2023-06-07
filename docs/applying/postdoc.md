@@ -6,7 +6,7 @@ You can inquire about a postdoc in response to a particular [opening](https://sr
 
 * Your current CV as a `.pdf`;
 * A summary of your past research as a `.pdf`;
-* A description of your research interests and how they align with our group's work as a `.pdf`;
+* A description of your research interests and how they align with our group's work as a `.pdf` (the more you can show that you've read relevant papers, the better);
 * A written response to one of the group's papers:
     * Summary of the key points of the paper;
     * Important caveats and limitations (mentioned in the paper or not);

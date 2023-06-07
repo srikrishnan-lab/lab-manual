@@ -10,9 +10,11 @@ There are three main ways to do research in our group as an undergraduate:
 3. For pay.
 
 !!! important "Internships"
-    We do not hire uncompensated interns. When funds are available, interns may be paid; otherwise, they will be given academic credit.
+    We do not hire uncompensated interns. When funds are available, undergraduate researchers will be paid; otherwise, they will be given academic credit.
 
-Specifically advertised positions for pay will be publicized on the research group's ["Join Us"](https://srikrishnan-lab.github.io/join/){:target="_blank"} page. However, you may always contact Vivek if you have a specific idea (see [below](#apply)).
+Specifically advertised positions for pay will be publicized on the research group's ["Join Us"](https://srikrishnan-lab.github.io/join/){:target="_blank"} page. However, you may always contact Vivek if you have a specific idea.
+
+If you are doing research in the lab group, you will be [expected](/lab-manual/expectations/roles.md/#undergraduate-students) to participate in lab meetings and be available on Slack.
 
 ## Research for Credit
 
@@ -42,13 +44,13 @@ At the end of the semester, a written report or thesis must be submitted to Vive
 
 ### How To Apply
 
-Follow the [same steps](#apply) as applying for research credit, but put "Honors Thesis Supervision" as the email subject.
+Follow the same steps as applying for research credit, but put "Honors Thesis Supervision" as the email subject.
 
 ## Research for Pay
 
 If you want to work in the lab and earn money instead of academic credit, there are two options. When funds are available from a grant, the lab can pay you as a research assistant. These positions will typically be advertised on the group's ["Join Us!"](https://srikrishnan-lab.github.io/join/){:target="_blank"} page.
 
-Alternatively, we can explore undergraduate research fellowships.
+Alternatively, we can explore undergraduate research fellowships, or funding may be available from other sources. If there are no actively advertised positions, please do reach out! We'll try to be creative.
 
 ## Volunteer Research
 

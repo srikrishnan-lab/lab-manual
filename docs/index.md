@@ -1,4 +1,6 @@
-# Welcome
+# Srikrishnan Group Lab Manual 
+
+## Overview
 
 Welcome to the lab guide for the [Srikrishnan Research Group](https://viveks.bee.cornell.edu) in the [Department of Biological & Environmental Engineering](https://bee.cals.cornell.edu) at [Cornell University](https://cornell.edu). The PI for the group is [Vivek Srikrishnan](https://viveks.me).
 
