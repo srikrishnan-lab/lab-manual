@@ -9,7 +9,7 @@ There are three main ways to do research in our group as an undergraduate:
 2. As a senior thesis;
 3. For pay.
 
-!!! important "Internships"
+!!! failure "Internships"
     We do not hire uncompensated interns. When funds are available, undergraduate researchers will be paid; otherwise, they will be given academic credit.
 
 Specifically advertised positions for pay will be publicized on the research group's ["Join Us"](https://srikrishnan-lab.github.io/join/){:target="_blank"} page. However, you may always contact Vivek if you have a specific idea.

@@ -8,9 +8,9 @@
 
 ### Meta-Repositories
 
-!!! important inline end "Repository Visibility"
+!!! warning inline end "Repository Visibility"
     
-    It may be prudent to set up initial repositories as `private` until you're ready to release the code (which should always be done **ahead** of paper submission).
+    It may be prudent to set up initial repositories as private until you're ready to release the code (which should always be done **ahead** of paper submission).
 
 When you start a new project, you should [create a GitHub meta-repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo){:target="_blank"} right away. You can do this in your personal account or as part of the `srikrishnan-lab` organization. Make sure that your repository name is informative; we will eventually rename this to align with a paper (something like `lead_author-etal-year`). 
 

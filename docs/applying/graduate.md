@@ -16,7 +16,7 @@ Vivek is a member of the graduate faculty in [Biological & Environmental Enginee
 
 When funding is available for M.S. and Ph.D students to do specific work, these positions will be advertised on the group's ["Join Us"](https://srikrishnan-lab.github.io/join/){:target="_blank"} page. When projects allow for a broader scope, or more general funding is available, that same page will note how many students the group is looking to take on. 
 
-!!! important inline end "Graduate Fellowships"
+!!! tip inline end "Graduate Fellowships"
 
     - If you are externally funded (through a graduate fellowship, such as the [NSF GRFP](https://www.nsfgrfp.org/) or others), feel free to reach out if you are interested in our research, regardless of whether a position is advertised. 
     - If you are considering applying for a graduate fellowship, Vivek is also happy to work with you on developing your application.
@@ -60,7 +60,7 @@ Other skills, such as geospatial analysis, climate modeling, or hydrological or 
 
 ### Critical Thinking
 
-!!! important "Ph.D.s"
+!!! tip "Ph.D.s"
     If you're interested in doing a Ph.D. with our group, it is important that you demonstrate the ability to develop critical thinking skills. A Ph.D. is a license to do independent research, which means you should be able to ask and answer questions such as "Why am I doing this research?" and to follow the scientific method, which involves formulating and testing hypotheses, not just turning the crank or dredging through data or model output. You should be able to tell a story about why you posed a particular question, how your prior understanding of the area led you to formulate certain hypotheses, how you designed your experiment to test those hypotheses, and what the implications of the results are for your hypotheses in particular and the field in general.
 
 Critical thinking is an important part of not just research, but life. We want to be cognizant of why we are doing science, both so we do it well and so we know it makes us happy. Part of your training will involve developing these skills! What is expected when you apply will depend on your background and what credential you are pursuing. If you want a Ph.D. and have an M.S., Vivek will expect that your critical thinking skills are relatively well-developed. If you're coming straight from undergrad, the expectations will not be as high, as you haven't had graduate training yet. It's ok if you don't quite meet Vivek's expectations at this stage so long as you demonstrate an interest and enthusiasm in developing these skills further.
@@ -70,7 +70,7 @@ Critical thinking is an important part of not just research, but life. We want t
 !!! note
     This section is primarily aimed at students applying for thesis programs (M.S. and Ph.D.). Not all of these steps are relevant for M.Eng. and M.P.S. applicants, and we will note which ones are.
 
-!!! important "Admission"
+!!! warning "Am I Guaranteed Admission?"
     It would be unethical and unfair of Vivek to promise admission prior to seeing your completed application and those of other candidates. While the below-listed steps may go well, they may also go well for other applicants, and unfortunately resources are limited. In the unfortunate eventuality that you are not offered admission, hopefully the process will help you make your application(s) more attractive to other faculty at Cornell and other universities.
 
 Once you decide you are interested in working with our group, there are several steps that will be asked of you to maximize the chances of a quality fit and a successful graduate experience. These are not provided in any particular order, depending on how much lead time was provided before the deadline.

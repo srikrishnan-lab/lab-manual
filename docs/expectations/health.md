@@ -1,6 +1,6 @@
 # Health and Wellness
 
-!!! important
+!!! tip "Health is Priority One"
     Your first priority should always be your own health, safety, and well-being. Vivek will never intentionally ask you to compromise your health. If you think that a request from Vivek might do so, let him know as soon as possible and he will make other arrangements.
 
 ## Overview

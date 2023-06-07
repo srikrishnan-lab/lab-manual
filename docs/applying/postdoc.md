@@ -1,4 +1,4 @@
-# Applying for a Postdoc
+# Postdoctoral Scholars
 
 ## Initial Inquiry
 
