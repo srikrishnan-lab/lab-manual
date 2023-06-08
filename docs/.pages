@@ -2,6 +2,7 @@ nav:
   - Home: 
     - index.md
     - mission.md
-  - Joining The Group: 'applying'
   - Expectations and Conduct: 'expectations'
-  - Guides: 'resources'
+  - Guides: 'guides'
+  - Resources: 'resources'
+  - Joining The Group: 'applying'
