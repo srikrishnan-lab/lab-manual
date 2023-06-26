@@ -17,15 +17,16 @@ All Cornell employees and students *must* understand and comply with the Univers
 ## Definition
 
 Harassment includes, but is not limited to:
-    * Verbal comments that reinforce social structures of domination, *e.g.* related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, or other related topics;
-    * Sexual imagery in public spaces;
-    * Deliberate intimidation, stalking, or following;
-    * Harassing photography or recording;
-    * Sustained disruption of communication or the research environment;
-    * Inappropriate physical contact;
-    * Unwelcome sexual attention;
-    * Creation of an otherwise sexualized or discriminatory environment;
-    * Advocating for, or encouraging, any of the above behaviors.
+
+* Verbal comments that reinforce social structures of domination, *e.g.* related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, or other related topics;
+* Sexual imagery in public spaces;
+* Deliberate intimidation, stalking, or following;
+* Harassing photography or recording;
+* Sustained disruption of communication or the research environment;
+* Inappropriate physical contact;
+* Unwelcome sexual attention;
+* Creation of an otherwise sexualized or discriminatory environment;
+* Advocating for, or encouraging, any of the above behaviors.
 
 !!! danger "Expectations of Group Members"
     We expect all group members to follow these rules in all professional settings, including the office, conferences, workshop venues, and group-related social events. We additionally expect members to treat each other professionally with respect to their work and workspaces with constructive criticism, without dismissive behavior, and without disruption of shared working spaces.
