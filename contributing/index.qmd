@@ -1,0 +1,21 @@
+---
+title: How To Contribute
+---
+
+## Contributing To This Lab Manual
+
+This lab manual was built using [Quarto](https://quarto.org). Quarto is a system for building documents (websites, PDFs, etc) from Markdown and Jupyter notebook inputs. You are welcomed (and **encouraged**!) to contribute to this lab manual, either by suggesting small changes or adding larger pieces of content, such as guides for common tasks or software tutorials. Doing so is also good practice for writing and using GitHub!
+
+## Minor Contributions
+
+If you notice that a current page has formatting issues or contains typos^[Which is unfortunately likely!], you should [create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with the fixed page. The majority (if not all) of the pages which make up this lab manual are `.qmd` files written in Markdown (specifically, [Quarto's flavor of Markdown](https://quarto.org/docs/authoring/markdown-basics.html)) and should be straightforward to edit.
+
+## Major Contributions
+
+Major additions (new tutorials, etc.) should also be submitted with [a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request). The only real difference is to pay attention to the format of the new document:
+
+- Material which is mostly text-based (maybe with some code snippets) should be written as a `.qmd` file, primarily in Markdown. 
+- Code-heavy tutorials can be written as a `.qmd` file, or can be submitted as an `.ipynb` Jupyter notebook. Depending on the language, we may need to modify the GitHub action to install the associated language so the site can compile properly; this is not a problem.
+
+In either case, the new page should go into the associated folder for the section (*e.g.* put a new resource in `resources/`) and needs to be added to the navigation in `_quarto.yml`. This document uses [hybrid navigation](https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation) with sections in a top navbar and individual pages in a sidebar, so make sure you add the new page to the right section. 
+
