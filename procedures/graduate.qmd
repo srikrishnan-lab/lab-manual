@@ -9,7 +9,7 @@ If you are unsure if your research interests would be a good fit for the researc
 
 1. [Email Vivek expressing interest](#interest) &mdash; well ahead of the admissions deadline.
 2. Apply through the [Graduate School's Admissions site](https://gradschool.cornell.edu/admissions/apply/) to a field in which Vivek is a member (see [How to Apply](#how-to-apply) below).
-3. If there's mutual interest, expect a video chat, a short guided paper evaluation, and then your formal application (see [Application Process](#application-process)).
+3. If there's mutual interest, expect a video chat, a short guided paper evaluation and a conversation about it, and then your formal application (see [Application Process](#application-process)).
 
 Also see the expectations for [Graduate Students](../expectations/roles.qmd#graduate-students) in the group.
 :::
@@ -131,7 +131,9 @@ This email exists to show you have read our work and thought about the fit. A mo
 
 If you cannot write a few paragraphs in your own voice about why you want to work here, the fit probably is not there.
 
-Polishing your own prose afterward is fine. This is also a narrower rule than the one governing the [guided paper evaluation](#guided-paper-evaluation) below, where you *may* use a language model so long as you disclose and cite it. That is a supervised exercise with stated rules; this is the part where we are trying to find out whether there is a specific person with specific interests on the other end.
+Polishing your own prose afterward is fine.
+
+This is stricter than what governs the [guided paper evaluation](#guided-paper-evaluation) later in the process, where you may use a language model as long as you say so. The difference is that the evaluation gets discussed with you afterward, so it does not much matter how the draft got written; this email is the only thing we have to go on, and it is the part where we are trying to find out whether there is a specific person with specific interests on the other end.
 :::
 
 
@@ -143,15 +145,31 @@ No judgement whatsoever will be made based on video background, and don't feel t
 
 ### Guided Paper Evaluation
 
-Vivek will send you an email asking you to provide a written evaluation of a paper, which he will provide in that email. This paper will be selected based on your discussed interests. The goal of this response is to get a sense of your baseline writing skills, as well as your current ability to read and analyze a paper.
+Vivek will send you an email asking you to provide a written evaluation of a paper, which he will provide in that email. This paper will be selected based on your discussed interests.
 
-Your evaluation should be no more than two pages (no more than 12 point font and no less than one inch page margins), and should touch on several of the following prompts:
+::: {.callout-note}
+## This Is a Conversation, Not a Test
+
+The written response is the starting point, not the whole exercise. Vivek will follow up with a short discussion --- usually about fifteen minutes, often folded into the [video chat](#video-chats) --- about what you wrote and why.
+
+That conversation is the part that matters. We are trying to learn how you read a paper, what you noticed, and what you did when you hit something you didn't understand. None of that comes through clearly on the page, and all of it comes through in five minutes of talking.
+:::
+
+Your evaluation should be no more than two pages (no more than 12 point font and no less than one inch page margins). Address several of the following prompts about the paper:
 
 * What are the main research questions and hypotheses of the paper?
 * What are the key results?
 * Are there important qualifications for the results that were mentioned or not mentioned?
 * How effective are the figures at communicating key points?
 * Can you think of a way to improve on the paper?
+
+Then address at least one of these, which are about *your reading* rather than about the paper:
+
+* What did you have to look up in order to get through this? A method, a term, a cited paper --- whatever it was.
+* Which part was hardest for you, and what did you do about it?
+* Was there anything you are still not sure you understood?
+
+The second set is not a trap, and there is no penalty for a long answer. Research consists largely of reading things you do not yet understand and working out how to proceed anyway; being able to say clearly what you don't know is a skill we are actively looking for, and one that many strong applicants undersell. "I couldn't follow the Bayesian calibration in §3, so I read the Kennedy and O'Hagan paper it cites and got about halfway" is a better answer than a confident summary that papers over the same gap.
 
 You should return your response to Vivek within 48 hours. This doesn't need to be detailed or overly polished, and this isn't an exam. However, if this is not possible due to time constraints, let Vivek know ASAP and we can find a suitable date.
 
@@ -166,9 +184,11 @@ This evaluation is governed by [Cornell's Academic Integrity Code](https://provo
 1. You should do this work on your own, without communicating with advisors, colleagues, etc.
 2. You may use information that you find on the web so long as it is from a trustworthy source. However, you must attribute any sources that you draw from. Plagiarism is unacceptable, and simply paragraphing without attribution is still plagiarism.
 3. Please use a formal bibliographic style such as APA, AGU, or similar. References do not count toward the page limit. It doesn't matter which of these you use, but be consistent.
-4. You *may* use large language models (*e.g.*, ChatGPT) to help you write your evaluation. However, you should be prepared to answer detailed questions about what you have written and to explain your reasoning, which will be hard if you haven't read the paper carefully. You must also cite the model you used, the precise input(s) that you prompted it with, and provide a statement of how you fact-checked and integrated the output into your writing.[^1]
+4. You *may* use large language models (*e.g.*, ChatGPT) while working on this. If you do, include a sentence or two saying what you used and what for. We would much rather know than not, and it is useful information about how you work rather than a mark against you --- how people actually use these tools is something the group is still figuring out too.[^1]
 
-[^1]: All of this may be more work than just reading the paper and writing the response yourself, but your mileage may vary.
+    Bear in mind what the exercise is for. Vivek will discuss your response with you, and the questions will be about this particular paper and your particular reading of it. A response you did not think through yourself is difficult to talk about, and that is the main reason outsourcing this tends to backfire --- not because it breaks a rule, but because the conversation is the point and you will have skipped the preparation for it.
+
+[^1]: This is a narrower ask than earlier versions of this page made. We used to require citing the exact prompts and documenting how you fact-checked the output. That was more bookkeeping than it was worth, and it mostly penalized applicants who were candid about using a tool that others were using silently.
 
 ### Your Application
 
