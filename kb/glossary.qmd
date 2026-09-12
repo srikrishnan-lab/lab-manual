@@ -1,0 +1,137 @@
+---
+title: Glossary
+---
+
+We work across climate science, statistics, decision analysis, and engineering, and those fields use the same words differently. This page records how the group uses them.
+
+It exists because [the paper contract](../guides/papers.qmd#paper-contract) already asks authors to settle terminology early, on the grounds that "vocabularies can vary across disciplines or even sub-disciplines." That is good advice with nowhere to point. This is the place to point.
+
+::: {.callout-note}
+## Not a Dictionary
+
+These are working definitions for this group, not authoritative ones. Where a term is genuinely contested, the entry says so rather than picking a winner. If you think one is wrong, [say so](../contributing/index.qmd) — a glossary nobody argues with is usually one nobody reads.
+:::
+
+## Kinds of Uncertainty
+
+**Deep uncertainty** — the situation where the parties to a decision do not know, or cannot agree on, the system model, the probability distributions over its inputs, or how to value the outcomes. Not simply "a lot of uncertainty": the distinguishing feature is that you cannot write down an agreed probability distribution, which is why [expected-value methods stop being the obvious tool](../guides/readinglist.qmd). Names a whole research community as well as a condition.
+
+**Parametric uncertainty** — uncertainty about the values of a model's parameters, holding its structure fixed. The kind most analyses propagate, because it is the kind a Monte Carlo ensemble over a fixed model naturally captures.
+
+**Structural uncertainty** — uncertainty about the form of the model itself: which processes are represented, how they are coupled, what is left out. [The group's repeated empirical finding](../guides/readinglist.qmd) is that this usually dominates parametric uncertainty, and that analyses which propagate only the latter understate risk, often in the tail.
+
+**Model discrepancy** — the systematic difference between a model's output and reality, over and above observation error. A structural property of the model, not noise.
+
+::: {.callout-warning}
+## Discrepancy Is Not Residual
+
+Residuals are what is left over after fitting. Discrepancy is a claim about the model being wrong in a structured way, and the reason it matters is that ignoring it biases parameter estimates rather than just widening them — fitted parameters absorb the structural error and end up confidently wrong.
+
+Our own materials have not always kept these apart, and the reading list assigns Brynjarsdóttir and O'Hagan specifically because the distinction is load-bearing. Use "discrepancy" when you mean the structural thing.
+:::
+
+**Epistemic uncertainty** — uncertainty arising from lack of knowledge, in principle reducible by learning more. Contrasted with **aleatory uncertainty**, which is irreducible variability in the system itself. The boundary is model-dependent and often arguable; the distinction is a modeling choice, not a fact about the world.
+
+## Risk
+
+**Risk** — commonly decomposed as the interaction of hazard, exposure, and vulnerability. Note this is a decomposition, not a product: the three interact, and [the group's flood work](../guides/readinglist.qmd) repeatedly finds that treating hazard as the dominant uncertainty is a mistake.
+
+**Hazard** — the physical event and its characteristics over space and time: the flood, the surge, the heatwave.
+
+**Exposure** — what is in harm's way. Assets, people, infrastructure.
+
+**Vulnerability** — how much damage exposed assets take for a given hazard. Depth-damage functions are the canonical example.
+
+::: {.callout-note}
+## "Hazard" Drifts
+In careful use, hazard is one leg of the triad. In looser use — including in some of our own older papers — it stands in for the whole risk estimate. Worth reading for context rather than assuming precision.
+:::
+
+## Models and Their Evaluation
+
+**Exploratory modeling** — using ensembles of plausible models to map what *could* happen and which possibilities matter, rather than treating one model as a surrogate for reality and asking what *will* happen. Contrasted with **consolidative modeling**. This is the group's basic epistemic stance, and [Bankes is the reading-list entry that explains it](../guides/readinglist.qmd).
+
+**Emulator** (or surrogate) — a fast statistical approximation of an expensive model, fitted to a sample of its runs, used where the full model is too slow for the number of evaluations an analysis needs.
+
+**Sensitivity analysis** — apportioning variation in a model's output among variations in its inputs. **Global** sensitivity analysis varies inputs across their full ranges simultaneously; **local** analysis perturbs around a point. For nonlinear models with interactions, which is most of ours, local results can be badly misleading. The [MSD uncertainty eBook](https://uc-ebook.org) is the group's practical reference.
+
+**Calibration** — estimating model parameters from observations.
+
+::: {.callout-warning}
+## Verification and Validation Mean Two Different Things Here
+
+In the **modeling** sense — Oreskes et al., on the reading list — verification means establishing that a model's results are logically consistent, and validation that it corresponds to the system it represents. Their argument is that for open systems neither is achievable in the strong sense the words imply, which is why we prefer to talk about evaluation and confirmation.
+
+In the **software** sense, used in [Coding Best Practices](../guides/best-practices.qmd), "validation" means unit testing and "verified" means reviewed and merged.
+
+Both senses appear in this manual. Check which one is meant, and when you write, make it obvious.
+:::
+
+## Projections and Scenarios
+
+**Projection** — a conditional statement: what the model says follows *given* a scenario. Not a forecast, and the conditioning is the point.
+
+**Prediction** — an unconditional claim about what will happen. We rarely make them.
+
+**Scenario** — a coherent, internally consistent description of a possible future, used as an input assumption. A scenario is not a probability statement, and SSPs and RCPs are not ranked by likelihood.
+
+**State of the world (SOW)** — one fully specified combination of uncertain factors; the unit of a large ensemble. An analysis over tens of thousands of SOWs is asking which combinations produce outcomes we care about, not which combination is most likely.
+
+## Decision-Making
+
+**Robustness** — how well a strategy performs across a wide range of futures, rather than how well it performs in expectation. Robust strategies usually sacrifice some performance under the most likely future to avoid failing badly under others.
+
+**Resilience** — the capacity of a system to absorb disturbance and recover function. A property of the system; robustness is a property of a strategy.
+
+**Reliability** — in our energy systems work, the technical sense: the probability a system meets demand under specified conditions.
+
+**Regret** — the difference between a strategy's outcome and the best that could have been achieved had the future been known. Minimizing maximum regret is a decision criterion for deep uncertainty. Distinguish from the ordinary English word, which also appears in our writing.
+
+**Rival framings** — the observation that how a decision problem is formulated — which objectives, which constraints, whose outcomes — shapes the answer as much as the analysis does, and that comparing formulations is itself informative.
+
+## Extremes
+
+**Return level** — the value expected to be exceeded once on average in a given period. The 100-year return level is the flood exceeded on average once per century.
+
+**Return period** — the inverse: the average interval between exceedances. "The 100-year flood" is widely misread as "happens once a century," which is wrong in two ways — it is a long-run average, and under nonstationarity the underlying distribution is itself moving.
+
+**Block maxima** and **peaks-over-threshold** — the two standard approaches to extreme value analysis, fitting maxima per block (usually annual) or all exceedances above a threshold. The second uses more data and requires a threshold choice that is rarely innocuous.
+
+## Group Tools and Conventions
+
+**Meta-repository** — a repository holding one paper's analysis and pointing at released versions of the models and data it uses, rather than containing them. See [git and GitHub](programming/git.qmd#setting-up-project-repositories).
+
+**Paper contract** — a document agreed early in a project recording the author line, expected contributions, research questions, hypotheses, and submission plan. See [Paper Writing](../guides/papers.qmd#paper-contract).
+
+**BRICK** — Building blocks for Relevant Ice and Climate Knowledge; a semi-empirical sea-level model used across the group's coastal work, implemented in the Mimi framework as `MimiBRICK.jl`.
+
+**UNSAFE** — UNcertain Structure And Fragility Ensemble; the group's framework for property-level flood risk estimation under uncertainty in exposure and vulnerability.
+
+**MSD** — MultiSector Dynamics; the research program studying co-evolution of human and Earth systems across sectors, and the community the group's uncertainty work sits in.
+
+## Acronyms
+
+Several of these appear in group materials without ever being expanded. Spell them out on first use.
+
+| | |
+|---|---|
+| ABC | Approximate Bayesian Computation |
+| CMIP | Coupled Model Intercomparison Project |
+| DDF | Depth-Damage Function |
+| GCM | General Circulation Model |
+| GEV | Generalized Extreme Value (distribution) |
+| GSA | Global Sensitivity Analysis |
+| IAM | Integrated Assessment Model |
+| IRB | Institutional Review Board |
+| MCMC | Markov chain Monte Carlo |
+| MSD | MultiSector Dynamics |
+| POT / GP | Peaks-Over-Threshold / Generalized Pareto |
+| RCP | Representative Concentration Pathway |
+| RDM | Robust Decision Making |
+| SOW | State Of the World |
+| SSP | Shared Socioeconomic Pathway |
+| UQ | Uncertainty Quantification |
+
+## Missing an Entry?
+
+If you hit a term that should be here, add it. Entries that record a *disagreement* or an ambiguity are more useful than ones that record a definition everybody already shares.
