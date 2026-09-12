@@ -1,0 +1,114 @@
+---
+title: Figure Library
+---
+
+The group maintains two small packages of plotting defaults with matching APIs, so that figures share a colorblind-safe palette and readable type without everyone rebuilding that from scratch.
+
+- **[`VizLab.jl`](https://github.com/srikrishnan-lab/VizLab.jl)** — built on Plots.jl, the group default.
+- **[`vizlab-py`](https://github.com/srikrishnan-lab/vizlab-py)** — built on matplotlib.
+
+These are defaults, not a framework. [Figure Design](figures.qmd) is where the reasoning lives; this is the implementation of a few of its recommendations so you do not have to reimplement them per project.
+
+::: {.callout-tip}
+## Break Them When the Figure Is Better For It
+
+A house style is a starting point, not a rule. `figures.qmd` says data visualization is contextual and that breaking the guidelines sometimes produces a better figure, and that applies to these defaults too. What they buy you is not having to think about the palette when the palette is not the interesting problem.
+:::
+
+## Getting Started
+
+::: {.panel-tabset}
+
+### Julia
+
+```julia
+using Pkg
+Pkg.add(url = "https://github.com/srikrishnan-lab/VizLab.jl")
+```
+
+```julia
+using VizLab, Plots
+
+lab_theme!()                          # once, at the top of a figure script
+
+p = plot(size = journal_size(:single))
+spaghetti!(p, years, ensemble; n = 100)
+bandplot!(p, years, q05, q95; label = "5–95% ensemble range")
+savefig(p, "figures/fig01_slr.png")
+```
+
+### Python
+
+```bash
+pip install git+https://github.com/srikrishnan-lab/vizlab-py
+```
+
+```python
+import matplotlib.pyplot as plt
+import vizlab
+
+vizlab.lab_theme()                    # once, at the top of a figure script
+
+fig, ax = plt.subplots(figsize=vizlab.journal_size("single"))
+vizlab.spaghetti(ax, years, ensemble, n=100)
+vizlab.bandplot(ax, years, q05, q95, label="5-95% ensemble range")
+fig.savefig("figures/fig01_slr.png")
+```
+
+:::
+
+## What They Give You
+
+| | What it does |
+|---|---|
+| `lab_theme` | Readable fonts, no top/right spines, light y-grid only, safe palette |
+| `lab_palette(n)` | Colorblind-safe categorical colors, warns past ~7 |
+| `sequential()` / `diverging()` | Magnitude and midpoint colormaps |
+| `bandplot` | Shaded uncertainty interval |
+| `spaghetti` | Subsampled ensemble members |
+| `journal_size` | Single, one-and-a-half, and double column widths |
+
+The palettes are [Paul Tol's](https://sronpersonalpages.nl/~pault/) bright and muted schemes, which survive both colorblindness and grayscale printing. `lab_palette` warns past about seven categories because that is roughly where color stops being a usable channel — at that point, facet or label directly instead.
+
+## Three Things Worth Repeating
+
+These are in the docstrings because they are the errors that reach print.
+
+**Say what your band is.** A 90% credible interval, a 5–95% ensemble range, and one standard error look identical on the page and mean very different things. A shaded band without a caption saying which it is conveys nothing.
+
+**Diverging colormaps need symmetric limits.** If the midpoint of your color scale is not the midpoint of your data range, the visual center is not the real one and the figure misleads without anyone noticing.
+
+**Set figure size at creation, never scale afterwards.** Scaling changes the physical font size. This is why so many published figures have axis labels nobody can read at print size.
+
+## Ensemble Spaghetti
+
+`spaghetti` subsamples by default, and it should. Overplotting several thousand translucent lines produces a solid block that shows nothing.
+
+It is worth plotting both the spaghetti and the summary band while you are exploring, because they answer different questions. The band tells you where the mass is; the individual traces tell you whether the ensemble is doing something a band hides — bimodality, crossing trajectories, members behaving qualitatively differently. [Figure Design](figures.qmd) makes the same point about representations of uncertainty generally.
+
+## Archiving
+
+::: {.callout-important}
+## Do Not Let an Archived Figure Depend on a Moving Package
+
+A paper's figures must still regenerate years later. If your figure scripts import a package that keeps changing, they will eventually stop reproducing, and the archive your availability statement promises will be broken.
+
+Either **pin the version** in your project's `Manifest.toml` or environment file — which the [meta-repository](https://github.com/srikrishnan-lab/paper-metarepo-template) archives anyway — or **copy the theme function into the paper repository**. A pinned or copied style survives archival; a floating dependency does not.
+:::
+
+## Makie
+
+[Makie.jl](https://docs.makie.org/) is the alternative to Plots.jl, and the better choice for interactivity, 3D, or fine control over complex multi-panel layouts. Several group projects already use CairoMakie.
+
+The palettes are plain hex strings and transfer unchanged:
+
+```julia
+using CairoMakie, VizLab
+set_theme!(palette = (color = VizLab.TOL_BRIGHT,), fontsize = 10)
+```
+
+The helper functions are Plots-specific. If you find yourself reimplementing them for Makie, [open an issue](https://github.com/srikrishnan-lab/VizLab.jl/issues) rather than keeping a private copy — if more than one project wants them, a Makie extension is worth adding.
+
+## Adding to Them
+
+Additions are welcome, especially for plot types the group makes repeatedly. The one constraint is that the two packages keep matching APIs, so switching languages does not mean relearning the defaults.

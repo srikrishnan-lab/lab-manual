@@ -1,5 +1,9 @@
 project:
   type: website
+  render:
+    - "**/*.qmd"
+  resources:
+    - templates/
 
 pagetitle: "{{< meta title >}} | Srikrishnan Group"
 author-meta: "Vivek Srikrishnan"
@@ -60,6 +64,7 @@ website:
         - guides/authorship.qmd
         - guides/best-practices.qmd
         - guides/data-management.qmd
+        - guides/figure-library.qmd
         - guides/figures.qmd
         - guides/github-zenodo.qmd
         - guides/group-workflow.qmd
