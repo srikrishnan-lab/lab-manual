@@ -59,20 +59,26 @@ It is completely acceptable, and often the most interesting outcome, to present 
 
 ## One-on-Ones with Vivek
 
-Recurring individual meetings, scheduled at the start of each semester around everyone's teaching and coursework.
+**Weekly, scheduled for an hour**, arranged at the start of each semester around everyone's teaching and coursework.
 
-These are your time. Vivek will not arrive with an agenda unless something specific needs discussing, so bring one — even a rough one. Useful things to bring:
+An hour is what gets reserved, not what has to be used. Plenty of weeks need twenty minutes, and ending early is a perfectly good outcome — the hour exists so that the weeks which *do* need it are not squeezed. The purpose is to update each other and to talk through anything that is proving difficult, not to fill the time.
 
-- What you did since last time, and what you are stuck on
+These are your meeting. Vivek will not arrive with an agenda unless something specific needs discussing, so bring one — even a rough one. Useful things to bring:
+
+- Where things stand since last time, and anything you are stuck on
 - A decision you need input on
 - Results you want a second opinion about, before they harden into a paper
 - Coursework, committee, exam, and deadline logistics
 - Career questions, which are in scope and do not need a special occasion
 
-::: {.callout-tip}
-## "I Didn't Get Anything Done" Is a Fine Agenda
+::: {.callout-important}
+## Weekly Progress Is Not the Standard
 
-Some weeks the honest report is that a bug ate five days, or that a method did not work, or that coursework took everything. Say so. This is normal, it is useful information, and the meeting is more valuable when it is accurate than when it is impressive. The [undergraduate research guidance](../procedures/undergrad.qmd) says the same thing in the same words, and it applies to everyone.
+Do not treat the meeting as a weekly accounting of output. **Expecting substantial progress every single week is unrealistic**, and measuring yourself that way is a reliable route to feeling like you are failing at a job you are doing fine.
+
+Research does not arrive on a seven-day cycle. A week can go to a bug that turns out to be a one-character fix, to a method that does not work, to reading that does not resolve into anything yet, or to coursework. [None of that is wasted](../procedures/graduate.qmd) — it is what the work consists of, and it is often where the understanding actually comes from.
+
+So the honest report is the useful one. "This didn't work and I'm not sure why" is a better agenda item than a polished summary, because it is the kind of thing the meeting can actually help with. The meeting is more valuable when it is accurate than when it is impressive.
 :::
 
 If something urgent comes up between meetings, do not wait for the next slot — see [PI availability](../expectations/availability.qmd) for how to reach Vivek.
