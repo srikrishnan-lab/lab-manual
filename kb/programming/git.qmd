@@ -56,6 +56,6 @@ There are several alternatives to GitHub, including [Bitbucket](https://bitbucke
 ## Learn More
 
 * [Version Control with Git](http://swcarpentry.github.io/git-novice/) from Software Carpentry
-* [Github Training](https://lab.github.com/githubtraining/introduction-to-github) from GitHub.
+* [GitHub Skills](https://skills.github.com/) from GitHub.
 * [Getting Started: Git and GitHub](https://waterprogramming.wordpress.com/2014/09/29/getting-started-git-and-github/) from Water Programming.
 * A [collection of git-related posts](https://waterprogramming.wordpress.com/category/programming/git-and-github/) from Water Programming.

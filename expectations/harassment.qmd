@@ -12,15 +12,15 @@ This policy on harassment is a non-negotiable part of our commitment to creating
 If you feel that these guidelines could be strengthened in any way, please [submit a pull request](http://github.com/srikrishnan-lab/lab-manual) with your suggested changes.
 :::
 
-These guidelines are only slightly modified from those provided by the [Ada Initiative](https://geekfeminism.wikia.org/wiki/Conference_anti-harassment/Policy), and additional language was borrowed from or is heavily influenced by the [Doss-Gollin group lab guide](http://dossgollin-lab.github.io/lab-guide).
+These guidelines are only slightly modified from the anti-harassment policy originally developed by the [Ada Initiative](https://geekfeminism.fandom.com/wiki/Conference_anti-harassment/Policy) and maintained on the Geek Feminism wiki, and additional language was borrowed from or is heavily influenced by the [Doss-Gollin group's harassment policy](https://dossgollin-lab.github.io/culture/harassment-policy.html).
 
 ::: {.callout-note}
 ## The Short Version
 
-The Srikrishnan Research Group is committed to creating a harassment-free space for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, or religion. We do not tolerate harassment of group members, other colleagues, or anyone else in any form. Sexual language and imagery is not appropriate for any professional setting, including talks, workshops, parties, Zulip, or any online media. Research group members violating these rules will be sanctioned or expelled at the discretion of Vivek Srikrishnan.
+The Srikrishnan Research Group is committed to creating a harassment-free space for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, or religion. We do not tolerate harassment of group members, other colleagues, or anyone else in any form. Sexual language and imagery is not appropriate for any professional setting, including talks, workshops, parties, Slack, or any online media. Research group members violating these rules will be sanctioned or expelled at the discretion of Vivek Srikrishnan.
 :::
 
-All Cornell employees and students *must* understand and comply with the University's policies and procedures regarding harassment and discrimination, including but not limited to [the policy on prohibited bias, discrimination, harassment, and sexual and related misconduct](https://www.dfa.cornell.edu/sites/default/files/vol6_4.pdf). In addition to these formal guidelines, or group adopts additional informal guidelines on conduct which may go beyond the University's policies.
+All Cornell employees and students *must* understand and comply with the University's policies and procedures regarding harassment and discrimination, including but not limited to [the policy on prohibited bias, discrimination, harassment, and sexual and related misconduct](https://www.dfa.cornell.edu/sites/default/files/vol6_4.pdf). In addition to these formal guidelines, our group adopts additional informal guidelines on conduct which may go beyond the University's policies.
 
 ## Definition
 
@@ -46,7 +46,7 @@ Group members asked to stop harassing behavior are expected to comply immediatel
 
 ## Enforcement
 
-If a member engages in harassing behavior, other group members and Vivek Srikrishnan may take any action they deem appropriate to stop this behavior, including warning the offender, expelling the behavior from the group, and sanction through official Cornell University channels.
+If a member engages in harassing behavior, other group members and Vivek Srikrishnan may take any action they deem appropriate to stop this behavior, including warning the offender, expelling the offender from the group, and sanction through official Cornell University channels.
 
 ## Reporting
 

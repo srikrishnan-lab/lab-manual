@@ -1,5 +1,7 @@
 ---
-title: General Resources
+title: Guides
 ---
 
 This section contains guides and team resources for common workflows and tasks.
+
+If you are new, [Group Workflow](group-workflow.qmd) covers the software we coordinate with and [Data Management](data-management.qmd) covers where your data should live and what is (and is not) backed up.

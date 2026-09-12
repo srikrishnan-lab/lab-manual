@@ -5,7 +5,7 @@ title: Undergraduate Research
 ::: {.callout-note}
 ## Credit
 
-Specific language on this page comes from the [Doss-Gollin Lab](https://dossgollin-lab.github.io/lab-guide).
+Specific language on this page comes from the [Doss-Gollin Lab](https://dossgollin-lab.github.io/joinus/undergrad.html).
 :::
 
 There are three main ways to do research in our group as an undergraduate:
@@ -47,12 +47,13 @@ At the beginning of the semester, Vivek will sit down with you to agree on the s
 
 ### How To Apply {#apply}
 
-Send Vivek an [email](mailto:vs498@cornell.edu) from your Cornell University account:
+Send Vivek an [email](mailto:viveks@cornell.edu) from your Cornell University account:
 
   1. Make the subject line of the email BEE 4970 or 4990, whichever you'd like to enroll in.
   2. Attach your CV or resume as a `.pdf` file. It's ok if this isn't long or if it mainly contains the courses you've completed, but it helps Vivek get a sense of your aims and background.
   3. Attach a 1-2 page [project proposal](#proposal) as a `.pdf` file. The more detailed, the better. This proposal isn't binding, but it will give Vivek a sense of your interests and communication skills.
   4. Suggest some times when you might be available to talk over the next week in the body of the email.
+
 
 ## Honors Thesis supervision
 
@@ -76,7 +77,7 @@ Uncompensated internships give an unfair advantage to those who can afford to vo
 
 ## How to Write a Project Proposal {#proposal}
 
-The project proposal is the first draft of your semester research plan. This document will lay out research questions and goals, milestones and timelines, the tools you will need, and the mentoring and guidance you anticipate requiring. The proposal is not intendedd to be a binding contract, and will likely change upon further discussion. The main goal of the project proposal is to convince Vivek of the following:
+The project proposal is the first draft of your semester research plan. This document will lay out research questions and goals, milestones and timelines, the tools you will need, and the mentoring and guidance you anticipate requiring. The proposal is not intended to be a binding contract, and will likely change upon further discussion. The main goal of the project proposal is to convince Vivek of the following:
 
   * You've thought about the research you'd like to do;
   * This research serves your broader intellectual or career goals;

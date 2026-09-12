@@ -17,5 +17,5 @@ Major additions (new tutorials, etc.) should also be submitted with [a pull requ
 - Material which is mostly text-based (maybe with some code snippets) should be written as a `.qmd` file, primarily in Markdown. 
 - Code-heavy tutorials can be written as a `.qmd` file, or can be submitted as an `.ipynb` Jupyter notebook. Depending on the language, we may need to modify the GitHub action to install the associated language so the site can compile properly; this is not a problem.
 
-In either case, the new page should go into the associated folder for the section (*e.g.* put a new resource in `resources/`) and needs to be added to the navigation in `_quarto.yml`. This document uses [hybrid navigation](https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation) with sections in a top navbar and individual pages in a sidebar, so make sure you add the new page to the right section. 
+In either case, the new page should go into the associated folder for the section (*e.g.* put a new knowledge-base page in `kb/`) and needs to be added to the navigation in `_quarto.yml`. This document uses [hybrid navigation](https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation) with sections in a top navbar and individual pages in a sidebar, so make sure you add the new page to the right section. 
 

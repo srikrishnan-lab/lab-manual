@@ -10,38 +10,55 @@ Zach Brodeur wrote [a user guide for Hopper](https://docs.google.com/document/d/
 
 To get access to Hopper, message Vivek (this should be part of your onboarding process).
 
-You can access Hopper for file transfers through [Globus](https://www.cac.cornell.edu/wiki/index.php?title=Hopper_Cluster#:~:text=Globus%20Collection%3A-,Hopper%20Cluster,-.%20See%20the%20File) (see the Cornell CAC wiki for information on [how to use Globus](https://www.cac.cornell.edu/wiki/index.php?title=File_Transfer_using_Globus)).
+You can access Hopper for file transfers through Globus; the Hopper collection is named `Hopper Cluster`. See the CAC documentation on [file transfer using Globus](https://portal.cac.cornell.edu/techdocs/files/FileTransferGlobus/) for access instructions.
 
 ## Hardware
 
-- 22 compute nodes (c0001-c0022) with dual 20-core Intel Xeon Gold 5218R CPUs @ 2.1 GHz, 192 GB of RAM
-- 225 TB of total usable storage. This should be a healthy amount per person. We'll figure out a more formal way to partition storage resources over time.
-- Hyperthreading is available on all nodes and enabled by default (so you can treat each physical core as two logical cores, if the software allows; in other words, think of each node as consisting of 80 CPUs). If you don't want to use hyperthreading, including the following in your submission script: `#SBATCH --hint=nomultithread`
+Hopper has 26 compute nodes, in two generations:
+
+| Nodes | CPU | Physical cores | RAM |
+|---|---|---|---|
+| `c0001`-`c0022` | 2 x 20-core Intel Xeon Gold 5218R @ 2.1 GHz | 40 | 192 GB |
+| `c0023`-`c0026` | 2 x 48-core AMD EPYC 9454 @ 2.75 GHz | 96 | 567 GB |
+
+The head node is `hopper.cac.cornell.edu`, accessed over `ssh`. Nodes are interconnected with InfiniBand.
+
+- Hyperthreading is enabled on all nodes by default, so each physical core is treated as two logical CPUs (an Intel node looks like 80 CPUs, an EPYC node like 192). If you don't want hyperthreading, include the following in your submission script: `#SBATCH --hint=nomultithread`
+- The EPYC nodes are both faster per-core and much larger in memory than the original Intel nodes. If your job is memory-hungry or you want more cores in a single shared-memory process, target those; if you are running many small independent tasks, the Intel nodes are usually less contended.
 
 ## Software
 
 ### Filesystem
 
-Use your home directory (`~`) for data you want to keep. These directories are not backed up by default.
+Use your home directory (`~`) for data you want to keep. Home directories live on an NFS export from the head node.
+
+::: {.callout-warning}
+## Hopper Is Not Backed Up
+
+CAC does **not** back up Hopper home directories. Nothing on Hopper is safe by default. Anything you cannot regenerate cheaply -- raw input data, final simulation output, anything a paper depends on -- must also live somewhere else. See [Data Management](data-management.qmd) for what that means in practice.
+:::
 
 ### Scheduler
 
-Hopper uses the [SLURM scheduler](https://www.cac.cornell.edu/wiki/index.php?title=Slurm). There is only one queue (`normal`) with no resource or time limits.
+Hopper uses the [Slurm scheduler](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurm/). All nodes are in a single partition (`normal`) with no time limits. The [Slurm Quick Start](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurmQS/) guide is a good place to begin.
 
 ### Modules
 
+Hopper uses [Lmod environment modules](https://portal.cac.cornell.edu/techdocs/clusterinfo/modules/) to make software available.
+
 - To see the list of available modules, use `module avail`.
 - To see loaded modules, use `module list`.
+- Load modules inside your Slurm script rather than relying on your login shell, so the job is reproducible and does not depend on your interactive environment.
 
 ## Usage Guidelines
 
 ### When To Use Hopper
 
-If you aren't going to be using a lot of cores (10+ cores), it might be better to use your workstation, especially if Hopper's resources are highly in demand when you want to run your job. Hopper's cores are only 2.1 GHz (compare that to 3-4 GHz on your workstation), so you're only going to get an advantage if you can exploit parallelization. This is great for things like Monte Carlo simulations, multi-objective optimization, or really large-scale modeling experiments where you can have each core run a different member of the ensemble. If you're doing model calibration, think carefully about whether your method can actually use that many cores. Most MCMC procedures, for example, cannot, but Approximate Bayesian Computation, pre-calibration or particle filtering can be embarrassingly parallel.
+If you aren't going to be using a lot of cores (10+ cores), it might be better to use your workstation, especially if Hopper's resources are highly in demand when you want to run your job. The original Intel nodes run at 2.1 GHz, well below the 3-4 GHz of a typical workstation, so on those nodes you only come out ahead if you can exploit parallelization. The newer EPYC nodes narrow that gap (2.75 GHz, and far more cores and memory per node), but the same basic logic holds: Hopper wins on breadth, not on single-core speed. This is great for things like Monte Carlo simulations, multi-objective optimization, or really large-scale modeling experiments where you can have each core run a different member of the ensemble. If you're doing model calibration, think carefully about whether your method can actually use that many cores. Most MCMC procedures, for example, cannot, but Approximate Bayesian Computation, pre-calibration or particle filtering can be embarrassingly parallel.
 
 ### Run Jobs using SLURM
 
-**Do not run jobs from the command line in your home directory.*** Either set up a SLURM script and run it or
+**Do not run compute jobs directly on the head node.** The head node is shared by everyone on the cluster, and a heavy job there slows down logins and file transfers for all of us. Instead, either write a Slurm batch script and submit it with `sbatch`, or request an interactive session with `salloc` (or `srun --pty bash`) and work inside that.
 
 ### Benchmark Your Code
 
@@ -76,4 +93,4 @@ Always benchmark your parallel code on your workstation to get a sense for how i
 
 ## More Information
 
-For more information, see the [Cornell CAC Wiki entry](https://www.cac.cornell.edu/wiki/index.php?title=Hopper_Cluster).
+For more information, see the [Cornell CAC TechDocs entry for Hopper](https://portal.cac.cornell.edu/techdocs/clusters/Hopper/). Note that CAC moved its documentation from the old wiki to TechDocs, so older bookmarks and links will be dead.

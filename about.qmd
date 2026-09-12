@@ -21,7 +21,7 @@ Our research group adheres to several values which inform the procedures and exp
 
 This organization and content of this lab manual borrows heavily from several documents written by:
 
-- the [Doss-Gollin Research Group](https://jamesdossgollin.me/lab-guide/) at [Rice University](https://rice.edu)
+- the [Doss-Gollin Research Group](https://dossgollin-lab.github.io/) at [Rice University](https://rice.edu)
 
 - [Lab Carpentry](https://lab-carpentry.readthedocs.io/en/latest/)
 

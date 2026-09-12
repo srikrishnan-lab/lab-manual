@@ -14,7 +14,7 @@ Also see the expectations for [Postdocs](../expectations/roles.qmd#postdocs) in 
 
 ## Initial Inquiry
 
-You can inquire about a postdoc in response to a particular [opening](https://srikrishnan-lab.github.com/join/), or at any time &mdash; even without an advertised opening &mdash; if you're interested in working with Vivek on an application for another postdoc opportunity, such as an [NSF Postdoctoral Fellowship](https://beta.nsf.gov/funding/opportunities?f%5B0%5D=student_educator_eligibility:postdoc), the [Cornell Energy Systems Institute Postdoctoral Fellowship](https://energy.cornell.edu/index.php/research/postdoctoral-research-fellowship-program), or a [Cornell Atkinson Center Postdoctoral Fellowship](https://atkinson.cornell.edu/grants/postdocs/postdoctoral-fellowships/), among other options. Applying after an inquiry puts you in a better position than just submitting a blind application. To get the best feedback about whether you should apply, include the following information:
+You can inquire about a postdoc in response to a particular [opening](https://srikrishnan-lab.github.io/join/), or at any time &mdash; even without an advertised opening &mdash; if you're interested in working with Vivek on an application for another postdoc opportunity, such as an [NSF Postdoctoral Fellowship](https://www.nsf.gov/funding/opportunities?f%5B0%5D=student_educator_eligibility:postdoc), a fellowship through the [Cornell Energy Systems Institute](https://energy.cornell.edu/), or a [Cornell Atkinson Center Postdoctoral Fellowship](https://atkinson.cornell.edu/grants/postdocs/postdoctoral-fellowships/), among other options. Applying after an inquiry puts you in a better position than just submitting a blind application. To get the best feedback about whether you should apply, include the following information:
 
 * Your current CV as a `.pdf`;
 * A summary of your past research as a `.pdf`;
@@ -27,13 +27,14 @@ You can inquire about a postdoc in response to a particular [opening](https://sr
 
 This information allows Vivek to get a sense of your fit, and he can provide feedback about whether you should apply for a particular opening.
 
+
 <!-- TODO(Vivek): note roughly how long applicants should expect to wait for a response to an initial inquiry. -->
 
 ## What We're Looking For
 
 Postdocs should be ready to work independently and develop their own line of research, while still collaborating closely with Vivek and the rest of the group; see the full set of [expectations for postdocs](../expectations/roles.qmd#postdocs) for more detail. The written paper response and presentation described below are mainly meant to get a sense of your independent research judgment and your fit with the group's ongoing work.
 
-<!-- TODO(Vivek): add specifics on appointment length, renewal terms, and salary/benefits (e.g. NIH/NSF postdoc pay scale), since these are common questions for postdoc applicants and aren't addressed elsewhere in the manual. -->
+<!-- TODO(Vivek): add salary/benefits specifics (e.g. the postdoc pay scale used) to the FAQ below. Appointment length and renewal are now answered there. -->
 
 ## Application Process
 

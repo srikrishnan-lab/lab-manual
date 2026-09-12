@@ -43,5 +43,5 @@ Some other tips include:
 6. ***If you are worried about someone else in the lab group, let Vivek know***: We all have to look out for each other. If you're concerned that stress may be getting to another member of the lab group, let Vivek know and he can work with that member to ensure that their health is prioritized.
 
 ::: {.callout-important}
-If you or someone you know may be considering suicide, contact the National Suicide Prevention Lifeline at 1-800-273-8255.
+If you or someone you know may be considering suicide or is in crisis, call or text **988** to reach the [988 Suicide & Crisis Lifeline](https://988lifeline.org/), available 24/7. If there is immediate danger, call 911. Cornell students can also reach [Cornell Health's 24/7 crisis line](https://health.cornell.edu/services/mental-health-care) at 607-255-5155.
 :::

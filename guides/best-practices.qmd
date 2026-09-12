@@ -20,7 +20,7 @@ When writing comments, write about "why," not "what." What a particular line of 
 
 ## Write Unit Tests
 
-Unit tests are a great debugging and software validation tool. The purpose of a unit test is to check that a particular function or set of functions behaves as expected. They consistent of a few steps:
+Unit tests are a great debugging and software validation tool. The purpose of a unit test is to check that a particular function or set of functions behaves as expected. They consist of a few steps:
 
 1. Set the environment's state. Initialize variables to desired values for the test.
 2. Execute the desired function(s).

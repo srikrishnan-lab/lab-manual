@@ -6,17 +6,21 @@ title: "R"
 
 ## Installation
 
-Use the latest version of R that you can, but it's not essential (usually) to stay on top of updates. R can be managed using conda, but conda only maintains some packages. It's still generally good practice to create new environments for different projects.
+Use the latest version of R that you can, but it's not essential (usually) to stay on top of updates. R can be managed using [conda](conda.qmd), but conda only packages a subset of CRAN. It's still generally good practice to create new environments for different projects.
+
+For project-level reproducibility in R, [`renv`](https://rstudio.github.io/renv/) is the standard tool: it records the exact package versions a project uses in an `renv.lock` file that you commit alongside the code. Use it for anything that will end up in a paper.
 
 ## Usage
 
 Hadley Wickham has several good (and freely available online!) R books, depending on your level of familiarity:
 
-* [R for Data Science](https://r4ds.had.co.nz/)
+* [R for Data Science](https://r4ds.hadley.nz/) (2nd edition)
 * [Advanced R](https://adv-r.hadley.nz/)
 
-Kieran Healy has [an excellent book on data visualization](https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html) using the `ggplot2` library.
+Kieran Healy has [an excellent book on data visualization](https://socviz.co/) using the `ggplot2` library, which pairs well with our [figure design guide](../../guides/figures.qmd).
 
 ## Development Environments
 
-[RStudio](https://www.rstudio.com/) is the best graphical R IDE around. Otherwise, you can work in a text editor like [Atom](https://atom.io) equipped with an R linter and (maybe) a code-completion package.
+[RStudio](https://posit.co/products/open-source/rstudio/) is the best graphical R IDE around. It is now developed by Posit, the company formerly called RStudio, but the editor itself is unchanged and still free and open-source.
+
+If you would rather stay in one editor across languages, [VS Code](https://code.visualstudio.com/) has a usable [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r), though RStudio remains the better experience for R-heavy work.

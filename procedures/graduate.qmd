@@ -116,11 +116,12 @@ Putting together a graduate application is a lot of work, both for you and for y
 * **Explain why you are reaching out to Vivek *specifically***: Did you read one of our group's papers (and if so, which one(s))? Was a project or opening listed on the website of particular interest? It's helpful for Vivek to know why our group appeared on your radar. For this reason, mass e-mails are unlikely to receive productive responses. An inquiry that references a specific paper or material and ties it to your interests and what you hope to gain as a member of our group is the most likely to get a positive response.
 
 * **Ask specific questions**: It's hard to provide feedback if your expression of interest is vague, and this can be a sign that you haven't fully thought through whether we would be a good fit for you. For example, you might ask questions like:
-    * "Are you still working on `<some topic>`>?" or "Are you interested in `<some topic`>?"
+    * "Are you still working on `<some topic>`?" or "Are you interested in `<some topic>`?"
     * "Do you have funding for students in the fall?" (This will hopefully be made clear on the website, but it's ok to ask to be sure).
     * "Is `<this method>` something you use?"
 
 If your only questions are "Should I apply?" or "Can you look at my application?", the only answers that I can give you are "It's up to you" and "If your application is in the pool, I will see it."
+
 
 ### Video Chats
 

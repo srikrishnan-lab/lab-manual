@@ -4,23 +4,33 @@ title: conda
 
 [conda](https://conda.io) is a package manager used to manage dependencies for python projects (with some functionality for R and some other programs). You can [export your environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment) for your Git repository.
 
-We recommend that you use conda whenever possible to facilitate reproducibility and reduce package conflicts. If you need to use packages that are not available within conda, try to maintain a similar level of documentation:
-what packages did you use, and what versions?
+We recommend that you use conda whenever possible to facilitate reproducibility and reduce package conflicts. If you need to use packages that are not available within conda, try to maintain a similar level of documentation: what packages did you use, and what versions?
+
+Make a separate environment for each project, and commit its `environment.yml` to the project repository. An environment file that only lists direct dependencies is readable but does not pin transitive ones; for a paper, export a fully resolved file as well so the exact versions used to produce the results are recorded. See [Data Management](../../guides/data-management.qmd) and [Open and Reproducible Research](../../expectations/open.qmd).
 
 ## Installation
 
-conda [installation procedures](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) vary slightly depending on on your operating system. We recommend starting with Miniconda and adding packages as needed, as the full Anaconda installation might include a lot of less-necessary packages.
+conda [installation procedures](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) vary slightly depending on your operating system. We recommend installing [**Miniforge**](https://github.com/conda-forge/miniforge) and adding packages as needed.
+
+Miniforge is a minimal installer that defaults to the community-run `conda-forge` channel. We prefer it to Miniconda or the full Anaconda distribution for two reasons:
+
+- The full Anaconda installation bundles a lot of packages you will not use.
+- Anaconda Inc.'s terms of service for its *default* channels require a paid license for some institutional use. Miniforge avoids the question entirely by not using those channels. If you have an existing Miniconda or Anaconda install pointed at the `defaults` channel, it is worth switching.
+
+Miniforge also ships `mamba`, a much faster drop-in replacement for the `conda` command. Modern `conda` has adopted the same solver and the gap has narrowed, but `mamba install` is still generally quicker.
 
 ## Usage
 
-Here is a [conda cheat sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf) current as of conda 4.6.
+The conda documentation has a [current cheat sheet](https://docs.conda.io/projects/conda/en/stable/user-guide/cheatsheet.html) of common commands.
 
-You will generally want to add the `conda-forge` channel to your configuration. After loading an environment:
+If you installed Miniforge, `conda-forge` is already your default channel and there is nothing to configure. If you are on an older Miniconda or Anaconda install, point it at `conda-forge` and make that priority strict:
 
 ```shell
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
+
+Mixing channels is the most common cause of unsolvable environments, so pick one and stay there.
 
 The conda documentation has more information on [managing channels](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html).
 

@@ -6,9 +6,16 @@ title: Python
 
 ## Installation
 
-You should install Python 3 (preferably version 3.6 or greater) --- not Python 2. Rather than using the default version installed on whatever system you're using, you should use [conda](conda.qmd). This allows you to manage multiple installations, as different packages might not be compatible with the same Python version. conda is great at automatically upgrading or downgrading the version as needed.
+Do not use the Python that came with your operating system for research work. Install and manage your own, so that each project gets an isolated, reproducible environment.
 
-Some packages may not be available through conda, but in that case, use `pip` to install them from within your conda environment.
+Two reasonable approaches:
+
+- **[conda](conda.qmd)** (via Miniforge), which handles non-Python dependencies well. This matters for the geospatial and climate stack (`GDAL`, `PROJ`, `netCDF`), which is why it remains our default.
+- **[`uv`](https://docs.astral.sh/uv/)**, a much faster pure-Python package and version manager. Good for projects that are Python-only.
+
+Pick one per project and commit its lockfile or environment file to the repository. Whichever you use, avoid installing into a base environment.
+
+Some packages may not be available through conda; in that case use `pip` from within the activated conda environment, and record them in your environment file.
 
 ## Usage
 
@@ -18,31 +25,37 @@ Python is a dynamically-typed language, meaning that it automatically assigns ty
 
 ## Development Environments
 
-There are a number of good IDEs for Python. A few options:
+* [VS Code](https://code.visualstudio.com/) with the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) is the group default. It is free, handles notebooks and remote work over SSH (useful for [Hopper](../../guides/hopper.qmd)), and is the same editor we recommend for [Julia](julia.qmd), so you only have to learn one.
+* [PyCharm](https://www.jetbrains.com/pycharm/): fully-featured IDE. The Community edition is free, and students can get the full version free through JetBrains' academic licensing.
+* [Spyder](https://www.spyder-ide.org/): lightweight, free, open-source, with a MATLAB-like layout that some people coming from MATLAB prefer.
 
-* [Spyder](https://www.spyder-ide.org/): Lightweight, free, open-source, natively-coded in Python.
-* [PyCharm](https://www.jetbrains.com/pycharm/): Fully-functional IDE, though it costs money. We can get you a license if this is the way you want to go.
-* [Atom](https://atom.io/): Text editor that can [be turned into a Python IDE](https://hackernoon.com/setting-up-atom-as-a-python-ide-a-how-to-guide-o6dd37ff) using several packages.
+::: {.callout-note}
+## Atom
+
+Earlier versions of this page recommended Atom. GitHub sunset Atom in December 2022 and it no longer receives updates, including security updates. If you are still using it, switch.
+:::
 
 ## Recommended Packages
 
 You'll usually want to include the following in any research conda environment:
 
 * [`numpy`](https://numpy.org/): high-performance library for numerical computing.
-* [`scipy`](https://www.scipy.org/): contains functionality for a wide variety of scientific computing tasks, including optimization and statistics.
+* [`scipy`](https://scipy.org/): contains functionality for a wide variety of scientific computing tasks, including optimization and statistics.
 * [`matplotlib`](https://matplotlib.org/): library for visualization and plotting.
 
 Other packages may make sense depending on your workflow and tasks:
 
 * [`pandas`](https://pandas.pydata.org/): data analysis and manipulation.
-* [`xarray`](http://xarray.pydata.org/en/stable/): allows for structured datasets and interfacing with netCDF.
+* [`polars`](https://pola.rs/): an alternative dataframe library, considerably faster than `pandas` on large tables. Worth knowing about if `pandas` becomes your bottleneck.
+* [`xarray`](https://docs.xarray.dev/): allows for structured datasets and interfacing with netCDF.
 * [`seaborn`](https://seaborn.pydata.org/): adds some additional plotting functionality on top of `matplotlib`, and integrates well with `pandas`.
-* [`pyMC3`](https://docs.pymc.io/): probabilistic programming using a variety of methods, including Hamiltonian Monte Carlo and Metropolis-Hastings.
-* [`pyStan`](https://pystan.readthedocs.io/en/latest/): Similar to `pyMC3`, but uses the [Stan](https://mc-stan.org/) backend.
-* [`TensorFlow`](https://www.tensorflow.org/): machine learning tools and libraries.
+* [`PyMC`](https://www.pymc.io/): probabilistic programming using a variety of methods, including Hamiltonian Monte Carlo and Metropolis-Hastings. (This was called `pymc3` for versions 3 and earlier; the project renamed to `pymc` at version 4, so older tutorials using `import pymc3` need translating.)
+* [`CmdStanPy`](https://mc-stan.org/cmdstanpy/): a Python interface to [Stan](https://mc-stan.org/), now the recommended way to drive Stan from Python.
+* [`ArviZ`](https://python.arviz.org/): diagnostics, summaries, and plots for Bayesian inference. Pairs with both of the above and does the convergence checking you should be doing anyway.
+* [`PyTorch`](https://pytorch.org/): machine learning. Now the default in most research settings; [`TensorFlow`](https://www.tensorflow.org/) is still around but you are less likely to need it.
 * [`mpi4py`](https://mpi4py.readthedocs.io/en/stable/): bindings for parallelization across multiple processors and compute nodes.
-* [`mypy`](http://mypy-lang.org/): optional static type-checking, can help reduce errors by clarifying expected inputs and outputs and make it easier for others to work with your code.
-* [`black`](https://github.com/psf/black): automates code formatting.
+* [`mypy`](https://mypy-lang.org/): optional static type-checking, can help reduce errors by clarifying expected inputs and outputs and make it easier for others to work with your code.
+* [`ruff`](https://docs.astral.sh/ruff/): linting and code formatting in one very fast tool. It replaces the `black` + `flake8` + `isort` combination that older guides recommend.
 
 ## Learn More
 * [Beyond PEP 8 -- Best Practices for Beautiful Intelligible Code](https://www.youtube.com/watch?v=wf-BqAjZb8M&list=LL&index=21) by Raymond Hettinger from PyCon 2015.

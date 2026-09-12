@@ -2,6 +2,47 @@
 title: UNIX and the Shell
 ---
 
-Whether you're using a Linux laptop or workstation (or working on the command line in MacOS!) or working on a cluster, you'll need to be familiar with shell commands and scripting (which can save you a lot of time and typing!).
+Whether you're using a Linux laptop or workstation (or working on the command line in macOS!) or working on a cluster, you'll need to be familiar with shell commands and scripting, which can save you a lot of time and typing.
 
-If you're unfamiliar with shell basics, check out [this tutorial](http://swcarpentry.github.io/shell-novice/) from Software Carpentry. Some more advanced tips are available in [this post](https://waterprogramming.wordpress.com/2020/04/13/more-terminal-schooling/) from Water Programming.
+You do not need to be an expert. But once your work moves to [Hopper](../../guides/hopper.qmd) there is no graphical interface to fall back on, so a working command-line vocabulary stops being optional.
+
+## What You Actually Need
+
+Enough to move around a filesystem, inspect files without opening them, and chain a few commands together:
+
+| Task | Commands |
+|---|---|
+| Move around | `cd`, `pwd`, `ls` |
+| Inspect files | `cat`, `head`, `tail`, `less`, `wc` |
+| Move and copy | `cp`, `mv`, `mkdir`, `rm` |
+| Find things | `find`, `grep` |
+| Chain things | pipes (`\|`), redirection (`>`, `>>`) |
+| Remote work | `ssh`, `scp`, `rsync` |
+| Long-running jobs | `tmux` or `screen` |
+| Disk usage | `du -sh`, `df -h` |
+
+Two that repay learning early:
+
+- **`rsync`** rather than `scp` for anything large or repeated. It resumes, it skips unchanged files, and `rsync -avn` (with `-n` for a dry run) lets you see what *would* transfer before committing to it.
+- **`tmux`** on any remote machine. Without it, a dropped SSH connection kills whatever you were running. With it, you reattach and your session is still there.
+
+::: {.callout-warning}
+## `rm` Does Not Ask Twice
+
+There is no undo and no trash can. `rm -rf` on the wrong path is unrecoverable, and on a cluster with no backups (which includes [Hopper](../../guides/hopper.qmd)) so is deleting the wrong directory with any command. Check `pwd` before destructive operations, and prefer `rm -i` while you are still getting comfortable.
+:::
+
+## Shell Scripts
+
+A shell script is just a file of commands you would otherwise type. Any analysis step you have run more than twice belongs in one, both to save typing and because the script is a record of what you actually did. This matters for [reproducibility](../../expectations/open.qmd): "I ran some commands" is not a method, and a `.sh` file in the repository is.
+
+Start scripts with `#!/usr/bin/env bash` and `set -euo pipefail`, which makes the script stop on the first error instead of continuing with bad state. Without that line a failed step is silently ignored and the script reports success.
+
+Your Slurm submission scripts on Hopper are shell scripts with extra `#SBATCH` directives at the top, so this is the same skill.
+
+## Learn More
+
+* [The Unix Shell](https://swcarpentry.github.io/shell-novice/) from Software Carpentry, the standard introduction. Work through it once; it takes an afternoon.
+* [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) from MIT, covering the shell, `tmux`, and the wider command-line toolchain.
+* [ShellCheck](https://www.shellcheck.net/) will catch bugs in a script you have written, including several classes of quoting error that fail silently.
+* [Explainshell](https://explainshell.com/) breaks down what an unfamiliar command and its flags actually do, which is useful when you inherit a script or copy something from a tutorial.
