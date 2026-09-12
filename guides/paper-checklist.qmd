@@ -20,7 +20,7 @@ As you write the paper (and prior to/after submission), make sure to do/consider
 
 ## Prior to Submission
 
-- [ ] Mint releases of relevant data and codes and get relevant DOIs.
+- [ ] Mint releases of relevant data and codes and get relevant DOIs (see [GitHub and Zenodo](github-zenodo.qmd) -- the model gets released *before* the meta-repository, and papers cite the **version** DOI, not the concept DOI).
 - [ ] If GitHub repository was private, make public.
 - [ ] Write code and data availability statements including the DOIs.
 - [ ] Ensure that Acknowledgements are complete and include appropriate (and correct) funding statements.

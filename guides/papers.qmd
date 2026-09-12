@@ -8,7 +8,7 @@ Paper writing is essential for M.S. and Ph.D students as well as postdocs. While
 
 ## Process Guidelines
 
-1. Start with an [outline](#outline) and [paper contract](#paper-contract). This will help lay out the goals of the research and make sure all projected authors know their expected contributions and how key terms are being used (as vocabularies can vary across disciplines or even sub-disciplines).
+1. Start with an [outline](#outline) and [paper contract](#paper-contract). This will help lay out the goals of the research and make sure all projected authors know their expected contributions and how key terms are being used (as vocabularies can vary across disciplines or even sub-disciplines -- the [Glossary](../kb/glossary.qmd) records how this group uses the ambiguous ones).
 
 2.  In our group, the first author (usually the junior researcher leading the research) has the final say on scope, wording, and figure design. These decisions should be made in consultation with the entire team, however.
 

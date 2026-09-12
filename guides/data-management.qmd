@@ -56,7 +56,7 @@ At submission, the data behind the paper stops being your working files and beco
 
 As stated in [Open and Reproducible Research](../expectations/open.qmd), this includes the full simulation ensemble where feasible, not only the subset used in the paper, so that subsetting choices are transparent.
 
-Archive to something with a DOI, which for us usually means minting a Zenodo release from the GitHub repository. GitHub itself is not an archive: repositories can be deleted, renamed, or made private, and a bare GitHub URL in a data availability statement will eventually rot.
+Archive to something with a DOI, which for us usually means minting a Zenodo release from the GitHub repository. GitHub itself is not an archive: repositories can be deleted, renamed, or made private, and a bare GitHub URL in a data availability statement will eventually rot. [GitHub and Zenodo](github-zenodo.qmd) covers the mechanics and the order the steps have to happen in.
 
 ## Retention and Ownership
 

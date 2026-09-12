@@ -2,4 +2,6 @@
 title: Knowledge Base
 ---
 
-This is a rudimentary knowledge base for our group, with some basics information and resources on various topics.
+This is a knowledge base for our group, with basic resources and how-tos on various topics.
+
+Start with the [Glossary](glossary.qmd) if you are new: we work across climate science, statistics, decision analysis, and engineering, and those fields use several of the same words to mean different things.
