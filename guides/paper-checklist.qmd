@@ -11,6 +11,7 @@ As you write the paper (and prior to/after submission), make sure to do/consider
 - [ ] Double check the full names and affiliations of any authors.
 - [ ] Identify 3 key points and paper highlights.
 - [ ] Update and finalize author contributions.
+- [ ] Draft the AI-use disclosure statement if one is needed, checked against the target journal's *current* policy (see [AI Tools in Research](ai-tools.qmd)).
 - [ ] Check that:
     * [ ] Title is appropriately declarative.
     * [ ] Word limits are obeyed (for the manuscript and the abstract).

@@ -61,6 +61,7 @@ website:
       style: "floating"
       contents:
         - guides/index.qmd
+        - guides/ai-tools.qmd
         - guides/authorship.qmd
         - guides/best-practices.qmd
         - guides/data-management.qmd
