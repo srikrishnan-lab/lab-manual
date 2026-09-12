@@ -61,6 +61,7 @@ website:
         - guides/best-practices.qmd
         - guides/data-management.qmd
         - guides/figures.qmd
+        - guides/github-zenodo.qmd
         - guides/group-workflow.qmd
         - guides/hopper.qmd
         - guides/hopper-access.qmd
