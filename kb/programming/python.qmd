@@ -1,0 +1,64 @@
+---
+title: Python
+---
+
+[Python](https://www.python.org/) is a general-purpose programming language, aimed at striking a balance between performance and code interpretability. Python has some high-performance numerical libraries, but is not as performant as languages like C++. However, it is widely used, the code can be easy to read, and it has a large collection of packages.
+
+## Installation
+
+Do not use the Python that came with your operating system for research work. Install and manage your own, so that each project gets an isolated, reproducible environment.
+
+Two reasonable approaches:
+
+- **[conda](conda.qmd)** (via Miniforge), which handles non-Python dependencies well. This matters for the geospatial and climate stack (`GDAL`, `PROJ`, `netCDF`), which is why it remains our default.
+- **[`uv`](https://docs.astral.sh/uv/)**, a much faster pure-Python package and version manager. Good for projects that are Python-only.
+
+Pick one per project and commit its lockfile or environment file to the repository. Whichever you use, avoid installing into a base environment.
+
+Some packages may not be available through conda; in that case use `pip` from within the activated conda environment, and record them in your environment file.
+
+## Usage
+
+A good place to start if you don't know any Python is the [Python Fundamentals](https://earth-env-data-science.github.io/lectures/core_python/python_fundamentals.html) chapter from Earth and Environmental Data Science. There are also a number of other resources available online, and many specific questions can be or already are answered on [Stack Overflow](https://stackoverflow.com/questions/tagged/python).
+
+Python is a dynamically-typed language, meaning that it automatically assigns types to variables and functions. This means that, by default, it lacks type checking, which can result in bugs. Dynamic typing is also one reason why Python is more user-friendly than a statically-typed language like C++, but is also slower.
+
+## Development Environments
+
+* [VS Code](https://code.visualstudio.com/) with the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) is the group default. It is free, handles notebooks and remote work over SSH (useful for [Hopper](../../guides/hopper.qmd)), and is the same editor we recommend for [Julia](julia.qmd), so you only have to learn one.
+* [PyCharm](https://www.jetbrains.com/pycharm/): fully-featured IDE. The Community edition is free, and students can get the full version free through JetBrains' academic licensing.
+* [Spyder](https://www.spyder-ide.org/): lightweight, free, open-source, with a MATLAB-like layout that some people coming from MATLAB prefer.
+
+::: {.callout-note}
+## Atom
+
+Earlier versions of this page recommended Atom. GitHub sunset Atom in December 2022 and it no longer receives updates, including security updates. If you are still using it, switch.
+:::
+
+## Recommended Packages
+
+You'll usually want to include the following in any research conda environment:
+
+* [`numpy`](https://numpy.org/): high-performance library for numerical computing.
+* [`scipy`](https://scipy.org/): contains functionality for a wide variety of scientific computing tasks, including optimization and statistics.
+* [`matplotlib`](https://matplotlib.org/): library for visualization and plotting.
+
+Other packages may make sense depending on your workflow and tasks:
+
+* [`pandas`](https://pandas.pydata.org/): data analysis and manipulation.
+* [`polars`](https://pola.rs/): an alternative dataframe library, considerably faster than `pandas` on large tables. Worth knowing about if `pandas` becomes your bottleneck.
+* [`xarray`](https://docs.xarray.dev/): allows for structured datasets and interfacing with netCDF.
+* [`seaborn`](https://seaborn.pydata.org/): adds some additional plotting functionality on top of `matplotlib`, and integrates well with `pandas`.
+* [`PyMC`](https://www.pymc.io/): probabilistic programming using a variety of methods, including Hamiltonian Monte Carlo and Metropolis-Hastings. (This was called `pymc3` for versions 3 and earlier; the project renamed to `pymc` at version 4, so older tutorials using `import pymc3` need translating.)
+* [`CmdStanPy`](https://mc-stan.org/cmdstanpy/): a Python interface to [Stan](https://mc-stan.org/), now the recommended way to drive Stan from Python.
+* [`ArviZ`](https://python.arviz.org/): diagnostics, summaries, and plots for Bayesian inference. Pairs with both of the above and does the convergence checking you should be doing anyway.
+* [`PyTorch`](https://pytorch.org/): machine learning. Now the default in most research settings; [`TensorFlow`](https://www.tensorflow.org/) is still around but you are less likely to need it.
+* [`mpi4py`](https://mpi4py.readthedocs.io/en/stable/): bindings for parallelization across multiple processors and compute nodes.
+* [`mypy`](https://mypy-lang.org/): optional static type-checking, can help reduce errors by clarifying expected inputs and outputs and make it easier for others to work with your code.
+* [`ruff`](https://docs.astral.sh/ruff/): linting and code formatting in one very fast tool. It replaces the `black` + `flake8` + `isort` combination that older guides recommend.
+
+## Learn More
+* [Beyond PEP 8 -- Best Practices for Beautiful Intelligible Code](https://www.youtube.com/watch?v=wf-BqAjZb8M&list=LL&index=21) by Raymond Hettinger from PyCon 2015.
+* [Livecoding Madness - Let's Build a Deep Learning Library](https://www.youtube.com/watch?v=o64FV-ez6Gw) by Joel Grus
+* [Software Testing and Testing Automation with Python](https://leemangeophysicalllc.github.io/testing-with-python/)
+* [Python posts](https://waterprogramming.wordpress.com/category/programming/python/) from Water Programming.

@@ -1,0 +1,7 @@
+---
+title: Procedures
+---
+
+This section guides prospective and interested lab members through the process of joining the lab, and lays out the checklist we ask new group members to complete once they arrive.
+
+It also covers the other end: [Leaving the Group](offboarding.qmd) describes what to hand off when you move on, and what stays true afterwards.

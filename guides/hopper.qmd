@@ -1,0 +1,96 @@
+---
+title: Hopper Cluster
+---
+
+Hopper is our group's high-performance computing cluster, which we share with the Reed, Steinschneider, and Anderson groups.
+
+Zach Brodeur wrote [a user guide for Hopper](https://docs.google.com/document/d/1frEVAQmG7sCQdYDmUitXfiH7AanXvcVsAEppRu5QS00/edit?usp=sharing) and [a more detailed guide](https://docs.google.com/document/d/1QBipIcxp7HmiERVVEeOdBkiA02Z43Fdzk993D9oLlFM/edit?usp=sharing) which you should read.
+
+## Access
+
+To get access to Hopper, message Vivek (this should be part of your onboarding process).
+
+You can access Hopper for file transfers through Globus; the Hopper collection is named `Hopper Cluster`. See the CAC documentation on [file transfer using Globus](https://portal.cac.cornell.edu/techdocs/files/FileTransferGlobus/) for access instructions.
+
+## Hardware
+
+Hopper has 26 compute nodes, in two generations:
+
+| Nodes | CPU | Physical cores | RAM |
+|---|---|---|---|
+| `c0001`-`c0022` | 2 x 20-core Intel Xeon Gold 5218R @ 2.1 GHz | 40 | 192 GB |
+| `c0023`-`c0026` | 2 x 48-core AMD EPYC 9454 @ 2.75 GHz | 96 | 567 GB |
+
+The head node is `hopper.cac.cornell.edu`, accessed over `ssh`. Nodes are interconnected with InfiniBand.
+
+- Hyperthreading is enabled on all nodes by default, so each physical core is treated as two logical CPUs (an Intel node looks like 80 CPUs, an EPYC node like 192). If you don't want hyperthreading, include the following in your submission script: `#SBATCH --hint=nomultithread`
+- The EPYC nodes are both faster per-core and much larger in memory than the original Intel nodes. If your job is memory-hungry or you want more cores in a single shared-memory process, target those; if you are running many small independent tasks, the Intel nodes are usually less contended.
+
+## Software
+
+### Filesystem
+
+Use your home directory (`~`) for data you want to keep. Home directories live on an NFS export from the head node.
+
+::: {.callout-warning}
+## Hopper Is Not Backed Up
+
+CAC does **not** back up Hopper home directories. Nothing on Hopper is safe by default. Anything you cannot regenerate cheaply -- raw input data, final simulation output, anything a paper depends on -- must also live somewhere else. See [Data Management](data-management.qmd) for what that means in practice.
+:::
+
+### Scheduler
+
+Hopper uses the [Slurm scheduler](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurm/). All nodes are in a single partition (`normal`) with no time limits. The [Slurm Quick Start](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurmQS/) guide is a good place to begin.
+
+### Modules
+
+Hopper uses [Lmod environment modules](https://portal.cac.cornell.edu/techdocs/clusterinfo/modules/) to make software available.
+
+- To see the list of available modules, use `module avail`.
+- To see loaded modules, use `module list`.
+- Load modules inside your Slurm script rather than relying on your login shell, so the job is reproducible and does not depend on your interactive environment.
+
+## Usage Guidelines
+
+### When To Use Hopper
+
+If you aren't going to be using a lot of cores (10+ cores), it might be better to use your workstation, especially if Hopper's resources are highly in demand when you want to run your job. The original Intel nodes run at 2.1 GHz, well below the 3-4 GHz of a typical workstation, so on those nodes you only come out ahead if you can exploit parallelization. The newer EPYC nodes narrow that gap (2.75 GHz, and far more cores and memory per node), but the same basic logic holds: Hopper wins on breadth, not on single-core speed. This is great for things like Monte Carlo simulations, multi-objective optimization, or really large-scale modeling experiments where you can have each core run a different member of the ensemble. If you're doing model calibration, think carefully about whether your method can actually use that many cores. Most MCMC procedures, for example, cannot, but Approximate Bayesian Computation, pre-calibration or particle filtering can be embarrassingly parallel.
+
+### Run Jobs using SLURM
+
+**Do not run compute jobs directly on the head node.** The head node is shared by everyone on the cluster, and a heavy job there slows down logins and file transfers for all of us. Instead, either write a Slurm batch script and submit it with `sbatch`, or request an interactive session with `salloc` (or `srun --pty bash`) and work inside that.
+
+### Benchmark Your Code
+
+Always benchmark your parallel code on your workstation to get a sense for how it scales (though note that your workstation has faster cores than Hopper does!). You don't want to just give SLURM an unrealistic amount of time, since we need to coordinate Hopper as a shared resource. Dave Gold has a good [post](https://waterprogramming.wordpress.com/2021/06/07/scaling-experiments-how-to-measure-the-performance-of-parallel-code-on-hpc-systems/) about this at Water Programming. Dave also has a good post about how to make a plan and organize an HPC experiment [here](https://waterprogramming.wordpress.com/2020/01/27/performing-experiments-on-hpc-systems/). In general, Water Programming has a lot of good resources about [HPC](https://waterprogramming.wordpress.com/category/high-performance-computing/) and [SLURM](https://waterprogramming.wordpress.com/category/slurm/), among other topics.
+
+### Other Tips
+
+- If you are going to request a large fraction of Hopper's resources (more than 5 nodes), make sure that you give the other lab groups plenty of notice so they can coordinate their use.
+- Right now, the only filesystem is the user home directories, `~`. This is not a parallel file system, so file I/O with lots of files might slow things down a bit. Try to read files once and minimize file I/O as much as possible.
+- The default shell is `bash`. If you want to use a different shell, contact CAC using the instructions on the Wiki page.
+- I recommend using the following instructions to colorize `git` output for easier reading:
+
+    ```{.bash filename="Colorize Git"}
+    git config --global color.ui auto
+    git config --global color.branch auto
+    git config --global color.status auto
+    ```
+
+    You can also modify your ~/.gitconfig to customize the colors, like in this example from [StackOverflow](https://unix.stackexchange.com/a/44283):
+
+    ```{.bash filename="Modify .gitconfig for Color"}
+    [color "status"]
+      added = green
+      changed = red bold
+      untracked = magenta bold
+
+    [color "branch"]
+      remote = yellow
+    ```
+
+- Make sure you set up your [SSH key](https://docs.github.com/articles/generating-an-ssh-key/) for Github. This isn't essential (you can use https instead), but this is a bit more secure.
+
+## More Information
+
+For more information, see the [Cornell CAC TechDocs entry for Hopper](https://portal.cac.cornell.edu/techdocs/clusters/Hopper/). Note that CAC moved its documentation from the old wiki to TechDocs, so older bookmarks and links will be dead.
