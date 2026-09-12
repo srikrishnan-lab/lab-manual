@@ -75,6 +75,7 @@ website:
       style: "floating"
       contents:
         - kb/index.qmd
+        - kb/glossary.qmd
         - section: "Programming"
           contents:
             - kb/programming/conda.qmd
