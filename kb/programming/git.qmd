@@ -18,7 +18,7 @@ It may be prudent to set up initial repositories as private until you're ready t
 
 When you start a new project, you should [create a GitHub meta-repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo) right away. You can do this in your personal account or as part of the `srikrishnan-lab` organization. Make sure that your repository name is informative; we will eventually rename this to align with a paper (something like `lead_author-etal-year`).
 
-A meta-repository is a repository which creates a single point of access for all resources needed to create a published work. We use meta-repositories to avoid mixing data, models, and analysis codes, which can inhibit reproducibility, make the repository cluttered, and make it difficult to re-use models for subsequent projects. You can fork [our meta-repository template](https://github.com/srikrishnan-lab/paper-metarepo-template) as a starting point.
+A meta-repository is a repository which creates a single point of access for all resources needed to create a published work. We use meta-repositories to avoid mixing data, models, and analysis codes, which can inhibit reproducibility, make the repository cluttered, and make it difficult to re-use models for subsequent projects. You can fork [our meta-repository template](https://github.com/srikrishnan-lab/paper-metarepo-template) as a starting point. There is a companion [model repository template](https://github.com/srikrishnan-lab/model_repo_template) for model codes, which live in their own repository rather than inside the meta-repository.
 
 ### Repository Guidelines
 

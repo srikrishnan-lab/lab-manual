@@ -4,6 +4,8 @@ title: Hopper Cluster
 
 Hopper is our group's high-performance computing cluster, which we share with the Reed, Steinschneider, and Anderson groups.
 
+This page covers what Hopper is and when to use it. For getting an account, connecting, remote editing, and running jobs, see [Using Hopper](hopper-access.qmd).
+
 Zach Brodeur wrote [a user guide for Hopper](https://docs.google.com/document/d/1frEVAQmG7sCQdYDmUitXfiH7AanXvcVsAEppRu5QS00/edit?usp=sharing) and [a more detailed guide](https://docs.google.com/document/d/1QBipIcxp7HmiERVVEeOdBkiA02Z43Fdzk993D9oLlFM/edit?usp=sharing) which you should read.
 
 ## Access
@@ -30,7 +32,7 @@ The head node is `hopper.cac.cornell.edu`, accessed over `ssh`. Nodes are interc
 
 ### Filesystem
 
-Use your home directory (`~`) for data you want to keep. Home directories live on an NFS export from the head node.
+Use your home directory (`~`) for data you want to keep. Home directories live on an NFS export from the head node, shared across all compute nodes. CAC does not publish a per-user quota or a total capacity figure, so check your own usage with `du -sh ~` and the filesystem with `df -h ~`. Because `$HOME` is NFS, jobs doing heavy file I/O should [stage through node-local `/tmp`](hopper-access.qmd#staging-data-through-tmp).
 
 ::: {.callout-warning}
 ## Hopper Is Not Backed Up
@@ -40,7 +42,7 @@ CAC does **not** back up Hopper home directories. Nothing on Hopper is safe by d
 
 ### Scheduler
 
-Hopper uses the [Slurm scheduler](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurm/). All nodes are in a single partition (`normal`) with no time limits. The [Slurm Quick Start](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurmQS/) guide is a good place to begin.
+Hopper uses [Slurm](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurm/). There are two partitions, both spanning all nodes: `normal`, with no time limit, and `guest`, capped at 48 hours. See [Using Hopper](hopper-access.qmd#batch-jobs) for submission scripts and [Slurm Quick Start](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurmQS/) for CAC's own introduction.
 
 ### Modules
 
@@ -68,7 +70,7 @@ Always benchmark your parallel code on your workstation to get a sense for how i
 
 - If you are going to request a large fraction of Hopper's resources (more than 5 nodes), make sure that you give the other lab groups plenty of notice so they can coordinate their use.
 - Right now, the only filesystem is the user home directories, `~`. This is not a parallel file system, so file I/O with lots of files might slow things down a bit. Try to read files once and minimize file I/O as much as possible.
-- The default shell is `bash`. If you want to use a different shell, contact CAC using the instructions on the Wiki page.
+- The login shell is `sh`, not `bash`. It is bash running in sh-compatibility mode, and the practical consequence is that **`~/.bashrc` is not sourced** -- put shell customizations in `~/.profile` instead. CAC warns that changing your login shell with `chsh` "may well wreck your batch environment," since the scheduler assumes `sh`.
 - I recommend using the following instructions to colorize `git` output for easier reading:
 
     ```{.bash filename="Colorize Git"}

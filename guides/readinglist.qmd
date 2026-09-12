@@ -4,6 +4,8 @@ title: Reading List
 
 Here are some papers that are essential or useful reading for members of our group. Everyone should read the papers in the [General](#general) section, and the others are good starting points if the topic area is relevant or of interest.
 
+These are also a good source of candidates for [journal club](meetings.qmd#journal-club) -- sign up in the [`journal-club`](https://github.com/srikrishnan-lab/journal-club) repository.
+
 ## General {#general}
 
 * Keller, K., Helgeson, C., & Srikrishnan, V. (2021). Climate Risk Management. *Annual Review of Earth and Planetary Sciences*, 49(1), 95–116. <https://doi.org/10.1146/annurev-earth-080320-055847>

@@ -16,7 +16,7 @@ What "working consistently" precisely means will vary based on your role - stude
 
 - Applying consistent and professional effort to your research;
 - Sharing ideas and effort with your fellow lab members;
-- Attending meetings (physically or remotely) with Vivek, the broader lab, or any other research groups;
+- Attending [meetings](../guides/meetings.qmd) (physically or remotely) with Vivek, the broader lab, or any other research groups;
 - Staying in communication via email or Slack.
 
 Working consistently does *not* mean:
