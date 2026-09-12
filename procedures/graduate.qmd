@@ -1,5 +1,7 @@
 ---
 title: Graduate Admissions
+aliases:
+  - /applying/graduate/
 ---
 
 If you are unsure if your research interests would be a good fit for the research group, please [send Vivek](mailto:viveks@cornell.edu) an email [expressing your interest](#interest). Ideally, you should do this well in advance of the admissions deadline, so there is plenty of time for you and Vivek to mutually decide if you would be a good fit in the research group.

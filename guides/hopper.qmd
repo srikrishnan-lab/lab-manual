@@ -1,5 +1,7 @@
 ---
 title: Hopper Cluster
+aliases:
+  - /guides/hopper/
 ---
 
 Hopper is our group's high-performance computing cluster, which we share with the Reed, Steinschneider, and Anderson groups.

@@ -1,5 +1,7 @@
 ---
 title: Markdown
+aliases:
+  - /kb/programming/markdown/
 ---
 
 [Markdown](https://daringfireball.net/projects/markdown/) is a powerful but lightweight formatting system for Web (and other) publishing. Among other features, it allows for clean embedding of code blocks and blockquotes within a document, as well as the creation of bibliographies from a variety of sources.

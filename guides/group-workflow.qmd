@@ -1,5 +1,7 @@
 ---
 title: Group Workflow
+aliases:
+  - /guides/group-workflow/
 ---
 
 This page will cover how we use software to coordinate our work as a group. You should feel free to use whatever workflow works best for you for your individual tasks.

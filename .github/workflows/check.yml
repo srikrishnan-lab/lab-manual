@@ -1,0 +1,19 @@
+name: Check
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      # Render only. This never deploys; it just fails the PR if a page
+      # is broken or a cross-reference does not resolve.
+      - name: Render site
+        run: quarto render

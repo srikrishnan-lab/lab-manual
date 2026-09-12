@@ -1,5 +1,7 @@
 ---
 title: git and GitHub
+aliases:
+  - /kb/programming/git/
 ---
 
 [git](https://git-scm.com/) is a software version control system. git is useful for tracking changes to code, including systematic approaches to adding new features or changing functionality. We use git to track and save code as we're working on it.

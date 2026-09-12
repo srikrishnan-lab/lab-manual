@@ -1,5 +1,7 @@
 ---
 title: Python
+aliases:
+  - /kb/programming/python/
 ---
 
 [Python](https://www.python.org/) is a general-purpose programming language, aimed at striking a balance between performance and code interpretability. Python has some high-performance numerical libraries, but is not as performant as languages like C++. However, it is widely used, the code can be easy to read, and it has a large collection of packages.

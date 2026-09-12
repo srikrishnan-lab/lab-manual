@@ -1,5 +1,7 @@
 ---
 title: Authorship
+aliases:
+  - /guides/authorship/
 ---
 
 When doing any collaborative work, discussing research plans and expected contributions early and frequently is essential to avoid problems down the road. This is particularly the case when doing interdisciplinary research, as different fields have different vocabularies, norms about authorship and sets of target journals.

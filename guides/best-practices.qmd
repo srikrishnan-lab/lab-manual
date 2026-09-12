@@ -1,5 +1,7 @@
 ---
 title: Coding Best Practices
+aliases:
+  - /guides/best-practices/
 ---
 
 Here are some best practices to follow when writing code.

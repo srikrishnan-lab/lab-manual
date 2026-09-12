@@ -1,5 +1,7 @@
 ---
 title: LaTeX
+aliases:
+  - /kb/programming/latex/
 ---
 
 [LaTeX](https://www.latex-project.org/) is a markup language for documents, particularly those with mathematical content. LaTeX can take a while to learn, but is capable of powerful control of formatting and syntax.

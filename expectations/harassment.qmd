@@ -1,5 +1,7 @@
 ---
 title: Harassment Policy
+aliases:
+  - /expectations/harassment/
 ---
 
 ## Overview

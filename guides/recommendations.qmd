@@ -1,5 +1,7 @@
 ---
 title: Letters of Recommendation
+aliases:
+  - /guides/recommendations/
 ---
 
 It is likely that, at some point, you will need a letter of recommendation for a future opportunity. As part of his role as PI, you can expect that Vivek will write you an honest and constructive letter if desired, or will let you know (only for short-term relationships) that he does not feel that he can evaluate your work and performance honestly. If you would Vivek to write you a letter, following these steps will help make the process go more smoothly.

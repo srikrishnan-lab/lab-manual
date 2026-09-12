@@ -1,5 +1,7 @@
 ---
 title: Selecting Licenses
+aliases:
+  - /guides/licenses/
 ---
 
 When you develop and release software and other research materials for the public, you need to select a software license, which provides rules for its re-use. You should include information about this license in your GitHub repository (and potentially other places as well).

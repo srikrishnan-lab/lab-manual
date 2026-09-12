@@ -1,5 +1,7 @@
 ---
 title: Paper Writing
+aliases:
+  - /guides/papers/
 ---
 
 Paper writing is essential for M.S. and Ph.D students as well as postdocs. While it is less so for undergrads, M.Eng., and M.P.S. students, turning your project into a paper could have benefits down the road.

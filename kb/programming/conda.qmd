@@ -1,5 +1,7 @@
 ---
 title: conda
+aliases:
+  - /kb/programming/conda/
 ---
 
 [conda](https://conda.io) is a package manager used to manage dependencies for python projects (with some functionality for R and some other programs). You can [export your environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment) for your Git repository.
