@@ -122,6 +122,18 @@ Putting together a graduate application is a lot of work, both for you and for y
 
 If your only questions are "Should I apply?" or "Can you look at my application?", the only answers that I can give you are "It's up to you" and "If your application is in the pool, I will see it."
 
+::: {.callout-warning}
+## Write This Yourself
+
+If your inquiry reads as though a language model wrote it, it will not get a substantive reply.
+
+This email exists to show you have read our work and thought about the fit. A model cannot do that for you --- it does not know what you want, and what comes back is fluent, warm, and specific about nothing.
+
+If you cannot write a few paragraphs in your own voice about why you want to work here, the fit probably is not there.
+
+Polishing your own prose afterward is fine. This is also a narrower rule than the one governing the [guided paper evaluation](#guided-paper-evaluation) below, where you *may* use a language model so long as you disclose and cite it. That is a supervised exercise with stated rules; this is the part where we are trying to find out whether there is a specific person with specific interests on the other end.
+:::
+
 
 ### Video Chats
 

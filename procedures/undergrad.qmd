@@ -54,6 +54,18 @@ Send Vivek an [email](mailto:viveks@cornell.edu) from your Cornell University ac
   3. Attach a 1-2 page [project proposal](#proposal) as a `.pdf` file. The more detailed, the better. This proposal isn't binding, but it will give Vivek a sense of your interests and communication skills.
   4. Suggest some times when you might be available to talk over the next week in the body of the email.
 
+::: {.callout-warning}
+## Write This Yourself
+
+If your email and proposal read as though a language model wrote them, they will not get a substantive reply.
+
+They exist to show you have thought about what you want to research and why. A model cannot do that for you --- it does not know what you want, and what comes back is fluent, warm, and specific about nothing. The [project proposal](#proposal) is not graded on polish, and it is explicitly not a binding contract; it is evidence that there is a specific person with specific interests behind the application. A generated one is evidence of nothing.
+
+If you cannot write a page or two in your own voice about why this research interests you, the fit probably is not there.
+
+Polishing your own prose afterward is fine.
+:::
+
 
 ## Honors Thesis supervision
 

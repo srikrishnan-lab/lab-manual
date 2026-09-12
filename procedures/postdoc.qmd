@@ -27,6 +27,18 @@ You can inquire about a postdoc in response to a particular [opening](https://sr
 
 This information allows Vivek to get a sense of your fit, and he can provide feedback about whether you should apply for a particular opening.
 
+::: {.callout-warning}
+## Write This Yourself
+
+If your inquiry reads as though a language model wrote it, it will not get a substantive reply.
+
+This material exists to show you have read our work and thought about the fit. A model cannot do that for you --- it does not know what you want, and what comes back is fluent, warm, and specific about nothing. This matters most for the written response to one of our papers: the whole point of that exercise is to see your independent research judgment, and a generated critique demonstrates the opposite.
+
+If you cannot write a few paragraphs in your own voice about why you want to work here, the fit probably is not there.
+
+Polishing your own prose afterward is fine.
+:::
+
 
 <!-- TODO(Vivek): note roughly how long applicants should expect to wait for a response to an initial inquiry. -->
 
