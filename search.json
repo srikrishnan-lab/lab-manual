@@ -678,7 +678,7 @@
     "href": "guides/paper-checklist.html#while-writing",
     "title": "Paper Checklist",
     "section": "While Writing",
-    "text": "While Writing\n\nDouble check the full names and affiliations of any authors.\nIdentify 3 key points and paper highlights.\nUpdate and finalize author contributions.\nCheck that:\n\nTitle is appropriately declarative.\nWord limits are obeyed (for the manuscript and the abstract).\nNo uses of “significant” when not referencing a statistical test.\nAll figures have labeled axes and units.",
+    "text": "While Writing\n\nDouble check the full names and affiliations of any authors.\nIdentify 3 key points and paper highlights.\nUpdate and finalize author contributions.\nDraft the AI-use disclosure statement if one is needed, checked against the target journal’s current policy (see AI Tools in Research).\nCheck that:\n\nTitle is appropriately declarative.\nWord limits are obeyed (for the manuscript and the abstract).\nNo uses of “significant” when not referencing a statistical test.\nAll figures have labeled axes and units.",
     "crumbs": [
       "Guides",
       "Paper Checklist"
@@ -1026,81 +1026,224 @@
     ]
   },
   {
-    "objectID": "expectations/roles.html",
-    "href": "expectations/roles.html",
-    "title": "Roles, Responsibilities, and Expectations",
+    "objectID": "expectations/timeoff.html",
+    "href": "expectations/timeoff.html",
+    "title": "Time Off and Vacation",
     "section": "",
-    "text": "There are many roles within any research group, and each carries a different set of responsibilities and expectations. We want the lab group to be a healthy, fun, and productive place where we can make scientific progress.",
+    "text": "It is of paramount importance that every lab member looks out for their health and well-being. Working sustainable hours involves setting boundaries and reserving personal time.",
     "crumbs": [
       "Expectations and Conduct",
-      "Roles, Responsibilities, and Expectations"
+      "Time Off and Vacation"
     ]
   },
   {
-    "objectID": "expectations/roles.html#everyone",
-    "href": "expectations/roles.html#everyone",
-    "title": "Roles, Responsibilities, and Expectations",
-    "section": "Everyone",
-    "text": "Everyone\n\nBe Present: Everyone should maintain a presence in the lab.\nWork Professionally: Academia provides a lot of freedom and flexibility, but you should treat this job as you would any other.\nDo Work You Are Proud Of: We work on issues of societal relevance, and we are in academia to learn things and be creative. If you aren’t proud of your work or you find yourself working on things that you don’t find interesting or you don’t think others will care about, let Vivek know as soon as possible.\nTake Time Off: Take appropriate time off from work each day and each week, and take vacation to recharge.\nTreat Others With Respect: Beyond our (the university’s and this group’s) policies on harassment, we expect that you will treat every other member of the lab, as well as everyone else, with respect. We want to create an environment where everybody, regardless of background and personality, feels comfortable and valued. Discussions should always be constructive.\nBe Collaborative: This is likely to be a research group where everyone has different, but complementary, backgrounds, interests, and skills. Collaborations among group members is strongly encouraged. One of the goals of our regular lab meetings is to allow group members to ask questions, share where they might be stuck, and potentially get insights and advice from other members. You should never view any of your fellow group members as competition. All members of the group are expected to try to help if another member is stuck or otherwise needs advice.\nScientific Integrity: It is never okay to commit scientific misconduct. Even the slightest fudging of results to make them look better is unacceptable. We are here to gain scientific insights, not just publish papers, and nuanced and null results are still important findings. Our work will be completely reproducible and open. We have a zero-tolerance policy towards fabrication, falsification, and plagiarism. Make sure you familiarize yourself with the relevant portions of Cornell’s policies on responsible conduct of research and alert Vivek if you are concerned about any research practices you observe. If Vivek is the cause of your concern or you would rather he not know of your complaint, you can use a university-wide contact instead.\nOpen and Accessible Research Products: As a lab, we are committed to the principles of open and transparent science. We want our peers and the public to be able to reproduce, improve upon, and critique our work. Moreover, as our work is funded by public institutions, our research products should be thought of as public property. More details on our approach to openness are provided elsewhere, but all group members will make their models, data, and code publicly available and easily accessible.",
+    "objectID": "expectations/timeoff.html#timeoff",
+    "href": "expectations/timeoff.html#timeoff",
+    "title": "Time Off and Vacation",
+    "section": "Time Off",
+    "text": "Time Off\n\nSet boundaries each day: No lab members are expected to work around the clock, and sleep and personal time are crucial for both your well-being and your productivity. Define what work hours make sense for you and turn off notifications during your personal time.\nTake time off each week: Take a day or two off, as needed, each week. There may be some weeks where this doesn’t feel necessary, but it is still encouraged to help prevent burnout.\nStay at home if you’re sick: This helps you recover more quickly and prevents potential spread to others. If you feel up to working remotely, great! If not, take care of yourself. Work can wait. Just let Vivek and your labmates know when you can so they can cover for you and not bother you.",
     "crumbs": [
       "Expectations and Conduct",
-      "Roles, Responsibilities, and Expectations"
+      "Time Off and Vacation"
     ]
   },
   {
-    "objectID": "expectations/roles.html#principal-investigator",
-    "href": "expectations/roles.html#principal-investigator",
-    "title": "Roles, Responsibilities, and Expectations",
-    "section": "Principal Investigator",
-    "text": "Principal Investigator\nVivek has a variety of responsibilities as the PI, in addition to those outlined above.\n\nBuild a diverse, inclusive, and equitable environment: While every member of the research group is expected to contribute to a positive and inclusive environment, it is ultimately Vivek’s responsibility to manage the social dynamic of the group.\nProvide the research environment: Our group’s work is primarily computational. Providing and managing hardware and software resources to facilitate the group’s research is Vivek’s job.\nObtain funding: It is Vivek’s responsibility to obtain funding for research equipment, personnel, and other costs such as travel and publication fees. One of the Vivek’s key goals is to never have to let someone go for lack of funding.\nProvide material support: You are never expected to spend your personal finances on anything related to research. Coordinate any upcoming expenses with Vivek and he will identify grant support for payment or reimbursement.\nProvide moral support: Academic life can be stressful, whether it’s classwork, research, the paper submission process, or job searches. Vivek is always here to listen and provide advice (see also Health and Wellness).\nProvide mentoring: One of Vivek’s core jobs is to help junior researchers in the group mature into independent scientists. This mentoring role can continue, to the degree you wish, beyond your departure from the research group.\n\n\n\n\n\n\nNotePlease Ask to See Documents!\n\n\n\n\n\nAs part of the mentoring process, please feel free to request access to grant proposals or other relevant documents that Vivek is working on or has completed. Vivek can discuss these with you as well.\n\n\n\nProvide feedback: Vivek will provide feedback on all aspects of research through ongoing conversations with you. These include research hypotheses, figure designs, identification of appropriate methods, code development, data management, and paper writing. If relevant, he will also provide feedback on course selection, long-term strategy, and career goals. If Vivek is not well-suited to provide feedback on a particular topic, he will connect you with someone who is better suited.\n\n\n\n\n\n\nNoteBe Mindful About Time Constraints\n\n\n\n\n\nAs a faculty member, Vivek has many demands on his time, including teaching and departmental and professional service. While Vivek will manage his time so that he can meet the listed expectations, he may not be able to provide immediate feedback during particularly busy periods. You will be given notice when this is the case as well as a rough timeline for when you can expect feedback.\n\n\n\nWrite recommendations: Recommendation letters are required for career moves. Vivek will write an honest recommendation letter for you at any point. If you need a recommendation letter, please give Vivek any required information with a few week’s advance notice. If you have been away from the group for some time, Vivek may ask you for some additional information to help write the letter.",
+    "objectID": "expectations/timeoff.html#vacation",
+    "href": "expectations/timeoff.html#vacation",
+    "title": "Time Off and Vacation",
+    "section": "Vacation",
+    "text": "Vacation\nGroup members should aim to take 2-4 weeks off each year for vacation (4 is strongly encouraged). This is essential to help prevent burnout and refresh your creativity. You should discuss vacation timelines with Vivek and communicate them to the rest of the lab. Set away messages and e-mail responses which make it clear that you are on vacation.",
     "crumbs": [
       "Expectations and Conduct",
-      "Roles, Responsibilities, and Expectations"
+      "Time Off and Vacation"
     ]
   },
   {
-    "objectID": "expectations/roles.html#postdocs",
-    "href": "expectations/roles.html#postdocs",
-    "title": "Roles, Responsibilities, and Expectations",
-    "section": "Postdocs",
-    "text": "Postdocs\nPostdocs should be focused on transitioning into independent researchers. This does not mean working without guidance or supervision, but rather developing the ability to formulate and pursue independent lines of research.\n\nDevelop your own line of research: As a postdoc, you should develop the ability to independently identify interesting questions and develop a research plan to address them. Vivek will help guide you through this process and provide feedback.\nPublish and present research: Your primarily role as a postdoc is to produce research. You will be given a large degree of autonomy when it comes to writing manuscript for publication and developing presentations for seminars or conferences.\nCo-develop group research: Postdocs will bring their own expertise to the group, and are likely to have different perspectives on problems and methods than Vivek. You should take an active role in discussing parts of the research group agenda with Vivek and in meetings so that your insights can be incorporated into the group’s research portfolio.\nMentor students: As a leader in the research group, a postdoc will at some point be expected to help mentor graduate and undergraduate students in the group. This mentoring will likely be primarily focused on research, but you may have useful perspectives on work-life balance and classwork as well, and sharing these are strongly encouraged.\nDevelop a career plan: Postdocs have a lot of autonomy and independence, but have to navigate an increasingly tight job market. It is important that you think carefully about what types of jobs you might be interested in and how you might want to prepare for those roles, and that you discuss those plans with Vivek so that he can effectively mentor you.",
-    "crumbs": [
-      "Expectations and Conduct",
-      "Roles, Responsibilities, and Expectations"
-    ]
-  },
-  {
-    "objectID": "expectations/roles.html#graduate-students",
-    "href": "expectations/roles.html#graduate-students",
-    "title": "Roles, Responsibilities, and Expectations",
-    "section": "Graduate Students",
-    "text": "Graduate Students\nUnlike postdocs, grad students have to balance research and coursework, and as a result have a wide range of responsibilities to manage.\n\nBe organized: Grad school is full of demands on your time and can be stressful. Make sure that you develop a time management system that works to manage your responsibilities, both research and coursework, while allowing sufficient time off to decompress. There is no universal strategy, but identifying how to manage your time is one of the biggest challenges of grad school.\nAsk questions: As a grad student, you are learning how to do research, or an equivalent type of professional work for M.Eng. and M.P.S. students. Make sure that you actively ask questions if anything, whether a science question, a research plan, course suggestions, or an administrative issue, is unclear to you.\nDevelop a research plan: Our research group uses a broad variety of methods to address problems across a number of application domains. As such, there is a large degree of freedom to identify areas which you find exciting, rather than simply working on problems which Vivek assigns you. It is, of course, understood that this plan is likely to be dynamic and may change as you engage in research, are exposed to other areas or ideas in seminars or by talking to collaborators, or take additional courses. The important thing is that you are working on problems which you find fulfilling and intellectually stimulating.\nStay in good standing: Graduate programs have a wide variety of requirements, from required courses and credits to exam dates. While Vivek will help you manage these requirements, it is important that you stay on top of them and your status and communicate with him about any upcoming deadlines or needs.\nFocus on your research: If you’re in a thesis-based program (an M.S. or a Ph.D.), your research is the most important part of your graduate education. For students in professional programs (M.Eng. and M.P.S.), your project is a key part of your overall experience. You should prioritize your research as such and treat it professionally.\nSucceed in your coursework: Depending on your program, there are periods (or your entire program) in grad school that are dominated by coursework. You should try to get as much from your coursework as possible (while meeting your other responsibilities) and connect it to your research whenever possible.\nDevelop independence: You should not hesitate to pursue and discuss your own ideas as they arise. Within the context of your time management system (and without compromising your personal time), set aside time to read new papers in and out of your field, attend as many seminars as you can, and run independent experiments with new models and datasets. Make sure you discuss ideas and results with Vivek and the broader group for feedback.\nDevelop a career plan: There is no hiding the fact that there is a clear opportunity cost to attending graduate school. You should think carefully about what type of job you would like to have, and what credential and what type of training would best prepare you for your ambitions. This plan is likely to be dynamic, and communication with Vivek and others in the group is important.",
-    "crumbs": [
-      "Expectations and Conduct",
-      "Roles, Responsibilities, and Expectations"
-    ]
-  },
-  {
-    "objectID": "expectations/roles.html#undergraduate-students",
-    "href": "expectations/roles.html#undergraduate-students",
-    "title": "Roles, Responsibilities, and Expectations",
-    "section": "Undergraduate Students",
-    "text": "Undergraduate Students\nUndergrads who are working with the research group have several responsibilities.\n\nLearn!: As an undergrad, you are not necessarily expected to write and publish papers or give presentations (though it’s great for your resume if you can!). However, you should link your research to your broader education and learn as much as you can from the process. This may help you decide if you want to go to graduate school.\nSucceed in your coursework: Research activities should be viewed as a supplement to undergrad education, not a primary requirement. As such, your first responsibility is to make sure that you remain in good academic standing and are on track to graduate with a strong GPA.\nWork 3 hours each week for every credit hour: This is the standard conversion from credit-hours to work-hours. Both your research and your classwork will have varying demands from week to week, but try to work this many hours each week on average. If you find yourself needing to work more than this to complete your project, let Vivek and anyone else you’re working with know so they can scale the scope back.\nStay on top of deadlines: It is your responsibility to be aware of upcoming deadlines for course content or for paperwork, and make Vivek aware of what he needs to do or how he can help you complete the relevant task(s).",
-    "crumbs": [
-      "Expectations and Conduct",
-      "Roles, Responsibilities, and Expectations"
-    ]
-  },
-  {
-    "objectID": "expectations/index.html",
-    "href": "expectations/index.html",
-    "title": "Expectations",
+    "objectID": "expectations/open.html",
+    "href": "expectations/open.html",
+    "title": "Open and Reproducible Research",
     "section": "",
-    "text": "This section outlines our expectations for anyone who is a member of the lab group. Familiarizing yourself with these expectations is essential for anyone joining the group; if you do not feel that you can abide by or tolerate these expectations, our group may not be a good fit for you.",
+    "text": "According to UNESCO, open science\nAs The Center for Open Science says,\nTo this end, our research group:\nThis page describes, at a high level, our procedures and philosophies concerning open and reproducible science. Our standard set of tools is documented in Group Workflow and the Knowledge Base, and Data Management covers where data lives and what gets archived; familiarization with these will be part of the onboarding process. Alternative tools can be used if they have a particular feature set or if a collaborator would prefer. Always be inclusive rather than dogmatic!",
     "crumbs": [
       "Expectations and Conduct",
-      "Expectations"
+      "Open and Reproducible Research"
     ]
+  },
+  {
+    "objectID": "expectations/open.html#transparency",
+    "href": "expectations/open.html#transparency",
+    "title": "Open and Reproducible Research",
+    "section": "Transparency",
+    "text": "Transparency\nGroup members are required to share any data and code used in the development of a paper. This does not have to happen immediately (and there may be good reasons to keep a code repository private for a time), but public release should generally occur by the time we are ready to submit a manuscript to a peer-reviewed journal. A paper is not ready for peer review if the data and code are not publicly available and documented.\nLarge ensembles of simulation outputs should also be made available, even if only a subset was used for a particular analysis. This facilitates transparency about how the choices involved in the subsetting process and their impact.",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Open and Reproducible Research"
+    ]
+  },
+  {
+    "objectID": "expectations/open.html#reproducible-science",
+    "href": "expectations/open.html#reproducible-science",
+    "title": "Open and Reproducible Research",
+    "section": "Reproducible Science",
+    "text": "Reproducible Science\nReproducibility is an essential part of science. Your entire analysis, from model calibration to figure generation, should be made public and organized in a straightforward fashion. As an example, for a project which involves model-based uncertainty quantification and simulation, you should document the workflows needed to:\n\ninstall any required tools or packages;\nload and clean data;\nrun and calibrate the model;\ngenerate simulations based on the calibration results;\nanalyze simulation results;\nplot any figures included in the paper.\n\nYou should also include partial products of the analysis, such as calibration and simulation results, so that subsequent parts of the analysis can be reproduced without needing to re-run everything from scratch.\nIdeally, your code has also been written and commented to make key choices clear.\nWhen multiple versions of a model or other piece of software exist, you should document the specific versions that were used, or, even better, develop and provide a container that will set up the correct configuration.\n\nOpen vs. Closed-Source\nIn an ideal world, we would use nothing but open source software. Occasionally, we may need to use software which does not allow its source code to be distributed. In that case, in addition to documenting the version(s) of the relevant software, you should also provide documentation for how to install and configure them (a container is once again the preferred approach).\nWe try to avoid proprietary software, which requires payment, as that reduces the number of people who can potentially try to reproduce or build on the analysis. It may be that we encounter a situation where this is required; if so, you should discuss this with Vivek and your other collaborators to make sure that this is the only option.\n\n\nToolset for Reproducible Science\nWe try not to be dogmatic about particular choices of tools for reproducibility. Our workflow is heavily inspired by &gt; Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, Teal TK (2017) Good enough practices in scientific computing. PLoS Comput Biol 13(6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510\nwhich you should read before starting to use any particular set of tools to understand why we use them and how they fit into the workflow. While we have some default choices (such as GitHub for code repositories), these are not exclusive. If you prefer another tool, feel free to use it. You should, however, discuss those choices ahead of time with collaborators as part of the paper-writing process to make sure everyone is comfortable with them.",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Open and Reproducible Research"
+    ]
+  },
+  {
+    "objectID": "expectations/open.html#communication-and-outreach",
+    "href": "expectations/open.html#communication-and-outreach",
+    "title": "Open and Reproducible Research",
+    "section": "Communication and Outreach",
+    "text": "Communication and Outreach\nA key part of open science is increasing the accessibility of results, both to other scientists and to the public.\n\nScientific Communication\nTo increase access of results to the scientific community, we will:\n\npost preprints on an open-access preprint server at the time of submission, to be updated through the revision process;\npublish in open-access journals (or with open-access licenses) where possible and appropriate, and make post-prints readily available when not;\nsummarize findings in blog posts;\nclearly document and organize code;\nmake code repositories publically available at time of submission;\nmake software, figures, and papers available through permissive licenses.\n\n\n\nPublic Communication\nOur research is mission-oriented and stakeholder-driven. Moreover, it is often funded by public institutions. Withholding access to key results from the public is therefore not only an abandonment of our mission to do research which supports decision-making on key societal issues, but could also be seen as unethical. To help communicate our results to the public, we will:\n\nsummarize findings in non-technical posts (on our blog or other outlets);\nuse social media to share key findings;\ndevelop communications plans with stakeholders as part of our research design;\nissue press releases as appropriate.\n\nIt can be challenging to write about scientific and technical topics in a manner which is readily understandable to non-experts (Vivek certainly cannot claim to be an expert on this!). However, honing your ability to write in this style will benefit interest in your work and the quality and accessibility of your peer-reviewed papers. Seek out examples of popular science writing that you admire and try to learn what makes them so effective. There are likely other resources, both online and local, that you can utilize.",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Open and Reproducible Research"
+    ]
+  },
+  {
+    "objectID": "expectations/health.html",
+    "href": "expectations/health.html",
+    "title": "Health and Wellness",
+    "section": "",
+    "text": "TipHealth is Priority One\n\n\n\nYour first priority should always be your own health, safety, and well-being. Vivek will never intentionally ask you to compromise your health. If you think that a request from Vivek might do so, let him know as soon as possible and he will make other arrangements.",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Health and Wellness"
+    ]
+  },
+  {
+    "objectID": "expectations/health.html#overview",
+    "href": "expectations/health.html#overview",
+    "title": "Health and Wellness",
+    "section": "Overview",
+    "text": "Overview\nNo research activity – a paper, a proposal, a presentation – is more important than your physical, mental, and emotional well-being. Graduate students and postdocs are often placed under a variety of stress factors. The resulting consequences can be extremely severe.\nIf you feel you may be facing mental health challenges, you’re not alone! Quoting from an Inside Higher Ed report on a Nature Biotechnology study on graduate student mental health:\n\nSeveral studies suggest that graduate students are at greater risk for mental health issues than those in the general population. This is largely due to social isolation, the often abstract nature of the work and feelings of inadequacy – not to mention the slim tenure-track job market. But a new study in Nature Biotechnology warns, in no uncertain terms, of a mental health “crisis” in graduate education.\n\n\n“Our results show that graduate students are more than six times as likely to experience depression and anxiety as compared to the general population,” the study says, urging action on the part of institutions. “It is only with strong and validated interventions that academia will be able to provide help for those who are traveling through the bioscience workforce pipeline.”\n\nIn economics,\n\nIn one unspecified program, 10 percent of students had moderately severe or severe depression symptoms. Twelve percent had severe anxiety symptoms. Four percent of respondents had both moderately severe or severe depressive symptoms and severe anxiety. About 13 percent of the sample was in treatment for anxiety, and 13 percent for depression. The five students suffering from moderately severe or severe depressive symptoms were not in treatment. One-third of the students with severe anxiety symptoms were getting treatment.\n\nThe authors of the economics-department study found that “contrary to social stigma, seeing a mental health professional is not the same thing as having poor mental health. Many of those who seek help are doing better than those who do not.” You should never feel shy about seeking help if you’re at all worried about your mental health.",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Health and Wellness"
+    ]
+  },
+  {
+    "objectID": "expectations/health.html#staying-healthy",
+    "href": "expectations/health.html#staying-healthy",
+    "title": "Health and Wellness",
+    "section": "Staying Healthy",
+    "text": "Staying Healthy\nOur group will do everything possible to support lab members and ensure a healthy work-life balance. You will never be expected to respond to work communications or do work on your personal time or vacation, which you should set aside, and you should not, and will never be expected to, work unsustainable hours. If you have to work particularly hard one week, try to take additional time off the week after, so you maintain, on average, a roughly balanced schedule. Let Vivek know as soon as possible if you’re unable to meet some deadlines or have to back off your work intensity, and he will work with you to help manage your workload and stress level.\nSome other tips include:\n\nStay home while sick: This is an expectation: your recovery is important, and we want to avoid the risk of getting others sick. If you don’t feel well enough to work, you shouldn’t! Your first priority is to regain your health. Just let Vivek know and he can cover for you if necessary.\nMaintain a healthy sleep schedule: We all have different rhythms and sleep needs. Make sure that you’re getting enough sleep. If that means some work doesn’t quite get done that night, no big deal! As stated above, your health is the most important thing, and sleep is an essential part of maintaining it.\nPursue hobbies outside of work: Your work is not, and should not, define you or be your life. Engage in activities that relieve stress, and let your mind wander away from work. Letting your brain focus on something else might actually benefit your research or classwork!\nDevelop a support network among your peers: Whether they’re inside or outside the group, your peers can relate to whatever stresses you’re facing. It’s helpful to have a group you can confide in and get support from.\nTake advantage of mental health resources: Vivek is always here to provide moral support and guidance (and you should never feel shy about asking!), but he is not a trained counselor. Cornell offers mental health care and counseling. You should never feel ashamed to reach out for help if you’re at all worried about your mental health.\nIf you are worried about someone else in the lab group, let Vivek know: We all have to look out for each other. If you’re concerned that stress may be getting to another member of the lab group, let Vivek know and he can work with that member to ensure that their health is prioritized.\n\n\n\n\n\n\n\nImportant\n\n\n\nIf you or someone you know may be considering suicide or is in crisis, call or text 988 to reach the 988 Suicide & Crisis Lifeline, available 24/7. If there is immediate danger, call 911. Cornell students can also reach Cornell Health’s 24/7 crisis line at 607-255-5155.",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Health and Wellness"
+    ]
+  },
+  {
+    "objectID": "expectations/availability.html",
+    "href": "expectations/availability.html",
+    "title": "Availability",
+    "section": "",
+    "text": "It is expected that all research group members will work consistently on their research and remain in communication and collaboration with the broader group.\n\n\n\n\n\n\nNoteWorking Remotely\n\n\n\n\n\nYou do not have to be physically present on campus to be present within the research group. Occasional remote work is encouraged as it suits your personal and professional needs, and sustained remote work will generally be fine, though it should be discussed and approved with Vivek. If you will be working remotely for a sustained period, do not take equipment from campus without coordinating with Vivek.\n\n\n\nWhat “working consistently” precisely means will vary based on your role - students have to balance classwork with research, while postdocs do not. Within that context, we can identify what working consistently means:\n\nApplying consistent and professional effort to your research;\nSharing ideas and effort with your fellow lab members;\nAttending meetings (physically or remotely) with Vivek, the broader lab, or any other research groups;\nStaying in communication via email or Slack.\n\nWorking consistently does not mean:\n\nPutting in unreasonable or unsustainable hours;\nCompeting with your lab members to see who can work the hardest.\n\nYou are also not expected to work on staff holidays, but you are expected to work during non-staff holiday university breaks unless you are on vacation or taking personal time.\nYou do not need to install email or specialized messaging apps on your phone. If you do, you do not need notifications to be active, and should definitely turn them off during non-work time. However, Vivek may text you if there is something that needs your immediate attention (this will be rare!).",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Availability"
+    ]
+  },
+  {
+    "objectID": "expectations/availability.html#presence",
+    "href": "expectations/availability.html#presence",
+    "title": "Availability",
+    "section": "",
+    "text": "It is expected that all research group members will work consistently on their research and remain in communication and collaboration with the broader group.\n\n\n\n\n\n\nNoteWorking Remotely\n\n\n\n\n\nYou do not have to be physically present on campus to be present within the research group. Occasional remote work is encouraged as it suits your personal and professional needs, and sustained remote work will generally be fine, though it should be discussed and approved with Vivek. If you will be working remotely for a sustained period, do not take equipment from campus without coordinating with Vivek.\n\n\n\nWhat “working consistently” precisely means will vary based on your role - students have to balance classwork with research, while postdocs do not. Within that context, we can identify what working consistently means:\n\nApplying consistent and professional effort to your research;\nSharing ideas and effort with your fellow lab members;\nAttending meetings (physically or remotely) with Vivek, the broader lab, or any other research groups;\nStaying in communication via email or Slack.\n\nWorking consistently does not mean:\n\nPutting in unreasonable or unsustainable hours;\nCompeting with your lab members to see who can work the hardest.\n\nYou are also not expected to work on staff holidays, but you are expected to work during non-staff holiday university breaks unless you are on vacation or taking personal time.\nYou do not need to install email or specialized messaging apps on your phone. If you do, you do not need notifications to be active, and should definitely turn them off during non-work time. However, Vivek may text you if there is something that needs your immediate attention (this will be rare!).",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Availability"
+    ]
+  },
+  {
+    "objectID": "expectations/availability.html#pi-availability",
+    "href": "expectations/availability.html#pi-availability",
+    "title": "Availability",
+    "section": "PI Availability",
+    "text": "PI Availability\nVivek will be regularly working on campus, and will let you know on Slack if he is working from home during the work week or if he is sick. Vivek’s work schedule is from 8am-5pm each workday, and from 9am-4pm on Sunday. He does not work at all on Saturdays.\nIf his office door (318 Riley-Robb Hall) is open, feel free to ask if he can meet with you (though he may be in office hours if he is teaching).\nIf his door is closed, he is likely working on something that requires focus or is in another meeting. If you’d like to meet during those times, please send him a message instead of knocking, though his notifications will likely be off. Otherwise, if a meeting can wait, please send him an email or a message asking to schedule it.\nIf Vivek is working remotely, he’ll be available for regularly scheduled meetings using Zoom, and can schedule additional meetings if desired. He will also be available using Slack and email, though similar caveats exist to when he is in the office with a closed door. If Vivek is sick, he may not be available at all, but will make this clear.\nYou can text Vivek if you need an immediate response to something during non-sleep hours (if you text while he is sleeping, he will respond first thing in the morning). However, please do not call his cell unless it is an emergency, and if you have an emergency, feel free to call if he can help in any way.\nVivek will also make his vacation plans clear ahead of time, so that any relevant deadlines requiring his feedback can be dealt with prior to the start.",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Availability"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Our mission is to support the resilience of societal units (from global to individual) to dynamic environmental risks by informing impact-management strategies. These strategies are understood in the broad sense, and can include mitigating new risks or adapting to existing or anticipated ones. Through mission-oriented basic research, we develop tools and methods to transparently and collaboratively inform decision-making to help improve equity and be responsive to diverse sets of stakeholder preferences and values."
+  },
+  {
+    "objectID": "about.html#mission",
+    "href": "about.html#mission",
+    "title": "About",
+    "section": "",
+    "text": "Our mission is to support the resilience of societal units (from global to individual) to dynamic environmental risks by informing impact-management strategies. These strategies are understood in the broad sense, and can include mitigating new risks or adapting to existing or anticipated ones. Through mission-oriented basic research, we develop tools and methods to transparently and collaboratively inform decision-making to help improve equity and be responsive to diverse sets of stakeholder preferences and values."
+  },
+  {
+    "objectID": "about.html#core-values",
+    "href": "about.html#core-values",
+    "title": "About",
+    "section": "Core Values",
+    "text": "Core Values\nOur research group adheres to several values which inform the procedures and expectations outlined in this manual.\n\nExcellence: We strive for excellence in all of our activities.\nTransparency: We do not hide our procedures or products. Our research is accessible to all levels of society. When we make mistakes, we recognize them and do our best to fix them.\nDiversity: We seek out members, collaborators, and community partners from diverse backgrounds and who represent diverse perspectives.\nEquity: We recognize the existence and impacts of systematic inequalities and work to promote fairness and justice. We strive to provide all of our members, collaborators, and partners with equitable platforms for engagement.\nInclusivity: We view scientific research as collaborative, not competitive, and want our group members and collaborators to have agency over and ownership of their research. We want the right people doing the right work at the right time. We leverage our differences and diversity to improve our capacity to achieve breakthroughs.\nHealth and Well-Being: We recognize the essential importance of taking care of one’s physical, mental, and emotional well-being."
+  },
+  {
+    "objectID": "about.html#credit",
+    "href": "about.html#credit",
+    "title": "About",
+    "section": "Credit",
+    "text": "Credit\nThis organization and content of this lab manual borrows heavily from several documents written by:\n\nthe Doss-Gollin Research Group at Rice University\nLab Carpentry\nthe Computer-Oriented Geoscience Lab at the University of Liverpool\nthe Aly Lab at Columbia University\nthe Murdock Lab here at Cornell\nthe Kaleel Jamison Consulting Group."
+  },
+  {
+    "objectID": "contributing/index.html",
+    "href": "contributing/index.html",
+    "title": "How To Contribute",
+    "section": "",
+    "text": "This lab manual was built using Quarto. Quarto is a system for building documents (websites, PDFs, etc) from Markdown and Jupyter notebook inputs. You are welcomed (and encouraged!) to contribute to this lab manual, either by suggesting small changes or adding larger pieces of content, such as guides for common tasks or software tutorials. Doing so is also good practice for writing and using GitHub!"
+  },
+  {
+    "objectID": "contributing/index.html#contributing-to-this-lab-manual",
+    "href": "contributing/index.html#contributing-to-this-lab-manual",
+    "title": "How To Contribute",
+    "section": "",
+    "text": "This lab manual was built using Quarto. Quarto is a system for building documents (websites, PDFs, etc) from Markdown and Jupyter notebook inputs. You are welcomed (and encouraged!) to contribute to this lab manual, either by suggesting small changes or adding larger pieces of content, such as guides for common tasks or software tutorials. Doing so is also good practice for writing and using GitHub!"
+  },
+  {
+    "objectID": "contributing/index.html#minor-contributions",
+    "href": "contributing/index.html#minor-contributions",
+    "title": "How To Contribute",
+    "section": "Minor Contributions",
+    "text": "Minor Contributions\nIf you notice that a current page has formatting issues or contains typos1, you should create a pull request with the fixed page. The majority (if not all) of the pages which make up this lab manual are .qmd files written in Markdown (specifically, Quarto’s flavor of Markdown) and should be straightforward to edit.\n1 Which is unfortunately likely!"
+  },
+  {
+    "objectID": "contributing/index.html#major-contributions",
+    "href": "contributing/index.html#major-contributions",
+    "title": "How To Contribute",
+    "section": "Major Contributions",
+    "text": "Major Contributions\nMajor additions (new tutorials, etc.) should also be submitted with a pull request. The only real difference is to pay attention to the format of the new document:\n\nMaterial which is mostly text-based (maybe with some code snippets) should be written as a .qmd file, primarily in Markdown.\nCode-heavy tutorials can be written as a .qmd file, or can be submitted as an .ipynb Jupyter notebook. Depending on the language, we may need to modify the GitHub action to install the associated language so the site can compile properly; this is not a problem.\n\nIn either case, the new page should go into the associated folder for the section (e.g. put a new knowledge-base page in kb/) and needs to be added to the navigation in _quarto.yml. This document uses hybrid navigation with sections in a top navbar and individual pages in a sidebar, so make sure you add the new page to the right section."
+  },
+  {
+    "objectID": "contributing/index.html#previewing-your-changes",
+    "href": "contributing/index.html#previewing-your-changes",
+    "title": "How To Contribute",
+    "section": "Previewing Your Changes",
+    "text": "Previewing Your Changes\nThe manual is a Quarto website. To see your changes before opening a pull request, install Quarto and run:\nquarto preview\nThis serves the site locally and reloads as you edit. quarto render builds it once into _site/ without serving, which is what the pull request check runs. There are no executable code chunks in the manual, so you do not need R, Python, or Julia installed to build it.\nA pull request will fail its check if a page does not render or a cross-reference does not resolve. Merging to main publishes automatically."
+  },
+  {
+    "objectID": "contributing/index.html#conventions",
+    "href": "contributing/index.html#conventions",
+    "title": "How To Contribute",
+    "section": "Conventions",
+    "text": "Conventions\nA few patterns to match so the manual reads as one document:\n\nVoice. Second person for the reader (“you should”), third person for Vivek (“Vivek will”). Avoid first person — it reads oddly on a page that outlives any one author.\nCross-references use relative paths to the .qmd file, not the rendered URL: [Data Management](../guides/data-management.qmd). Quarto rewrites these and will fail the build if the target does not exist, which is how we catch broken internal links.\nCallouts carry consistent meaning: callout-note for an aside, callout-tip for advice, callout-important for something with consequences, callout-warning for something that will go wrong if ignored.\nAliases. If you rename or move a page that was already published, add an aliases: entry with its old path so existing links keep working.\nDon’t assert what you haven’t checked. Where something could not be verified — an unpublished policy, an undocumented command — say so on the page. “We could not confirm this” is more useful than a confident guess, and much easier for the next person to fix."
+  },
+  {
+    "objectID": "contributing/index.html#reporting-a-problem-without-fixing-it",
+    "href": "contributing/index.html#reporting-a-problem-without-fixing-it",
+    "title": "How To Contribute",
+    "section": "Reporting a Problem Without Fixing It",
+    "text": "Reporting a Problem Without Fixing It\nYou do not have to write the fix. Open an issue describing what is wrong, missing, or confusing.\nThis is genuinely useful, and it is most useful from people who have just joined: you are the only ones who can see which parts of the manual assume knowledge you do not have yet. By the time something is obvious to you, you will have stopped noticing it was ever unclear.\nAnyone can open an issue — you do not need to be a member of the group."
   },
   {
     "objectID": "expectations/harassment.html",
@@ -1158,223 +1301,190 @@
     ]
   },
   {
-    "objectID": "contributing/index.html",
-    "href": "contributing/index.html",
-    "title": "How To Contribute",
+    "objectID": "expectations/index.html",
+    "href": "expectations/index.html",
+    "title": "Expectations",
     "section": "",
-    "text": "This lab manual was built using Quarto. Quarto is a system for building documents (websites, PDFs, etc) from Markdown and Jupyter notebook inputs. You are welcomed (and encouraged!) to contribute to this lab manual, either by suggesting small changes or adding larger pieces of content, such as guides for common tasks or software tutorials. Doing so is also good practice for writing and using GitHub!"
+    "text": "This section outlines our expectations for anyone who is a member of the lab group. Familiarizing yourself with these expectations is essential for anyone joining the group; if you do not feel that you can abide by or tolerate these expectations, our group may not be a good fit for you.",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Expectations"
+    ]
   },
   {
-    "objectID": "contributing/index.html#contributing-to-this-lab-manual",
-    "href": "contributing/index.html#contributing-to-this-lab-manual",
-    "title": "How To Contribute",
+    "objectID": "expectations/roles.html",
+    "href": "expectations/roles.html",
+    "title": "Roles, Responsibilities, and Expectations",
     "section": "",
-    "text": "This lab manual was built using Quarto. Quarto is a system for building documents (websites, PDFs, etc) from Markdown and Jupyter notebook inputs. You are welcomed (and encouraged!) to contribute to this lab manual, either by suggesting small changes or adding larger pieces of content, such as guides for common tasks or software tutorials. Doing so is also good practice for writing and using GitHub!"
+    "text": "There are many roles within any research group, and each carries a different set of responsibilities and expectations. We want the lab group to be a healthy, fun, and productive place where we can make scientific progress.",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Roles, Responsibilities, and Expectations"
+    ]
   },
   {
-    "objectID": "contributing/index.html#minor-contributions",
-    "href": "contributing/index.html#minor-contributions",
-    "title": "How To Contribute",
-    "section": "Minor Contributions",
-    "text": "Minor Contributions\nIf you notice that a current page has formatting issues or contains typos1, you should create a pull request with the fixed page. The majority (if not all) of the pages which make up this lab manual are .qmd files written in Markdown (specifically, Quarto’s flavor of Markdown) and should be straightforward to edit.\n1 Which is unfortunately likely!"
+    "objectID": "expectations/roles.html#everyone",
+    "href": "expectations/roles.html#everyone",
+    "title": "Roles, Responsibilities, and Expectations",
+    "section": "Everyone",
+    "text": "Everyone\n\nBe Present: Everyone should maintain a presence in the lab.\nWork Professionally: Academia provides a lot of freedom and flexibility, but you should treat this job as you would any other.\nDo Work You Are Proud Of: We work on issues of societal relevance, and we are in academia to learn things and be creative. If you aren’t proud of your work or you find yourself working on things that you don’t find interesting or you don’t think others will care about, let Vivek know as soon as possible.\nTake Time Off: Take appropriate time off from work each day and each week, and take vacation to recharge.\nTreat Others With Respect: Beyond our (the university’s and this group’s) policies on harassment, we expect that you will treat every other member of the lab, as well as everyone else, with respect. We want to create an environment where everybody, regardless of background and personality, feels comfortable and valued. Discussions should always be constructive.\nBe Collaborative: This is likely to be a research group where everyone has different, but complementary, backgrounds, interests, and skills. Collaborations among group members is strongly encouraged. One of the goals of our regular lab meetings is to allow group members to ask questions, share where they might be stuck, and potentially get insights and advice from other members. You should never view any of your fellow group members as competition. All members of the group are expected to try to help if another member is stuck or otherwise needs advice.\nScientific Integrity: It is never okay to commit scientific misconduct. Even the slightest fudging of results to make them look better is unacceptable. We are here to gain scientific insights, not just publish papers, and nuanced and null results are still important findings. Our work will be completely reproducible and open. We have a zero-tolerance policy towards fabrication, falsification, and plagiarism. Our expectations for AI tools follow from this: you are responsible for everything in your analysis and your manuscript, including parts a tool helped produce. Make sure you familiarize yourself with the relevant portions of Cornell’s policies on responsible conduct of research and alert Vivek if you are concerned about any research practices you observe. If Vivek is the cause of your concern or you would rather he not know of your complaint, you can use a university-wide contact instead.\nOpen and Accessible Research Products: As a lab, we are committed to the principles of open and transparent science. We want our peers and the public to be able to reproduce, improve upon, and critique our work. Moreover, as our work is funded by public institutions, our research products should be thought of as public property. More details on our approach to openness are provided elsewhere, but all group members will make their models, data, and code publicly available and easily accessible.",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Roles, Responsibilities, and Expectations"
+    ]
   },
   {
-    "objectID": "contributing/index.html#major-contributions",
-    "href": "contributing/index.html#major-contributions",
-    "title": "How To Contribute",
-    "section": "Major Contributions",
-    "text": "Major Contributions\nMajor additions (new tutorials, etc.) should also be submitted with a pull request. The only real difference is to pay attention to the format of the new document:\n\nMaterial which is mostly text-based (maybe with some code snippets) should be written as a .qmd file, primarily in Markdown.\nCode-heavy tutorials can be written as a .qmd file, or can be submitted as an .ipynb Jupyter notebook. Depending on the language, we may need to modify the GitHub action to install the associated language so the site can compile properly; this is not a problem.\n\nIn either case, the new page should go into the associated folder for the section (e.g. put a new knowledge-base page in kb/) and needs to be added to the navigation in _quarto.yml. This document uses hybrid navigation with sections in a top navbar and individual pages in a sidebar, so make sure you add the new page to the right section."
+    "objectID": "expectations/roles.html#principal-investigator",
+    "href": "expectations/roles.html#principal-investigator",
+    "title": "Roles, Responsibilities, and Expectations",
+    "section": "Principal Investigator",
+    "text": "Principal Investigator\nVivek has a variety of responsibilities as the PI, in addition to those outlined above.\n\nBuild a diverse, inclusive, and equitable environment: While every member of the research group is expected to contribute to a positive and inclusive environment, it is ultimately Vivek’s responsibility to manage the social dynamic of the group.\nProvide the research environment: Our group’s work is primarily computational. Providing and managing hardware and software resources to facilitate the group’s research is Vivek’s job.\nObtain funding: It is Vivek’s responsibility to obtain funding for research equipment, personnel, and other costs such as travel and publication fees. One of the Vivek’s key goals is to never have to let someone go for lack of funding.\nProvide material support: You are never expected to spend your personal finances on anything related to research. Coordinate any upcoming expenses with Vivek and he will identify grant support for payment or reimbursement.\nProvide moral support: Academic life can be stressful, whether it’s classwork, research, the paper submission process, or job searches. Vivek is always here to listen and provide advice (see also Health and Wellness).\nProvide mentoring: One of Vivek’s core jobs is to help junior researchers in the group mature into independent scientists. This mentoring role can continue, to the degree you wish, beyond your departure from the research group.\n\n\n\n\n\n\nNotePlease Ask to See Documents!\n\n\n\n\n\nAs part of the mentoring process, please feel free to request access to grant proposals or other relevant documents that Vivek is working on or has completed. Vivek can discuss these with you as well.\n\n\n\nProvide feedback: Vivek will provide feedback on all aspects of research through ongoing conversations with you. These include research hypotheses, figure designs, identification of appropriate methods, code development, data management, and paper writing. If relevant, he will also provide feedback on course selection, long-term strategy, and career goals. If Vivek is not well-suited to provide feedback on a particular topic, he will connect you with someone who is better suited.\n\n\n\n\n\n\nNoteBe Mindful About Time Constraints\n\n\n\n\n\nAs a faculty member, Vivek has many demands on his time, including teaching and departmental and professional service. While Vivek will manage his time so that he can meet the listed expectations, he may not be able to provide immediate feedback during particularly busy periods. You will be given notice when this is the case as well as a rough timeline for when you can expect feedback.\n\n\n\nWrite recommendations: Recommendation letters are required for career moves. Vivek will write an honest recommendation letter for you at any point. If you need a recommendation letter, please give Vivek any required information with a few week’s advance notice. If you have been away from the group for some time, Vivek may ask you for some additional information to help write the letter.",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Roles, Responsibilities, and Expectations"
+    ]
   },
   {
-    "objectID": "contributing/index.html#previewing-your-changes",
-    "href": "contributing/index.html#previewing-your-changes",
-    "title": "How To Contribute",
-    "section": "Previewing Your Changes",
-    "text": "Previewing Your Changes\nThe manual is a Quarto website. To see your changes before opening a pull request, install Quarto and run:\nquarto preview\nThis serves the site locally and reloads as you edit. quarto render builds it once into _site/ without serving, which is what the pull request check runs. There are no executable code chunks in the manual, so you do not need R, Python, or Julia installed to build it.\nA pull request will fail its check if a page does not render or a cross-reference does not resolve. Merging to main publishes automatically."
+    "objectID": "expectations/roles.html#postdocs",
+    "href": "expectations/roles.html#postdocs",
+    "title": "Roles, Responsibilities, and Expectations",
+    "section": "Postdocs",
+    "text": "Postdocs\nPostdocs should be focused on transitioning into independent researchers. This does not mean working without guidance or supervision, but rather developing the ability to formulate and pursue independent lines of research.\n\nDevelop your own line of research: As a postdoc, you should develop the ability to independently identify interesting questions and develop a research plan to address them. Vivek will help guide you through this process and provide feedback.\nPublish and present research: Your primarily role as a postdoc is to produce research. You will be given a large degree of autonomy when it comes to writing manuscript for publication and developing presentations for seminars or conferences.\nCo-develop group research: Postdocs will bring their own expertise to the group, and are likely to have different perspectives on problems and methods than Vivek. You should take an active role in discussing parts of the research group agenda with Vivek and in meetings so that your insights can be incorporated into the group’s research portfolio.\nMentor students: As a leader in the research group, a postdoc will at some point be expected to help mentor graduate and undergraduate students in the group. This mentoring will likely be primarily focused on research, but you may have useful perspectives on work-life balance and classwork as well, and sharing these are strongly encouraged.\nDevelop a career plan: Postdocs have a lot of autonomy and independence, but have to navigate an increasingly tight job market. It is important that you think carefully about what types of jobs you might be interested in and how you might want to prepare for those roles, and that you discuss those plans with Vivek so that he can effectively mentor you.",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Roles, Responsibilities, and Expectations"
+    ]
   },
   {
-    "objectID": "contributing/index.html#conventions",
-    "href": "contributing/index.html#conventions",
-    "title": "How To Contribute",
-    "section": "Conventions",
-    "text": "Conventions\nA few patterns to match so the manual reads as one document:\n\nVoice. Second person for the reader (“you should”), third person for Vivek (“Vivek will”). Avoid first person — it reads oddly on a page that outlives any one author.\nCross-references use relative paths to the .qmd file, not the rendered URL: [Data Management](../guides/data-management.qmd). Quarto rewrites these and will fail the build if the target does not exist, which is how we catch broken internal links.\nCallouts carry consistent meaning: callout-note for an aside, callout-tip for advice, callout-important for something with consequences, callout-warning for something that will go wrong if ignored.\nAliases. If you rename or move a page that was already published, add an aliases: entry with its old path so existing links keep working.\nDon’t assert what you haven’t checked. Where something could not be verified — an unpublished policy, an undocumented command — say so on the page. “We could not confirm this” is more useful than a confident guess, and much easier for the next person to fix."
+    "objectID": "expectations/roles.html#graduate-students",
+    "href": "expectations/roles.html#graduate-students",
+    "title": "Roles, Responsibilities, and Expectations",
+    "section": "Graduate Students",
+    "text": "Graduate Students\nUnlike postdocs, grad students have to balance research and coursework, and as a result have a wide range of responsibilities to manage.\n\nBe organized: Grad school is full of demands on your time and can be stressful. Make sure that you develop a time management system that works to manage your responsibilities, both research and coursework, while allowing sufficient time off to decompress. There is no universal strategy, but identifying how to manage your time is one of the biggest challenges of grad school.\nAsk questions: As a grad student, you are learning how to do research, or an equivalent type of professional work for M.Eng. and M.P.S. students. Make sure that you actively ask questions if anything, whether a science question, a research plan, course suggestions, or an administrative issue, is unclear to you.\nDevelop a research plan: Our research group uses a broad variety of methods to address problems across a number of application domains. As such, there is a large degree of freedom to identify areas which you find exciting, rather than simply working on problems which Vivek assigns you. It is, of course, understood that this plan is likely to be dynamic and may change as you engage in research, are exposed to other areas or ideas in seminars or by talking to collaborators, or take additional courses. The important thing is that you are working on problems which you find fulfilling and intellectually stimulating.\nStay in good standing: Graduate programs have a wide variety of requirements, from required courses and credits to exam dates. While Vivek will help you manage these requirements, it is important that you stay on top of them and your status and communicate with him about any upcoming deadlines or needs.\nFocus on your research: If you’re in a thesis-based program (an M.S. or a Ph.D.), your research is the most important part of your graduate education. For students in professional programs (M.Eng. and M.P.S.), your project is a key part of your overall experience. You should prioritize your research as such and treat it professionally.\nSucceed in your coursework: Depending on your program, there are periods (or your entire program) in grad school that are dominated by coursework. You should try to get as much from your coursework as possible (while meeting your other responsibilities) and connect it to your research whenever possible.\nDevelop independence: You should not hesitate to pursue and discuss your own ideas as they arise. Within the context of your time management system (and without compromising your personal time), set aside time to read new papers in and out of your field, attend as many seminars as you can, and run independent experiments with new models and datasets. Make sure you discuss ideas and results with Vivek and the broader group for feedback.\nDevelop a career plan: There is no hiding the fact that there is a clear opportunity cost to attending graduate school. You should think carefully about what type of job you would like to have, and what credential and what type of training would best prepare you for your ambitions. This plan is likely to be dynamic, and communication with Vivek and others in the group is important.",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Roles, Responsibilities, and Expectations"
+    ]
   },
   {
-    "objectID": "contributing/index.html#reporting-a-problem-without-fixing-it",
-    "href": "contributing/index.html#reporting-a-problem-without-fixing-it",
-    "title": "How To Contribute",
-    "section": "Reporting a Problem Without Fixing It",
-    "text": "Reporting a Problem Without Fixing It\nYou do not have to write the fix. Open an issue describing what is wrong, missing, or confusing.\nThis is genuinely useful, and it is most useful from people who have just joined: you are the only ones who can see which parts of the manual assume knowledge you do not have yet. By the time something is obvious to you, you will have stopped noticing it was ever unclear.\nAnyone can open an issue — you do not need to be a member of the group."
+    "objectID": "expectations/roles.html#undergraduate-students",
+    "href": "expectations/roles.html#undergraduate-students",
+    "title": "Roles, Responsibilities, and Expectations",
+    "section": "Undergraduate Students",
+    "text": "Undergraduate Students\nUndergrads who are working with the research group have several responsibilities.\n\nLearn!: As an undergrad, you are not necessarily expected to write and publish papers or give presentations (though it’s great for your resume if you can!). However, you should link your research to your broader education and learn as much as you can from the process. This may help you decide if you want to go to graduate school.\nSucceed in your coursework: Research activities should be viewed as a supplement to undergrad education, not a primary requirement. As such, your first responsibility is to make sure that you remain in good academic standing and are on track to graduate with a strong GPA.\nWork 3 hours each week for every credit hour: This is the standard conversion from credit-hours to work-hours. Both your research and your classwork will have varying demands from week to week, but try to work this many hours each week on average. If you find yourself needing to work more than this to complete your project, let Vivek and anyone else you’re working with know so they can scale the scope back.\nStay on top of deadlines: It is your responsibility to be aware of upcoming deadlines for course content or for paperwork, and make Vivek aware of what he needs to do or how he can help you complete the relevant task(s).",
+    "crumbs": [
+      "Expectations and Conduct",
+      "Roles, Responsibilities, and Expectations"
+    ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "guides/ai-tools.html",
+    "href": "guides/ai-tools.html",
+    "title": "AI Tools in Research",
     "section": "",
-    "text": "Our mission is to support the resilience of societal units (from global to individual) to dynamic environmental risks by informing impact-management strategies. These strategies are understood in the broad sense, and can include mitigating new risks or adapting to existing or anticipated ones. Through mission-oriented basic research, we develop tools and methods to transparently and collaboratively inform decision-making to help improve equity and be responsive to diverse sets of stakeholder preferences and values."
-  },
-  {
-    "objectID": "about.html#mission",
-    "href": "about.html#mission",
-    "title": "About",
-    "section": "",
-    "text": "Our mission is to support the resilience of societal units (from global to individual) to dynamic environmental risks by informing impact-management strategies. These strategies are understood in the broad sense, and can include mitigating new risks or adapting to existing or anticipated ones. Through mission-oriented basic research, we develop tools and methods to transparently and collaboratively inform decision-making to help improve equity and be responsive to diverse sets of stakeholder preferences and values."
-  },
-  {
-    "objectID": "about.html#core-values",
-    "href": "about.html#core-values",
-    "title": "About",
-    "section": "Core Values",
-    "text": "Core Values\nOur research group adheres to several values which inform the procedures and expectations outlined in this manual.\n\nExcellence: We strive for excellence in all of our activities.\nTransparency: We do not hide our procedures or products. Our research is accessible to all levels of society. When we make mistakes, we recognize them and do our best to fix them.\nDiversity: We seek out members, collaborators, and community partners from diverse backgrounds and who represent diverse perspectives.\nEquity: We recognize the existence and impacts of systematic inequalities and work to promote fairness and justice. We strive to provide all of our members, collaborators, and partners with equitable platforms for engagement.\nInclusivity: We view scientific research as collaborative, not competitive, and want our group members and collaborators to have agency over and ownership of their research. We want the right people doing the right work at the right time. We leverage our differences and diversity to improve our capacity to achieve breakthroughs.\nHealth and Well-Being: We recognize the essential importance of taking care of one’s physical, mental, and emotional well-being."
-  },
-  {
-    "objectID": "about.html#credit",
-    "href": "about.html#credit",
-    "title": "About",
-    "section": "Credit",
-    "text": "Credit\nThis organization and content of this lab manual borrows heavily from several documents written by:\n\nthe Doss-Gollin Research Group at Rice University\nLab Carpentry\nthe Computer-Oriented Geoscience Lab at the University of Liverpool\nthe Aly Lab at Columbia University\nthe Murdock Lab here at Cornell\nthe Kaleel Jamison Consulting Group."
-  },
-  {
-    "objectID": "expectations/availability.html",
-    "href": "expectations/availability.html",
-    "title": "Availability",
-    "section": "",
-    "text": "It is expected that all research group members will work consistently on their research and remain in communication and collaboration with the broader group.\n\n\n\n\n\n\nNoteWorking Remotely\n\n\n\n\n\nYou do not have to be physically present on campus to be present within the research group. Occasional remote work is encouraged as it suits your personal and professional needs, and sustained remote work will generally be fine, though it should be discussed and approved with Vivek. If you will be working remotely for a sustained period, do not take equipment from campus without coordinating with Vivek.\n\n\n\nWhat “working consistently” precisely means will vary based on your role - students have to balance classwork with research, while postdocs do not. Within that context, we can identify what working consistently means:\n\nApplying consistent and professional effort to your research;\nSharing ideas and effort with your fellow lab members;\nAttending meetings (physically or remotely) with Vivek, the broader lab, or any other research groups;\nStaying in communication via email or Slack.\n\nWorking consistently does not mean:\n\nPutting in unreasonable or unsustainable hours;\nCompeting with your lab members to see who can work the hardest.\n\nYou are also not expected to work on staff holidays, but you are expected to work during non-staff holiday university breaks unless you are on vacation or taking personal time.\nYou do not need to install email or specialized messaging apps on your phone. If you do, you do not need notifications to be active, and should definitely turn them off during non-work time. However, Vivek may text you if there is something that needs your immediate attention (this will be rare!).",
+    "text": "How we use language models and related tools, and the one principle that decides the hard cases.",
     "crumbs": [
-      "Expectations and Conduct",
-      "Availability"
+      "Guides",
+      "AI Tools in Research"
     ]
   },
   {
-    "objectID": "expectations/availability.html#presence",
-    "href": "expectations/availability.html#presence",
-    "title": "Availability",
-    "section": "",
-    "text": "It is expected that all research group members will work consistently on their research and remain in communication and collaboration with the broader group.\n\n\n\n\n\n\nNoteWorking Remotely\n\n\n\n\n\nYou do not have to be physically present on campus to be present within the research group. Occasional remote work is encouraged as it suits your personal and professional needs, and sustained remote work will generally be fine, though it should be discussed and approved with Vivek. If you will be working remotely for a sustained period, do not take equipment from campus without coordinating with Vivek.\n\n\n\nWhat “working consistently” precisely means will vary based on your role - students have to balance classwork with research, while postdocs do not. Within that context, we can identify what working consistently means:\n\nApplying consistent and professional effort to your research;\nSharing ideas and effort with your fellow lab members;\nAttending meetings (physically or remotely) with Vivek, the broader lab, or any other research groups;\nStaying in communication via email or Slack.\n\nWorking consistently does not mean:\n\nPutting in unreasonable or unsustainable hours;\nCompeting with your lab members to see who can work the hardest.\n\nYou are also not expected to work on staff holidays, but you are expected to work during non-staff holiday university breaks unless you are on vacation or taking personal time.\nYou do not need to install email or specialized messaging apps on your phone. If you do, you do not need notifications to be active, and should definitely turn them off during non-work time. However, Vivek may text you if there is something that needs your immediate attention (this will be rare!).",
+    "objectID": "guides/ai-tools.html#why-we-care-about-this-specifically",
+    "href": "guides/ai-tools.html#why-we-care-about-this-specifically",
+    "title": "AI Tools in Research",
+    "section": "Why We Care About This Specifically",
+    "text": "Why We Care About This Specifically\nThe concern is not that these tools are inaccurate. It is that they are useful, which is what makes the trade easy to take without noticing.\nThe pattern has a name and predates the technology. Bainbridge’s “Ironies of Automation”1 observed that the more capable an automated system becomes, the more demanding the human role gets rather than less: operators end up expected to monitor and take over systems they no longer have the skills to run, because the automation removed exactly the routine practice that built those skills.\n1 Bainbridge, L. (1983). Ironies of automation. Automatica, 19(6), 775–779. https://doi.org/10.1016/0005-1098(83)90046-8. Pre-dates and generalizes the AI-specific findings.2 Liu, G., Christian, B., Dumbalska, T., Bakker, M. A., et al. (2026). AI Assistance Reduces Persistence and Hurts Independent Performance. https://arxiv.org/abs/2604.04721. Randomized trials, N = 1,222. Preprint.3 Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., et al. (2025). Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task. https://arxiv.org/abs/2506.08872. Preprint.More recent work finds the same shape in tasks closer to ours. A randomized study of AI assistance on reasoning and comprehension tasks found that assistance improved performance while it was available, and that participants then performed worse without it and gave up sooner2. An EEG study of essay writing found weaker neural connectivity in LLM-assisted writers than in unassisted ones, and degraded engagement in participants moved from assisted to unassisted work3.\nTreat these as suggestive rather than settled — they are recent, some are preprints, and the effect sizes are contested. But the direction is consistent, and it matches what the group cares about: we are trying to produce researchers, not just papers.",
     "crumbs": [
-      "Expectations and Conduct",
-      "Availability"
+      "Guides",
+      "AI Tools in Research"
     ]
   },
   {
-    "objectID": "expectations/availability.html#pi-availability",
-    "href": "expectations/availability.html#pi-availability",
-    "title": "Availability",
-    "section": "PI Availability",
-    "text": "PI Availability\nVivek will be regularly working on campus, and will let you know on Slack if he is working from home during the work week or if he is sick. Vivek’s work schedule is from 8am-5pm each workday, and from 9am-4pm on Sunday. He does not work at all on Saturdays.\nIf his office door (318 Riley-Robb Hall) is open, feel free to ask if he can meet with you (though he may be in office hours if he is teaching).\nIf his door is closed, he is likely working on something that requires focus or is in another meeting. If you’d like to meet during those times, please send him a message instead of knocking, though his notifications will likely be off. Otherwise, if a meeting can wait, please send him an email or a message asking to schedule it.\nIf Vivek is working remotely, he’ll be available for regularly scheduled meetings using Zoom, and can schedule additional meetings if desired. He will also be available using Slack and email, though similar caveats exist to when he is in the office with a closed door. If Vivek is sick, he may not be available at all, but will make this clear.\nYou can text Vivek if you need an immediate response to something during non-sleep hours (if you text while he is sleeping, he will respond first thing in the morning). However, please do not call his cell unless it is an emergency, and if you have an emergency, feel free to call if he can help in any way.\nVivek will also make his vacation plans clear ahead of time, so that any relevant deadlines requiring his feedback can be dealt with prior to the start.",
+    "objectID": "guides/ai-tools.html#the-test",
+    "href": "guides/ai-tools.html#the-test",
+    "title": "AI Tools in Research",
+    "section": "The Test",
+    "text": "The Test\nFor any use you are unsure about, ask: would a competent version of me be able to check this?\nIf yes, the tool is an accelerator and you are still the one responsible. If no — if you would be accepting the output because you cannot evaluate it — you have outsourced the judgment, and that is the thing we are trying not to do.\nThis is a test about you, not about the task. Having a model draft boilerplate in a language you know well is fine. Having it write an analysis in a method you do not understand is not, even though the code may run and the numbers may look reasonable.",
     "crumbs": [
-      "Expectations and Conduct",
-      "Availability"
+      "Guides",
+      "AI Tools in Research"
     ]
   },
   {
-    "objectID": "expectations/health.html",
-    "href": "expectations/health.html",
-    "title": "Health and Wellness",
-    "section": "",
-    "text": "TipHealth is Priority One\n\n\n\nYour first priority should always be your own health, safety, and well-being. Vivek will never intentionally ask you to compromise your health. If you think that a request from Vivek might do so, let him know as soon as possible and he will make other arrangements.",
+    "objectID": "guides/ai-tools.html#where-this-lands-in-practice",
+    "href": "guides/ai-tools.html#where-this-lands-in-practice",
+    "title": "AI Tools in Research",
+    "section": "Where This Lands in Practice",
+    "text": "Where This Lands in Practice\nReasonable, with you still checking:\n\nExplaining an unfamiliar error, a library, or an equation, as a starting point you then verify\nBoilerplate you could have written: plotting scaffolds, argument parsing, file I/O\nRubber-ducking a design decision before you commit to it\nTightening prose you have already written\nAdversarial review of your own draft before you send it to anyone\n\nNot reasonable:\n\nAnything going to a third party as your own judgment — a referee report above all. Several journals and funders prohibit it outright, and the Peer Review section below covers why.\nGenerating citations. Models produce plausible, correctly formatted, non-existent references, and a single invented citation discredits everything else you wrote. If you did not read it, do not cite it.\nWriting the parts that are supposed to be your contribution: the hypothesis, the framing, the interpretation, the decision about what the result means.\nAnalysis in a method you cannot evaluate.\n\n\n\n\n\n\n\nWarningNever Cite What You Have Not Read\n\n\n\nThis is the failure mode most likely to reach print. A model will give you an author, a year, a journal, and a DOI that look exactly right and describe a paper that does not exist — or a real paper that does not say what you were told.\nVerify every reference against the actual source. Not a search snippet, not an abstract when the claim is about what the paper found. This applies to citations a model suggested, and equally to ones you half-remember.",
     "crumbs": [
-      "Expectations and Conduct",
-      "Health and Wellness"
+      "Guides",
+      "AI Tools in Research"
     ]
   },
   {
-    "objectID": "expectations/health.html#overview",
-    "href": "expectations/health.html#overview",
-    "title": "Health and Wellness",
-    "section": "Overview",
-    "text": "Overview\nNo research activity – a paper, a proposal, a presentation – is more important than your physical, mental, and emotional well-being. Graduate students and postdocs are often placed under a variety of stress factors. The resulting consequences can be extremely severe.\nIf you feel you may be facing mental health challenges, you’re not alone! Quoting from an Inside Higher Ed report on a Nature Biotechnology study on graduate student mental health:\n\nSeveral studies suggest that graduate students are at greater risk for mental health issues than those in the general population. This is largely due to social isolation, the often abstract nature of the work and feelings of inadequacy – not to mention the slim tenure-track job market. But a new study in Nature Biotechnology warns, in no uncertain terms, of a mental health “crisis” in graduate education.\n\n\n“Our results show that graduate students are more than six times as likely to experience depression and anxiety as compared to the general population,” the study says, urging action on the part of institutions. “It is only with strong and validated interventions that academia will be able to provide help for those who are traveling through the bioscience workforce pipeline.”\n\nIn economics,\n\nIn one unspecified program, 10 percent of students had moderately severe or severe depression symptoms. Twelve percent had severe anxiety symptoms. Four percent of respondents had both moderately severe or severe depressive symptoms and severe anxiety. About 13 percent of the sample was in treatment for anxiety, and 13 percent for depression. The five students suffering from moderately severe or severe depressive symptoms were not in treatment. One-third of the students with severe anxiety symptoms were getting treatment.\n\nThe authors of the economics-department study found that “contrary to social stigma, seeing a mental health professional is not the same thing as having poor mental health. Many of those who seek help are doing better than those who do not.” You should never feel shy about seeking help if you’re at all worried about your mental health.",
+    "objectID": "guides/ai-tools.html#the-groups-skills",
+    "href": "guides/ai-tools.html#the-groups-skills",
+    "title": "AI Tools in Research",
+    "section": "The Group’s Skills",
+    "text": "The Group’s Skills\nThe group maintains claude-research-skills, a set of Claude Agent Skills built around our workflow: adversarial reading, paper planning, literature review, figure design, code review, and revision response.\nThese are deliberately built as critique tools, not authorship tools, and the design notes in the repository state the stance better than a summary would. From the section on starting a study:\n\nWhat comes out of this conversation is not your contract. It is a draft, with placeholders, the assistant’s compressions of what you said, and suggestions marked as suggestions. The hypothesis, the scope decision, and the framing have to be yours. […] A contract you did not write is a contract you will not maintain, and its entire value is that it records what you predicted before you knew the answer.\n\nThe same logic runs through the rest: referee simulation is scoped to your own papers, the revision-response skill evaluates a reply you have written rather than originating its substance, author lists are never inferred, and the literature skill refuses to name a paper it has not seen.\nInstallation instructions are in the repository README.",
     "crumbs": [
-      "Expectations and Conduct",
-      "Health and Wellness"
+      "Guides",
+      "AI Tools in Research"
     ]
   },
   {
-    "objectID": "expectations/health.html#staying-healthy",
-    "href": "expectations/health.html#staying-healthy",
-    "title": "Health and Wellness",
-    "section": "Staying Healthy",
-    "text": "Staying Healthy\nOur group will do everything possible to support lab members and ensure a healthy work-life balance. You will never be expected to respond to work communications or do work on your personal time or vacation, which you should set aside, and you should not, and will never be expected to, work unsustainable hours. If you have to work particularly hard one week, try to take additional time off the week after, so you maintain, on average, a roughly balanced schedule. Let Vivek know as soon as possible if you’re unable to meet some deadlines or have to back off your work intensity, and he will work with you to help manage your workload and stress level.\nSome other tips include:\n\nStay home while sick: This is an expectation: your recovery is important, and we want to avoid the risk of getting others sick. If you don’t feel well enough to work, you shouldn’t! Your first priority is to regain your health. Just let Vivek know and he can cover for you if necessary.\nMaintain a healthy sleep schedule: We all have different rhythms and sleep needs. Make sure that you’re getting enough sleep. If that means some work doesn’t quite get done that night, no big deal! As stated above, your health is the most important thing, and sleep is an essential part of maintaining it.\nPursue hobbies outside of work: Your work is not, and should not, define you or be your life. Engage in activities that relieve stress, and let your mind wander away from work. Letting your brain focus on something else might actually benefit your research or classwork!\nDevelop a support network among your peers: Whether they’re inside or outside the group, your peers can relate to whatever stresses you’re facing. It’s helpful to have a group you can confide in and get support from.\nTake advantage of mental health resources: Vivek is always here to provide moral support and guidance (and you should never feel shy about asking!), but he is not a trained counselor. Cornell offers mental health care and counseling. You should never feel ashamed to reach out for help if you’re at all worried about your mental health.\nIf you are worried about someone else in the lab group, let Vivek know: We all have to look out for each other. If you’re concerned that stress may be getting to another member of the lab group, let Vivek know and he can work with that member to ensure that their health is prioritized.\n\n\n\n\n\n\n\nImportant\n\n\n\nIf you or someone you know may be considering suicide or is in crisis, call or text 988 to reach the 988 Suicide & Crisis Lifeline, available 24/7. If there is immediate danger, call 911. Cornell students can also reach Cornell Health’s 24/7 crisis line at 607-255-5155.",
+    "objectID": "guides/ai-tools.html#reproducibility",
+    "href": "guides/ai-tools.html#reproducibility",
+    "title": "AI Tools in Research",
+    "section": "Reproducibility",
+    "text": "Reproducibility\nOur reproducibility commitments do not have an exception for code a model helped write.\n\nYou are responsible for code you did not write yourself. If it is in your analysis, you own its correctness. Generated code that runs but is subtly wrong is a serious failure mode, because it removes the syntax errors that usually tell you something is off while leaving the logic errors that do not.\nTest it the way you would test any code. Positive and negative controls are the relevant discipline: does it recover known values, and does it correctly find nothing in noise?\nThis matters most where the numbers are least checkable — uncertainty propagation, tail estimates, anything where a plausible-looking wrong answer will not announce itself.\nInternal code review before submission is already required, and the reviewer should be told which parts were generated.",
     "crumbs": [
-      "Expectations and Conduct",
-      "Health and Wellness"
+      "Guides",
+      "AI Tools in Research"
     ]
   },
   {
-    "objectID": "expectations/open.html",
-    "href": "expectations/open.html",
-    "title": "Open and Reproducible Research",
-    "section": "",
-    "text": "According to UNESCO, open science\nAs The Center for Open Science says,\nTo this end, our research group:\nThis page describes, at a high level, our procedures and philosophies concerning open and reproducible science. Our standard set of tools is documented in Group Workflow and the Knowledge Base, and Data Management covers where data lives and what gets archived; familiarization with these will be part of the onboarding process. Alternative tools can be used if they have a particular feature set or if a collaborator would prefer. Always be inclusive rather than dogmatic!",
+    "objectID": "guides/ai-tools.html#journal-and-funder-disclosure",
+    "href": "guides/ai-tools.html#journal-and-funder-disclosure",
+    "title": "AI Tools in Research",
+    "section": "Journal and Funder Disclosure",
+    "text": "Journal and Funder Disclosure\nNo major publisher permits AI authorship. The stated reason is consistent: authorship requires accountability, and a tool cannot be accountable. Our own authorship criteria rule it out already, since they require contribution and participation in drafting and revision.\nBeyond that, the common shape of current policy is:\n\nDisclosure of substantive use, usually in Methods or an equivalent section. Basic grammar and spelling checks generally do not need declaring.\nFull author responsibility for everything in the manuscript, including generated parts.\nPeer review is different and stricter — see below.\nImage rules vary the most. Some publishers ban AI-generated figures outright; others permit them with disclosure. Check before you make one.\n\n\n\n\n\n\n\nWarningCheck Your Target Journal, Every Time\n\n\n\nThese policies change faster than this page will. The table below was checked in September 2026 and is a starting point, not an authority. Confirm against the journal’s current author guidelines when you submit, and add the disclosure statement to the paper checklist for that submission.\n\n\n\n\n\nVenue\nPolicy\n\n\n\n\nAGU\nOur primary venue. No AI authors. Disclose tool and use in Methods. LLMs may not be used to review a manuscript.\n\n\nElsevier\nNo AI authors. Required declaration section before the references. Tiered image rules.\n\n\nCopernicus / EGU\nAssistive language use need not be declared; generative use must be. Notably permits AI-generated illustrations if cited.\n\n\nSpringer Nature\nNo AI authors. Document in Methods. AI-generated images not permitted.\n\n\nPNAS\nNo AI authors. Disclose in Methods or Acknowledgments.\n\n\nAMS\nNo AI authors. Disclose tool and use. Reviewers prohibited from using AI tools.\n\n\n\n\nNSF\nTwo separate things, easy to conflate:\n\nProposal preparation. Disclosure is encouraged, not required — NSF asks proposers to indicate in the project description whether and how generative AI was used (December 2023 notice).\nResearch misconduct. PAPPG 24-1 Supplement 1, effective December 2025, extends the definition of misconduct to fabrication, falsification, or plagiarism committed “through the use or assistance of other persons, entities, or tools, including artificial intelligence (AI)-based tools.”\n\nThe second does not create a disclosure requirement. It does mean a fabricated citation in a proposal is misconduct whether or not a model produced it.",
     "crumbs": [
-      "Expectations and Conduct",
-      "Open and Reproducible Research"
+      "Guides",
+      "AI Tools in Research"
     ]
   },
   {
-    "objectID": "expectations/open.html#transparency",
-    "href": "expectations/open.html#transparency",
-    "title": "Open and Reproducible Research",
-    "section": "Transparency",
-    "text": "Transparency\nGroup members are required to share any data and code used in the development of a paper. This does not have to happen immediately (and there may be good reasons to keep a code repository private for a time), but public release should generally occur by the time we are ready to submit a manuscript to a peer-reviewed journal. A paper is not ready for peer review if the data and code are not publicly available and documented.\nLarge ensembles of simulation outputs should also be made available, even if only a subset was used for a particular analysis. This facilitates transparency about how the choices involved in the subsetting process and their impact.",
+    "objectID": "guides/ai-tools.html#peer-review-and-confidentiality",
+    "href": "guides/ai-tools.html#peer-review-and-confidentiality",
+    "title": "AI Tools in Research",
+    "section": "Peer Review and Confidentiality",
+    "text": "Peer Review and Confidentiality\n\n\n\n\n\n\nImportantDo Not Put a Manuscript Under Review Into a Language Model\n\n\n\nA manuscript sent to you for review is confidential. Uploading it to an external service is a breach of that confidence regardless of what the service does with it, and essentially every publisher now says so explicitly. NSF likewise prohibits reviewers from uploading proposal content to non-approved tools.\nBeyond confidentiality: a review is a judgment you were asked for personally. AMS puts the reason well — AI systems cannot explain the reasoning behind their evaluations, which makes the scholarly exchange a review is supposed to start impossible.\nIf you are asked to review and want help, ask Vivek. Reviewing is a skill worth building, and doing it badly with a tool is how you avoid building it.",
     "crumbs": [
-      "Expectations and Conduct",
-      "Open and Reproducible Research"
+      "Guides",
+      "AI Tools in Research"
     ]
   },
   {
-    "objectID": "expectations/open.html#reproducible-science",
-    "href": "expectations/open.html#reproducible-science",
-    "title": "Open and Reproducible Research",
-    "section": "Reproducible Science",
-    "text": "Reproducible Science\nReproducibility is an essential part of science. Your entire analysis, from model calibration to figure generation, should be made public and organized in a straightforward fashion. As an example, for a project which involves model-based uncertainty quantification and simulation, you should document the workflows needed to:\n\ninstall any required tools or packages;\nload and clean data;\nrun and calibrate the model;\ngenerate simulations based on the calibration results;\nanalyze simulation results;\nplot any figures included in the paper.\n\nYou should also include partial products of the analysis, such as calibration and simulation results, so that subsequent parts of the analysis can be reproduced without needing to re-run everything from scratch.\nIdeally, your code has also been written and commented to make key choices clear.\nWhen multiple versions of a model or other piece of software exist, you should document the specific versions that were used, or, even better, develop and provide a container that will set up the correct configuration.\n\nOpen vs. Closed-Source\nIn an ideal world, we would use nothing but open source software. Occasionally, we may need to use software which does not allow its source code to be distributed. In that case, in addition to documenting the version(s) of the relevant software, you should also provide documentation for how to install and configure them (a container is once again the preferred approach).\nWe try to avoid proprietary software, which requires payment, as that reduces the number of people who can potentially try to reproduce or build on the analysis. It may be that we encounter a situation where this is required; if so, you should discuss this with Vivek and your other collaborators to make sure that this is the only option.\n\n\nToolset for Reproducible Science\nWe try not to be dogmatic about particular choices of tools for reproducibility. Our workflow is heavily inspired by &gt; Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, Teal TK (2017) Good enough practices in scientific computing. PLoS Comput Biol 13(6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510\nwhich you should read before starting to use any particular set of tools to understand why we use them and how they fit into the workflow. While we have some default choices (such as GitHub for code repositories), these are not exclusive. If you prefer another tool, feel free to use it. You should, however, discuss those choices ahead of time with collaborators as part of the paper-writing process to make sure everyone is comfortable with them.",
+    "objectID": "guides/ai-tools.html#applicants",
+    "href": "guides/ai-tools.html#applicants",
+    "title": "AI Tools in Research",
+    "section": "Applicants",
+    "text": "Applicants\nSeparate guidance applies to people applying to join the group — see the graduate, postdoc, and undergraduate pages.\nThe short version is the same principle from the other side. An application is the only evidence we have that there is a specific person with specific interests behind it, so a generated one defeats its own purpose. The guided paper evaluation is more permissive precisely because it gets discussed afterwards, which makes outsourcing self-defeating rather than prohibited.",
     "crumbs": [
-      "Expectations and Conduct",
-      "Open and Reproducible Research"
+      "Guides",
+      "AI Tools in Research"
     ]
   },
   {
-    "objectID": "expectations/open.html#communication-and-outreach",
-    "href": "expectations/open.html#communication-and-outreach",
-    "title": "Open and Reproducible Research",
-    "section": "Communication and Outreach",
-    "text": "Communication and Outreach\nA key part of open science is increasing the accessibility of results, both to other scientists and to the public.\n\nScientific Communication\nTo increase access of results to the scientific community, we will:\n\npost preprints on an open-access preprint server at the time of submission, to be updated through the revision process;\npublish in open-access journals (or with open-access licenses) where possible and appropriate, and make post-prints readily available when not;\nsummarize findings in blog posts;\nclearly document and organize code;\nmake code repositories publically available at time of submission;\nmake software, figures, and papers available through permissive licenses.\n\n\n\nPublic Communication\nOur research is mission-oriented and stakeholder-driven. Moreover, it is often funded by public institutions. Withholding access to key results from the public is therefore not only an abandonment of our mission to do research which supports decision-making on key societal issues, but could also be seen as unethical. To help communicate our results to the public, we will:\n\nsummarize findings in non-technical posts (on our blog or other outlets);\nuse social media to share key findings;\ndevelop communications plans with stakeholders as part of our research design;\nissue press releases as appropriate.\n\nIt can be challenging to write about scientific and technical topics in a manner which is readily understandable to non-experts (Vivek certainly cannot claim to be an expert on this!). However, honing your ability to write in this style will benefit interest in your work and the quality and accessibility of your peer-reviewed papers. Seek out examples of popular science writing that you admire and try to learn what makes them so effective. There are likely other resources, both online and local, that you can utilize.",
+    "objectID": "guides/ai-tools.html#this-page-will-age",
+    "href": "guides/ai-tools.html#this-page-will-age",
+    "title": "AI Tools in Research",
+    "section": "This Page Will Age",
+    "text": "This Page Will Age\nThe tools, the policies, and the evidence are all moving. If something here is out of date, fix it — and if you find a use that is genuinely valuable and not covered here, raise it at lab meeting. How people actually use these tools well is something the group is still working out, and nobody has this settled.",
     "crumbs": [
-      "Expectations and Conduct",
-      "Open and Reproducible Research"
-    ]
-  },
-  {
-    "objectID": "expectations/timeoff.html",
-    "href": "expectations/timeoff.html",
-    "title": "Time Off and Vacation",
-    "section": "",
-    "text": "It is of paramount importance that every lab member looks out for their health and well-being. Working sustainable hours involves setting boundaries and reserving personal time.",
-    "crumbs": [
-      "Expectations and Conduct",
-      "Time Off and Vacation"
-    ]
-  },
-  {
-    "objectID": "expectations/timeoff.html#timeoff",
-    "href": "expectations/timeoff.html#timeoff",
-    "title": "Time Off and Vacation",
-    "section": "Time Off",
-    "text": "Time Off\n\nSet boundaries each day: No lab members are expected to work around the clock, and sleep and personal time are crucial for both your well-being and your productivity. Define what work hours make sense for you and turn off notifications during your personal time.\nTake time off each week: Take a day or two off, as needed, each week. There may be some weeks where this doesn’t feel necessary, but it is still encouraged to help prevent burnout.\nStay at home if you’re sick: This helps you recover more quickly and prevents potential spread to others. If you feel up to working remotely, great! If not, take care of yourself. Work can wait. Just let Vivek and your labmates know when you can so they can cover for you and not bother you.",
-    "crumbs": [
-      "Expectations and Conduct",
-      "Time Off and Vacation"
-    ]
-  },
-  {
-    "objectID": "expectations/timeoff.html#vacation",
-    "href": "expectations/timeoff.html#vacation",
-    "title": "Time Off and Vacation",
-    "section": "Vacation",
-    "text": "Vacation\nGroup members should aim to take 2-4 weeks off each year for vacation (4 is strongly encouraged). This is essential to help prevent burnout and refresh your creativity. You should discuss vacation timelines with Vivek and communicate them to the rest of the lab. Set away messages and e-mail responses which make it clear that you are on vacation.",
-    "crumbs": [
-      "Expectations and Conduct",
-      "Time Off and Vacation"
+      "Guides",
+      "AI Tools in Research"
     ]
   },
   {
@@ -1734,7 +1844,7 @@
     "href": "guides/index.html",
     "title": "Guides",
     "section": "",
-    "text": "This section contains guides and team resources for common workflows and tasks.\nIf you are new, Meetings covers the group’s standing meetings, Group Workflow covers the software we coordinate with, Data Management covers where your data should live and what is (and is not) backed up, and GitHub and Zenodo covers how projects are structured and archived.",
+    "text": "This section contains guides and team resources for common workflows and tasks.\nIf you are new, Meetings covers the group’s standing meetings, Group Workflow covers the software we coordinate with, Data Management covers where your data should live and what is (and is not) backed up, and AI Tools in Research covers how we use language models without outsourcing judgment.",
     "crumbs": [
       "Guides"
     ]

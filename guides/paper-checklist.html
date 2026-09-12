@@ -189,6 +189,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../guides/ai-tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI Tools in Research</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../guides/authorship.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Authorship</span></a>
   </div>
@@ -322,6 +328,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><label><input type="checkbox">Double check the full names and affiliations of any authors.</label></li>
 <li><label><input type="checkbox">Identify 3 key points and paper highlights.</label></li>
 <li><label><input type="checkbox">Update and finalize author contributions.</label></li>
+<li><label><input type="checkbox">Draft the AI-use disclosure statement if one is needed, checked against the target journal’s <em>current</em> policy (see <a href="../guides/ai-tools.html">AI Tools in Research</a>).</label></li>
 <li><label><input type="checkbox">Check that:</label>
 <ul class="task-list">
 <li><label><input type="checkbox">Title is appropriately declarative.</label></li>
@@ -825,26 +832,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Double check the full names and affiliations of any authors.</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Identify 3 key points and paper highlights.</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Update and finalize author contributions.</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Check that:</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span><span class="va">[ ]</span> Title is appropriately declarative.</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span><span class="va">[ ]</span> Word limits are obeyed (for the manuscript and the abstract).</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span><span class="va">[ ]</span> No uses of "significant" when not referencing a statistical test.</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span><span class="va">[ ]</span> All figures have labeled axes and units.</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prior to Submission</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Mint releases of relevant data and codes and get relevant DOIs (see <span class="co">[</span><span class="ot">GitHub and Zenodo</span><span class="co">](github-zenodo.qmd)</span> -- the model gets released *before* the meta-repository, and papers cite the **version** DOI, not the concept DOI).</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> If GitHub repository was private, make public.</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Write code and data availability statements including the DOIs.</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Ensure that Acknowledgements are complete and include appropriate (and correct) funding statements.</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Ask lab members (or others) to replicate the analysis based on GitHub documentation.</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Ask lab members (or others) to read for clarity.</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Get final approval on draft from all authors (**do not submit without this!**)</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## After Submission</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Upload preprint to an appropriate server (such as the <span class="co">[</span><span class="ot">arXiv</span><span class="co">](https://arxiv.org/)</span>) or <span class="co">[</span><span class="ot">ESS Open Archive</span><span class="co">](https://essopenarchive.org/)</span>.</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Email or Slack citation and preprint link to co-authors.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Draft the AI-use disclosure statement if one is needed, checked against the target journal's *current* policy (see <span class="co">[</span><span class="ot">AI Tools in Research</span><span class="co">](ai-tools.qmd)</span>).</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Check that:</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span><span class="va">[ ]</span> Title is appropriately declarative.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span><span class="va">[ ]</span> Word limits are obeyed (for the manuscript and the abstract).</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span><span class="va">[ ]</span> No uses of "significant" when not referencing a statistical test.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span><span class="va">[ ]</span> All figures have labeled axes and units.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prior to Submission</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Mint releases of relevant data and codes and get relevant DOIs (see <span class="co">[</span><span class="ot">GitHub and Zenodo</span><span class="co">](github-zenodo.qmd)</span> -- the model gets released *before* the meta-repository, and papers cite the **version** DOI, not the concept DOI).</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> If GitHub repository was private, make public.</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Write code and data availability statements including the DOIs.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Ensure that Acknowledgements are complete and include appropriate (and correct) funding statements.</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Ask lab members (or others) to replicate the analysis based on GitHub documentation.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Ask lab members (or others) to read for clarity.</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Get final approval on draft from all authors (**do not submit without this!**)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">## After Submission</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Upload preprint to an appropriate server (such as the <span class="co">[</span><span class="ot">arXiv</span><span class="co">](https://arxiv.org/)</span>) or <span class="co">[</span><span class="ot">ESS Open Archive</span><span class="co">](https://essopenarchive.org/)</span>.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Email or Slack citation and preprint link to co-authors.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
