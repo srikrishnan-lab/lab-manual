@@ -19,3 +19,33 @@ Major additions (new tutorials, etc.) should also be submitted with [a pull requ
 
 In either case, the new page should go into the associated folder for the section (*e.g.* put a new knowledge-base page in `kb/`) and needs to be added to the navigation in `_quarto.yml`. This document uses [hybrid navigation](https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation) with sections in a top navbar and individual pages in a sidebar, so make sure you add the new page to the right section. 
 
+
+## Previewing Your Changes
+
+The manual is a [Quarto](https://quarto.org) website. To see your changes before opening a pull request, [install Quarto](https://quarto.org/docs/get-started/) and run:
+
+```bash
+quarto preview
+```
+
+This serves the site locally and reloads as you edit. `quarto render` builds it once into `_site/` without serving, which is what the pull request check runs. There are no executable code chunks in the manual, so you do not need R, Python, or Julia installed to build it.
+
+A pull request will fail its check if a page does not render or a cross-reference does not resolve. Merging to `main` publishes automatically.
+
+## Conventions
+
+A few patterns to match so the manual reads as one document:
+
+- **Voice.** Second person for the reader ("you should"), third person for Vivek ("Vivek will"). Avoid first person — it reads oddly on a page that outlives any one author.
+- **Cross-references** use relative paths to the `.qmd` file, not the rendered URL: `[Data Management](../guides/data-management.qmd)`. Quarto rewrites these and will fail the build if the target does not exist, which is how we catch broken internal links.
+- **Callouts** carry consistent meaning: `callout-note` for an aside, `callout-tip` for advice, `callout-important` for something with consequences, `callout-warning` for something that will go wrong if ignored.
+- **Aliases.** If you rename or move a page that was already published, add an `aliases:` entry with its old path so existing links keep working.
+- **Don't assert what you haven't checked.** Where something could not be verified — an unpublished policy, an undocumented command — say so on the page. "We could not confirm this" is more useful than a confident guess, and much easier for the next person to fix.
+
+## Reporting a Problem Without Fixing It
+
+You do not have to write the fix. [Open an issue](https://github.com/srikrishnan-lab/lab-manual/issues) describing what is wrong, missing, or confusing.
+
+This is genuinely useful, and it is most useful from people who have just joined: you are the only ones who can see which parts of the manual assume knowledge you do not have yet. By the time something is obvious to you, you will have stopped noticing it was ever unclear.
+
+Anyone can open an issue — you do not need to be a member of the group.
