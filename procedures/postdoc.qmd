@@ -42,13 +42,13 @@ Polishing your own prose afterward is fine.
 :::
 
 
-<!-- TODO(Vivek): note roughly how long applicants should expect to wait for a response to an initial inquiry. -->
+Vivek aims to reply to inquiries within about a week. If it has been noticeably longer, a short follow-up is welcome --- messages get buried, particularly around proposal deadlines.
 
 ## What We're Looking For
 
 Postdocs should be ready to work independently and develop their own line of research, while still collaborating closely with Vivek and the rest of the group; see the full set of [expectations for postdocs](../expectations/roles.qmd#postdocs) for more detail. The written paper response and presentation described below are mainly meant to get a sense of your independent research judgment and your fit with the group's ongoing work.
 
-<!-- TODO(Vivek): add salary/benefits specifics (e.g. the postdoc pay scale used) to the FAQ below. Appointment length and renewal are now answered there. -->
+
 
 ## Application Process
 
@@ -69,3 +69,9 @@ Postdoctoral positions will not be advertised or offered unless they are fully f
 ### How long is the appointment?
 
 Postdoctoral contracts will be for 1 year; renewal for future years is possible depending on the funding situation.
+
+### What does it pay, and what are the benefits?
+
+Salary and benefits move often enough that any figure written here would be wrong before long, so we do not publish one. Compensation is benchmarked against prevailing postdoctoral scales and is discussed concretely during the interview process; ask Vivek directly at any point, including before you apply, and you will get a straight answer rather than a range.
+
+Cornell's [Office of Postdoctoral Studies](https://postdocs.cornell.edu/) is the authoritative source for benefits, appointment policies, and what the postdoc title entitles you to.
