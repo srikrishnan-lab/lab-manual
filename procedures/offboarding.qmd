@@ -1,0 +1,63 @@
+---
+title: Leaving the Group
+---
+
+Everyone leaves eventually — that is what the training is for. This page covers what to hand off and what stays true after you go.
+
+::: {.callout-tip}
+## Leaving Is Not a Falling Out
+
+People finish degrees, take jobs, and move on. Departure is a normal and expected part of group membership, and it does not end your relationship with the group. Vivek's [mentoring role continues](../expectations/roles.qmd) for as long as you want it to, and you remain an author on your papers regardless of where you go next.
+:::
+
+## Start About a Month Out
+
+Most of what follows takes a few hours total, but it takes a few hours *while you still have access and still remember how everything works*. The failure mode is discovering six months later that the only copy of a calibration ensemble was on a workstation that has been reimaged, and the only person who knew how to regenerate it has a new job and a new email address.
+
+Put a conversation with Vivek on the calendar about a month before you go to work through this page.
+
+## Code and Data
+
+- [ ] Push everything. Check for uncommitted work on your workstation, on [Hopper](../guides/hopper.qmd), and on any laptop you have used.
+- [ ] Move repositories you own into the [`srikrishnan-lab`](https://github.com/srikrishnan-lab) organization, or transfer ownership to Vivek. A repository under a personal account disappears from the group's reach when that account goes quiet.
+- [ ] Move data off Hopper. **Hopper is not backed up**, and home directories of departed users do not survive indefinitely. Follow [Data Management](../guides/data-management.qmd) for where things should land.
+- [ ] Mint archival releases (Zenodo DOIs) for anything tied to a submitted or published paper, if that has not happened already.
+- [ ] Delete what genuinely does not need to be kept, and say so. A labeled empty space is more useful than an unlabeled 2 TB directory nobody dares touch.
+
+## The Handoff Document
+
+If anyone will pick up your work — a new student, a collaborator, or you in three years — write one document and put it in the project repository. It does not need to be long or polished. It needs to answer:
+
+- What is the state of this project right now, honestly?
+- What runs, and what is broken or half-finished?
+- Where does the data live, and what is expensive to regenerate?
+- What did you try that did not work? *This is the part nobody writes down and everybody needs.* It is the difference between a successor picking up where you left off and a successor rediscovering your dead ends over six months.
+- Who else knows anything about this — collaborators, data providers, people who helped?
+
+## Papers in Progress
+
+Leaving does not change your authorship. The [authorship guidelines](../guides/authorship.qmd) apply as written, and finishing a degree is not a reason to be dropped from a paper you led or contributed to.
+
+What does need deciding, explicitly and before you go:
+
+- **Will you keep leading the revisions?** Many people do, and that is the default assumption for a paper you first-authored. If your new position makes that unrealistic, say so early rather than going quiet during a revision cycle.
+- **Who is the corresponding author?** The [authorship page](../guides/authorship.qmd) allows transferring this to someone else, usually Vivek, if you would rather not field emails about the paper for the next decade. Decide before submission, not after.
+- **What contact information goes on the paper?** Cornell email addresses expire. Use an address that will still work, and consider an [ORCID](https://orcid.org/) if you do not have one, since that follows you across institutions.
+- **For unsubmitted work**, agree on a timeline. Work that is nearly done and then abandoned for two years helps nobody, least of all you.
+
+## Accounts and Access
+
+- [ ] Confirm with Vivek what happens to your Slack, Trello, and GitHub organization membership. We are not in a hurry to remove you.
+- [ ] Note that your Cornell NetID and email will be deactivated on the university's schedule, which is often sooner than people expect. Forward anything you need, and update the address on anything that will outlive your account.
+- [ ] Hand over anything you administer — a shared account, a project board, a deployed site, a data-sharing agreement.
+- [ ] Return keys, card access, and any hardware.
+- [ ] Update your entry on the group website to reflect where you have gone. Alumni stay listed; that is the point.
+
+## Before You Go
+
+Vivek will ask for an exit conversation. Part of it is practical handoff, and part of it is feedback: what worked about being in this group, what did not, and what he should change for the people who come after you. That feedback is genuinely wanted, including the uncomfortable parts, and you are in an unusually good position to give it honestly.
+
+Also, concretely:
+
+- **Ask about recommendation letters now**, even if you do not need one yet. It is much easier to write a strong letter while the work is fresh. The [letters of recommendation](../guides/recommendations.qmd) page describes what Vivek needs from you, and that page's two-week notice requirement applies just as much to alumni.
+- **Tell us where you are going**, so the group can celebrate it properly and so we can keep in touch.

@@ -23,7 +23,7 @@ To this end, our research group:
 * communicates our findings and methods through open-access channels;
 * communicates findings of public relevance through appropriate channels
 
-This page describes, at a high level, our procedures and philosophies concerning open and reproducible science. Our standard set of tools is documented elsewhere, and familiarization with them will be part of the onboarding process. Alternative tools can be used if they have a particular feature set or if a collaborator would prefer. Always be inclusive rather than dogmatic!
+This page describes, at a high level, our procedures and philosophies concerning open and reproducible science. Our standard set of tools is documented in [Group Workflow](../guides/group-workflow.qmd) and the [Knowledge Base](../kb/index.qmd), and [Data Management](../guides/data-management.qmd) covers where data lives and what gets archived; familiarization with these will be part of the onboarding process. Alternative tools can be used if they have a particular feature set or if a collaborator would prefer. Always be inclusive rather than dogmatic!
 
 ## Transparency
 
