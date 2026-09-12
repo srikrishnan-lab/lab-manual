@@ -2,9 +2,19 @@
 title: Postdoctoral Scholars
 ---
 
+::: {.callout-tip}
+## Quick Start
+
+1. Reach out any time &mdash; in response to an [advertised opening](#initial-inquiry) or as a cold inquiry about another postdoc opportunity you're pursuing. Advertised or not, [reaching out is welcome](#initial-inquiry).
+2. Send Vivek your CV, a summary of your past research, a statement of fit, and a written response to one of the group's papers (see [Initial Inquiry](#initial-inquiry)).
+3. If there's mutual interest, expect a short video interview, then a presentation and one-on-one discussions with the group (see [Interview Process](#interview-process)).
+
+Also see the expectations for [Postdocs](../expectations/roles.qmd#postdocs) in the group.
+:::
+
 ## Initial Inquiry
 
-You can inquire about a postdoc in response to a particular [opening](https://srikrishnan-lab.github.com/join/) or if you're interested in working with Vivek on an application for another postdoc opportunity, such as an [NSF Postdoctoral Fellowship](https://beta.nsf.gov/funding/opportunities?f%5B0%5D=student_educator_eligibility:postdoc), the [Cornell Energy Systems Institute Postdoctoral Fellowship](https://energy.cornell.edu/index.php/research/postdoctoral-research-fellowship-program), or a [Cornell Atkinson Center Postdoctoral Fellowship](https://atkinson.cornell.edu/grants/postdocs/postdoctoral-fellowships/), among other options. Applying after an inquiry puts you in a better position than just submitting a blind application. To get the best feedback about whether you should apply, include the following information:
+You can inquire about a postdoc in response to a particular [opening](https://srikrishnan-lab.github.com/join/), or at any time &mdash; even without an advertised opening &mdash; if you're interested in working with Vivek on an application for another postdoc opportunity, such as an [NSF Postdoctoral Fellowship](https://beta.nsf.gov/funding/opportunities?f%5B0%5D=student_educator_eligibility:postdoc), the [Cornell Energy Systems Institute Postdoctoral Fellowship](https://energy.cornell.edu/index.php/research/postdoctoral-research-fellowship-program), or a [Cornell Atkinson Center Postdoctoral Fellowship](https://atkinson.cornell.edu/grants/postdocs/postdoctoral-fellowships/), among other options. Applying after an inquiry puts you in a better position than just submitting a blind application. To get the best feedback about whether you should apply, include the following information:
 
 * Your current CV as a `.pdf`;
 * A summary of your past research as a `.pdf`;
@@ -17,12 +27,30 @@ You can inquire about a postdoc in response to a particular [opening](https://sr
 
 This information allows Vivek to get a sense of your fit, and he can provide feedback about whether you should apply for a particular opening.
 
+<!-- TODO(Vivek): note roughly how long applicants should expect to wait for a response to an initial inquiry. -->
+
+## What We're Looking For
+
+Postdocs should be ready to work independently and develop their own line of research, while still collaborating closely with Vivek and the rest of the group; see the full set of [expectations for postdocs](../expectations/roles.qmd#postdocs) for more detail. The written paper response and presentation described below are mainly meant to get a sense of your independent research judgment and your fit with the group's ongoing work.
+
+<!-- TODO(Vivek): add specifics on appointment length, renewal terms, and salary/benefits (e.g. NIH/NSF postdoc pay scale), since these are common questions for postdoc applicants and aren't addressed elsewhere in the manual. -->
+
 ## Application Process
 
 Application instructions for postdocs should be specified in the relevant ad.
 
 ## Interview Process
 
-After the applicant pool is initially narrowed down, remaining candidates will be asked to participate in a 30-minute video interviews with Vivek. You should also take this opportunity to ask your own questions.
+After the applicant pool is initially narrowed down, remaining candidates will be asked to participate in a 30-minute video interview with Vivek. You should also take this opportunity to ask your own questions.
 
 Once the pool is narrowed down, Vivek will ask you to prepare a presentation for the group on how your past research has impacted your future research interests, and how they align with the ad. You will also be asked to have discussions with other group members for their feedback. Take advantage of this time to ask your own questions to the people who do the real work!
+
+## FAQ
+
+### Is this position fully funded?
+
+Postdoctoral positions will not be advertised or offered unless they are fully funded.
+
+### How long is the appointment?
+
+Postdoctoral contracts will be for 1 year; renewal for future years is possible depending on the funding situation.

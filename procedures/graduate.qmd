@@ -4,9 +4,21 @@ title: Graduate Admissions
 
 If you are unsure if your research interests would be a good fit for the research group, please [send Vivek](mailto:viveks@cornell.edu) an email [expressing your interest](#interest). Ideally, you should do this well in advance of the admissions deadline, so there is plenty of time for you and Vivek to mutually decide if you would be a good fit in the research group.
 
+::: {#quick-start .callout-tip}
+## Quick Start
+
+1. [Email Vivek expressing interest](#interest) &mdash; well ahead of the admissions deadline.
+2. Apply through the [Graduate School's Admissions site](https://gradschool.cornell.edu/admissions/apply/) to a field in which Vivek is a member (see [How to Apply](#how-to-apply) below).
+3. If there's mutual interest, expect a video chat, a short guided paper evaluation, and then your formal application (see [Application Process](#application-process)).
+
+Also see the expectations for [Graduate Students](../expectations/roles.qmd#graduate-students) in the group.
+:::
+
 ## How to Apply
 
 You can apply for graduate admission to Cornell at the [Graduate School's Admissions site](https://gradschool.cornell.edu/admissions/apply/).
+
+<!-- TODO(Vivek): link the specific field-level application deadline(s) here, and note roughly how many weeks applicants should expect to wait between their initial email and a decision on next steps. -->
 
 ::: {.callout-note}
 ## Graduate Fields
@@ -14,7 +26,7 @@ You can apply for graduate admission to Cornell at the [Graduate School's Admiss
 Cornell organizes its graduate admissions and supervision around graduate fields of study, rather than departments. Faculty who are members of a field can supervise students in that field, even if they are outside of their department. You can therefore apply to any of the fields in which Vivek is a member and be part of the group. Feel free to ask about more information of any of these fields to find which might be the best fit for your goals.
 :::
 
-Vivek is a member of the graduate faculty in [Biological & Environmental Engineering](https://gradschool.cornell.edu/academics/fields-of-study/subject/biological-and-environmental-engineering/biological-and-environmental-engineering-phd-ithaca/), [Civil & Environmental Engineering](https://gradschool.cornell.edu/academics/fields-of-study/field/civil-and-environmental-engineering/), and [Systems Engineering](https://www.systemseng.cornell.edu/se).
+Vivek is a member of the graduate faculty in [Biological & Environmental Engineering](https://gradschool.cornell.edu/academics/fields-of-study/subject/biological-and-environmental-engineering/biological-and-environmental-engineering-phd-ithaca/), [Civil & Environmental Engineering](https://gradschool.cornell.edu/academics/fields-of-study/field/civil-and-environmental-engineering/), [Atmospheric Science](https://www.duffield.cornell.edu/eas/phd-programs/) and [Systems Engineering](https://www.systemseng.cornell.edu/se).
 
 ### Thesis Programs (M.S. and Ph.D)
 
@@ -27,11 +39,11 @@ When funding is available for M.S. and Ph.D students to do specific work, these 
 - If you are considering applying for a graduate fellowship, Vivek is also happy to work with you on developing your application.
 :::
 
-You can apply to the aforementioned fields without contacting faculty ahead of time, but it is recommended that you [email Vivek](mailto:viveks@cornell.edu) to [express interest](#interest) ahead of time (*well* ahead of time &mdash; make sure you can determine if the group is a good fit!). This will ensure that we can evaluate fit and, if all goes well, your application will be given priority.
+You can apply to the aforementioned fields without contacting faculty ahead of time, but as noted in [Quick Start](#quick-start), reaching out early increases the odds we can confirm a good mutual fit and that your application will be given priority.
 
 ### Professional Programs (M.Eng. and M.P.S.)
 
-M.Eng. and M.P.S. students should [contact Vivek](mailto:viveks@cornell.edu) to [express interest](#interest) and ask if he has projects available. This does not need to be done too far ahead of the start of your first semester unless you specifically want to be supervised by Vivek, in which case you should inquire as early as possible.
+M.Eng. and M.P.S. students should also follow the [Quick Start](#quick-start) steps and ask if he has projects available. This does not need to be done too far ahead of the start of your first semester unless you specifically want to be supervised by Vivek, in which case you should inquire as early as possible.
 
 ## What We're Looking For
 
@@ -177,9 +189,9 @@ Yes! Attending conferences is an important part of professional development. Our
 
 ::: {.callout-tip}
 ## Travel Support
-:::
 
 You will never be expected to pay for travel expenses, though typically expenses are covered through a reimbursement model. If this is a problem (and there are many good reasons for it to be, particularly for students), talk to Vivek about directly booking your transportation and hotel, and we can discuss how to handle routine expenses such as food.
+:::
 
 ### What do you wish students knew before joining your group/program?
 

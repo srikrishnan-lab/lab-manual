@@ -16,6 +16,7 @@ conda [installation procedures](https://conda.io/projects/conda/en/latest/user-g
 Here is a [conda cheat sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf) current as of conda 4.6.
 
 You will generally want to add the `conda-forge` channel to your configuration. After loading an environment:
+
 ```shell
 conda config --add channels conda-forge
 conda config --set channel_priority strict

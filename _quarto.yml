@@ -25,7 +25,7 @@ website:
       - icon: github
         href: https://github.com/srikrishnan-lab/lab-manual
 
-navbar:
+  navbar:
     pinned: true
     search: true
     left:
@@ -42,66 +42,66 @@ navbar:
       - text: "Lab Manual"
         href: index.qmd
 
-sidebar:
-  - title: "Expectations and Conduct"
-    style: "floating"
-    contents:
-      - expectations/index.qmd
-      - expectations/availability.qmd
-      - expectations/harassment.qmd
-      - expectations/health.qmd
-      - expectations/open.qmd
-      - expectations/roles.qmd
-      - expectations/timeoff.qmd
-  - title: "Guides"
-    style: "floating"
-    contents:
-      - guides/index.qmd
-      - guides/authorship.qmd
-      - guides/best-practices.qmd
-      - guides/figures.qmd
-      - guides/group-workflow.qmd
-      - guides/hopper.qmd
-      - guides/licenses.qmd
-      - guides/paper-checklist.qmd
-      - guides/papers.qmd
-      - guides/readinglist.qmd
-      - guides/recommendations.qmd
-  - title: "Knowledge Base"
-    style: "floating"
-    contents:
-      - kb/index.qmd
-      - section: "Programming"
-        contents:
-          - kb/programming/conda.qmd
-          - kb/programming/git.qmd
-          - kb/programming/julia.qmd
-          - kb/programming/latex.qmd
-          - kb/programming/markdown.qmd
-          - kb/programming/python.qmd
-          - kb/programming/R.qmd
-          - kb/programming/shell.qmd
-      - section: "Program Requirements"
-        contents:
-          - kb/requirements/index.qmd
-          - kb/requirements/minors.qmd
-          - kb/requirements/ms.qmd
-          - kb/requirements/phd.qmd
-  - title: "Procedures"
-    style: "floating"
-    contents:
-      - procedures/index.qmd
-      - procedures/checklist.qmd
-      - procedures/graduate.qmd
-      - procedures/postdoc.qmd
-      - procedures/undergrad.qmd
+  sidebar:
+    - title: "Expectations and Conduct"
+      style: "floating"
+      contents:
+        - expectations/index.qmd
+        - expectations/availability.qmd
+        - expectations/harassment.qmd
+        - expectations/health.qmd
+        - expectations/open.qmd
+        - expectations/roles.qmd
+        - expectations/timeoff.qmd
+    - title: "Guides"
+      style: "floating"
+      contents:
+        - guides/index.qmd
+        - guides/authorship.qmd
+        - guides/best-practices.qmd
+        - guides/figures.qmd
+        - guides/group-workflow.qmd
+        - guides/hopper.qmd
+        - guides/licenses.qmd
+        - guides/paper-checklist.qmd
+        - guides/papers.qmd
+        - guides/readinglist.qmd
+        - guides/recommendations.qmd
+    - title: "Knowledge Base"
+      style: "floating"
+      contents:
+        - kb/index.qmd
+        - section: "Programming"
+          contents:
+            - kb/programming/conda.qmd
+            - kb/programming/git.qmd
+            - kb/programming/julia.qmd
+            - kb/programming/latex.qmd
+            - kb/programming/markdown.qmd
+            - kb/programming/python.qmd
+            - kb/programming/R.qmd
+            - kb/programming/shell.qmd
+        - section: "Program Requirements"
+          contents:
+            - kb/requirements/index.qmd
+            - kb/requirements/minors.qmd
+            - kb/requirements/ms.qmd
+            - kb/requirements/phd.qmd
+    - title: "Procedures"
+      style: "floating"
+      contents:
+        - procedures/index.qmd
+        - procedures/checklist.qmd
+        - procedures/graduate.qmd
+        - procedures/postdoc.qmd
+        - procedures/undergrad.qmd
 
 format:
   html:
-    theme: 
-      [default, styles/custom.scss]
+    theme: [spacelab, styles/custom.scss]
     toc: true
     code-link: true
+    code-tools: true
     anchor-sections: true
     fig-cap-location: margin
     reference-location: margin

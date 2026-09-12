@@ -55,7 +55,7 @@ Vivek has a variety of responsibilities as the PI, in addition to those outlined
 
 8. **Write recommendations**: Recommendation letters are required for career moves. Vivek will write an honest recommendation letter for you at any point. If you need a recommendation letter, please give Vivek any required information with a few week's advance notice. If you have been away from the group for some time, Vivek may ask you for some additional information to help write the letter.
 
-## Postdocs
+## Postdocs {#postdocs}
 
 Postdocs should be focused on transitioning into independent researchers. This does not mean working without guidance or supervision, but rather developing the ability to formulate and pursue independent lines of research.
 
@@ -65,7 +65,7 @@ Postdocs should be focused on transitioning into independent researchers. This d
 4. **Mentor students**: As a leader in the research group, a postdoc will at some point be expected to help mentor graduate and undergraduate students in the group. This mentoring will likely be primarily focused on research, but you may have useful perspectives on work-life balance and classwork as well, and sharing these are strongly encouraged.
 5. **Develop a career plan**: Postdocs have a lot of autonomy and independence, but have to navigate an increasingly tight job market. It is important that you think carefully about what types of jobs you might be interested in and how you might want to prepare for those roles, and that you discuss those plans with Vivek so that he can effectively mentor you.
 
-## Graduate Students
+## Graduate Students {#graduate-students}
 
 Unlike postdocs, grad students have to balance research and coursework, and as a result have a wide range of responsibilities to manage.
 
