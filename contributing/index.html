@@ -177,6 +177,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#contributing-to-this-lab-manual" id="toc-contributing-to-this-lab-manual" class="nav-link active" data-scroll-target="#contributing-to-this-lab-manual">Contributing To This Lab Manual</a></li>
   <li><a href="#minor-contributions" id="toc-minor-contributions" class="nav-link" data-scroll-target="#minor-contributions">Minor Contributions</a></li>
   <li><a href="#major-contributions" id="toc-major-contributions" class="nav-link" data-scroll-target="#major-contributions">Major Contributions</a></li>
+  <li><a href="#previewing-your-changes" id="toc-previewing-your-changes" class="nav-link" data-scroll-target="#previewing-your-changes">Previewing Your Changes</a></li>
+  <li><a href="#conventions" id="toc-conventions" class="nav-link" data-scroll-target="#conventions">Conventions</a></li>
+  <li><a href="#reporting-a-problem-without-fixing-it" id="toc-reporting-a-problem-without-fixing-it" class="nav-link" data-scroll-target="#reporting-a-problem-without-fixing-it">Reporting a Problem Without Fixing It</a></li>
   </ul>
 </nav>
     </div>
@@ -218,6 +221,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Code-heavy tutorials can be written as a <code>.qmd</code> file, or can be submitted as an <code>.ipynb</code> Jupyter notebook. Depending on the language, we may need to modify the GitHub action to install the associated language so the site can compile properly; this is not a problem.</li>
 </ul>
 <p>In either case, the new page should go into the associated folder for the section (<em>e.g.</em> put a new knowledge-base page in <code>kb/</code>) and needs to be added to the navigation in <code>_quarto.yml</code>. This document uses <a href="https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation">hybrid navigation</a> with sections in a top navbar and individual pages in a sidebar, so make sure you add the new page to the right section.</p>
+</section>
+<section id="previewing-your-changes" class="level2">
+<h2 class="anchored" data-anchor-id="previewing-your-changes">Previewing Your Changes</h2>
+<p>The manual is a <a href="https://quarto.org">Quarto</a> website. To see your changes before opening a pull request, <a href="https://quarto.org/docs/get-started/">install Quarto</a> and run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This serves the site locally and reloads as you edit. <code>quarto render</code> builds it once into <code>_site/</code> without serving, which is what the pull request check runs. There are no executable code chunks in the manual, so you do not need R, Python, or Julia installed to build it.</p>
+<p>A pull request will fail its check if a page does not render or a cross-reference does not resolve. Merging to <code>main</code> publishes automatically.</p>
+</section>
+<section id="conventions" class="level2">
+<h2 class="anchored" data-anchor-id="conventions">Conventions</h2>
+<p>A few patterns to match so the manual reads as one document:</p>
+<ul>
+<li><strong>Voice.</strong> Second person for the reader (“you should”), third person for Vivek (“Vivek will”). Avoid first person — it reads oddly on a page that outlives any one author.</li>
+<li><strong>Cross-references</strong> use relative paths to the <code>.qmd</code> file, not the rendered URL: <code>[Data Management](../guides/data-management.qmd)</code>. Quarto rewrites these and will fail the build if the target does not exist, which is how we catch broken internal links.</li>
+<li><strong>Callouts</strong> carry consistent meaning: <code>callout-note</code> for an aside, <code>callout-tip</code> for advice, <code>callout-important</code> for something with consequences, <code>callout-warning</code> for something that will go wrong if ignored.</li>
+<li><strong>Aliases.</strong> If you rename or move a page that was already published, add an <code>aliases:</code> entry with its old path so existing links keep working.</li>
+<li><strong>Don’t assert what you haven’t checked.</strong> Where something could not be verified — an unpublished policy, an undocumented command — say so on the page. “We could not confirm this” is more useful than a confident guess, and much easier for the next person to fix.</li>
+</ul>
+</section>
+<section id="reporting-a-problem-without-fixing-it" class="level2">
+<h2 class="anchored" data-anchor-id="reporting-a-problem-without-fixing-it">Reporting a Problem Without Fixing It</h2>
+<p>You do not have to write the fix. <a href="https://github.com/srikrishnan-lab/lab-manual/issues">Open an issue</a> describing what is wrong, missing, or confusing.</p>
+<p>This is genuinely useful, and it is most useful from people who have just joined: you are the only ones who can see which parts of the manual assume knowledge you do not have yet. By the time something is obvious to you, you will have stopped noticing it was ever unclear.</p>
+<p>Anyone can open an issue — you do not need to be a member of the group.</p>
 
 
 <!-- -->
@@ -682,26 +709,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> How To Contribute</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contributing To This Lab Manual</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>This lab manual was built using <span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org)</span>. Quarto is a system for building documents (websites, PDFs, etc) from Markdown and Jupyter notebook inputs. You are welcomed (and **encouraged**!) to contribute to this lab manual, either by suggesting small changes or adding larger pieces of content, such as guides for common tasks or software tutorials. Doing so is also good practice for writing and using GitHub!</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Minor Contributions</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>If you notice that a current page has formatting issues or contains typos^<span class="co">[</span><span class="ot">Which is unfortunately likely!</span><span class="co">]</span>, you should <span class="co">[</span><span class="ot">create a pull request</span><span class="co">](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)</span> with the fixed page. The majority (if not all) of the pages which make up this lab manual are <span class="in">`.qmd`</span> files written in Markdown (specifically, <span class="co">[</span><span class="ot">Quarto's flavor of Markdown</span><span class="co">](https://quarto.org/docs/authoring/markdown-basics.html)</span>) and should be straightforward to edit.</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Major Contributions</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Major additions (new tutorials, etc.) should also be submitted with <span class="co">[</span><span class="ot">a pull request</span><span class="co">](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)</span>. The only real difference is to pay attention to the format of the new document:</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Material which is mostly text-based (maybe with some code snippets) should be written as a <span class="in">`.qmd`</span> file, primarily in Markdown. </span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Code-heavy tutorials can be written as a <span class="in">`.qmd`</span> file, or can be submitted as an <span class="in">`.ipynb`</span> Jupyter notebook. Depending on the language, we may need to modify the GitHub action to install the associated language so the site can compile properly; this is not a problem.</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>In either case, the new page should go into the associated folder for the section (*e.g.* put a new knowledge-base page in <span class="in">`kb/`</span>) and needs to be added to the navigation in <span class="in">`_quarto.yml`</span>. This document uses <span class="co">[</span><span class="ot">hybrid navigation</span><span class="co">](https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation)</span> with sections in a top navbar and individual pages in a sidebar, so make sure you add the new page to the right section. </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> How To Contribute</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contributing To This Lab Manual</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>This lab manual was built using <span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org)</span>. Quarto is a system for building documents (websites, PDFs, etc) from Markdown and Jupyter notebook inputs. You are welcomed (and **encouraged**!) to contribute to this lab manual, either by suggesting small changes or adding larger pieces of content, such as guides for common tasks or software tutorials. Doing so is also good practice for writing and using GitHub!</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Minor Contributions</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>If you notice that a current page has formatting issues or contains typos^<span class="co">[</span><span class="ot">Which is unfortunately likely!</span><span class="co">]</span>, you should <span class="co">[</span><span class="ot">create a pull request</span><span class="co">](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)</span> with the fixed page. The majority (if not all) of the pages which make up this lab manual are <span class="in">`.qmd`</span> files written in Markdown (specifically, <span class="co">[</span><span class="ot">Quarto's flavor of Markdown</span><span class="co">](https://quarto.org/docs/authoring/markdown-basics.html)</span>) and should be straightforward to edit.</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Major Contributions</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>Major additions (new tutorials, etc.) should also be submitted with <span class="co">[</span><span class="ot">a pull request</span><span class="co">](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)</span>. The only real difference is to pay attention to the format of the new document:</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Material which is mostly text-based (maybe with some code snippets) should be written as a <span class="in">`.qmd`</span> file, primarily in Markdown. </span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Code-heavy tutorials can be written as a <span class="in">`.qmd`</span> file, or can be submitted as an <span class="in">`.ipynb`</span> Jupyter notebook. Depending on the language, we may need to modify the GitHub action to install the associated language so the site can compile properly; this is not a problem.</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>In either case, the new page should go into the associated folder for the section (*e.g.* put a new knowledge-base page in <span class="in">`kb/`</span>) and needs to be added to the navigation in <span class="in">`_quarto.yml`</span>. This document uses <span class="co">[</span><span class="ot">hybrid navigation</span><span class="co">](https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation)</span> with sections in a top navbar and individual pages in a sidebar, so make sure you add the new page to the right section. </span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Previewing Your Changes</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>The manual is a <span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org)</span> website. To see your changes before opening a pull request, <span class="co">[</span><span class="ot">install Quarto</span><span class="co">](https://quarto.org/docs/get-started/)</span> and run:</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>This serves the site locally and reloads as you edit. <span class="in">`quarto render`</span> builds it once into <span class="in">`_site/`</span> without serving, which is what the pull request check runs. There are no executable code chunks in the manual, so you do not need R, Python, or Julia installed to build it.</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>A pull request will fail its check if a page does not render or a cross-reference does not resolve. Merging to <span class="in">`main`</span> publishes automatically.</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conventions</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>A few patterns to match so the manual reads as one document:</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Voice.** Second person for the reader ("you should"), third person for Vivek ("Vivek will"). Avoid first person — it reads oddly on a page that outlives any one author.</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Cross-references** use relative paths to the <span class="in">`.qmd`</span> file, not the rendered URL: <span class="in">`[Data Management](../guides/data-management.qmd)`</span>. Quarto rewrites these and will fail the build if the target does not exist, which is how we catch broken internal links.</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Callouts** carry consistent meaning: <span class="in">`callout-note`</span> for an aside, <span class="in">`callout-tip`</span> for advice, <span class="in">`callout-important`</span> for something with consequences, <span class="in">`callout-warning`</span> for something that will go wrong if ignored.</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Aliases.** If you rename or move a page that was already published, add an <span class="in">`aliases:`</span> entry with its old path so existing links keep working.</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Don't assert what you haven't checked.** Where something could not be verified — an unpublished policy, an undocumented command — say so on the page. "We could not confirm this" is more useful than a confident guess, and much easier for the next person to fix.</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="fu">## Reporting a Problem Without Fixing It</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>You do not have to write the fix. <span class="co">[</span><span class="ot">Open an issue</span><span class="co">](https://github.com/srikrishnan-lab/lab-manual/issues)</span> describing what is wrong, missing, or confusing.</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>This is genuinely useful, and it is most useful from people who have just joined: you are the only ones who can see which parts of the manual assume knowledge you do not have yet. By the time something is obvious to you, you will have stopped noticing it was ever unclear.</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>Anyone can open an issue — you do not need to be a member of the group.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

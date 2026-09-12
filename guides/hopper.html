@@ -225,8 +225,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../guides/hopper-access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using Hopper</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../guides/licenses.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Selecting Licenses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../guides/meetings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Meetings</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -305,6 +317,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Hopper is our group’s high-performance computing cluster, which we share with the Reed, Steinschneider, and Anderson groups.</p>
+<p>This page covers what Hopper is and when to use it. For getting an account, connecting, remote editing, and running jobs, see <a href="../guides/hopper-access.html">Using Hopper</a>.</p>
 <p>Zach Brodeur wrote <a href="https://docs.google.com/document/d/1frEVAQmG7sCQdYDmUitXfiH7AanXvcVsAEppRu5QS00/edit?usp=sharing">a user guide for Hopper</a> and <a href="https://docs.google.com/document/d/1QBipIcxp7HmiERVVEeOdBkiA02Z43Fdzk993D9oLlFM/edit?usp=sharing">a more detailed guide</a> which you should read.</p>
 <section id="access" class="level2">
 <h2 class="anchored" data-anchor-id="access">Access</h2>
@@ -354,7 +367,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="software">Software</h2>
 <section id="filesystem" class="level3">
 <h3 class="anchored" data-anchor-id="filesystem">Filesystem</h3>
-<p>Use your home directory (<code>~</code>) for data you want to keep. Home directories live on an NFS export from the head node.</p>
+<p>Use your home directory (<code>~</code>) for data you want to keep. Home directories live on an NFS export from the head node, shared across all compute nodes. CAC does not publish a per-user quota or a total capacity figure, so check your own usage with <code>du -sh ~</code> and the filesystem with <code>df -h ~</code>. Because <code>$HOME</code> is NFS, jobs doing heavy file I/O should <a href="../guides/hopper-access.html#staging-data-through-tmp">stage through node-local <code>/tmp</code></a>.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -371,7 +384,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="scheduler" class="level3">
 <h3 class="anchored" data-anchor-id="scheduler">Scheduler</h3>
-<p>Hopper uses the <a href="https://portal.cac.cornell.edu/techdocs/clusterinfo/slurm/">Slurm scheduler</a>. All nodes are in a single partition (<code>normal</code>) with no time limits. The <a href="https://portal.cac.cornell.edu/techdocs/clusterinfo/slurmQS/">Slurm Quick Start</a> guide is a good place to begin.</p>
+<p>Hopper uses <a href="https://portal.cac.cornell.edu/techdocs/clusterinfo/slurm/">Slurm</a>. There are two partitions, both spanning all nodes: <code>normal</code>, with no time limit, and <code>guest</code>, capped at 48 hours. See <a href="../guides/hopper-access.html#batch-jobs">Using Hopper</a> for submission scripts and <a href="https://portal.cac.cornell.edu/techdocs/clusterinfo/slurmQS/">Slurm Quick Start</a> for CAC’s own introduction.</p>
 </section>
 <section id="modules" class="level3">
 <h3 class="anchored" data-anchor-id="modules">Modules</h3>
@@ -402,7 +415,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><p>If you are going to request a large fraction of Hopper’s resources (more than 5 nodes), make sure that you give the other lab groups plenty of notice so they can coordinate their use.</p></li>
 <li><p>Right now, the only filesystem is the user home directories, <code>~</code>. This is not a parallel file system, so file I/O with lots of files might slow things down a bit. Try to read files once and minimize file I/O as much as possible.</p></li>
-<li><p>The default shell is <code>bash</code>. If you want to use a different shell, contact CAC using the instructions on the Wiki page.</p></li>
+<li><p>The login shell is <code>sh</code>, not <code>bash</code>. It is bash running in sh-compatibility mode, and the practical consequence is that <strong><code>~/.bashrc</code> is not sourced</strong> – put shell customizations in <code>~/.profile</code> instead. CAC warns that changing your login shell with <code>chsh</code> “may well wreck your batch environment,” since the scheduler assumes <code>sh</code>.</p></li>
 <li><p>I recommend using the following instructions to colorize <code>git</code> output for easier reading:</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
@@ -903,96 +916,98 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>Hopper is our group's high-performance computing cluster, which we share with the Reed, Steinschneider, and Anderson groups.</span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>Zach Brodeur wrote <span class="co">[</span><span class="ot">a user guide for Hopper</span><span class="co">](https://docs.google.com/document/d/1frEVAQmG7sCQdYDmUitXfiH7AanXvcVsAEppRu5QS00/edit?usp=sharing)</span> and <span class="co">[</span><span class="ot">a more detailed guide</span><span class="co">](https://docs.google.com/document/d/1QBipIcxp7HmiERVVEeOdBkiA02Z43Fdzk993D9oLlFM/edit?usp=sharing)</span> which you should read.</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>This page covers what Hopper is and when to use it. For getting an account, connecting, remote editing, and running jobs, see <span class="co">[</span><span class="ot">Using Hopper</span><span class="co">](hopper-access.qmd)</span>.</span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Access</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>Zach Brodeur wrote <span class="co">[</span><span class="ot">a user guide for Hopper</span><span class="co">](https://docs.google.com/document/d/1frEVAQmG7sCQdYDmUitXfiH7AanXvcVsAEppRu5QS00/edit?usp=sharing)</span> and <span class="co">[</span><span class="ot">a more detailed guide</span><span class="co">](https://docs.google.com/document/d/1QBipIcxp7HmiERVVEeOdBkiA02Z43Fdzk993D9oLlFM/edit?usp=sharing)</span> which you should read.</span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>To get access to Hopper, message Vivek (this should be part of your onboarding process).</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Access</span></span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>You can access Hopper for file transfers through Globus; the Hopper collection is named <span class="in">`Hopper Cluster`</span>. See the CAC documentation on <span class="co">[</span><span class="ot">file transfer using Globus</span><span class="co">](https://portal.cac.cornell.edu/techdocs/files/FileTransferGlobus/)</span> for access instructions.</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>To get access to Hopper, message Vivek (this should be part of your onboarding process).</span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hardware</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>You can access Hopper for file transfers through Globus; the Hopper collection is named <span class="in">`Hopper Cluster`</span>. See the CAC documentation on <span class="co">[</span><span class="ot">file transfer using Globus</span><span class="co">](https://portal.cac.cornell.edu/techdocs/files/FileTransferGlobus/)</span> for access instructions.</span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>Hopper has 26 compute nodes, in two generations:</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hardware</span></span>
 <span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Nodes <span class="pp">|</span> CPU <span class="pp">|</span> Physical cores <span class="pp">|</span> RAM <span class="pp">|</span></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|</span></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`c0001`</span>-<span class="in">`c0022`</span> <span class="pp">|</span> 2 x 20-core Intel Xeon Gold 5218R @ 2.1 GHz <span class="pp">|</span> 40 <span class="pp">|</span> 192 GB <span class="pp">|</span></span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`c0023`</span>-<span class="in">`c0026`</span> <span class="pp">|</span> 2 x 48-core AMD EPYC 9454 @ 2.75 GHz <span class="pp">|</span> 96 <span class="pp">|</span> 567 GB <span class="pp">|</span></span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>The head node is <span class="in">`hopper.cac.cornell.edu`</span>, accessed over <span class="in">`ssh`</span>. Nodes are interconnected with InfiniBand.</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>Hopper has 26 compute nodes, in two generations:</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Nodes <span class="pp">|</span> CPU <span class="pp">|</span> Physical cores <span class="pp">|</span> RAM <span class="pp">|</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`c0001`</span>-<span class="in">`c0022`</span> <span class="pp">|</span> 2 x 20-core Intel Xeon Gold 5218R @ 2.1 GHz <span class="pp">|</span> 40 <span class="pp">|</span> 192 GB <span class="pp">|</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`c0023`</span>-<span class="in">`c0026`</span> <span class="pp">|</span> 2 x 48-core AMD EPYC 9454 @ 2.75 GHz <span class="pp">|</span> 96 <span class="pp">|</span> 567 GB <span class="pp">|</span></span>
 <span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Hyperthreading is enabled on all nodes by default, so each physical core is treated as two logical CPUs (an Intel node looks like 80 CPUs, an EPYC node like 192). If you don't want hyperthreading, include the following in your submission script: <span class="in">`#SBATCH --hint=nomultithread`</span></span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The EPYC nodes are both faster per-core and much larger in memory than the original Intel nodes. If your job is memory-hungry or you want more cores in a single shared-memory process, target those; if you are running many small independent tasks, the Intel nodes are usually less contended.</span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="fu">## Software</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>The head node is <span class="in">`hopper.cac.cornell.edu`</span>, accessed over <span class="in">`ssh`</span>. Nodes are interconnected with InfiniBand.</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Hyperthreading is enabled on all nodes by default, so each physical core is treated as two logical CPUs (an Intel node looks like 80 CPUs, an EPYC node like 192). If you don't want hyperthreading, include the following in your submission script: <span class="in">`#SBATCH --hint=nomultithread`</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The EPYC nodes are both faster per-core and much larger in memory than the original Intel nodes. If your job is memory-hungry or you want more cores in a single shared-memory process, target those; if you are running many small independent tasks, the Intel nodes are usually less contended.</span>
 <span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="fu">### Filesystem</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Software</span></span>
 <span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>Use your home directory (<span class="in">`~`</span>) for data you want to keep. Home directories live on an NFS export from the head node.</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="fu">### Filesystem</span></span>
 <span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hopper Is Not Backed Up</span></span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>CAC does **not** back up Hopper home directories. Nothing on Hopper is safe by default. Anything you cannot regenerate cheaply -- raw input data, final simulation output, anything a paper depends on -- must also live somewhere else. See <span class="co">[</span><span class="ot">Data Management</span><span class="co">](data-management.qmd)</span> for what that means in practice.</span>
-<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a><span class="fu">### Scheduler</span></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>Use your home directory (<span class="in">`~`</span>) for data you want to keep. Home directories live on an NFS export from the head node, shared across all compute nodes. CAC does not publish a per-user quota or a total capacity figure, so check your own usage with <span class="in">`du -sh ~`</span> and the filesystem with <span class="in">`df -h ~`</span>. Because <span class="in">`$HOME`</span> is NFS, jobs doing heavy file I/O should <span class="co">[</span><span class="ot">stage through node-local `/tmp`</span><span class="co">](hopper-access.qmd#staging-data-through-tmp)</span>.</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hopper Is Not Backed Up</span></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>CAC does **not** back up Hopper home directories. Nothing on Hopper is safe by default. Anything you cannot regenerate cheaply -- raw input data, final simulation output, anything a paper depends on -- must also live somewhere else. See <span class="co">[</span><span class="ot">Data Management</span><span class="co">](data-management.qmd)</span> for what that means in practice.</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>Hopper uses the <span class="co">[</span><span class="ot">Slurm scheduler</span><span class="co">](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurm/)</span>. All nodes are in a single partition (<span class="in">`normal`</span>) with no time limits. The <span class="co">[</span><span class="ot">Slurm Quick Start</span><span class="co">](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurmQS/)</span> guide is a good place to begin.</span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a><span class="fu">### Scheduler</span></span>
 <span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a><span class="fu">### Modules</span></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>Hopper uses <span class="co">[</span><span class="ot">Slurm</span><span class="co">](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurm/)</span>. There are two partitions, both spanning all nodes: <span class="in">`normal`</span>, with no time limit, and <span class="in">`guest`</span>, capped at 48 hours. See <span class="co">[</span><span class="ot">Using Hopper</span><span class="co">](hopper-access.qmd#batch-jobs)</span> for submission scripts and <span class="co">[</span><span class="ot">Slurm Quick Start</span><span class="co">](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurmQS/)</span> for CAC's own introduction.</span>
 <span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>Hopper uses <span class="co">[</span><span class="ot">Lmod environment modules</span><span class="co">](https://portal.cac.cornell.edu/techdocs/clusterinfo/modules/)</span> to make software available.</span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a><span class="fu">### Modules</span></span>
 <span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>To see the list of available modules, use <span class="in">`module avail`</span>.</span>
-<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>To see loaded modules, use <span class="in">`module list`</span>.</span>
-<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Load modules inside your Slurm script rather than relying on your login shell, so the job is reproducible and does not depend on your interactive environment.</span>
-<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a><span class="fu">## Usage Guidelines</span></span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>Hopper uses <span class="co">[</span><span class="ot">Lmod environment modules</span><span class="co">](https://portal.cac.cornell.edu/techdocs/clusterinfo/modules/)</span> to make software available.</span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>To see the list of available modules, use <span class="in">`module avail`</span>.</span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>To see loaded modules, use <span class="in">`module list`</span>.</span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Load modules inside your Slurm script rather than relying on your login shell, so the job is reproducible and does not depend on your interactive environment.</span>
 <span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a><span class="fu">### When To Use Hopper</span></span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a><span class="fu">## Usage Guidelines</span></span>
 <span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a>If you aren't going to be using a lot of cores (10+ cores), it might be better to use your workstation, especially if Hopper's resources are highly in demand when you want to run your job. The original Intel nodes run at 2.1 GHz, well below the 3-4 GHz of a typical workstation, so on those nodes you only come out ahead if you can exploit parallelization. The newer EPYC nodes narrow that gap (2.75 GHz, and far more cores and memory per node), but the same basic logic holds: Hopper wins on breadth, not on single-core speed. This is great for things like Monte Carlo simulations, multi-objective optimization, or really large-scale modeling experiments where you can have each core run a different member of the ensemble. If you're doing model calibration, think carefully about whether your method can actually use that many cores. Most MCMC procedures, for example, cannot, but Approximate Bayesian Computation, pre-calibration or particle filtering can be embarrassingly parallel.</span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a><span class="fu">### When To Use Hopper</span></span>
 <span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a><span class="fu">### Run Jobs using SLURM</span></span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a>If you aren't going to be using a lot of cores (10+ cores), it might be better to use your workstation, especially if Hopper's resources are highly in demand when you want to run your job. The original Intel nodes run at 2.1 GHz, well below the 3-4 GHz of a typical workstation, so on those nodes you only come out ahead if you can exploit parallelization. The newer EPYC nodes narrow that gap (2.75 GHz, and far more cores and memory per node), but the same basic logic holds: Hopper wins on breadth, not on single-core speed. This is great for things like Monte Carlo simulations, multi-objective optimization, or really large-scale modeling experiments where you can have each core run a different member of the ensemble. If you're doing model calibration, think carefully about whether your method can actually use that many cores. Most MCMC procedures, for example, cannot, but Approximate Bayesian Computation, pre-calibration or particle filtering can be embarrassingly parallel.</span>
 <span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a>**Do not run compute jobs directly on the head node.** The head node is shared by everyone on the cluster, and a heavy job there slows down logins and file transfers for all of us. Instead, either write a Slurm batch script and submit it with <span class="in">`sbatch`</span>, or request an interactive session with <span class="in">`salloc`</span> (or <span class="in">`srun --pty bash`</span>) and work inside that.</span>
+<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a><span class="fu">### Run Jobs using SLURM</span></span>
 <span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a><span class="fu">### Benchmark Your Code</span></span>
+<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a>**Do not run compute jobs directly on the head node.** The head node is shared by everyone on the cluster, and a heavy job there slows down logins and file transfers for all of us. Instead, either write a Slurm batch script and submit it with <span class="in">`sbatch`</span>, or request an interactive session with <span class="in">`salloc`</span> (or <span class="in">`srun --pty bash`</span>) and work inside that.</span>
 <span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a>Always benchmark your parallel code on your workstation to get a sense for how it scales (though note that your workstation has faster cores than Hopper does!). You don't want to just give SLURM an unrealistic amount of time, since we need to coordinate Hopper as a shared resource. Dave Gold has a good <span class="co">[</span><span class="ot">post</span><span class="co">](https://waterprogramming.wordpress.com/2021/06/07/scaling-experiments-how-to-measure-the-performance-of-parallel-code-on-hpc-systems/)</span> about this at Water Programming. Dave also has a good post about how to make a plan and organize an HPC experiment <span class="co">[</span><span class="ot">here</span><span class="co">](https://waterprogramming.wordpress.com/2020/01/27/performing-experiments-on-hpc-systems/)</span>. In general, Water Programming has a lot of good resources about <span class="co">[</span><span class="ot">HPC</span><span class="co">](https://waterprogramming.wordpress.com/category/high-performance-computing/)</span> and <span class="co">[</span><span class="ot">SLURM</span><span class="co">](https://waterprogramming.wordpress.com/category/slurm/)</span>, among other topics.</span>
+<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a><span class="fu">### Benchmark Your Code</span></span>
 <span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a><span class="fu">### Other Tips</span></span>
+<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a>Always benchmark your parallel code on your workstation to get a sense for how it scales (though note that your workstation has faster cores than Hopper does!). You don't want to just give SLURM an unrealistic amount of time, since we need to coordinate Hopper as a shared resource. Dave Gold has a good <span class="co">[</span><span class="ot">post</span><span class="co">](https://waterprogramming.wordpress.com/2021/06/07/scaling-experiments-how-to-measure-the-performance-of-parallel-code-on-hpc-systems/)</span> about this at Water Programming. Dave also has a good post about how to make a plan and organize an HPC experiment <span class="co">[</span><span class="ot">here</span><span class="co">](https://waterprogramming.wordpress.com/2020/01/27/performing-experiments-on-hpc-systems/)</span>. In general, Water Programming has a lot of good resources about <span class="co">[</span><span class="ot">HPC</span><span class="co">](https://waterprogramming.wordpress.com/category/high-performance-computing/)</span> and <span class="co">[</span><span class="ot">SLURM</span><span class="co">](https://waterprogramming.wordpress.com/category/slurm/)</span>, among other topics.</span>
 <span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If you are going to request a large fraction of Hopper's resources (more than 5 nodes), make sure that you give the other lab groups plenty of notice so they can coordinate their use.</span>
-<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Right now, the only filesystem is the user home directories, <span class="in">`~`</span>. This is not a parallel file system, so file I/O with lots of files might slow things down a bit. Try to read files once and minimize file I/O as much as possible.</span>
-<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The default shell is <span class="in">`bash`</span>. If you want to use a different shell, contact CAC using the instructions on the Wiki page.</span>
-<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>I recommend using the following instructions to colorize <span class="in">`git`</span> output for easier reading:</span>
-<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a>    <span class="in">```{.bash filename="Colorize Git"}</span></span>
-<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> config <span class="at">--global</span> color.ui auto</span>
-<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> config <span class="at">--global</span> color.branch auto</span>
-<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> config <span class="at">--global</span> color.status auto</span>
-<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
-<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a>    You can also modify your ~/.gitconfig to customize the colors, like in this example from <span class="co">[</span><span class="ot">StackOverflow</span><span class="co">](https://unix.stackexchange.com/a/44283)</span>:</span>
+<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a><span class="fu">### Other Tips</span></span>
+<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If you are going to request a large fraction of Hopper's resources (more than 5 nodes), make sure that you give the other lab groups plenty of notice so they can coordinate their use.</span>
+<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Right now, the only filesystem is the user home directories, <span class="in">`~`</span>. This is not a parallel file system, so file I/O with lots of files might slow things down a bit. Try to read files once and minimize file I/O as much as possible.</span>
+<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The login shell is <span class="in">`sh`</span>, not <span class="in">`bash`</span>. It is bash running in sh-compatibility mode, and the practical consequence is that **`~/.bashrc` is not sourced** -- put shell customizations in <span class="in">`~/.profile`</span> instead. CAC warns that changing your login shell with <span class="in">`chsh`</span> "may well wreck your batch environment," since the scheduler assumes <span class="in">`sh`</span>.</span>
+<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>I recommend using the following instructions to colorize <span class="in">`git`</span> output for easier reading:</span>
+<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a>    <span class="in">```{.bash filename="Colorize Git"}</span></span>
+<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> config <span class="at">--global</span> color.ui auto</span>
+<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> config <span class="at">--global</span> color.branch auto</span>
+<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> config <span class="at">--global</span> color.status auto</span>
+<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
 <span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a>    <span class="in">```{.bash filename="Modify .gitconfig for Color"}</span></span>
-<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a>    <span class="ex">[color</span> <span class="st">"status"</span>]</span>
-<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a>      <span class="ex">added</span> = green</span>
-<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a>      <span class="ex">changed</span> = red bold</span>
-<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a>      <span class="ex">untracked</span> = magenta bold</span>
-<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a>    <span class="ex">[color</span> <span class="st">"branch"</span>]</span>
-<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a>      <span class="ex">remote</span> = yellow</span>
-<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
-<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Make sure you set up your <span class="co">[</span><span class="ot">SSH key</span><span class="co">](https://docs.github.com/articles/generating-an-ssh-key/)</span> for Github. This isn't essential (you can use https instead), but this is a bit more secure.</span>
+<span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a>    You can also modify your ~/.gitconfig to customize the colors, like in this example from <span class="co">[</span><span class="ot">StackOverflow</span><span class="co">](https://unix.stackexchange.com/a/44283)</span>:</span>
+<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a>    <span class="in">```{.bash filename="Modify .gitconfig for Color"}</span></span>
+<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a>    <span class="ex">[color</span> <span class="st">"status"</span>]</span>
+<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a>      <span class="ex">added</span> = green</span>
+<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a>      <span class="ex">changed</span> = red bold</span>
+<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a>      <span class="ex">untracked</span> = magenta bold</span>
+<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a>    <span class="ex">[color</span> <span class="st">"branch"</span>]</span>
+<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a>      <span class="ex">remote</span> = yellow</span>
+<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
 <span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a><span class="fu">## More Information</span></span>
+<span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Make sure you set up your <span class="co">[</span><span class="ot">SSH key</span><span class="co">](https://docs.github.com/articles/generating-an-ssh-key/)</span> for Github. This isn't essential (you can use https instead), but this is a bit more secure.</span>
 <span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a>For more information, see the <span class="co">[</span><span class="ot">Cornell CAC TechDocs entry for Hopper</span><span class="co">](https://portal.cac.cornell.edu/techdocs/clusters/Hopper/)</span>. Note that CAC moved its documentation from the old wiki to TechDocs, so older bookmarks and links will be dead.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a><span class="fu">## More Information</span></span>
+<span id="cb3-99"><a href="#cb3-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-100"><a href="#cb3-100" aria-hidden="true" tabindex="-1"></a>For more information, see the <span class="co">[</span><span class="ot">Cornell CAC TechDocs entry for Hopper</span><span class="co">](https://portal.cac.cornell.edu/techdocs/clusters/Hopper/)</span>. Note that CAC moved its documentation from the old wiki to TechDocs, so older bookmarks and links will be dead.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
