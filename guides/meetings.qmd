@@ -1,0 +1,90 @@
+---
+title: Meetings
+---
+
+The group has two standing meetings, both on Monday afternoons in Riley-Robb 319, plus one-on-ones with Vivek. This page covers what each is for and what to bring.
+
+::: {.callout-note}
+## Schedules Live in GitHub
+
+- **Lab meeting** — schedule and per-meeting agendas in the [`labmeetings`](https://github.com/srikrishnan-lab/labmeetings) repository (private to the group).
+- **Journal club** — schedule and paper sign-ups in the [`journal-club`](https://github.com/srikrishnan-lab/journal-club) repository.
+
+Both are plain Markdown tables you edit with a pull request. Ask Vivek for access to `labmeetings` if you do not have it.
+:::
+
+## Lab Meeting
+
+**Mondays, 1:00-2:30pm, Riley-Robb 319.** Remote attendance is available; the Zoom link is in the `labmeetings` repository rather than here, since this manual is public.
+
+Lab meeting is the group's main shared working session. A typical slot is one person presenting, but "presenting" is deliberately broad, and the most useful slots are often the least polished ones:
+
+- Work in progress, including work that is not going well
+- A practice talk before a conference or an exam
+- A figure you are not sure about
+- A method you are trying to understand, taught to the rest of us
+- A problem you are stuck on
+
+That last one is not a consolation prize. [Being able to ask for help is an explicit expectation of everyone in the group](../expectations/roles.qmd#everyone), and lab meeting is the mechanism. A stuck slot where four people who know different things look at the same problem for an hour is frequently the highest-value use of the time.
+
+### Preparing
+
+Add your agenda item to the current meeting's agenda file in `labmeetings` before the meeting. How much you prepare depends on the slot: a practice talk needs to be ready, a stuck slot needs a clear statement of the problem and what you have already tried, and nothing more.
+
+You do not need slides. A figure on the screen and a conversation is often better.
+
+### Attending
+
+Attendance is expected, in person or remotely, as part of [maintaining a presence in the group](../expectations/availability.qmd#presence). If you cannot make it, say so in Slack beforehand.
+
+Come having thought about other people's work, not just your own. The group's [internal peer review and code review](papers.qmd) before submission both depend on people having enough context on each other's projects to be useful readers, and lab meeting is where that context accumulates.
+
+## Journal Club
+
+**Mondays, 2:30-3:30pm, Riley-Robb 319**, directly after lab meeting.
+
+One person presents one paper each week. The presenter picks the paper — it does not have to be new, and it does not have to be something you already understand. Papers that you found hard, or that you disagree with, usually generate better discussion than papers you can summarize cleanly.
+
+The [reading list](readinglist.qmd) is a reasonable source of candidates, particularly the foundational papers everyone in the group is expected to have read.
+
+### Claiming a Slot
+
+Open a pull request against the schedule table in [`journal-club`](https://github.com/srikrishnan-lab/journal-club) adding your name and the paper (with a link) to an open date. Doing this a week or two ahead gives people time to read it.
+
+### Presenting
+
+Read the paper closely; skim its key references. You are not expected to defend it or to have resolved everything about it — the job is to get everyone else into the paper quickly and then lead a discussion. Fifteen or twenty minutes of setup and forty minutes of argument is a better ratio than the reverse.
+
+It is completely acceptable, and often the most interesting outcome, to present a paper and conclude that you do not believe its central claim.
+
+## One-on-Ones with Vivek
+
+**Weekly, scheduled for an hour**, arranged at the start of each semester around everyone's teaching and coursework.
+
+An hour is what gets reserved, not what has to be used. Plenty of weeks need twenty minutes, and ending early is a perfectly good outcome — the hour exists so that the weeks which *do* need it are not squeezed. The purpose is to update each other and to talk through anything that is proving difficult, not to fill the time.
+
+These are your meeting. Vivek will not arrive with an agenda unless something specific needs discussing, so bring one — even a rough one. Useful things to bring:
+
+- Where things stand since last time, and anything you are stuck on
+- A decision you need input on
+- Results you want a second opinion about, before they harden into a paper
+- Coursework, committee, exam, and deadline logistics
+- Career questions, which are in scope and do not need a special occasion
+
+::: {.callout-important}
+## Weekly Progress Is Not the Standard
+
+Do not treat the meeting as a weekly accounting of output. **Expecting substantial progress every single week is unrealistic**, and measuring yourself that way is a reliable route to feeling like you are failing at a job you are doing fine.
+
+Research does not arrive on a seven-day cycle. A week can go to a bug that turns out to be a one-character fix, to a method that does not work, to reading that does not resolve into anything yet, or to coursework. [None of that is wasted](../procedures/graduate.qmd) — it is what the work consists of, and it is often where the understanding actually comes from.
+
+So the honest report is the useful one. "This didn't work and I'm not sure why" is a better agenda item than a polished summary, because it is the kind of thing the meeting can actually help with. The meeting is more valuable when it is accurate than when it is impressive.
+:::
+
+If something urgent comes up between meetings, do not wait for the next slot — see [PI availability](../expectations/availability.qmd) for how to reach Vivek.
+
+## Other Regular Gatherings
+
+The group shares a third-floor Riley-Robb Slack channel with the Anderson group, used to organize events and reading across both groups. See [Group Workflow](group-workflow.qmd) for how we use Slack generally.
+
+Conferences are covered separately — AGU and a smaller meeting each year are the usual pattern, described in the [graduate admissions FAQ](../procedures/graduate.qmd).

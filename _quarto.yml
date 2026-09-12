@@ -63,7 +63,9 @@ website:
         - guides/figures.qmd
         - guides/group-workflow.qmd
         - guides/hopper.qmd
+        - guides/hopper-access.qmd
         - guides/licenses.qmd
+        - guides/meetings.qmd
         - guides/paper-checklist.qmd
         - guides/papers.qmd
         - guides/readinglist.qmd

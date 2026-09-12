@@ -20,15 +20,28 @@ Also see the expectations for [Graduate Students](../expectations/roles.qmd#grad
 
 You can apply for graduate admission to Cornell at the [Graduate School's Admissions site](https://gradschool.cornell.edu/admissions/apply/).
 
-<!-- TODO(Vivek): link the specific field-level application deadline(s) here, and note roughly how many weeks applicants should expect to wait between their initial email and a decision on next steps. -->
-
 ::: {.callout-note}
 ## Graduate Fields
 
 Cornell organizes its graduate admissions and supervision around graduate fields of study, rather than departments. Faculty who are members of a field can supervise students in that field, even if they are outside of their department. You can therefore apply to any of the fields in which Vivek is a member and be part of the group. Feel free to ask about more information of any of these fields to find which might be the best fit for your goals.
 :::
 
-Vivek is a member of the graduate faculty in [Biological & Environmental Engineering](https://gradschool.cornell.edu/academics/fields-of-study/subject/biological-and-environmental-engineering/biological-and-environmental-engineering-phd-ithaca/), [Civil & Environmental Engineering](https://gradschool.cornell.edu/academics/fields-of-study/field/civil-and-environmental-engineering/), [Atmospheric Science](https://www.duffield.cornell.edu/eas/phd-programs/) and [Systems Engineering](https://www.systemseng.cornell.edu/se).
+Vivek is a member of the graduate faculty in four fields. Each sets its own application deadline, and you apply to one of them rather than to the group:
+
+| Field | Deadline | Source |
+|---|---|---|
+| [Biological & Environmental Engineering](https://cals.cornell.edu/education/degrees-programs/graduate-field-biological-environmental-engineering) | Not published on the field's own page | Check the [Graduate School field listing](https://gradschool.cornell.edu/admissions/degrees-fields/cugradfos/) |
+| [Civil & Environmental Engineering](https://www.duffield.cornell.edu/cee/programs/graduate-programs/) | Not published on the field's own page | Check the [Graduate School field listing](https://gradschool.cornell.edu/admissions/degrees-fields/cugradfos/) |
+| [Atmospheric Science](https://www.duffield.cornell.edu/eas/programs/graduate-programs/atmospheric-science-graduate-program/applying-admission) | **January 1** for fall, **September 15** for spring; GRE not required | [EAS admissions](https://www.duffield.cornell.edu/eas/programs/graduate-programs/atmospheric-science-graduate-program/applying-admission) |
+| [Systems Engineering](https://www.duffield.cornell.edu/sys/ms-phd-faqs/) | **January 1** for the following September | [Systems Engineering FAQ](https://www.duffield.cornell.edu/sys/ms-phd-faqs/) |
+
+::: {.callout-warning}
+## Confirm the Deadline Yourself
+
+Deadlines move, and this table was last checked in September 2026. Always confirm against the field's own page before you plan around a date here. Two of the four fields do not publish a deadline on their own site at all, so for those the [Graduate School's field listing](https://gradschool.cornell.edu/admissions/degrees-fields/cugradfos/) is the authoritative source.
+
+The Graduate School application itself generally opens in early September and closes in mid-June; individual field deadlines fall inside that window and are much earlier.
+:::
 
 ### Thesis Programs (M.S. and Ph.D)
 
@@ -116,6 +129,8 @@ Putting together a graduate application is a lot of work, both for you and for y
 * **Attach relevant documents**: To get the most informed feedback, you should include your current CV or resume (as a `.pdf`), a draft of your personal statement or a statement of your research interests (ideally as a `pdf`), and any relevant prior work you'd like Vivek to see. This helps him get a sense of your interests and incoming skillset.
 
 * **Explain why you are reaching out to Vivek *specifically***: Did you read one of our group's papers (and if so, which one(s))? Was a project or opening listed on the website of particular interest? It's helpful for Vivek to know why our group appeared on your radar. For this reason, mass e-mails are unlikely to receive productive responses. An inquiry that references a specific paper or material and ties it to your interests and what you hope to gain as a member of our group is the most likely to get a positive response.
+
+* **Expect a reply within about a week**: Vivek aims to respond to inquiries within a week. If it has been noticeably longer, a short follow-up is welcome rather than presumptuous --- messages do get buried, particularly around deadlines and the start of a semester.
 
 * **Ask specific questions**: It's hard to provide feedback if your expression of interest is vague, and this can be a sign that you haven't fully thought through whether we would be a good fit for you. For example, you might ask questions like:
     * "Are you still working on `<some topic>`?" or "Are you interested in `<some topic>`?"
