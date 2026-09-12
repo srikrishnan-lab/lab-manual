@@ -1,5 +1,7 @@
 ---
 title: Health and Wellness
+aliases:
+  - /expectations/health/
 ---
 
 ::: {.callout-tip}

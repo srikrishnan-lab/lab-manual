@@ -1,5 +1,7 @@
 ---
 title: Ph.D. Requirements
+aliases:
+  - /kb/requirements/phd/
 ---
 
 Ph.D. students have to select two [minor fields](minors.qmd). The special committee is made up of at least your major advisor (probably Vivek if you're reading this) and your minor advisors, and might contain other members whose input would be valuable.

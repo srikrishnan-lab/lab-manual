@@ -1,5 +1,7 @@
 ---
 title: Paper Checklist
+aliases:
+  - /guides/paper-checklist/
 ---
 
 As you write the paper (and prior to/after submission), make sure to do/consider these steps.

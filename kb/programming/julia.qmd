@@ -1,5 +1,7 @@
 ---
 title: Julia
+aliases:
+  - /kb/programming/julia/
 ---
 
 [Julia](https://julialang.org/) is a high-performance language for scientific computing, which also happens to be readable. Julia may be the best choice for our work, though there may be times when your collaborators want to use Python or R, or when tools already exist in those languages that are perfect for a particular project.

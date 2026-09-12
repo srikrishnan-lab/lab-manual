@@ -1,5 +1,7 @@
 ---
 title: Open and Reproducible Research
+aliases:
+  - /expectations/open/
 ---
 
 According to [UNESCO](http://www.unesco.org/new/en/communication-and-information/portals-and-platforms/goap/open-science-movement/), open science

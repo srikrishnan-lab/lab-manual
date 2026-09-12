@@ -1,5 +1,7 @@
 ---
 title: Time Off and Vacation
+aliases:
+  - /expectations/timeoff/
 ---
 
 It is of paramount importance that every lab member looks out for their health and well-being. Working sustainable hours involves setting boundaries and reserving personal time.

@@ -1,5 +1,7 @@
 ---
 title: UNIX and the Shell
+aliases:
+  - /kb/programming/shell/
 ---
 
 Whether you're using a Linux laptop or workstation (or working on the command line in macOS!) or working on a cluster, you'll need to be familiar with shell commands and scripting, which can save you a lot of time and typing.

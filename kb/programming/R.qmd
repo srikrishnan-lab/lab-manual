@@ -1,5 +1,7 @@
 ---
 title: "R"
+aliases:
+  - /kb/programming/R/
 ---
 
 [R](https://www.r-project.org/) is a statistical programming language, and is highly optimized for that purpose (though additional functionality exists). It can be relatively slow and doesn't use memory particularly effectively, but it has a wide variety of data analysis and statistical modeling functions and libraries. R syntax is a bit different than other languages, but you may collaborate with people who prefer to work in R, so it's good to know your way around it.

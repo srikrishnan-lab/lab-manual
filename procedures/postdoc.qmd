@@ -1,5 +1,7 @@
 ---
 title: Postdoctoral Scholars
+aliases:
+  - /applying/postdoc/
 ---
 
 ::: {.callout-tip}

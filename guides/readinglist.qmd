@@ -1,5 +1,7 @@
 ---
 title: Reading List
+aliases:
+  - /guides/readinglist/
 ---
 
 Here are some papers that are essential or useful reading for members of our group. Everyone should read the papers in the [General](#general) section, and the others are good starting points if the topic area is relevant or of interest.

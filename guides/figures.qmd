@@ -1,5 +1,7 @@
 ---
 title: Figure Design
+aliases:
+  - /guides/figures/
 ---
 
 Figures are the most engaging part of papers and presentations. Many people will skim your work and only takeaway anything from the figures, or will only read your work if the figures seem interesting. Figure design is just as, if not more, essential when communicating results to stakeholders and the media. As a result, it is important to make your figures memorable. As a rule of thumb, you should have one figure for each key result.

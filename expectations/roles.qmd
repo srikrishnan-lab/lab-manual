@@ -1,5 +1,7 @@
 ---
 title: Roles, Responsibilities, and Expectations
+aliases:
+  - /expectations/roles/
 ---
 
 There are many roles within any research group, and each carries a different set of responsibilities and expectations. We want the lab group to be a healthy, fun, and productive place where we can make scientific progress.

@@ -1,5 +1,7 @@
 ---
 title: Minors
+aliases:
+  - /kb/requirements/minors/
 ---
 
 There are many possible minor fields that students can take. Ph.D students must have two minors and M.S. students one.

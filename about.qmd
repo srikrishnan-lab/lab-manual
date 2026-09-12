@@ -1,5 +1,7 @@
 ---
 title: "About"
+aliases:
+  - /mission/
 ---
 
 ## Mission

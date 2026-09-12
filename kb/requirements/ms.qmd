@@ -1,5 +1,7 @@
 ---
 title: M.S. Requirements
+aliases:
+  - /kb/requirements/ms/
 ---
 
 The M.S. program is usually two years. M.S. students are required to have one [minor field](minors.qmd). Your special committee is formed by at least your major advisor (likely Vivek if you're reading this) and your minor advisor, though other members may be added if their input and guidance would be valuable.
