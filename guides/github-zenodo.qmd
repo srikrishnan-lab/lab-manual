@@ -1,0 +1,100 @@
+---
+title: GitHub and Zenodo
+---
+
+How we structure repositories, and how code and data get archived and cited when a paper goes out.
+
+This page covers the workflow. [git and GitHub](../kb/programming/git.qmd) covers the tooling, and [Data Management](data-management.qmd) covers where data lives while you are still working.
+
+## Why This Is an Integrity Question
+
+It is tempting to treat repository structure as tidiness, to be dealt with once the science is done. It is not.
+
+[Our stated commitment](../expectations/open.qmd) is that a paper is not ready for peer review if the data and code are not publicly available and documented. That is a claim about the paper's evidence, not about its packaging. A reader who cannot get from your archive to your figures cannot check your work, which means the transparency the paper claims is not there — and [the group's position on scientific integrity](../expectations/roles.qmd#everyone) does not have a carve-out for "the analysis was right but the repository was a mess."
+
+The practical consequence: set the structure up on day one, when it costs nothing, rather than reconstructing it during a revision.
+
+## Two Repositories, Not One
+
+We split a project across two kinds of repository. This is the single most important structural decision, and it is easy to get wrong by defaulting to one repository for everything.
+
+**The model repository** holds a model: something reusable, that outlives this paper, that someone else might run for a different question. Start from [`model_repo_template`](https://github.com/srikrishnan-lab/model_repo_template).
+
+**The meta-repository** holds one paper's analysis: the workflow that takes a model and some data and produces this paper's figures and numbers. Start from [`paper-metarepo-template`](https://github.com/srikrishnan-lab/paper-metarepo-template).
+
+The meta-repository does not contain the model. It *references* a released version of it by DOI.
+
+::: {.callout-tip}
+## Why the Split Matters
+
+Bundling a model into a paper's repository does three things you will regret.
+
+It makes the model hard to reuse: the next project has to either copy it, which forks it silently, or depend on a repository named after somebody's 2024 paper.
+
+It makes the paper hard to reproduce: a reader cannot tell which parts of the code are the model and which are this analysis, so they cannot tell what your contribution was.
+
+And it makes both hard to version: a bug fix in the model becomes a commit in a paper repository that was supposed to be frozen at submission.
+:::
+
+If you are unsure whether something is a model or an analysis, ask whether the next project would want it. If yes, it is a model.
+
+## Starting a Project
+
+Do this in the first week, before there is anything worth losing.
+
+1. **Create the repository** from the appropriate template, in the [`srikrishnan-lab`](https://github.com/srikrishnan-lab) organization rather than your personal account. Work that lives only under a personal account leaves with that person.
+2. **Name it provisionally**, then rename it to `lastname-etal_year_journal` when the paper takes shape. GitHub handles renames and redirects old URLs.
+3. **Private is fine for now.** It must be public by submission, and there is no advantage to waiting past that.
+4. **Fill in the README as you go.** The [template's README](https://github.com/srikrishnan-lab/paper-metarepo-template/blob/main/metarepo_readme_template.md) is a form with the right blanks in it — abstract, journal reference, code reference, data reference, dependencies, reproduction steps. Filling it at the end means reconstructing from memory.
+
+## Archiving with Zenodo
+
+GitHub is not an archive. Repositories get renamed, made private, transferred, and deleted, and a bare GitHub URL in a data availability statement will eventually rot. Journals increasingly say so explicitly.
+
+[Zenodo](https://zenodo.org/) gives you a DOI and a permanent snapshot. Connect it once per repository, and every GitHub release then archives automatically.
+
+1. Sign in to Zenodo with GitHub, and flip the switch for the repository ([GitHub's instructions](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)).
+2. Cut a release on GitHub. Zenodo archives that snapshot and mints a DOI.
+3. Put the badge at the top of the README.
+
+::: {.callout-important}
+## Concept DOI vs. Version DOI
+
+Zenodo gives you **two** DOIs and they mean different things.
+
+- The **version DOI** points at one specific release. Frozen forever.
+- The **concept DOI** points at the record as a whole, and always resolves to the latest version.
+
+**Cite the version DOI in a paper.** A reader following your data availability statement must land on the code that produced the results, not on whatever the code became afterwards.
+
+**Cite the concept DOI for a living resource** — something you expect people to keep using and you expect to keep updating.
+
+Getting this backwards is a quiet failure: the link still works, so nobody notices that it now points at different code than the paper describes.
+:::
+
+## Before Submission
+
+Order matters here, because each step depends on the last.
+
+1. **Make the repositories public**, both model and meta.
+2. **Release and archive the model first.** The meta-repository needs to cite a specific version of it, which does not exist until you have cut that release.
+3. **Archive input and generated data.** Large simulation ensembles included — [not only the subset the paper used](../expectations/open.qmd), so the subsetting is inspectable.
+4. **Release and archive the meta-repository**, with the model and data DOIs already filled into its README.
+5. **Write the availability statement** using those DOIs, not URLs.
+6. **Have someone reproduce it.** Someone uninvolved, from the archive and the README alone, [as the paper checklist requires](paper-checklist.qmd). This is the step that finds the hard-coded absolute path.
+
+A workable availability statement names what is archived, where, and under what DOI:
+
+> All code and data required to reproduce this analysis are archived at [DOI]. The [model name] model version used is archived at [DOI]. Input data are available from [source] and archived at [DOI].
+
+Check your target journal's wording requirements — they vary, and some require a specific section heading.
+
+## Licensing
+
+Everything gets a license. Code with no license is not open, whatever the repository's visibility says: without one, nobody has permission to use it, and "it's on GitHub" is not permission.
+
+See [Selecting Licenses](licenses.qmd). The short version is a permissive license (MIT, BSD, Apache-2.0) for original code, and matching the upstream license when you build on copyleft.
+
+## When Someone Leaves
+
+Repository ownership, outstanding releases, and the question of who maintains a model after its author graduates are covered in [Leaving the Group](../procedures/offboarding.qmd). Read it before you need it — the expensive version of this conversation is the one that happens after the person has gone.
