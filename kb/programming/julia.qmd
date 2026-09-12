@@ -25,3 +25,14 @@ Julia comes with a fantastic package manager, `Pkg.jl`. Make sure you make a new
 ## Learn More
 
 A good introduction to Julia is [Introduction to Computational Thinking](https://computationalthinking.mit.edu/Fall20/), an online course from MIT.
+
+## When You're Stuck
+
+Julia's ecosystem is smaller than Python's, so the search-engine reflex works less well and the official channels work better.
+
+1. **Docstrings at the REPL.** `?functionname` is fast and unusually complete. `@which f(x)` tells you which method is being called, which is the key question when dispatch is not doing what you expect.
+2. **[The Julia manual](https://docs.julialang.org/)**, particularly [Performance Tips](https://docs.julialang.org/en/v1/manual/performance-tips/) when code is slower than you expected. Type instability is the usual culprit; `@code_warntype` finds it.
+3. **[Julia Discourse](https://discourse.julialang.org/)** is the main place questions get answered, and answers frequently come from the package authors. Better signal than Stack Overflow for Julia specifically.
+4. **The package's GitHub issues.** Smaller ecosystem means a real chance your problem is a known issue or a recent breaking change.
+5. **Check your environment.** `] status` in the REPL. Version mismatches between a `Project.toml` and what is actually installed cause a lot of confusing behaviour.
+6. **[Modern Julia Workflows](https://modernjuliaworkflows.org/)** for how to set things up sensibly in the first place.

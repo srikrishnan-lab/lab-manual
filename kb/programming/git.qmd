@@ -61,3 +61,13 @@ There are several alternatives to GitHub, including [Bitbucket](https://bitbucke
 * [GitHub Skills](https://skills.github.com/) from GitHub.
 * [Getting Started: Git and GitHub](https://waterprogramming.wordpress.com/2014/09/29/getting-started-git-and-github/) from Water Programming.
 * A [collection of git-related posts](https://waterprogramming.wordpress.com/category/programming/git-and-github/) from Water Programming.
+
+## When You're Stuck
+
+Git's error messages are famously unhelpful, and most problems are one of a small number of situations.
+
+1. **Stop and look before acting.** `git status`, then `git log --oneline --graph --all`. Most confusion is not knowing which branch you are on or what is staged.
+2. **[Oh Shit, Git!?!](https://ohshitgit.com/)** ([polite version](https://dangitgit.com/)) — organized by the situation you are in rather than by command, which is the right index for git.
+3. **Almost nothing is unrecoverable.** `git reflog` shows where HEAD has been, including commits you think you destroyed. Before a scary operation, note the current SHA.
+4. **[Version Control with Git](https://swcarpentry.github.io/git-novice/)** if the gap is conceptual.
+5. **Ask before force-pushing a shared branch.** This is the one class of git mistake that damages other people's work rather than just your own. On anything in the `srikrishnan-lab` organization, ask first.

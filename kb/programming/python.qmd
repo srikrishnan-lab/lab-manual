@@ -64,3 +64,12 @@ Other packages may make sense depending on your workflow and tasks:
 * [Livecoding Madness - Let's Build a Deep Learning Library](https://www.youtube.com/watch?v=o64FV-ez6Gw) by Joel Grus
 * [Software Testing and Testing Automation with Python](https://leemangeophysicalllc.github.io/testing-with-python/)
 * [Python posts](https://waterprogramming.wordpress.com/category/programming/python/) from Water Programming.
+
+## When You're Stuck
+
+1. **Read the traceback from the bottom up.** The last line is what broke; the lines above are how you got there. The first frame in *your* code, rather than in a library, is usually where the problem is.
+2. **[Official docs](https://docs.python.org/3/) and the library's own documentation** before a search engine. Library docs are generally good, and a search result is often three versions out of date.
+3. **Check the version you actually have.** A large fraction of "the docs are wrong" turns out to be a different version installed than the one you are reading about. `pip show <package>` or `conda list`.
+4. **[Stack Overflow](https://stackoverflow.com/questions/tagged/python)** for error messages. Paste the exact message, minus your paths and variable names.
+5. **Make a minimal reproducer.** Strip the problem to the smallest script that still fails. This solves it outright often enough to be worth doing before asking anyone, and when it does not, you now have something small enough for someone else to look at.
+6. **Ask.** With the reproducer, the traceback, and what you already tried.

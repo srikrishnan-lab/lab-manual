@@ -48,3 +48,13 @@ Your Slurm submission scripts on Hopper are shell scripts with extra `#SBATCH` d
 * [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) from MIT, covering the shell, `tmux`, and the wider command-line toolchain.
 * [ShellCheck](https://www.shellcheck.net/) will catch bugs in a script you have written, including several classes of quoting error that fail silently.
 * [Explainshell](https://explainshell.com/) breaks down what an unfamiliar command and its flags actually do, which is useful when you inherit a script or copy something from a tutorial.
+
+## When You're Stuck
+
+The shell's error messages are terse and its manual pages assume you already know what you are looking for. A rough order of attack:
+
+1. **`man <command>`** or `<command> --help`. Man pages are reference, not tutorial — skim for the flag you need rather than reading top to bottom.
+2. **[Explainshell](https://explainshell.com/)** when you have a command and do not know what it does. Paste it in and it annotates each flag. Better than guessing at a line you copied from a tutorial.
+3. **[ShellCheck](https://www.shellcheck.net/)** when a script misbehaves. It catches quoting bugs that fail silently, which is most of them.
+4. **[The Unix Shell](https://swcarpentry.github.io/shell-novice/)** if the gap is conceptual rather than a specific command.
+5. **Ask.** Shell problems are unusually well suited to a two-minute conversation, because the person helping can usually see the answer in your command.
