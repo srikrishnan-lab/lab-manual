@@ -187,6 +187,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Knowledge Base</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../kb/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -299,6 +305,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#commits" id="toc-commits" class="nav-link" data-scroll-target="#commits">Commits</a></li>
   <li><a href="#alternatives" id="toc-alternatives" class="nav-link" data-scroll-target="#alternatives">Alternatives</a></li>
   <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn More</a></li>
+  <li><a href="#when-youre-stuck" id="toc-when-youre-stuck" class="nav-link" data-scroll-target="#when-youre-stuck">When You’re Stuck</a></li>
   </ul>
 </nav>
     </div>
@@ -400,6 +407,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="https://waterprogramming.wordpress.com/2014/09/29/getting-started-git-and-github/">Getting Started: Git and GitHub</a> from Water Programming.</li>
 <li>A <a href="https://waterprogramming.wordpress.com/category/programming/git-and-github/">collection of git-related posts</a> from Water Programming.</li>
 </ul>
+</section>
+<section id="when-youre-stuck" class="level2">
+<h2 class="anchored" data-anchor-id="when-youre-stuck">When You’re Stuck</h2>
+<p>Git’s error messages are famously unhelpful, and most problems are one of a small number of situations.</p>
+<ol type="1">
+<li><strong>Stop and look before acting.</strong> <code>git status</code>, then <code>git log --oneline --graph --all</code>. Most confusion is not knowing which branch you are on or what is staged.</li>
+<li><strong><a href="https://ohshitgit.com/">Oh Shit, Git!?!</a></strong> (<a href="https://dangitgit.com/">polite version</a>) — organized by the situation you are in rather than by command, which is the right index for git.</li>
+<li><strong>Almost nothing is unrecoverable.</strong> <code>git reflog</code> shows where HEAD has been, including commits you think you destroyed. Before a scary operation, note the current SHA.</li>
+<li><strong><a href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a></strong> if the gap is conceptual.</li>
+<li><strong>Ask before force-pushing a shared branch.</strong> This is the one class of git mistake that damages other people’s work rather than just your own. On anything in the <code>srikrishnan-lab</code> organization, ask first.</li>
+</ol>
 
 
 <!-- -->
@@ -925,7 +943,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Version Control with Git</span><span class="co">](http://swcarpentry.github.io/git-novice/)</span> from Software Carpentry</span>
 <span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">GitHub Skills</span><span class="co">](https://skills.github.com/)</span> from GitHub.</span>
 <span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Getting Started: Git and GitHub</span><span class="co">](https://waterprogramming.wordpress.com/2014/09/29/getting-started-git-and-github/)</span> from Water Programming.</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>A <span class="co">[</span><span class="ot">collection of git-related posts</span><span class="co">](https://waterprogramming.wordpress.com/category/programming/git-and-github/)</span> from Water Programming.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>A <span class="co">[</span><span class="ot">collection of git-related posts</span><span class="co">](https://waterprogramming.wordpress.com/category/programming/git-and-github/)</span> from Water Programming.</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu">## When You're Stuck</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>Git's error messages are famously unhelpful, and most problems are one of a small number of situations.</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Stop and look before acting.** <span class="in">`git status`</span>, then <span class="in">`git log --oneline --graph --all`</span>. Most confusion is not knowing which branch you are on or what is staged.</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**[Oh Shit, Git!?!](https://ohshitgit.com/)** (<span class="co">[</span><span class="ot">polite version</span><span class="co">](https://dangitgit.com/)</span>) — organized by the situation you are in rather than by command, which is the right index for git.</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Almost nothing is unrecoverable.** <span class="in">`git reflog`</span> shows where HEAD has been, including commits you think you destroyed. Before a scary operation, note the current SHA.</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**[Version Control with Git](https://swcarpentry.github.io/git-novice/)** if the gap is conceptual.</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Ask before force-pushing a shared branch.** This is the one class of git mistake that damages other people's work rather than just your own. On anything in the <span class="in">`srikrishnan-lab`</span> organization, ask first.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

@@ -187,6 +187,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Knowledge Base</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../kb/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -296,6 +302,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#development-environments" id="toc-development-environments" class="nav-link" data-scroll-target="#development-environments">Development Environments</a></li>
   <li><a href="#recommended-packages" id="toc-recommended-packages" class="nav-link" data-scroll-target="#recommended-packages">Recommended Packages</a></li>
   <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn More</a></li>
+  <li><a href="#when-youre-stuck" id="toc-when-youre-stuck" class="nav-link" data-scroll-target="#when-youre-stuck">When You’re Stuck</a></li>
   </ul>
 </nav>
     </div>
@@ -390,6 +397,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="https://leemangeophysicalllc.github.io/testing-with-python/">Software Testing and Testing Automation with Python</a></li>
 <li><a href="https://waterprogramming.wordpress.com/category/programming/python/">Python posts</a> from Water Programming.</li>
 </ul>
+</section>
+<section id="when-youre-stuck" class="level2">
+<h2 class="anchored" data-anchor-id="when-youre-stuck">When You’re Stuck</h2>
+<ol type="1">
+<li><strong>Read the traceback from the bottom up.</strong> The last line is what broke; the lines above are how you got there. The first frame in <em>your</em> code, rather than in a library, is usually where the problem is.</li>
+<li><strong><a href="https://docs.python.org/3/">Official docs</a> and the library’s own documentation</strong> before a search engine. Library docs are generally good, and a search result is often three versions out of date.</li>
+<li><strong>Check the version you actually have.</strong> A large fraction of “the docs are wrong” turns out to be a different version installed than the one you are reading about. <code>pip show &lt;package&gt;</code> or <code>conda list</code>.</li>
+<li><strong><a href="https://stackoverflow.com/questions/tagged/python">Stack Overflow</a></strong> for error messages. Paste the exact message, minus your paths and variable names.</li>
+<li><strong>Make a minimal reproducer.</strong> Strip the problem to the smallest script that still fails. This solves it outright often enough to be worth doing before asking anyone, and when it does not, you now have something small enough for someone else to look at.</li>
+<li><strong>Ask.</strong> With the reproducer, the traceback, and what you already tried.</li>
+</ol>
 
 
 <!-- -->
@@ -918,7 +936,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Beyond PEP 8 -- Best Practices for Beautiful Intelligible Code</span><span class="co">](https://www.youtube.com/watch?v=wf-BqAjZb8M&amp;list=LL&amp;index=21)</span> by Raymond Hettinger from PyCon 2015.</span>
 <span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Livecoding Madness - Let's Build a Deep Learning Library</span><span class="co">](https://www.youtube.com/watch?v=o64FV-ez6Gw)</span> by Joel Grus</span>
 <span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Software Testing and Testing Automation with Python</span><span class="co">](https://leemangeophysicalllc.github.io/testing-with-python/)</span></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Python posts</span><span class="co">](https://waterprogramming.wordpress.com/category/programming/python/)</span> from Water Programming.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Python posts</span><span class="co">](https://waterprogramming.wordpress.com/category/programming/python/)</span> from Water Programming.</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">## When You're Stuck</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Read the traceback from the bottom up.** The last line is what broke; the lines above are how you got there. The first frame in *your* code, rather than in a library, is usually where the problem is.</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**[Official docs](https://docs.python.org/3/) and the library's own documentation** before a search engine. Library docs are generally good, and a search result is often three versions out of date.</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Check the version you actually have.** A large fraction of "the docs are wrong" turns out to be a different version installed than the one you are reading about. <span class="in">`pip show &lt;package&gt;`</span> or <span class="in">`conda list`</span>.</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**[Stack Overflow](https://stackoverflow.com/questions/tagged/python)** for error messages. Paste the exact message, minus your paths and variable names.</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Make a minimal reproducer.** Strip the problem to the smallest script that still fails. This solves it outright often enough to be worth doing before asking anyone, and when it does not, you now have something small enough for someone else to look at.</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**Ask.** With the reproducer, the traceback, and what you already tried.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

@@ -187,6 +187,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Knowledge Base</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../kb/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -294,6 +300,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#what-you-actually-need" id="toc-what-you-actually-need" class="nav-link active" data-scroll-target="#what-you-actually-need">What You Actually Need</a></li>
   <li><a href="#shell-scripts" id="toc-shell-scripts" class="nav-link" data-scroll-target="#shell-scripts">Shell Scripts</a></li>
   <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn More</a></li>
+  <li><a href="#when-youre-stuck" id="toc-when-youre-stuck" class="nav-link" data-scroll-target="#when-youre-stuck">When You’re Stuck</a></li>
   </ul>
 </nav>
     </div>
@@ -399,6 +406,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="https://www.shellcheck.net/">ShellCheck</a> will catch bugs in a script you have written, including several classes of quoting error that fail silently.</li>
 <li><a href="https://explainshell.com/">Explainshell</a> breaks down what an unfamiliar command and its flags actually do, which is useful when you inherit a script or copy something from a tutorial.</li>
 </ul>
+</section>
+<section id="when-youre-stuck" class="level2">
+<h2 class="anchored" data-anchor-id="when-youre-stuck">When You’re Stuck</h2>
+<p>The shell’s error messages are terse and its manual pages assume you already know what you are looking for. A rough order of attack:</p>
+<ol type="1">
+<li><strong><code>man &lt;command&gt;</code></strong> or <code>&lt;command&gt; --help</code>. Man pages are reference, not tutorial — skim for the flag you need rather than reading top to bottom.</li>
+<li><strong><a href="https://explainshell.com/">Explainshell</a></strong> when you have a command and do not know what it does. Paste it in and it annotates each flag. Better than guessing at a line you copied from a tutorial.</li>
+<li><strong><a href="https://www.shellcheck.net/">ShellCheck</a></strong> when a script misbehaves. It catches quoting bugs that fail silently, which is most of them.</li>
+<li><strong><a href="https://swcarpentry.github.io/shell-novice/">The Unix Shell</a></strong> if the gap is conceptual rather than a specific command.</li>
+<li><strong>Ask.</strong> Shell problems are unusually well suited to a two-minute conversation, because the person helping can usually see the answer in your command.</li>
+</ol>
 
 
 <!-- -->
@@ -911,7 +929,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">The Unix Shell</span><span class="co">](https://swcarpentry.github.io/shell-novice/)</span> from Software Carpentry, the standard introduction. Work through it once; it takes an afternoon.</span>
 <span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">The Missing Semester of Your CS Education</span><span class="co">](https://missing.csail.mit.edu/)</span> from MIT, covering the shell, <span class="in">`tmux`</span>, and the wider command-line toolchain.</span>
 <span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">ShellCheck</span><span class="co">](https://www.shellcheck.net/)</span> will catch bugs in a script you have written, including several classes of quoting error that fail silently.</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Explainshell</span><span class="co">](https://explainshell.com/)</span> breaks down what an unfamiliar command and its flags actually do, which is useful when you inherit a script or copy something from a tutorial.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Explainshell</span><span class="co">](https://explainshell.com/)</span> breaks down what an unfamiliar command and its flags actually do, which is useful when you inherit a script or copy something from a tutorial.</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="fu">## When You're Stuck</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>The shell's error messages are terse and its manual pages assume you already know what you are looking for. A rough order of attack:</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**`man &lt;command&gt;`** or <span class="in">`&lt;command&gt; --help`</span>. Man pages are reference, not tutorial — skim for the flag you need rather than reading top to bottom.</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**[Explainshell](https://explainshell.com/)** when you have a command and do not know what it does. Paste it in and it annotates each flag. Better than guessing at a line you copied from a tutorial.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**[ShellCheck](https://www.shellcheck.net/)** when a script misbehaves. It catches quoting bugs that fail silently, which is most of them.</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**[The Unix Shell](https://swcarpentry.github.io/shell-novice/)** if the gap is conceptual rather than a specific command.</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Ask.** Shell problems are unusually well suited to a two-minute conversation, because the person helping can usually see the answer in your command.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

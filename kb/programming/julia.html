@@ -187,6 +187,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Knowledge Base</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../kb/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -296,6 +302,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#development-environments" id="toc-development-environments" class="nav-link" data-scroll-target="#development-environments">Development Environments</a></li>
   <li><a href="#package-management" id="toc-package-management" class="nav-link" data-scroll-target="#package-management">Package Management</a></li>
   <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn More</a></li>
+  <li><a href="#when-youre-stuck" id="toc-when-youre-stuck" class="nav-link" data-scroll-target="#when-youre-stuck">When You’re Stuck</a></li>
   </ul>
 </nav>
     </div>
@@ -341,6 +348,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn More</h2>
 <p>A good introduction to Julia is <a href="https://computationalthinking.mit.edu/Fall20/">Introduction to Computational Thinking</a>, an online course from MIT.</p>
+</section>
+<section id="when-youre-stuck" class="level2">
+<h2 class="anchored" data-anchor-id="when-youre-stuck">When You’re Stuck</h2>
+<p>Julia’s ecosystem is smaller than Python’s, so the search-engine reflex works less well and the official channels work better.</p>
+<ol type="1">
+<li><strong>Docstrings at the REPL.</strong> <code>?functionname</code> is fast and unusually complete. <code>@which f(x)</code> tells you which method is being called, which is the key question when dispatch is not doing what you expect.</li>
+<li><strong><a href="https://docs.julialang.org/">The Julia manual</a></strong>, particularly <a href="https://docs.julialang.org/en/v1/manual/performance-tips/">Performance Tips</a> when code is slower than you expected. Type instability is the usual culprit; <code>@code_warntype</code> finds it.</li>
+<li><strong><a href="https://discourse.julialang.org/">Julia Discourse</a></strong> is the main place questions get answered, and answers frequently come from the package authors. Better signal than Stack Overflow for Julia specifically.</li>
+<li><strong>The package’s GitHub issues.</strong> Smaller ecosystem means a real chance your problem is a known issue or a recent breaking change.</li>
+<li><strong>Check your environment.</strong> <code>] status</code> in the REPL. Version mismatches between a <code>Project.toml</code> and what is actually installed cause a lot of confusing behaviour.</li>
+<li><strong><a href="https://modernjuliaworkflows.org/">Modern Julia Workflows</a></strong> for how to set things up sensibly in the first place.</li>
+</ol>
 
 
 <!-- -->
@@ -830,7 +849,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## Learn More</span></span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>A good introduction to Julia is <span class="co">[</span><span class="ot">Introduction to Computational Thinking</span><span class="co">](https://computationalthinking.mit.edu/Fall20/)</span>, an online course from MIT.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>A good introduction to Julia is <span class="co">[</span><span class="ot">Introduction to Computational Thinking</span><span class="co">](https://computationalthinking.mit.edu/Fall20/)</span>, an online course from MIT.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">## When You're Stuck</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>Julia's ecosystem is smaller than Python's, so the search-engine reflex works less well and the official channels work better.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Docstrings at the REPL.** <span class="in">`?functionname`</span> is fast and unusually complete. <span class="in">`@which f(x)`</span> tells you which method is being called, which is the key question when dispatch is not doing what you expect.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**[The Julia manual](https://docs.julialang.org/)**, particularly <span class="co">[</span><span class="ot">Performance Tips</span><span class="co">](https://docs.julialang.org/en/v1/manual/performance-tips/)</span> when code is slower than you expected. Type instability is the usual culprit; <span class="in">`@code_warntype`</span> finds it.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**[Julia Discourse](https://discourse.julialang.org/)** is the main place questions get answered, and answers frequently come from the package authors. Better signal than Stack Overflow for Julia specifically.</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**The package's GitHub issues.** Smaller ecosystem means a real chance your problem is a known issue or a recent breaking change.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Check your environment.** <span class="in">`] status`</span> in the REPL. Version mismatches between a <span class="in">`Project.toml`</span> and what is actually installed cause a lot of confusing behaviour.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**[Modern Julia Workflows](https://modernjuliaworkflows.org/)** for how to set things up sensibly in the first place.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
