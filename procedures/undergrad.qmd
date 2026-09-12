@@ -91,6 +91,8 @@ Uncompensated internships give an unfair advantage to those who can afford to vo
 
 ## How to Write a Project Proposal {#proposal}
 
+There is a [template you can start from](../templates/project-proposal.md) if a blank page is the obstacle. Using it is optional, and a proposal that ignores its headings entirely is fine so long as it covers the same ground.
+
 The project proposal is the first draft of your semester research plan. This document will lay out research questions and goals, milestones and timelines, the tools you will need, and the mentoring and guidance you anticipate requiring. The proposal is not intended to be a binding contract, and will likely change upon further discussion. The main goal of the project proposal is to convince Vivek of the following:
 
   * You've thought about the research you'd like to do;
