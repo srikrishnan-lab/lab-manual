@@ -1,20 +1,36 @@
 /*-- scss:defaults --*/
+
+// Inline code. Spacelab's default is a purple (#7d12ba) that reads as a link
+// and sits oddly next to the code blocks, so inline code gets near-black on a
+// light grey chip instead. 10.9:1 against its background.
 $color-code-background: #eeeeee;
 $color-code-color: #333333;
 
+// Override Bootstrap's variable too, so inline code inside tables, callouts,
+// headings and blockquotes matches the rest rather than falling back to purple.
+$code-color: $color-code-color;
+
 /*-- scss:rules --*/
-p code:not(.sourceCode) {
+
+// Applies everywhere inline code appears, not just in paragraphs and lists.
+// `:not(.sourceCode)` keeps highlighted code blocks out of it.
+code:not(.sourceCode) {
     background-color: $color-code-background;
     color: $color-code-color;
     border-radius: 0.3em;
-    padding: 4px 5px 6px;
-    white-space: nowrap;
+    padding: 2px 5px 3px;
 }
 
+// Keep short identifiers together, but let long paths and calls wrap rather
+// than pushing a table or a phone-width page into horizontal scrolling.
+p code:not(.sourceCode),
 li code:not(.sourceCode) {
-    background-color: $color-code-background;
-    color: $color-code-color;
-    border-radius: 0.3em;
-    padding: 4px 5px 6px;
-    white-space: nowrap;
+    overflow-wrap: break-word;
+}
+
+// Code blocks: a11y-light is a light theme, so give the block a light border
+// rather than leaving it as an unbounded block of near-white on white.
+div.sourceCode {
+    border: 1px solid #d8dbe0;
+    border-radius: 0.25rem;
 }
