@@ -23,6 +23,6 @@ Kieran Healy has [an excellent book on data visualization](https://socviz.co/) u
 
 ## Development Environments
 
-[RStudio](https://posit.co/products/open-source/rstudio/) is the best graphical R IDE around. It is now developed by Posit, the company formerly called RStudio, but the editor itself is unchanged and still free and open-source.
+[RStudio](https://posit.co/products/open-source/rstudio/) is the best graphical R IDE around. It is developed by Posit (the company formerly called RStudio), and it is still free and open-source.
 
 If you would rather stay in one editor across languages, [VS Code](https://code.visualstudio.com/) has a usable [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r), though RStudio remains the better experience for R-heavy work.
