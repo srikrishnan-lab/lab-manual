@@ -9,7 +9,7 @@ If you are unsure if your research interests would be a good fit for the researc
 ::: {#quick-start .callout-tip}
 ## Quick Start
 
-1. [Email Vivek expressing interest](#interest) &mdash; well ahead of the admissions deadline.
+1. [Email Vivek expressing interest](#interest), well ahead of the admissions deadline.
 2. Apply through the [Graduate School's Admissions site](https://gradschool.cornell.edu/admissions/apply/) to a field in which Vivek is a member (see [How to Apply](#how-to-apply) below).
 3. If there's mutual interest, expect a video chat, a short guided paper evaluation and a conversation about it, and then your formal application (see [Application Process](#application-process)).
 
@@ -58,7 +58,7 @@ You can apply to the aforementioned fields without contacting faculty ahead of t
 
 ### Professional Programs (M.Eng. and M.P.S.)
 
-M.Eng. and M.P.S. students should also follow the [Quick Start](#quick-start) steps and ask if he has projects available. This does not need to be done too far ahead of the start of your first semester unless you specifically want to be supervised by Vivek, in which case you should inquire as early as possible.
+M.Eng. and M.P.S. students should also follow the [Quick Start](#quick-start) steps and ask Vivek whether he has projects available. This does not need to be done too far ahead of the start of your first semester unless you specifically want to be supervised by Vivek, in which case you should inquire as early as possible.
 
 ## What We're Looking For
 
@@ -130,7 +130,7 @@ Putting together a graduate application is a lot of work, both for you and for y
 
 * **Explain why you are reaching out to Vivek *specifically***: Did you read one of our group's papers (and if so, which one(s))? Was a project or opening listed on the website of particular interest? It's helpful for Vivek to know why our group appeared on your radar. For this reason, mass e-mails are unlikely to receive productive responses. An inquiry that references a specific paper or material and ties it to your interests and what you hope to gain as a member of our group is the most likely to get a positive response.
 
-* **Expect a reply within about a week**: Vivek aims to respond to inquiries within a week. If it has been noticeably longer, a short follow-up is welcome rather than presumptuous --- messages do get buried, particularly around deadlines and the start of a semester.
+* **Expect a reply within about a week**: Vivek aims to respond to inquiries within a week. If it has been noticeably longer, a short follow-up is welcome rather than presumptuous, since messages do get buried, particularly around deadlines and the start of a semester.
 
 * **Ask specific questions**: It's hard to provide feedback if your expression of interest is vague, and this can be a sign that you haven't fully thought through whether we would be a good fit for you. For example, you might ask questions like:
     * "Are you still working on `<some topic>`?" or "Are you interested in `<some topic>`?"
@@ -144,13 +144,13 @@ If your only questions are "Should I apply?" or "Can you look at my application?
 
 If your inquiry reads as though a language model wrote it, it will not get a substantive reply.
 
-This email exists to show you have read our work and thought about the fit. A model cannot do that for you --- it does not know what you want, and what comes back is fluent, warm, and specific about nothing.
+This email exists to show you have read our work and thought about the fit. A model cannot do that for you: it does not know what you want, and what comes back is fluent, warm, and specific about nothing.
 
 If you cannot write a few paragraphs in your own voice about why you want to work here, the fit probably is not there.
 
 Polishing your own prose afterward is fine.
 
-This is stricter than what governs the [guided paper evaluation](#guided-paper-evaluation) later in the process, where you may use a language model as long as you say so. The difference is that the evaluation gets discussed with you afterward, so it does not much matter how the draft got written; this email is the only thing we have to go on, and it is the part where we are trying to find out whether there is a specific person with specific interests on the other end.
+This rule is stricter than the one for the [guided paper evaluation](#guided-paper-evaluation) later in the process, where you may use a language model as long as you say so. Vivek discusses the evaluation with you afterward, so how the draft was written is less important. This email is the only thing we have to go on, and we read it to learn what you specifically are interested in.
 :::
 
 
@@ -165,11 +165,11 @@ No judgement whatsoever will be made based on video background, and don't feel t
 Vivek will send you an email asking you to provide a written evaluation of a paper, which he will provide in that email. This paper will be selected based on your discussed interests.
 
 ::: {.callout-note}
-## This Is a Conversation, Not a Test
+## Will We Discuss My Evaluation?
 
-The written response is the starting point, not the whole exercise. Vivek will follow up with a short discussion --- usually about fifteen minutes, often folded into the [video chat](#video-chats) --- about what you wrote and why.
+Yes. The written response is a starting point: Vivek will follow up with a short discussion (usually about fifteen minutes, often as part of the [video chat](#video-chats)) about what you wrote and why.
 
-That conversation is the part that matters. We are trying to learn how you read a paper, what you noticed, and what you did when you hit something you didn't understand. None of that comes through clearly on the page, and all of it comes through in five minutes of talking.
+The discussion is the most important part of the exercise. We want to learn how you read a paper, what you noticed, and what you did when you hit something you didn't understand, and that comes through much more clearly in conversation than on the page.
 :::
 
 Your evaluation should be no more than two pages (no more than 12 point font and no less than one inch page margins). Address several of the following prompts about the paper:
@@ -182,11 +182,11 @@ Your evaluation should be no more than two pages (no more than 12 point font and
 
 Then address at least one of these, which are about *your reading* rather than about the paper:
 
-* What did you have to look up in order to get through this? A method, a term, a cited paper --- whatever it was.
+* What did you have to look up in order to get through this (a method, a term, a cited paper)?
 * Which part was hardest for you, and what did you do about it?
 * Was there anything you are still not sure you understood?
 
-The second set is not a trap, and there is no penalty for a long answer. Research consists largely of reading things you do not yet understand and working out how to proceed anyway; being able to say clearly what you don't know is a skill we are actively looking for, and one that many strong applicants undersell. "I couldn't follow the Bayesian calibration in §3, so I read the Kennedy and O'Hagan paper it cites and got about halfway" is a better answer than a confident summary that papers over the same gap.
+The second set is not a trap, and there is no penalty for a long answer. Much of research is reading things you don't yet understand and working out how to proceed anyway, so being able to say clearly what you don't know is a skill we look for. "I couldn't follow the Bayesian calibration in §3, so I read the Kennedy and O'Hagan paper it cites and got about halfway" is a better answer than a confident summary that leaves the same gap unmentioned.
 
 You should return your response to Vivek within 48 hours. This doesn't need to be detailed or overly polished, and this isn't an exam. However, if this is not possible due to time constraints, let Vivek know ASAP and we can find a suitable date.
 
@@ -201,11 +201,9 @@ This evaluation is governed by [Cornell's Academic Integrity Code](https://provo
 1. You should do this work on your own, without communicating with advisors, colleagues, etc.
 2. You may use information that you find on the web so long as it is from a trustworthy source. However, you must attribute any sources that you draw from. Plagiarism is unacceptable, and simply paragraphing without attribution is still plagiarism.
 3. Please use a formal bibliographic style such as APA, AGU, or similar. References do not count toward the page limit. It doesn't matter which of these you use, but be consistent.
-4. You *may* use large language models (*e.g.*, ChatGPT) while working on this. If you do, include a sentence or two saying what you used and what for. We would much rather know than not, and it is useful information about how you work rather than a mark against you --- how people actually use these tools is something the group is still figuring out too.[^1]
+4. You *may* use large language models (*e.g.*, ChatGPT) while working on this. If you do, include a sentence or two saying what you used and what for. We would much rather know than not, and it tells us how you work; it is not a mark against you. The group is still working out how best to use these tools, too.
 
-    Bear in mind what the exercise is for. Vivek will discuss your response with you, and the questions will be about this particular paper and your particular reading of it. A response you did not think through yourself is difficult to talk about, and that is the main reason outsourcing this tends to backfire --- not because it breaks a rule, but because the conversation is the point and you will have skipped the preparation for it.
-
-[^1]: This is a narrower ask than earlier versions of this page made. We used to require citing the exact prompts and documenting how you fact-checked the output. That was more bookkeeping than it was worth, and it mostly penalized applicants who were candid about using a tool that others were using silently.
+    Bear in mind what the exercise is for. Vivek will discuss your response with you, and the questions will be about this particular paper and your particular reading of it. A response you did not think through yourself is difficult to talk about, so if you hand the response to a model, you will have skipped the preparation for the discussion.
 
 ### Your Application
 
