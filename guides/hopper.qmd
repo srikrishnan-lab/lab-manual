@@ -28,7 +28,7 @@ Hopper has 26 compute nodes, in two generations:
 The head node is `hopper.cac.cornell.edu`, accessed over `ssh`. Nodes are interconnected with InfiniBand.
 
 - Hyperthreading is enabled on all nodes by default, so each physical core is treated as two logical CPUs (an Intel node looks like 80 CPUs, an EPYC node like 192). If you don't want hyperthreading, include the following in your submission script: `#SBATCH --hint=nomultithread`
-- The EPYC nodes are both faster per-core and much larger in memory than the original Intel nodes. If your job is memory-hungry or you want more cores in a single shared-memory process, target those; if you are running many small independent tasks, the Intel nodes are usually less contended.
+- The EPYC nodes are faster per core and have much more memory than the original Intel nodes. If your job needs a lot of memory, or more cores in a single shared-memory process, request those nodes; for many small independent tasks, the Intel nodes work fine.
 
 ## Software
 
@@ -37,9 +37,9 @@ The head node is `hopper.cac.cornell.edu`, accessed over `ssh`. Nodes are interc
 Use your home directory (`~`) for data you want to keep. Home directories live on an NFS export from the head node, shared across all compute nodes. CAC does not publish a per-user quota or a total capacity figure, so check your own usage with `du -sh ~` and the filesystem with `df -h ~`. Because `$HOME` is NFS, jobs doing heavy file I/O should [stage through node-local `/tmp`](hopper-access.qmd#staging-data-through-tmp).
 
 ::: {.callout-warning}
-## Hopper Is Not Backed Up
+## Is Hopper Backed Up?
 
-CAC does **not** back up Hopper home directories. Nothing on Hopper is safe by default. Anything you cannot regenerate cheaply -- raw input data, final simulation output, anything a paper depends on -- must also live somewhere else. See [Data Management](data-management.qmd) for what that means in practice.
+No. CAC does not back up Hopper home directories, so anything you can't cheaply regenerate (raw input data, final simulation output, anything a paper depends on) has to be stored somewhere else as well. [Data Management](data-management.qmd) explains where.
 :::
 
 ### Scheduler
@@ -58,11 +58,11 @@ Hopper uses [Lmod environment modules](https://portal.cac.cornell.edu/techdocs/c
 
 ### When To Use Hopper
 
-If you aren't going to be using a lot of cores (10+ cores), it might be better to use your workstation, especially if Hopper's resources are highly in demand when you want to run your job. The original Intel nodes run at 2.1 GHz, well below the 3-4 GHz of a typical workstation, so on those nodes you only come out ahead if you can exploit parallelization. The newer EPYC nodes narrow that gap (2.75 GHz, and far more cores and memory per node), but the same basic logic holds: Hopper wins on breadth, not on single-core speed. This is great for things like Monte Carlo simulations, multi-objective optimization, or really large-scale modeling experiments where you can have each core run a different member of the ensemble. If you're doing model calibration, think carefully about whether your method can actually use that many cores. Most MCMC procedures, for example, cannot, but Approximate Bayesian Computation, pre-calibration or particle filtering can be embarrassingly parallel.
+If you aren't going to be using a lot of cores (10+ cores), it might be better to use your workstation, especially if Hopper's resources are highly in demand when you want to run your job. The original Intel nodes run at 2.1 GHz, well below the 3-4 GHz of a typical workstation, so on those nodes you only come out ahead if you can exploit parallelization. The newer EPYC nodes narrow that gap (2.75 GHz, and far more cores and memory per node), but Hopper's advantage is still the number of cores you can use at once. This is great for things like Monte Carlo simulations, multi-objective optimization, or really large-scale modeling experiments where you can have each core run a different member of the ensemble. If you're doing model calibration, think carefully about whether your method can actually use that many cores. Most MCMC procedures, for example, cannot, but Approximate Bayesian Computation, pre-calibration or particle filtering can be embarrassingly parallel.
 
 ### Run Jobs using SLURM
 
-**Do not run compute jobs directly on the head node.** The head node is shared by everyone on the cluster, and a heavy job there slows down logins and file transfers for all of us. Instead, either write a Slurm batch script and submit it with `sbatch`, or request an interactive session with `salloc` (or `srun --pty bash`) and work inside that.
+**Do not run compute jobs directly on the head node.** Everyone on the cluster shares the head node, and a heavy job there slows down logins and file transfers for all of us. Instead, write a Slurm batch script and submit it with `sbatch`, or start an interactive session with `srun --pty` and work inside that ([Using Hopper](hopper-access.qmd#interactive-sessions) shows how).
 
 ### Benchmark Your Code
 
@@ -72,7 +72,7 @@ Always benchmark your parallel code on your workstation to get a sense for how i
 
 - If you are going to request a large fraction of Hopper's resources (more than 5 nodes), make sure that you give the other lab groups plenty of notice so they can coordinate their use.
 - Right now, the only filesystem is the user home directories, `~`. This is not a parallel file system, so file I/O with lots of files might slow things down a bit. Try to read files once and minimize file I/O as much as possible.
-- The login shell is `sh`, not `bash`. It is bash running in sh-compatibility mode, and the practical consequence is that **`~/.bashrc` is not sourced** -- put shell customizations in `~/.profile` instead. CAC warns that changing your login shell with `chsh` "may well wreck your batch environment," since the scheduler assumes `sh`.
+- The login shell is `sh`, not `bash` (it is bash running in sh-compatibility mode). As a result, `~/.bashrc` is not read when you log in, so put shell customizations in `~/.profile` instead. CAC warns that changing your login shell with `chsh` "may well wreck your batch environment," since the scheduler assumes `sh`.
 - I recommend using the following instructions to colorize `git` output for easier reading:
 
     ```{.bash filename="Colorize Git"}

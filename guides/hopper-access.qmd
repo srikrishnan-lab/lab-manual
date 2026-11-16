@@ -2,19 +2,19 @@
 title: Using Hopper
 ---
 
-How to get onto [Hopper](hopper.qmd), work on it comfortably, and run jobs. For what Hopper is and when it is the right tool, see the [overview](hopper.qmd).
+This page covers how to get onto [Hopper](hopper.qmd), work on it comfortably, and run jobs. The [overview](hopper.qmd) covers what Hopper is and when it's the right tool.
 
 ::: {.callout-important}
-## The One Rule
+## Don't Run Code on the Head Node
 
-**Do not run computations on the head node.** CAC states the consequence plainly: *"Users should not run codes on the head node. Users who do so will be notified and have privileges revoked."*
+CAC's rule is explicit: *"Users should not run codes on the head node. Users who do so will be notified and have privileges revoked."*
 
-The head node is shared by everyone on the cluster. Editing files, moving data, and submitting jobs there is fine. Anything that actually computes belongs in a [batch job](#batch-jobs) or an [interactive session](#interactive-sessions). This is easy to violate by accident once you are working through a remote IDE — see [that section](#remote-editing) for what to watch for.
+Everyone on the cluster shares the head node. Editing files, moving data, and submitting jobs there is fine, but anything that computes belongs in a [batch job](#batch-jobs) or an [interactive session](#interactive-sessions). It's easy to break this rule by accident when you work through a remote editor, so read the [remote editing](#remote-editing) section before setting one up.
 :::
 
 ## Getting an Account
 
-Hopper access runs through a **CAC account**, which is separate from your Cornell NetID. You get one by being added to the group's CAC project — message Vivek, and this should be part of [onboarding](../procedures/checklist.qmd).
+You log in to Hopper with a CAC account, which is separate from your Cornell NetID. You get one by being added to the group's CAC project; please message Vivek, since this should be part of [onboarding](../procedures/checklist.qmd).
 
 Once your account exists:
 
@@ -22,17 +22,17 @@ Once your account exists:
 ssh <your_cac_username>@hopper.cac.cornell.edu
 ```
 
-You will be prompted to set a new password on first login. CAC passwords need at least eight characters drawn from at least three of {uppercase, lowercase, digits, symbols}, and **expire every six months**; reset them at [passwordreset.cac.cornell.edu](https://passwordreset.cac.cornell.edu/passwordreset/Passwordreset). Repeated failed logins lock the account for about thirty minutes.
+You'll be asked to set a new password the first time you log in. CAC passwords need at least eight characters drawn from at least three of uppercase letters, lowercase letters, digits, and symbols. They expire every six months, and you can reset them at [passwordreset.cac.cornell.edu](https://passwordreset.cac.cornell.edu/passwordreset/Passwordreset). Repeated failed logins lock the account for about thirty minutes.
 
 ::: {.callout-note}
-## Two Things CAC's Docs Don't Say
+## Do I Need the VPN or Two-Factor Authentication?
 
-Their documentation does not state whether a **VPN** is required to reach Hopper from off campus, nor whether **two-factor authentication** applies. If you are off campus and SSH hangs, try the Cornell VPN before assuming your account is broken, and ask CAC if it persists. We would rather this page say "unknown" than guess.
+CAC's documentation doesn't say whether either is required. If you're off campus and SSH hangs, try the Cornell VPN before assuming your account is broken, and ask CAC if the problem continues.
 :::
 
 ## SSH Keys
 
-Optional, but set them up — it removes the password prompt, and remote IDEs depend on non-interactive login.
+SSH keys are optional, but please set them up: they remove the password prompt, and remote editors need to log in without one.
 
 On your own machine:
 
@@ -54,53 +54,53 @@ Host hopper
 
 `ServerAliveInterval` stops idle connections from being dropped, which matters for long interactive sessions.
 
-Note that CAC also creates a key pair for you on the cluster itself. That one is for node-to-node communication inside jobs (MPI and similar) and is unrelated to the key you use to log in.
+CAC also creates a key pair for you on the cluster itself. That key is for communication between nodes inside jobs (MPI and similar) and is unrelated to the key you use to log in.
 
 ## Remote Editing {#remote-editing}
 
-Working through an editor on your laptop while the files live on Hopper is much more pleasant than editing in a terminal. All three options below rest on ordinary SSH.
+Editing files on Hopper from an editor on your laptop is much easier than editing in a terminal. All three options below use ordinary SSH.
 
 ::: {.callout-warning}
-## Your IDE Runs Code on the Head Node
+## Where Does My Editor Run Code?
 
-VS Code and JetBrains both install a background server on the machine you connect to, and it runs as you, on the **head node**. Normal editing is fine. What is not fine is hitting **Run** or **Debug** in the IDE and executing your analysis there, which is exactly what the interface invites you to do.
+VS Code and JetBrains both install a background server on the machine you connect to, and that server runs as you on the head node. Editing files that way is fine. Pressing Run or Debug in the editor is not, because it runs your analysis on the head node.
 
-Use the IDE to edit and to submit jobs. To actually run something interactively, start an [interactive session](#interactive-sessions) in a terminal and work inside it.
+Use the editor to edit files and submit jobs. To run something interactively, start an [interactive session](#interactive-sessions) in a terminal and work inside it.
 
-Be aware too that heavyweight language servers and indexing extensions are themselves compute. If you point a Python or Julia extension at a large repository, it will index it on the head node. Keep your extension set lean, and if you are told you are loading the head node, this is the usual reason.
+Language servers and indexing extensions also use the head node's CPU. If you point a Python or Julia extension at a large repository, it will index the repository on the head node, so keep your extensions to the ones you need. If you're told you're loading the head node, check this first.
 
-CAC does not document remote IDEs at all. What follows works because Hopper supports standard SSH, not because CAC has endorsed it.
+CAC doesn't document remote editors. The setups below work because Hopper supports standard SSH, and CAC hasn't endorsed them.
 :::
 
 ### VS Code
 
-Install the [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension, then **Remote-SSH: Connect to Host** and pick `hopper` (it reads the `~/.ssh/config` block above). VS Code installs its server into `~/.vscode-server` on first connect, which takes a minute or two and consumes some home-directory space.
+Install the [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension, run "Remote-SSH: Connect to Host", and pick `hopper` (it reads the `~/.ssh/config` block above). The first time you connect, VS Code installs its server into `~/.vscode-server`, which takes a minute or two and uses some of your home-directory space.
 
 ### JetBrains
 
-[JetBrains Gateway](https://www.jetbrains.com/remote-development/gateway/) connects with the same SSH configuration and installs a backend IDE under `~/.cache/JetBrains`. This is heavier than the VS Code server; if home-directory space is tight, prefer VS Code.
+[JetBrains Gateway](https://www.jetbrains.com/remote-development/gateway/) connects with the same SSH configuration and installs a full backend IDE under `~/.cache/JetBrains`. That takes more space than the VS Code server, so if your home directory is nearly full, use VS Code.
 
 ### Plain SSH
 
-Always works, never breaks:
+A terminal session needs nothing beyond SSH:
 
 ```bash
 ssh hopper
 tmux new -s work       # or: tmux attach -t work
 ```
 
-`tmux` means a dropped connection does not kill what you were doing. Even if you use an IDE, learn this — it is the fallback when the IDE's server will not start. See the [shell page](../kb/programming/shell.qmd).
+With `tmux`, a dropped connection doesn't end what you were doing. Learn this even if you use an editor, because it's what you fall back on when the editor's server won't start. The [shell page](../kb/programming/shell.qmd) has more.
 
 ## Moving Files
 
-For a few files, `rsync` over your SSH config:
+For a few files, use `rsync` with your SSH configuration:
 
 ```bash
 rsync -avP ./localdir/ hopper:~/remotedir/      # up
 rsync -avP hopper:~/remotedir/ ./localdir/      # down
 ```
 
-For large transfers, use [Globus](https://portal.cac.cornell.edu/techdocs/files/FileTransferGlobus/), which resumes and verifies. Hopper's collection is named **`Hopper Cluster`**.
+For large transfers, use [Globus](https://portal.cac.cornell.edu/techdocs/files/FileTransferGlobus/), which resumes interrupted transfers and checks that files arrived intact. Hopper's collection is named `Hopper Cluster`.
 
 ## Software and Environments
 
@@ -116,16 +116,16 @@ module list
 module purge            # start clean
 ```
 
-Load modules **inside your job script**, not just in your login shell, so the job does not depend on your interactive environment.
+Load modules inside your job script as well as in your login shell, so the job doesn't depend on your interactive environment.
 
 ### Python
 
 ::: {.callout-warning}
-## conda Advice Does Not Apply Here
+## Can I Use conda on Hopper?
 
-The [conda page](../kb/programming/conda.qmd) is about your own machine. On Hopper, CAC documents `venv` and `pip` only, and there is **no `python3` module** to load — Hopper carries a system Python 3.6, which is old.
+The [conda page](../kb/programming/conda.qmd) describes your own machine. On Hopper, CAC documents only `venv` and `pip`, there is no `python3` module to load, and the system Python is version 3.6, which is old.
 
-If your work needs a current Python, talk to Vivek before fighting with this. Options include building a newer Python yourself, using a [Singularity](https://portal.cac.cornell.edu/techdocs/clusters/Hopper/) container (`module load singularity`), or installing Miniforge into your home directory. Do not assume the workflow from your laptop transfers.
+If your work needs a current Python, please talk to Vivek before spending time on this, since the setup from your laptop may not carry over. The options include building a newer Python yourself, using a [Singularity](https://portal.cac.cornell.edu/techdocs/clusters/Hopper/) container (`module load singularity`), or installing Miniforge in your home directory.
 :::
 
 ```bash
@@ -142,15 +142,15 @@ module load R
 mkdir -p $R_LIB
 ```
 
-Then inside R, `install.packages('<name>')` installs into your home directory.
+After that, `install.packages('<name>')` inside R installs packages into your home directory.
 
 ### Julia
 
-Julia is available as a module, though the packaged version may lag. Installing [`juliaup`](https://github.com/JuliaLang/juliaup) into your home directory gives you control of the version, which is usually what you want for a project with a committed `Manifest.toml`.
+Julia is available as a module, but it may be an older version. Installing [`juliaup`](https://github.com/JuliaLang/juliaup) in your home directory lets you choose the version, which you'll usually want for a project with a committed `Manifest.toml`.
 
 ## Running Jobs
 
-Hopper uses [Slurm](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurm/). Two partitions:
+Hopper uses [Slurm](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurm/) and has two partitions:
 
 | Partition | Nodes | Time limit |
 |---|---|---|
@@ -158,9 +158,9 @@ Hopper uses [Slurm](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurm/).
 | `guest` | all | 48 hours |
 
 ::: {.callout-note}
-## Slurm Counts Hyperthreads
+## How Does Slurm Count CPUs?
 
-Hyperthreading is on, so Slurm treats each physical core as two CPUs. `-n 1` gives you **two** logical CPUs — one physical core. Add `--ntasks-per-core=1` if you want to ignore hyperthreading and count physical cores.
+Hyperthreading is on, so Slurm treats each physical core as two CPUs: `-n 1` gives you two logical CPUs, which is one physical core. Add `--ntasks-per-core=1` if you want to ignore hyperthreading and count physical cores.
 :::
 
 ### Batch Jobs {#batch-jobs}
@@ -184,7 +184,7 @@ source ~/envs/myproject/bin/activate
 python analysis.py
 ```
 
-Submit and watch:
+To submit and monitor it:
 
 ```bash
 mkdir -p logs          # Slurm will not create it, and the job fails if it is missing
@@ -194,25 +194,25 @@ scancel <job_id>
 scontrol show job <job_id>
 ```
 
-Always set `-t` to something realistic. `normal` has no limit, but a job that hangs forever holds resources the rest of the cluster wants.
+Always set `-t` to a realistic time. The `normal` partition has no limit, so a job that hangs will hold resources the rest of the cluster needs until someone cancels it.
 
 ### Interactive Sessions {#interactive-sessions}
 
-For debugging, exploratory work, or anything you would otherwise be tempted to run on the head node:
+For debugging, exploratory work, or anything you would otherwise be tempted to run on the head node, start an interactive session:
 
 ```bash
 srun -p normal -n 1 -c 8 --pty /bin/bash -l
 ```
 
-You land on a compute node. Work normally, then `exit` when finished — CAC asks explicitly that you release the allocation rather than leaving it idle.
+This puts you on a compute node, where you can work normally. Type `exit` when you're finished, since CAC asks that you release the allocation instead of leaving it idle.
 
-Combine this with `tmux` on the head node so a dropped connection does not kill the session.
+Start the session from inside `tmux` on the head node, so that a dropped connection doesn't end it.
 
-CAC documents `srun --pty` and does not document `salloc`. `salloc` may work, but `srun --pty` is the supported path.
+CAC documents `srun --pty` but not `salloc`. `salloc` may work, but `srun --pty` is the documented way.
 
 ### Job Arrays
 
-The workhorse for this group, since most of what we run is an ensemble of independent tasks — Monte Carlo replicates, parameter sweeps, one task per scenario:
+Much of the group's work is an ensemble of independent tasks (Monte Carlo replicates, parameter sweeps, one task per scenario), and a job array is the way to run it:
 
 ```{.bash filename="array.sh"}
 #!/bin/bash
@@ -229,11 +229,11 @@ source ~/envs/myproject/bin/activate
 python run_member.py --member $SLURM_ARRAY_TASK_ID
 ```
 
-The `%50` throttle matters: it leaves capacity for the other three groups sharing the cluster. `$SLURM_ARRAY_TASK_ID` is how each task knows which member it is — use it to seed, to index into a parameter table, and to name the output file.
+Keep the `%50` limit, because it leaves capacity for the other three groups sharing the cluster. Each task reads its member number from `$SLURM_ARRAY_TASK_ID`; use it to set the random seed, to index into a parameter table, and to name the output file.
 
 ### Chained and Dependent Jobs
 
-When a workflow has stages — calibrate, then simulate, then post-process — submit them with dependencies rather than babysitting:
+When a workflow has stages (calibrate, then simulate, then post-process), submit them with dependencies so each stage starts when the previous one finishes:
 
 ```bash
 jid1=$(sbatch --parsable calibrate.sh)
@@ -241,11 +241,11 @@ jid2=$(sbatch --parsable --dependency=afterok:$jid1 simulate.sh)
 sbatch --dependency=afterok:$jid2 postprocess.sh
 ```
 
-`afterok` runs only if the previous job succeeded. To wait on an entire array, `--dependency=afterok:$jid` on the array's job id works — the dependent job starts when every task has finished.
+With `afterok`, a job runs only if the previous job succeeded. To wait for an entire array, use `--dependency=afterok:$jid` with the array's job ID; the dependent job starts once every task has finished.
 
-### Staging Data Through `/tmp`
+### Staging Data Through `/tmp` {#staging-data-through-tmp}
 
-Home directories are on NFS shared across all nodes, and hammering them from many tasks at once slows the filesystem for everyone. CAC is emphatic about this: *"We cannot stress enough how important this is to avoid delays on the file systems."*
+Home directories are on NFS, shared across all nodes, so heavy reading and writing from many tasks at once slows the file system for everyone. CAC says: *"We cannot stress enough how important this is to avoid delays on the file systems."*
 
 If your job does heavy file I/O, copy inputs to the node's local `/tmp` first, work there, and copy results back at the end:
 
@@ -260,28 +260,42 @@ cp -rp $MYTMP/output $SLURM_SUBMIT_DIR/ || exit 1
 rm -rf $MYTMP
 ```
 
-This matters most for job arrays, where the multiplier is the number of concurrent tasks.
+This is most important for job arrays, where the load grows with the number of tasks running at once.
 
 ## FAQ
 
-**My job is stuck in `PENDING`.** `squeue -u $USER` shows a reason. `Resources` means the cluster is busy — normal, wait. `Priority` means others are queued ahead. `PartitionTimeLimit` means your `-t` exceeds the partition's limit. If it is pending for days, ask before resubmitting.
+### Why is my job stuck in `PENDING`?
 
-**My job is much slower than on my laptop.** Two usual causes. Hopper's Intel cores run at 2.1 GHz, well below a workstation, so serial code genuinely is slower — see [when to use Hopper](hopper.qmd). Or you are I/O-bound against NFS, in which case stage through `/tmp`.
+`squeue -u $USER` shows the reason. `Resources` means the cluster is busy, which is normal; wait. `Priority` means other jobs are queued ahead of yours. `PartitionTimeLimit` means your `-t` is longer than the partition allows. If a job has been pending for days, please ask before resubmitting it.
 
-**I need more memory.** The AMD nodes (`c0023`-`c0026`) have 567 GB against the Intel nodes' 192 GB. Request memory with `--mem=` or `--mem-per-cpu=`, or target the large nodes with `-w`.
+### Why is my job slower than on my laptop?
 
-**How do I see what a finished job actually used?** Try `sacct -j <job_id>` or `seff <job_id>`. These are standard Slurm tools but are not in CAC's documentation, so they may or may not be configured here — worth trying, and worth telling the rest of us if they work.
+There are two common causes. Hopper's Intel cores run at 2.1 GHz, well below a typical workstation, so serial code really is slower there (see [when to use Hopper](hopper.qmd)). Or your job spends its time reading and writing files on NFS, in which case stage the data through `/tmp`.
 
-**I ran out of space in my home directory.** Check with `du -sh ~/*`. IDE servers, conda environments, and old job output are the usual culprits. Remember that [nothing on Hopper is backed up](hopper.qmd) — see [Data Management](data-management.qmd).
+### How do I get more memory?
 
-**Is there a web interface?** No. CAC's Open OnDemand portal serves the Seneca cluster, not Hopper. Hopper is SSH only.
+The AMD nodes (`c0023`-`c0026`) have 567 GB of memory, against 192 GB on the Intel nodes. Request memory with `--mem=` or `--mem-per-cpu=`, or ask for the large nodes with `-w`.
 
-**Something is broken and it isn't my code.** Check [portal.cac.cornell.edu/status](https://portal.cac.cornell.edu/status), then email `help@cac.cornell.edu` with "Hopper" in the subject. Tell Vivek too, since it probably affects the rest of the group.
+### How do I see what a finished job used?
+
+Try `sacct -j <job_id>` or `seff <job_id>`. These are standard Slurm tools, but CAC's documentation doesn't mention them, so they may not be set up on Hopper. Please try them and tell the rest of us whether they work.
+
+### I ran out of space in my home directory. What now?
+
+Check with `du -sh ~/*`. Editor servers, conda environments, and old job output often take the most space. Remember that [nothing on Hopper is backed up](hopper.qmd); [Data Management](data-management.qmd) explains where data should go instead.
+
+### Is there a web interface?
+
+No. CAC's Open OnDemand portal is for the Seneca cluster, and Hopper is reached only through SSH.
+
+### Something is broken, and it isn't my code. Who do I tell?
+
+Check [portal.cac.cornell.edu/status](https://portal.cac.cornell.edu/status), then email `help@cac.cornell.edu` with "Hopper" in the subject line. Please tell Vivek too, since it probably affects the rest of the group.
 
 ## More Information
 
-- [CAC TechDocs: Hopper](https://portal.cac.cornell.edu/techdocs/clusters/Hopper/) — the authoritative reference
-- [Slurm](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurm/) and [Slurm Quick Start](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurmQS/)
-- [`slurm_tutorial`](https://github.com/srikrishnan-lab/slurm_tutorial) — the group's example submission scripts
-- [`cluster-training`](https://github.com/srikrishnan-lab/cluster-training) — older HPC training materials
+- [CAC TechDocs: Hopper](https://portal.cac.cornell.edu/techdocs/clusters/Hopper/), the authoritative reference
+- [Slurm](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurm/) and [Slurm Quick Start](https://portal.cac.cornell.edu/techdocs/clusterinfo/slurmQS/) from CAC
+- [`slurm_tutorial`](https://github.com/srikrishnan-lab/slurm_tutorial), the group's example submission scripts in Julia and Python
+- [`cluster-training`](https://github.com/srikrishnan-lab/cluster-training), older HPC training materials
 - [Water Programming on HPC](https://waterprogramming.wordpress.com/category/high-performance-computing/) and [Slurm](https://waterprogramming.wordpress.com/category/slurm/)

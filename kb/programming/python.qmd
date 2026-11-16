@@ -10,10 +10,10 @@ aliases:
 
 Do not use the Python that came with your operating system for research work. Install and manage your own, so that each project gets an isolated, reproducible environment.
 
-Two reasonable approaches:
+There are two reasonable ways to do this:
 
-- **[conda](conda.qmd)** (via Miniforge), which handles non-Python dependencies well. This matters for the geospatial and climate stack (`GDAL`, `PROJ`, `netCDF`), which is why it remains our default.
-- **[`uv`](https://docs.astral.sh/uv/)**, a much faster pure-Python package and version manager. Good for projects that are Python-only.
+- [conda](conda.qmd) (installed through Miniforge), which also installs non-Python dependencies. The geospatial and climate libraries (`GDAL`, `PROJ`, `netCDF`) need those, which is why conda is our default.
+- [`uv`](https://docs.astral.sh/uv/), a much faster package and version manager for projects that only need Python packages.
 
 Pick one per project and commit its lockfile or environment file to the repository. Whichever you use, avoid installing into a base environment.
 
@@ -28,13 +28,13 @@ Python is a dynamically-typed language, meaning that it automatically assigns ty
 ## Development Environments
 
 * [VS Code](https://code.visualstudio.com/) with the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) is the group default. It is free, handles notebooks and remote work over SSH (useful for [Hopper](../../guides/hopper.qmd)), and is the same editor we recommend for [Julia](julia.qmd), so you only have to learn one.
-* [PyCharm](https://www.jetbrains.com/pycharm/): fully-featured IDE. The Community edition is free, and students can get the full version free through JetBrains' academic licensing.
+* [PyCharm](https://www.jetbrains.com/pycharm/): a full-featured IDE from JetBrains, which offers free licenses to students.
 * [Spyder](https://www.spyder-ide.org/): lightweight, free, open-source, with a MATLAB-like layout that some people coming from MATLAB prefer.
 
 ::: {.callout-note}
 ## Atom
 
-Earlier versions of this page recommended Atom. GitHub sunset Atom in December 2022 and it no longer receives updates, including security updates. If you are still using it, switch.
+Earlier versions of this page recommended Atom. GitHub retired Atom in December 2022, and it no longer receives updates, including security updates. If you are still using it, please switch.
 :::
 
 ## Recommended Packages
@@ -48,13 +48,13 @@ You'll usually want to include the following in any research conda environment:
 Other packages may make sense depending on your workflow and tasks:
 
 * [`pandas`](https://pandas.pydata.org/): data analysis and manipulation.
-* [`polars`](https://pola.rs/): an alternative dataframe library, considerably faster than `pandas` on large tables. Worth knowing about if `pandas` becomes your bottleneck.
+* [`polars`](https://pola.rs/): an alternative dataframe library, considerably faster than `pandas` on large tables. Consider it if `pandas` is too slow for your data.
 * [`xarray`](https://docs.xarray.dev/): allows for structured datasets and interfacing with netCDF.
 * [`seaborn`](https://seaborn.pydata.org/): adds some additional plotting functionality on top of `matplotlib`, and integrates well with `pandas`.
 * [`PyMC`](https://www.pymc.io/): probabilistic programming using a variety of methods, including Hamiltonian Monte Carlo and Metropolis-Hastings. (This was called `pymc3` for versions 3 and earlier; the project renamed to `pymc` at version 4, so older tutorials using `import pymc3` need translating.)
-* [`CmdStanPy`](https://mc-stan.org/cmdstanpy/): a Python interface to [Stan](https://mc-stan.org/), now the recommended way to drive Stan from Python.
-* [`ArviZ`](https://python.arviz.org/): diagnostics, summaries, and plots for Bayesian inference. Pairs with both of the above and does the convergence checking you should be doing anyway.
-* [`PyTorch`](https://pytorch.org/): machine learning. Now the default in most research settings; [`TensorFlow`](https://www.tensorflow.org/) is still around but you are less likely to need it.
+* [`CmdStanPy`](https://mc-stan.org/cmdstanpy/): a Python interface to [Stan](https://mc-stan.org/), maintained by the Stan development team.
+* [`ArviZ`](https://python.arviz.org/): diagnostics, summaries, and plots for Bayesian inference, which works with both of the above. It computes the convergence diagnostics (such as $\hat{R}$ and effective sample size) that you should check for any MCMC run.
+* [`PyTorch`](https://pytorch.org/): machine learning. [`TensorFlow`](https://www.tensorflow.org/) is an older alternative.
 * [`mpi4py`](https://mpi4py.readthedocs.io/en/stable/): bindings for parallelization across multiple processors and compute nodes.
 * [`mypy`](https://mypy-lang.org/): optional static type-checking, can help reduce errors by clarifying expected inputs and outputs and make it easier for others to work with your code.
 * [`ruff`](https://docs.astral.sh/ruff/): linting and code formatting in one very fast tool. It replaces the `black` + `flake8` + `isort` combination that older guides recommend.
@@ -67,9 +67,9 @@ Other packages may make sense depending on your workflow and tasks:
 
 ## When You're Stuck
 
-1. **Read the traceback from the bottom up.** The last line is what broke; the lines above are how you got there. The first frame in *your* code, rather than in a library, is usually where the problem is.
-2. **[Official docs](https://docs.python.org/3/) and the library's own documentation** before a search engine. Library docs are generally good, and a search result is often three versions out of date.
-3. **Check the version you actually have.** A large fraction of "the docs are wrong" turns out to be a different version installed than the one you are reading about. `pip show <package>` or `conda list`.
-4. **[Stack Overflow](https://stackoverflow.com/questions/tagged/python)** for error messages. Paste the exact message, minus your paths and variable names.
-5. **Make a minimal reproducer.** Strip the problem to the smallest script that still fails. This solves it outright often enough to be worth doing before asking anyone, and when it does not, you now have something small enough for someone else to look at.
-6. **Ask.** With the reproducer, the traceback, and what you already tried.
+1. Read the traceback from the bottom up. The last line says what failed, and the lines above show how the code got there. The problem is usually in the first frame that is in your own code, not in a library.
+2. Read the [official documentation](https://docs.python.org/3/) and the library's own documentation before searching the web. Library documentation is generally good, and search results often describe older versions.
+3. Check which version you have installed, with `pip show <package>` or `conda list`. When the documentation seems wrong, you are often reading about a different version from the one you have.
+4. Search [Stack Overflow](https://stackoverflow.com/questions/tagged/python) for the exact error message, with your file paths and variable names removed.
+5. Make a minimal example: cut the problem down to the smallest script that still fails. This often solves the problem, and if it doesn't, you have something small enough for someone else to look at.
+6. Ask someone, and bring the minimal example, the traceback, and what you have already tried.

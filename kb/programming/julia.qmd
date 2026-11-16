@@ -28,11 +28,11 @@ A good introduction to Julia is [Introduction to Computational Thinking](https:/
 
 ## When You're Stuck
 
-Julia's ecosystem is smaller than Python's, so the search-engine reflex works less well and the official channels work better.
+Julia's community is smaller than Python's, so web searches turn up less, and the official documentation and forums are more useful. Try these in order:
 
-1. **Docstrings at the REPL.** `?functionname` is fast and unusually complete. `@which f(x)` tells you which method is being called, which is the key question when dispatch is not doing what you expect.
-2. **[The Julia manual](https://docs.julialang.org/)**, particularly [Performance Tips](https://docs.julialang.org/en/v1/manual/performance-tips/) when code is slower than you expected. Type instability is the usual culprit; `@code_warntype` finds it.
-3. **[Julia Discourse](https://discourse.julialang.org/)** is the main place questions get answered, and answers frequently come from the package authors. Better signal than Stack Overflow for Julia specifically.
-4. **The package's GitHub issues.** Smaller ecosystem means a real chance your problem is a known issue or a recent breaking change.
-5. **Check your environment.** `] status` in the REPL. Version mismatches between a `Project.toml` and what is actually installed cause a lot of confusing behaviour.
-6. **[Modern Julia Workflows](https://modernjuliaworkflows.org/)** for how to set things up sensibly in the first place.
+1. Read the docstring at the REPL with `?functionname`. Julia's docstrings are usually thorough. If a function isn't doing what you expect, `@which f(x)` shows which method is being called.
+2. Read [the Julia manual](https://docs.julialang.org/), and [Performance Tips](https://docs.julialang.org/en/v1/manual/performance-tips/) in particular when code is slower than you expected. Type instability is a common cause, and `@code_warntype` shows where it happens.
+3. Search or ask on [Julia Discourse](https://discourse.julialang.org/), where most Julia questions are answered, often by the authors of the package involved. For Julia, it is more useful than Stack Overflow.
+4. Check the package's GitHub issues. With fewer users, there is a good chance your problem is a known issue or the result of a recent breaking change.
+5. Check your environment with `] status` at the REPL. A mismatch between the versions in `Project.toml` and what is installed causes a lot of confusing behavior.
+6. Read [Modern Julia Workflows](https://modernjuliaworkflows.org/) for how to set up a project well from the start.

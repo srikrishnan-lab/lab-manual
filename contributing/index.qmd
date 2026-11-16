@@ -28,24 +28,24 @@ The manual is a [Quarto](https://quarto.org) website. To see your changes before
 quarto preview
 ```
 
-This serves the site locally and reloads as you edit. `quarto render` builds it once into `_site/` without serving, which is what the pull request check runs. There are no executable code chunks in the manual, so you do not need R, Python, or Julia installed to build it.
+This serves the site locally and reloads as you edit. `quarto render` builds it once into `_site/` without serving, which is what the pull request check runs. There are no executable code chunks in the manual, so you don't need R, Python, or Julia installed to build it.
 
-A pull request will fail its check if a page does not render or a cross-reference does not resolve. Merging to `main` publishes automatically.
+A pull request fails its check if a page doesn't render. Quarto only warns about a link to a page that doesn't exist, so look for "Unable to resolve link target" in the render output before you open the pull request. Merging to `main` publishes the site automatically.
 
 ## Conventions
 
 A few patterns to match so the manual reads as one document:
 
-- **Voice.** Second person for the reader ("you should"), third person for Vivek ("Vivek will"). Avoid first person — it reads oddly on a page that outlives any one author.
-- **Cross-references** use relative paths to the `.qmd` file, not the rendered URL: `[Data Management](../guides/data-management.qmd)`. Quarto rewrites these and will fail the build if the target does not exist, which is how we catch broken internal links.
-- **Callouts** carry consistent meaning: `callout-note` for an aside, `callout-tip` for advice, `callout-important` for something with consequences, `callout-warning` for something that will go wrong if ignored.
-- **Aliases.** If you rename or move a page that was already published, add an `aliases:` entry with its old path so existing links keep working.
-- **Don't assert what you haven't checked.** Where something could not be verified — an unpublished policy, an undocumented command — say so on the page. "We could not confirm this" is more useful than a confident guess, and much easier for the next person to fix.
+- **Voice**: second person for the reader ("you should") and third person for Vivek ("Vivek will"). Avoid the first person, since the pages outlast any one author.
+- **Cross-references**: link to the relative path of the `.qmd` file, not the rendered URL, as in `[Data Management](../guides/data-management.qmd)`. Quarto rewrites these links and warns when the target doesn't exist.
+- **Callouts**: `callout-note` for an aside, `callout-tip` for advice, `callout-important` for something with consequences, and `callout-warning` for something that will go wrong if ignored. Callout titles are the reader's question ("Is My Data Backed Up?") or a short instruction ("Pin the Package Version").
+- **Aliases**: if you rename or move a page that was already published, add an `aliases:` entry with its old path so existing links keep working.
+- **Claims you haven't checked**: if something couldn't be verified (an unpublished policy, an undocumented command), say so on the page. "We could not confirm this" is more useful than a confident guess, and easier for the next person to fix.
 
 ## Reporting a Problem Without Fixing It
 
 You do not have to write the fix. [Open an issue](https://github.com/srikrishnan-lab/lab-manual/issues) describing what is wrong, missing, or confusing.
 
-This is genuinely useful, and it is most useful from people who have just joined: you are the only ones who can see which parts of the manual assume knowledge you do not have yet. By the time something is obvious to you, you will have stopped noticing it was ever unclear.
+Issues are especially useful from people who have just joined, because you can see which parts of the manual assume knowledge you don't have yet. Once something is obvious to you, it's hard to notice that it was ever unclear.
 
-Anyone can open an issue — you do not need to be a member of the group.
+Anyone can open an issue; you don't need to be a member of the group.
