@@ -2,139 +2,140 @@
 title: AI Tools in Research
 ---
 
-How we use language models and related tools, and the one principle that decides the hard cases.
+This page covers how we use language models and related tools in the group's research, and how to decide when a use isn't appropriate.
 
 ::: {#the-principle .callout-important}
-## The Principle
+## What Are These Tools For?
 
-**These tools are for enhancing your judgment, not replacing it.**
+**Use these tools to support your judgment, not to replace it.**
 
-You are here to become a researcher. That means developing the ability to read a hard paper, find your own bug, notice when a result is too clean, and know what you think before someone tells you. Every one of those is a skill, and skills are built by doing the thing — including the parts that are slow and uncomfortable.
+You are here to become a researcher. That means learning to read a hard paper, find your own bugs, notice when a result looks too clean, and form your own view before someone tells you theirs. Each of these is a skill, and you build skills through practice, including the parts that are slow and uncomfortable.
 
-A tool that does the slow part for you has not saved you time. It has moved a cost from this week to the point, later, where you need the skill and do not have it.
+If a tool does that work for you, you'll finish this week's task sooner, but you won't have built the skill. You'll need it later, when the tool can't help or when you have to check what it gave you.
 :::
 
-## Why We Care About This Specifically
+## Cognitive Offloading
 
-The concern is not that these tools are inaccurate. It is that they are *useful*, which is what makes the trade easy to take without noticing.
+Our concern on this page is with what these tools do to your skills, which is a separate question from whether their output is accurate. Because the tools are useful, it's easy to hand them work without noticing that you've stopped practicing it.
 
-The pattern has a name and predates the technology. Bainbridge's "Ironies of Automation"[^bainbridge] observed that the more capable an automated system becomes, the more demanding the human role gets rather than less: operators end up expected to monitor and take over systems they no longer have the skills to run, because the automation removed exactly the routine practice that built those skills.
+This problem was described long before language models. Bainbridge's "Ironies of Automation"[^bainbridge] looked at automated process control and flight decks, where operators are left to monitor the automation and take over when something goes wrong. The paper argues that the operator is left with the tasks the designers couldn't automate, including the take-over, while automation removes the practice those tasks need: manual skills "deteriorate when they are not used," and the knowledge needed to handle an unusual situation "develops only through use and feedback about its effectiveness."
 
-More recent work finds the same shape in tasks closer to ours. A randomized study of AI assistance on reasoning and comprehension tasks found that assistance improved performance while it was available, and that participants then performed *worse* without it and gave up sooner[^liu]. An EEG study of essay writing found weaker neural connectivity in LLM-assisted writers than in unassisted ones, and degraded engagement in participants moved from assisted to unassisted work[^kosmyna].
+Two recent studies find related effects with AI assistants. In a set of randomized experiments with 1,222 online participants solving fraction problems and reading-comprehension questions, people who had AI help did better while they had it, then solved fewer problems and skipped more of them once the help was removed, compared with people who never had it[^liu]. These effects appeared after sessions of only 10–15 minutes. In an EEG study of 54 people writing essays over several months, participants who used an LLM showed the weakest neural connectivity of three groups (LLM, search engine, no tools). In a final session, nine of the LLM users wrote without it; they showed weaker connectivity, and 7 of the 9 could not quote a sentence from the essay they had just written, against 1 of the 9 participants who switched the other way[^kosmyna].
 
-Treat these as suggestive rather than settled — they are recent, some are preprints, and the effect sizes are contested. But the direction is consistent, and it matches what the group cares about: we are trying to produce researchers, not just papers.
+These studies are short or small (the crossover result in the essay study rests on 18 people), and the essay study has not been peer reviewed yet, so they do not tell us how large the effect is over years of research. They are consistent with Bainbridge's mechanism, though, and that mechanism is the reason for the guidance on this page.
 
-[^bainbridge]: Bainbridge, L. (1983). Ironies of automation. *Automatica*, 19(6), 775–779. <https://doi.org/10.1016/0005-1098(83)90046-8>. Pre-dates and generalizes the AI-specific findings.
-[^liu]: Liu, G., Christian, B., Dumbalska, T., Bakker, M. A., et al. (2026). AI Assistance Reduces Persistence and Hurts Independent Performance. <https://arxiv.org/abs/2604.04721>. Randomized trials, N = 1,222. Preprint.
-[^kosmyna]: Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., et al. (2025). Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task. <https://arxiv.org/abs/2506.08872>. Preprint.
+[^bainbridge]: Bainbridge, L. (1983). Ironies of automation. *Automatica*, 19(6), 775–779. <https://doi.org/10.1016/0005-1098(83)90046-8>.
+[^liu]: Liu, G., Christian, B., Dumbalska, T., Bakker, M. A., & Dubey, R. (2026). AI Assistance Reduces Persistence and Hurts Independent Performance. Conference on Language Modeling (COLM 2026). <https://arxiv.org/abs/2604.04721>.
+[^kosmyna]: Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., et al. (2025). Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task. Preprint, under review. <https://arxiv.org/abs/2506.08872>.
 
-## The Test
+## Deciding Whether a Use Is Reasonable
 
-For any use you are unsure about, ask: **would a competent version of me be able to check this?**
+For any use you're unsure about, ask: **could I check this output myself, with the skills I have now?**
 
-If yes, the tool is an accelerator and you are still the one responsible. If no — if you would be accepting the output because you cannot evaluate it — you have outsourced the judgment, and that is the thing we are trying not to do.
+If you could, the tool is saving you time on work you already know how to do, and you're still responsible for the result. If you could not, and you would be accepting the output because you cannot evaluate it, then the tool is doing the judgment for you, which is what we want to avoid.
 
-This is a test about *you*, not about the task. Having a model draft boilerplate in a language you know well is fine. Having it write an analysis in a method you do not understand is not, even though the code may run and the numbers may look reasonable.
+The answer depends on what you know, so the same use can be fine for one person and not for another. Having a model draft boilerplate in a language you know well is fine. Having it write an analysis using a method you don't understand isn't, even if the code runs and the numbers look reasonable.
 
-## Where This Lands in Practice
+## Examples
 
-**Reasonable, with you still checking:**
+These uses are reasonable, as long as you check the result:
 
-- Explaining an unfamiliar error, a library, or an equation, *as a starting point you then verify*
-- Boilerplate you could have written: plotting scaffolds, argument parsing, file I/O
-- Rubber-ducking a design decision before you commit to it
-- Tightening prose you have already written
-- Adversarial review of your own draft before you send it to anyone
+- explaining an unfamiliar error message, library, or equation, as a starting point that you then verify;
+- boilerplate you could have written yourself (plotting scaffolds, argument parsing, file input and output);
+- talking through a design decision before you commit to it;
+- tightening prose you have already written;
+- critiquing your own draft before you send it to anyone.
 
-**Not reasonable:**
+These uses aren't:
 
-- Anything going to a third party as your own judgment — a referee report above all. Several journals and funders prohibit it outright, and the [Peer Review](#peer-review-and-confidentiality) section below covers why.
-- Generating citations. Models produce plausible, correctly formatted, non-existent references, and a single invented citation discredits everything else you wrote. If you did not read it, do not cite it.
-- Writing the parts that are supposed to be your contribution: the hypothesis, the framing, the interpretation, the decision about what the result means.
-- Analysis in a method you cannot evaluate.
+- anything that goes to someone else as your own judgment, above all a referee report (several journals and funders prohibit this; see [Peer Review](#peer-review-and-confidentiality) below);
+- generating citations, because models produce references that look correct and do not exist, and one invented citation discredits everything else you wrote;
+- writing the parts of a paper that are supposed to be your contribution: the hypothesis, the framing, the interpretation, and the decision about what a result means;
+- an analysis using a method you cannot evaluate.
 
 ::: {.callout-warning}
 ## Never Cite What You Have Not Read
 
-This is the failure mode most likely to reach print. A model will give you an author, a year, a journal, and a DOI that look exactly right and describe a paper that does not exist — or a real paper that does not say what you were told.
+A model will give you an author, a year, a journal, and a DOI that look exactly right for a paper that does not exist, or it will describe a real paper inaccurately.
 
-Verify every reference against the actual source. Not a search snippet, not an abstract when the claim is about what the paper found. This applies to citations a model suggested, and equally to ones you half-remember.
+Check every reference against the paper itself. A search snippet isn't enough, and neither is the abstract when you're citing what the paper found. This applies to citations a model suggested and equally to ones you half-remember.
 :::
 
 ## The Group's Skills
 
 The group maintains [`claude-research-skills`](https://github.com/srikrishnan-lab/claude-research-skills), a set of Claude Agent Skills built around our workflow: adversarial reading, paper planning, literature review, figure design, code review, and revision response.
 
-These are deliberately built as **critique tools, not authorship tools**, and the design notes in the repository state the stance better than a summary would. From the section on starting a study:
+The skills review and help plan work that you're doing; they don't write it for you. The repository's design notes put it this way for the paper-planning skill:
 
 > What comes out of this conversation is not your contract. It is a draft, with placeholders, the assistant's compressions of what you said, and suggestions marked as suggestions. The hypothesis, the scope decision, and the framing have to be yours. [...] A contract you did not write is a contract you will not maintain, and its entire value is that it records what *you* predicted before you knew the answer.
 
-The same logic runs through the rest: referee simulation is scoped to your own papers, the revision-response skill evaluates a reply you have written rather than originating its substance, author lists are never inferred, and the literature skill refuses to name a paper it has not seen.
+The other skills follow the same rule. Referee simulation only works on your own papers, the revision-response skill evaluates a reply you have written instead of writing one, author lists are never filled in by inference, and the literature skill will not name a paper it has not found in a search.
 
 Installation instructions are in the repository README.
 
 ## Reproducibility
 
-Our [reproducibility commitments](../expectations/open.qmd) do not have an exception for code a model helped write.
+Our [reproducibility commitments](../expectations/open.qmd) apply to code a model helped write in the same way as to any other code:
 
-- **You are responsible for code you did not write yourself.** If it is in your analysis, you own its correctness. Generated code that runs but is subtly wrong is a serious failure mode, because it removes the syntax errors that usually tell you something is off while leaving the logic errors that do not.
-- **Test it the way you would test any code.** [Positive and negative controls](best-practices.qmd) are the relevant discipline: does it recover known values, and does it correctly find nothing in noise?
-- **This matters most where the numbers are least checkable** — uncertainty propagation, tail estimates, anything where a plausible-looking wrong answer will not announce itself.
-- **Internal code review before submission** is [already required](papers.qmd), and the reviewer should be told which parts were generated.
+- You are responsible for all the code in your analysis, including code you did not write yourself. Generated code usually runs, so the syntax errors that would normally warn you something is off are missing, while logic errors can remain.
+- Test it the way you would test any code. [Positive and negative controls](best-practices.qmd) are the relevant checks: does it recover known values, and does it find nothing in noise?
+- Be most careful where the numbers are hardest to check by eye (uncertainty propagation, tail estimates), since a plausible wrong answer there will not stand out.
+- [Internal code review before submission](papers.qmd) is already required. Tell the reviewer which parts were generated.
 
 ## Journal and Funder Disclosure
 
-**No major publisher permits AI authorship.** The stated reason is consistent: authorship requires accountability, and a tool cannot be accountable. Our own [authorship criteria](authorship.qmd) rule it out already, since they require contribution *and* participation in drafting and revision.
+AGU, Elsevier, Springer Nature, PNAS and AMS all state that an AI tool cannot be listed as an author. AGU, Elsevier, Springer Nature and AMS give the same reason: authorship requires accountability, which a tool cannot take. Copernicus goes further and says generative AI must not be used for text or interpretation at all. Our own [authorship criteria](authorship.qmd) already rule out AI authorship, since they require both a contribution to the research and participation in drafting and revising the paper.
 
-Beyond that, the common shape of current policy is:
+Beyond authorship, most current policies require:
 
-- **Disclosure** of substantive use, usually in Methods or an equivalent section. Basic grammar and spelling checks generally do not need declaring.
-- **Full author responsibility** for everything in the manuscript, including generated parts.
-- **Peer review is different and stricter** — see below.
-- **Image rules vary the most.** Some publishers ban AI-generated figures outright; others permit them with disclosure. Check before you make one.
+- disclosure of substantial AI use, usually in the Methods or an equivalent section (grammar and spelling checks generally do not need declaring);
+- full author responsibility for everything in the manuscript, including generated parts;
+- separate, stricter rules for peer review (see below).
+
+Rules for figures differ the most between publishers: some ban AI-generated images and others allow them with disclosure. Check before you make one.
 
 ::: {.callout-warning}
-## Check Your Target Journal, Every Time
+## Check Your Target Journal
 
-These policies change faster than this page will. The table below was checked in **September 2026** and is a starting point, not an authority. Confirm against the journal's current author guidelines when you submit, and add the disclosure statement to the [paper checklist](paper-checklist.qmd) for that submission.
+These policies change faster than this page will. The table below was checked in September 2026, so treat it as a starting point and confirm against the journal's current author guidelines when you submit. Add the disclosure statement to the [paper checklist](paper-checklist.qmd) for that submission.
 :::
 
 | Venue | Policy |
 |---|---|
-| [AGU](https://www.agu.org/publications/authors/policies) | Our primary venue. No AI authors. Disclose tool and use in Methods. LLMs may not be used to review a manuscript. |
-| [Elsevier](https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals) | No AI authors. Required declaration section before the references. Tiered image rules. |
-| [Copernicus / EGU](https://publications.copernicus.org/for_authors/ai_policy.html) | Assistive language use need not be declared; generative use must be. Notably permits AI-generated illustrations if cited. |
-| [Springer Nature](https://group.springernature.com/gp/group/ai/ai-guidance-for-our-researchers-and-communities) | No AI authors. Document in Methods. AI-generated images not permitted. |
-| [PNAS](https://www.pnas.org/author-center/editorial-and-journal-policies) | No AI authors. Disclose in Methods or Acknowledgments. |
-| [AMS](https://www.ametsoc.org/ams/publications/ethical-guidelines-and-ams-policies/author-disclosure-and-obligations/) | No AI authors. Disclose tool and use. Reviewers prohibited from using AI tools. |
+| [AGU](https://www.agu.org/publications/authors/policies) | Our main venue. No AI authors. Disclose the tool and how it was used in the Methods. LLMs may not be used to review a manuscript. |
+| [Elsevier](https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals) | No AI authors. A separate declaration section before the references. Different rules for different kinds of images. |
+| [Copernicus / EGU](https://publications.copernicus.org/for_authors/ai_policy.html) | Language editing does not need to be declared; generative use does. Allows AI-generated illustrations if the tool is cited. |
+| [Springer Nature](https://group.springernature.com/gp/group/ai/ai-guidance-for-our-researchers-and-communities) | No AI authors. Document use in the Methods. AI-generated images are not permitted. |
+| [PNAS](https://www.pnas.org/author-center/editorial-and-journal-policies) | No AI authors. Disclose in the Methods or Acknowledgments. |
+| [AMS](https://www.ametsoc.org/ams/publications/ethical-guidelines-and-ams-policies/author-disclosure-and-obligations/) | No AI authors. Disclose the tool and how it was used. Reviewers may not use AI tools. |
 
 ### NSF
 
-Two separate things, easy to conflate:
+NSF has two separate policies that are easy to confuse:
 
-- **Proposal preparation.** Disclosure is *encouraged, not required* — NSF asks proposers to indicate in the project description whether and how generative AI was used ([December 2023 notice](https://www.nsf.gov/policies/ai/merit-review)).
-- **Research misconduct.** [PAPPG 24-1 Supplement 1](https://www.nsf.gov/policies/document/pappg24-1-supplement-1), effective December 2025, extends the definition of misconduct to fabrication, falsification, or plagiarism committed "through the use or assistance of other persons, entities, or tools, including artificial intelligence (AI)-based tools."
+- For proposal preparation, disclosure is encouraged but not required. NSF asks proposers to say in the project description whether and how they used generative AI ([December 2023 notice](https://www.nsf.gov/policies/ai/merit-review)).
+- For research misconduct, [PAPPG 24-1 Supplement 1](https://www.nsf.gov/policies/document/pappg24-1-supplement-1) (effective December 2025) extends the definition to fabrication, falsification, or plagiarism committed "through the use or assistance of other persons, entities, or tools, including artificial intelligence (AI)-based tools."
 
-The second does not create a disclosure requirement. It does mean a fabricated citation in a proposal is misconduct whether or not a model produced it.
+The second policy does not add a disclosure requirement, but it does mean a fabricated citation in a proposal is misconduct whether or not a model produced it.
 
 ## Peer Review and Confidentiality {#peer-review-and-confidentiality}
 
 ::: {.callout-important}
-## Do Not Put a Manuscript Under Review Into a Language Model
+## Keep Manuscripts Under Review Out of AI Tools
 
-A manuscript sent to you for review is confidential. Uploading it to an external service is a breach of that confidence regardless of what the service does with it, and essentially every publisher now says so explicitly. NSF likewise prohibits reviewers from uploading proposal content to non-approved tools.
+A manuscript sent to you for review is confidential, and uploading it to an external service breaks that confidentiality regardless of what the service does with it. AGU, Elsevier, Springer Nature and AMS all tell reviewers not to upload manuscripts to AI tools, and NSF prohibits reviewers from uploading proposal content to tools it has not approved.
 
-Beyond confidentiality: a review is a judgment you were asked for personally. AMS puts the reason well — AI systems cannot explain the reasoning behind their evaluations, which makes the scholarly exchange a review is supposed to start impossible.
+AMS gives a second reason: an AI system cannot explain the reasoning behind its evaluation, so the exchange between authors and reviewers that a review is meant to start cannot happen.
 
-If you are asked to review and want help, ask Vivek. Reviewing is a skill worth building, and [doing it badly with a tool is how you avoid building it](#the-principle).
+If you're asked to review and would like help, please ask Vivek. Reviewing is a skill like the others on this page, and you build it by doing it.
 :::
 
 ## Applicants
 
-Separate guidance applies to people applying to join the group — see the [graduate](../procedures/graduate.qmd), [postdoc](../procedures/postdoc.qmd), and [undergraduate](../procedures/undergrad.qmd) pages.
+People applying to join the group have their own guidance on the [graduate](../procedures/graduate.qmd), [postdoc](../procedures/postdoc.qmd), and [undergraduate](../procedures/undergrad.qmd) pages.
 
-The short version is the same principle from the other side. An application is the only evidence we have that there is a specific person with specific interests behind it, so a generated one defeats its own purpose. The guided paper evaluation is more permissive precisely because it gets discussed afterwards, which makes outsourcing self-defeating rather than prohibited.
+An application is the only evidence we have of what a specific person is interested in and why, so we ask applicants to write it themselves. The guided paper evaluation for graduate applicants allows AI tools, because we discuss it with the applicant afterward.
 
-## This Page Will Age
+## Keeping This Page Current
 
-The tools, the policies, and the evidence are all moving. If something here is out of date, [fix it](../contributing/index.qmd) — and if you find a use that is genuinely valuable and not covered here, raise it at [lab meeting](meetings.qmd). How people actually use these tools well is something the group is still working out, and nobody has this settled.
+The tools, the policies, and the evidence are all changing. If something here is out of date, please [fix it](../contributing/index.qmd), and if you find a use that has helped your work and isn't covered here, bring it to [lab meeting](meetings.qmd). The group is still working out how to use these tools well.

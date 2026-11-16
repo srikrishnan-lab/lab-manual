@@ -5,75 +5,75 @@ title: Data Management
 Our group's research products are code and data. This page covers where data lives, what is backed up, how projects are organized, and what happens to data over the long term.
 
 ::: {.callout-important}
-## The One Thing To Take Away
+## Is My Data Backed Up?
 
-**Nothing in our computing environment is backed up by default.** Not [Hopper](hopper.qmd), not your workstation. If a piece of data exists in exactly one place, treat it as already lost. Everything below is an elaboration of this point.
+**No. Nothing in our computing environment is backed up by default**, including [Hopper](hopper.qmd) and your workstation. Any data that exists in only one place can be lost to a single disk failure or a mistaken `rm`, so anything you can't cheaply regenerate needs a second copy somewhere else.
 :::
 
 ## Three Kinds of Data
 
-It is useful to sort everything you work with into three categories, because they need different treatment.
+It helps to sort everything you work with into three categories, because they need different treatment.
 
-**Raw inputs** are things you did not create: reanalysis products, climate model output, observational records, downloaded datasets. These are usually large, usually re-downloadable, and should never be edited in place. Keep the acquisition step (the download script, the API query, the exact product version and access date) in the repository, so the data can be regenerated rather than carried around.
+**Raw inputs** are data you did not create: reanalysis products, climate model output, observational records, downloaded datasets. These are usually large, can usually be downloaded again, and should never be edited in place. Keep the acquisition step (the download script, the API query, the exact product version and access date) in the repository, so the data can be regenerated instead of copied around.
 
-**Intermediate products** are what your workflow generates on the way: cleaned data, calibration output, simulation ensembles. These are typically the largest and most expensive things you own. Some are cheap to regenerate and some represent weeks of compute; the distinction matters enormously and is worth writing down in your README.
+**Intermediate products** are what your workflow generates along the way: cleaned data, calibration output, simulation ensembles. These are often the largest and most expensive files you have. Some are cheap to regenerate and some represent weeks of compute, so note which is which in your README; that decides what needs a second copy.
 
-**Final products** are what a paper depends on: the figures, the numbers in the text, and the specific outputs they were computed from. These must survive indefinitely, and they are what gets archived at submission.
+**Final products** are what a paper depends on: the figures, the numbers in the text, and the specific outputs they were computed from. These have to be kept indefinitely, and they are what gets archived at submission.
 
-The practical question for every file is: *if this disappeared tonight, what would it cost me?* An answer of "a week of Hopper time" means it needs to exist in more than one place.
+For every file, ask what it would cost you if it disappeared tonight. If the answer is "a week of Hopper time," it needs to exist in more than one place.
 
 ## Where Data Lives
 
 | Location | Backed up? | Use for |
 |---|---|---|
 | Your workstation | No | Active analysis, code, small data |
-| [Hopper](hopper.qmd) home directory | **No** | Running jobs, large intermediate output |
-| GitHub | Yes (as version control) | Code, small text data. **Not** large or binary data |
+| [Hopper](hopper.qmd) home directory | No | Running jobs, large intermediate output |
+| GitHub | Yes (as version control) | Code and small text files; not large or binary data |
 | Cornell Box / Google Drive | Yes | Data you need to keep but not compute on |
 | [Zenodo](https://zenodo.org/) | Yes, permanently | Archived releases tied to a paper |
 
-A few consequences:
+Some consequences of this table:
 
-- **Do not use GitHub as a data store.** It is version control for text. Large binary files bloat the repository permanently, since git keeps every version forever. If you have already committed a large file, tell Vivek before trying to remove it, because rewriting history on a shared repository breaks everyone else's clone.
-- **Hopper is for computing, not for keeping.** Move results off it once a project goes quiet.
-- Cornell provides institutional storage that is backed up and does not count against your personal quotas. If you are unsure what you have access to, ask Vivek rather than paying for something yourself.
+- Don't use GitHub to store data. It's version control for text, and large binary files make the repository permanently larger, since git keeps every version. If you've already committed a large file, tell Vivek before trying to remove it, because rewriting the history of a shared repository breaks everyone else's copy.
+- Use Hopper for running jobs and move results off it once a project goes quiet, since nothing on it is backed up.
+- If you're unsure what storage you have access to, ask Vivek before paying for something yourself.
 
 ## Organizing a Project
 
-Follow the [meta-repository structure](../kb/programming/git.qmd#setting-up-project-repositories): code and analysis in the repository, models and data linked from it by DOI or version rather than copied into it.
+Follow the [meta-repository structure](../kb/programming/git.qmd#setting-up-project-repositories): code and analysis go in the repository, and models and data are linked from it by DOI or version number instead of being copied into it.
 
-Within that, a few conventions that save pain later:
+Within that structure, a few conventions make an analysis much easier to rerun:
 
-- **Never edit raw data in place.** Read it, transform it, write the result somewhere else. A pipeline that starts from untouched inputs can be rerun; one that mutates its own inputs cannot.
-- **Use relative paths**, set from a single configurable root. Absolute paths like `/Users/yourname/Desktop/project` are the most common reason someone else cannot run your code.
-- **Name files so they sort correctly and parse mechanically**: dates as `YYYY-MM-DD`, zero-padded numbers, no spaces. `run_003_ssp585.nc` works; `final run (3) SSP5-8.5.nc` does not.
-- **Record provenance.** For every dataset you did not generate: where it came from, which version, and when you got it. Sources move and get revised, and "the CMIP6 data" is not enough information to reproduce anything two years later.
-- **Set and record random seeds.** Our work is full of Monte Carlo simulation, and an unseeded run cannot be reproduced even by you.
+- Never edit raw data in place. Read it, transform it, and write the result somewhere else. A pipeline that starts from untouched inputs can be rerun; one that changes its own inputs can't.
+- Use relative paths, set from one configurable root directory. Absolute paths like `/Users/yourname/Desktop/project` are a common reason someone else can't run your code.
+- Name files so they sort correctly and can be parsed by a script: dates as `YYYY-MM-DD`, zero-padded numbers, no spaces. `run_003_ssp585.nc` works; `final run (3) SSP5-8.5.nc` does not.
+- Record where every dataset you didn't generate came from, which version it is, and when you downloaded it. Sources move and get revised, and "the CMIP6 data" is not enough information to reproduce anything two years later.
+- Set and record random seeds. Most of our work involves Monte Carlo simulation, and an unseeded run can't be reproduced, even by you.
 
 ## Archiving for a Paper
 
-At submission, the data behind the paper stops being your working files and becomes part of the publication record. The [paper checklist](paper-checklist.qmd) covers the mechanics; the principle is that a reader should be able to get from the archived material to your figures without contacting you.
+At submission, the data behind a paper stops being your working files and becomes part of the publication record. The [paper checklist](paper-checklist.qmd) covers the mechanics. A reader should be able to get from the archived material to your figures without contacting you.
 
-As stated in [Open and Reproducible Research](../expectations/open.qmd), this includes the full simulation ensemble where feasible, not only the subset used in the paper, so that subsetting choices are transparent.
+As [Open and Reproducible Research](../expectations/open.qmd) says, this includes the full simulation ensemble where feasible, and not only the subset used in the paper, so that readers can see how the subset was chosen.
 
-Archive to something with a DOI, which for us usually means minting a Zenodo release from the GitHub repository. GitHub itself is not an archive: repositories can be deleted, renamed, or made private, and a bare GitHub URL in a data availability statement will eventually rot. [GitHub and Zenodo](github-zenodo.qmd) covers the mechanics and the order the steps have to happen in.
+Archive to a service that assigns a DOI, which for us usually means minting a Zenodo release from the GitHub repository. GitHub itself is not an archive: repositories can be deleted, renamed, or made private, and a bare GitHub URL in a data availability statement will eventually stop working. [GitHub and Zenodo](github-zenodo.qmd) covers the steps and the order they have to happen in.
 
 ## Retention and Ownership
 
-Research data generated here belongs to Cornell, not to any individual, including the person who produced it and including Vivek. In practice this matters in two situations: when someone leaves (see [Leaving the Group](../procedures/offboarding.qmd)) and when someone outside asks for data.
+Research data generated here belongs to Cornell, not to any individual (including the person who produced it, and including Vivek). This comes up in two situations: when someone leaves the group (see [Leaving the Group](../procedures/offboarding.qmd)), and when someone outside the group asks for data.
 
-Funders set minimum retention periods. The common federal baseline is three years after the final project report, and some awards and journals require longer. Data underlying a published paper should be kept indefinitely via its archived DOI regardless of what the minimum says.
+Funders set minimum retention periods. Under federal rules ([2 CFR 200.334](https://www.ecfr.gov/current/title-2/section-200.334)), award records must be kept for three years after the final financial report is submitted, and some awards and journals require longer. Data underlying a published paper should be kept indefinitely through its archived DOI, whatever the minimum is.
 
-If someone outside the group asks you for data or code that is not yet public, loop in Vivek before sending it. This is not about secrecy — we publish everything — but about making sure it goes out with the right documentation, licensing, and credit.
+If someone outside the group asks you for data or code that isn't public yet, please check with Vivek before sending it. We publish everything eventually; the reason to check is to make sure it goes out with the right documentation, license, and credit.
 
 ## Sensitive Data
 
-We work mostly with public environmental and model data, so this rarely arises. When it does, it matters a great deal:
+We mostly work with public environmental and model data, so this rarely comes up. When it does, these rules apply:
 
-- Anything involving **human subjects** requires IRB approval before collection, and the approved protocol governs how it is stored and who can see it. Talk to Vivek before starting.
-- Some datasets arrive with **licensing or redistribution restrictions**. Check before archiving; you cannot re-release data you only had permission to use.
-- **Never commit credentials** — API keys, tokens, passwords — to a repository, public or private. Use environment variables or an untracked local config file, and add it to `.gitignore`. A key committed once stays in the history even after you delete it, so if it happens, assume the key is compromised and rotate it.
+- Anything involving human subjects needs IRB (Institutional Review Board) approval before any data are collected, and the approved protocol governs how the data are stored and who can see them. Talk to Vivek before starting.
+- Some datasets come with licensing or redistribution restrictions. Check before archiving, because you can't re-release data you only had permission to use.
+- Never commit credentials (API keys, tokens, passwords) to a repository, public or private. Use environment variables or an untracked local configuration file listed in `.gitignore`. A key committed once stays in the history even after you delete it, so if it happens, assume the key is compromised and replace it.
 
 ## If You Are Not Sure
 
-Ask Vivek. The cost of a five-minute conversation about where to put a dataset is much lower than the cost of discovering the answer after losing it.
+Ask Vivek. A five-minute conversation about where to put a dataset costs much less than finding out the answer after you've lost it.
