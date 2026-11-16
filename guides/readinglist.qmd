@@ -4,17 +4,17 @@ aliases:
   - /guides/readinglist/
 ---
 
-This list is an introduction to how our group approaches climate risk analysis. It is organized as an argument rather than a taxonomy: each section answers a question raised by the one before it, so reading in order is worth more than reading the same papers scattered.
+This list is an introduction to how our group approaches climate risk analysis. Each section follows from the one before it, so read the sections in order.
 
-Everyone should read [Start Here](#general). How much the later sections matter depends on what you work on, but all of them describe something the group actually does.
+Everyone should read [Start Here](#general). How much of the later sections you need depends on what you work on, but each describes something the group does.
 
-These are also a good source of candidates for [journal club](meetings.qmd#journal-club) -- sign up in the [`journal-club`](https://github.com/srikrishnan-lab/journal-club) repository.
+These papers are also good candidates for [journal club](meetings.qmd#journal-club); sign up in the [`journal-club`](https://github.com/srikrishnan-lab/journal-club) repository.
 
 ## Start Here {#general}
 
-What climate risk management is, why it is a decision problem rather than a prediction problem, and what kind of modeling that implies.
+These papers cover what climate risk management is, why it is a decision problem and not a prediction problem, and what kind of modeling that requires.
 
-Read **Bankes** first if you read nothing else. The distinction it draws between *consolidative* modeling -- building a model you treat as a surrogate for the real system, then asking it what will happen -- and *exploratory* modeling -- using ensembles of plausible models to map what could happen and which of those possibilities matter -- is the epistemic commitment underneath nearly everything else the group does. Most of the methodological choices in the rest of this list follow from taking the second view seriously.
+Read Bankes first. It distinguishes *consolidative* modeling, which builds a model to stand in for the real system and asks it what will happen, from *exploratory* modeling, which uses ensembles of plausible models to map what could happen and which of those possibilities matter. Exploratory modeling is the epistemic commitment behind nearly everything else the group does, and most of the methods in the rest of this list follow from it.
 
 * Bankes, S. (1993). Exploratory Modeling for Policy Analysis. *Operations Research*, 41(3), 435–449. <https://doi.org/10.1287/opre.41.3.435>
 * Keller, K., Helgeson, C., & Srikrishnan, V. (2021). Climate Risk Management. *Annual Review of Earth and Planetary Sciences*, 49(1), 95–116. <https://doi.org/10.1146/annurev-earth-080320-055847>
@@ -25,9 +25,9 @@ Read **Bankes** first if you read nothing else. The distinction it draws between
 
 ## Models and Their Limits
 
-If models are instruments for exploration rather than oracles, the question becomes what a model can legitimately be used to claim. These are about the gap between a model running and a model telling you something true.
+If models are tools for exploring possibilities, the next question is what a model can legitimately be used to claim. These papers are about the difference between a model that runs and a model that tells you something true.
 
-Oreskes is the one people misremember. It does not argue that models are useless; it argues that "verification" and "validation" mean something much weaker for open systems than the words suggest. Worth keeping straight, since the same two words appear in this manual in their software-testing sense, where they mean something entirely different.
+Oreskes et al. argue that verification and validation of models of natural systems are impossible, and that models can only be confirmed partially; they do not argue that models are useless. The same two words appear in this manual in their software-testing sense, which is different (see the [Glossary](../kb/glossary.qmd)).
 
 * Oreskes, N., Shrader-Frechette, K., & Belitz, K. (1994). Verification, validation, and confirmation of numerical models in the Earth sciences. *Science*, 263(5147), 641–646. <https://doi.org/10.1126/science.263.5147.641>
 * Box, G. E. P. (1976). Science and Statistics. *Journal of the American Statistical Association*, 71(356), 791–799. <https://doi.org/10.1080/01621459.1976.10480949>
@@ -38,9 +38,9 @@ Oreskes is the one people misremember. It does not argue that models are useless
 
 ## Quantifying Uncertainty
 
-The methodological core: how to characterize what you do not know, propagate it through a model, and work out which unknowns actually matter.
+These papers cover the methods at the center of the group's work: how to characterize what you don't know, propagate it through a model, and find out which unknowns have the largest effect on the results.
 
-The **MSD uncertainty eBook** is the practical companion to the rest of this section, and the place to start when you need to actually run a sensitivity analysis rather than read about one. It is a living document, so check it again rather than trusting what you read the first time.
+The MSD uncertainty eBook goes with this section, and it is the place to start when you need to run a sensitivity analysis. It is updated over time, so go back to it instead of relying on what you read the first time.
 
 * O'Hagan, T. (2004). Dicing with the unknown. *Significance*, 1(3), 132–133. <https://doi.org/10.1111/j.1740-9713.2004.00050.x>
 * Schneider, S. H. (2002). Can we Estimate the Likelihood of Climatic Changes at 2100? *Climatic Change*, 52(4), 441–451. <https://doi.org/10.1023/A:1014276210717>
@@ -51,9 +51,7 @@ The **MSD uncertainty eBook** is the practical companion to the rest of this sec
 
 ## Structural Uncertainty in Practice
 
-The previous section gives you the theory of model discrepancy. This one is the group demonstrating, repeatedly and in unrelated systems, that *how you structured the model* usually matters more than *what values you gave its parameters* — and so an analysis that propagates only parametric uncertainty will understate risk, often in the tail, which is the part anyone cares about.
-
-If there is one claim to take away from this list, it is this one. Notice that these three papers reach it in coastal flood hazard, in agent-based household decisions, and in riverine flood risk, using different methods each time.
+The previous section gives you the theory of model discrepancy; these papers apply it to the group's own models. Wong et al. (2018) and Yoon et al. (2023) find, for storm-surge hazard and for agent-based models of household flood decisions, that *how the model is structured* can matter more than *what values its parameters take*, so that an analysis propagating only parametric uncertainty understates risk, often in the upper tail. Hosseini-Shakib et al. (2024) uses Sobol' sensitivity analysis to rank the sources of uncertainty in a riverine flood risk model, and finds the projected risk most sensitive to hazard factors (upstream discharge, river bed elevation, channel roughness, and the resolution of the elevation model).
 
 * Wong, T. E., Klufas, A., Srikrishnan, V., & Keller, K. (2018). Neglecting model structural uncertainty underestimates upper tails of flood hazard. *Environmental Research Letters*, 13(7), 074019. <https://doi.org/10.1088/1748-9326/aacb3d>
 * Yoon, J., Wan, H., Daniel, B., Srikrishnan, V., & Judi, D. (2023). Structural model choices regularly overshadow parametric uncertainty in agent-based simulations of household flood risk outcomes. *Computers, Environment and Urban Systems*, 103, 101979. <https://doi.org/10.1016/j.compenvurbsys.2023.101979>
@@ -61,7 +59,7 @@ If there is one claim to take away from this list, it is this one. Notice that t
 
 ## From Uncertainty to Decisions
 
-Characterizing uncertainty is not the goal. These are about what you do once you have it: how to frame a decision problem, how the framing shapes the answer, and what a good strategy means when probabilities are not available.
+We characterize uncertainty in order to inform decisions. These papers cover what to do once you have characterized it: how to frame a decision problem, how the framing shapes the answer, and what a good strategy means when probabilities are not available.
 
 * Walker, W. E., Haasnoot, M., & Kwakkel, J. H. (2013). Adapt or Perish: A Review of Planning Approaches for Adaptation under Deep Uncertainty. *Sustainability*, 5(3), 955–979. <https://doi.org/10.3390/su5030955>
 * Quinn, J. D., Reed, P. M., Giuliani, M., & Castelletti, A. (2017). Rival framings: A framework for discovering how problem formulation uncertainties shape risk management trade-offs in water resources systems. *Water Resources Research*, 53(8), 7208–7233. <https://doi.org/10.1002/2017WR020524>
@@ -71,7 +69,7 @@ Characterizing uncertainty is not the goal. These are about what you do once you
 
 ## Values, People, and Risk
 
-Every step above involves choices that the data does not settle: which outcomes to model, whose losses count, what counts as an acceptable risk. These are about treating those as choices — including the ones modelers make without noticing they are making them.
+Every step above involves choices that the data do not settle: which outcomes to model, whose losses count, what counts as an acceptable risk. These papers treat those as choices, including the ones modelers make without noticing.
 
 * Kunreuther, H., Novemsky, N., & Kahneman, D. (2001). Making Low Probabilities Useful. *Journal of Risk and Uncertainty*, 23(2), 103–120. <https://doi.org/10.1023/A:1011111601406>
 * Wong-Parodi, G. (2020). When climate change adaptation becomes a "looming threat" to society: Exploring views and responses to California wildfires and public safety power shutoffs. *Energy Research & Social Science*, 70, 101757. <https://doi.org/10.1016/j.erss.2020.101757>

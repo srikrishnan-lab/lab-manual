@@ -19,7 +19,7 @@ Parametric uncertainty
 :   Uncertainty about the values of a model's parameters, with its structure held fixed. Most analyses propagate this kind, because a Monte Carlo ensemble over a fixed model captures it.
 
 Structural uncertainty
-:   Uncertainty about the form of the model itself: which processes are represented, how they are coupled, and what is left out. [Several group studies](../guides/readinglist.qmd) have found it larger than parametric uncertainty, so that analyses propagating only parametric uncertainty understate risk, often in the tail.
+:   Uncertainty about the form of the model itself: which processes are represented, how they are coupled, and what is left out. Two group studies on the [reading list](../guides/readinglist.qmd) found it larger than parametric uncertainty in the systems they examined, so that analyses propagating only parametric uncertainty understated risk, often in the tail.
 
 Model discrepancy
 :   The systematic difference between a model's output and the system it represents, beyond observation error. It is a property of the model's structure, not random noise.
