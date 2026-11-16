@@ -4,74 +4,97 @@ aliases:
   - /guides/readinglist/
 ---
 
-This list is an introduction to how our group approaches climate risk analysis. Each section follows from the one before it, so read the sections in order.
-
-Everyone should read [Start Here](#general). How much of the later sections you need depends on what you work on, but each describes something the group does.
+This list introduces how our group approaches climate risk analysis. Everyone reads the eight [core papers](#general), starting with Bankes. The [extended readings](#extended) are grouped by topic.
 
 These papers are also good candidates for [journal club](meetings.qmd#journal-club); sign up in the [`journal-club`](https://github.com/srikrishnan-lab/journal-club) repository.
 
-## Start Here {#general}
+## Core Papers {#general}
 
-These papers cover what climate risk management is, why it is a decision problem and not a prediction problem, and what kind of modeling that requires.
+Four of these papers come from the wider field and four are the group's own.
 
-Read Bankes first. It distinguishes *consolidative* modeling, which builds a model to stand in for the real system and asks it what will happen, from *exploratory* modeling, which uses ensembles of plausible models to map what could happen and which of those possibilities matter. Exploratory modeling is the epistemic commitment behind nearly everything else the group does, and most of the methods in the rest of this list follow from it.
+1. Bankes, S. (1993). Exploratory Modeling for Policy Analysis. *Operations Research*, 41(3), 435–449. <https://doi.org/10.1287/opre.41.3.435>
 
-* Bankes, S. (1993). Exploratory Modeling for Policy Analysis. *Operations Research*, 41(3), 435–449. <https://doi.org/10.1287/opre.41.3.435>
-* Keller, K., Helgeson, C., & Srikrishnan, V. (2021). Climate Risk Management. *Annual Review of Earth and Planetary Sciences*, 49(1), 95–116. <https://doi.org/10.1146/annurev-earth-080320-055847>
-* Rittel, H. W. J., & Webber, M. M. (1973). Dilemmas in a general theory of planning. *Policy Sciences*, 4(2), 155–169. <https://doi.org/10.1007/BF01405730>
+    Read this first. Bankes distinguishes *consolidative* modeling, which builds a model to stand in for the real system and asks it what will happen, from *exploratory* modeling, which uses ensembles of plausible models to map what could happen and which of those possibilities matter. Exploratory modeling is the epistemic commitment behind nearly everything else the group does.
+
+2. Keller, K., Helgeson, C., & Srikrishnan, V. (2021). Climate Risk Management. *Annual Review of Earth and Planetary Sciences*, 49(1), 95–116. <https://doi.org/10.1146/annurev-earth-080320-055847>
+
+    Keller et al. review climate risk management through the challenges it poses: linking the required disciplines, identifying the values and objectives at stake, quantifying the important uncertainties, resolving interactions between decision levers and the system's dynamics, quantifying trade-offs between values under deep uncertainty, communicating to inform decisions, and letting decision needs shape the research. Most of the other readings take up one of these.
+
+3. Simpson, N. P., Mach, K. J., Constable, A., Hess, J., Hogarth, R., Howden, M., et al. (2021). A framework for complex climate change risk assessment. *One Earth*, 4(4), 489–501. <https://doi.org/10.1016/j.oneear.2021.03.005>
+
+    Simpson et al. give a framework for risks that become complex because their drivers interact, or because one risk compounds another or cascades into it. The framework includes risks that arise from responses to climate change, such as adaptation and mitigation, as well as risks from its impacts.
+
+4. Oreskes, N., Shrader-Frechette, K., & Belitz, K. (1994). Verification, validation, and confirmation of numerical models in the Earth sciences. *Science*, 263(5147), 641–646. <https://doi.org/10.1126/science.263.5147.641>
+
+    The authors argue that models of natural systems can't be verified or validated, because natural systems are never closed and model results are never unique. In their view, agreement between a model and observations confirms the model only partially, and a model's main value is heuristic. The manual also uses "verification" and "validation" in their software-testing sense, which is different (see the [Glossary](../kb/glossary.qmd#models-and-their-evaluation)).
+
+5. O'Hagan, T. (2004). Dicing with the unknown. *Significance*, 1(3), 132–133. <https://doi.org/10.1111/j.1740-9713.2004.00050.x>
+
+    In two pages, O'Hagan distinguishes uncertainty about what is unknown from uncertainty about what is unknowable (epistemic and aleatory uncertainty in the [Glossary](../kb/glossary.qmd#kinds-of-uncertainty)) and discusses what the difference means for how we use probability.
+
+6. Wong, T. E., Klufas, A., Srikrishnan, V., & Keller, K. (2018). Neglecting model structural uncertainty underestimates upper tails of flood hazard. *Environmental Research Letters*, 13(7), 074019. <https://doi.org/10.1088/1748-9326/aacb3d>
+
+    There is no consensus on which statistical model to use for extreme storm surge, so this paper combines stationary and non-stationary models by Bayesian model averaging, using tide-gauge records from the Netherlands and the United States. At both sites, roughly half the weight goes to the non-stationary models, and the combined estimate of the 100-year return level is several centimeters higher. As the title says, neglecting the uncertainty about model structure underestimates the upper tail of flood hazard.
+
+7. Zarekarizi, M., Srikrishnan, V., & Keller, K. (2020). Neglecting uncertainties biases house-elevation decisions to manage riverine flood risks. *Nature Communications*, 11(1), 5361. <https://doi.org/10.1038/s41467-020-19188-9>
+
+    FEMA recommends elevating an existing house to the base flood elevation (the 100-year flood level) plus freeboard, a safety margin usually given in feet. Once the analysis includes deep uncertainty about the flood hazard, the discount rate, the house's lifetime, and its fragility, the economically optimal elevation can be well above that recommendation, and the economic, engineering, and Earth-science uncertainties interact strongly.
+
+8. Helgeson, C., Keller, K., Nicholas, R. E., Srikrishnan, V., Cooper, C., Smithwick, E. A. H., & Tuana, N. (2024). Integrating Values to Improve the Relevance of Climate-Risk Research. *Earth's Future*, 12(10), e2022EF003025. <https://doi.org/10.1029/2022EF003025>
+
+    Helgeson et al. argue that assessing a risk-management strategy brings values into the research, and that the values a study assumes, often without saying so, may not be the stakeholders'. They describe values-informed mental models, which map stakeholders' values onto a conceptual model of the system so that a study can be designed around those values, and apply one to flood risk in a small community on the Susquehanna River.
+
+## Extended Readings {#extended}
+
+Start with the sections closest to your project, and read the others when your work or a journal club calls for them.
+
+### Uncertainty Analysis and Open Science {#open-science}
+
+Srikrishnan et al. (2022) review why it is hard to quantify every uncertainty in a multisector model, in calibration, in projection, and in scenario discovery, and classify the types of uncertainty. Pollack et al. (2026) find that only 4% of the most-cited recent climate risk studies fully share their data and code, and describe low-cost steps researchers can take now. Read Pollack et al. alongside our [reproducibility commitments](../expectations/open.qmd).
+
 * Srikrishnan, V., Lafferty, D. C., Wong, T. E., Lamontagne, J. R., Quinn, J. D., Sharma, S., et al. (2022). Uncertainty Analysis in Multi-Sector Systems: Considerations for Risk Analysis, Projection, and Planning for Complex Systems. *Earth's Future*, 10(8), e2021EF002644. <https://doi.org/10.1029/2021EF002644>
-* Reed, P. M., Hadjimichael, A., Moss, R. H., Brelsford, C., Burleyson, C. D., Cohen, S., et al. (2022). Multisector Dynamics: Advancing the Science of Complex Adaptive Human-Earth Systems. *Earth's Future*, 10(3), e2021EF002621. <https://doi.org/10.1029/2021EF002621>
 * Pollack, A. B., Auermuller, L., Burleyson, C. D., Campbell, J., Condon, M., Cooper, C., et al. (2026). Unlocking the benefits of transparent and reusable science for climate risk management. *Proceedings of the National Academy of Sciences*, 123(3), e2422157123. <https://doi.org/10.1073/pnas.2422157123>
 
-## Models and Their Limits
+### Models and Their Evaluation {#models}
 
-If models are tools for exploring possibilities, the next question is what a model can legitimately be used to claim. These papers are about the difference between a model that runs and a model that tells you something true.
+Parker (2020) works out what it means for a model to be adequate for a particular purpose, and how judging that differs from judging how accurately the model represents the system. Helgeson et al. (2021) start from the fact that quantifying uncertainty takes many model runs, which simpler models make affordable, so modelers face a trade-off between realism and uncertainty quantification. They argue that a simpler model can be the better one for informing a decision.
 
-Oreskes et al. argue that verification and validation of models of natural systems are impossible, and that models can only be confirmed partially; they do not argue that models are useless. The same two words appear in this manual in their software-testing sense, which is different (see the [Glossary](../kb/glossary.qmd)).
+* Parker, W. S. (2020). Model Evaluation: An Adequacy-for-Purpose View. *Philosophy of Science*, 87(3), 457–477. <https://doi.org/10.1086/708691>
+* Helgeson, C., Srikrishnan, V., Keller, K., & Tuana, N. (2021). Why Simpler Computer Simulation Models Can Be Epistemically Better for Informing Decisions. *Philosophy of Science*, 88(2), 213–233. <https://doi.org/10.1086/711501>
 
-* Oreskes, N., Shrader-Frechette, K., & Belitz, K. (1994). Verification, validation, and confirmation of numerical models in the Earth sciences. *Science*, 263(5147), 641–646. <https://doi.org/10.1126/science.263.5147.641>
-* Box, G. E. P. (1976). Science and Statistics. *Journal of the American Statistical Association*, 71(356), 791–799. <https://doi.org/10.1080/01621459.1976.10480949>
-* Helgeson, C., Srikrishnan, V., Keller, K., & Tuana, N. (2021). Why Simpler Computer Simulation Models Can Be Epistemically Better for Informing Decisions. *Philosophy of Science*. <https://doi.org/10.1086/711501>
-* Bennett, N. D., Croke, B. F. W., Guariso, G., Guillaume, J. H. A., Hamilton, S. H., Jakeman, A. J., et al. (2013). Characterising performance of environmental models. *Environmental Modelling & Software*, 40, 1–20. <https://doi.org/10.1016/j.envsoft.2012.09.011>
-* Saltelli, A. (2019). A short comment on statistical versus mathematical modelling. *Nature Communications*, 10(1), 3870. <https://doi.org/10.1038/s41467-019-11865-8>
-* Shmueli, G. (2010). To Explain or to Predict? *Statistical Science*, 25(3), 289–310. <https://doi.org/10.1214/10-STS330>
+### Inference and Sensitivity Analysis {#inference}
 
-## Quantifying Uncertainty
+Brynjarsdóttir and O'Hagan (2014) use a simple example to show that calibrating a model without accounting for model discrepancy (the systematic difference between a model and the system it represents) gives biased and overconfident parameter estimates. Recovering the "true" parameter values takes realistic priors on the discrepancy. The statistical framework comes from [Kennedy and O'Hagan (2001)](https://doi.org/10.1111/1467-9868.00294), which you'll need if you calibrate a model this way. Gelman et al. (2020) cover the rest of a Bayesian analysis: building models iteratively, checking them, fixing computational problems, and comparing them.
 
-These papers cover the methods at the center of the group's work: how to characterize what you don't know, propagate it through a model, and find out which unknowns have the largest effect on the results.
+Reed et al.'s eBook, *Addressing Uncertainty in Multisector Dynamics Research*, is the place to start when you need to run a sensitivity analysis. It is updated over time, so go back to it instead of relying on what you read the first time.
 
-The MSD uncertainty eBook goes with this section, and it is the place to start when you need to run a sensitivity analysis. It is updated over time, so go back to it instead of relying on what you read the first time.
-
-* O'Hagan, T. (2004). Dicing with the unknown. *Significance*, 1(3), 132–133. <https://doi.org/10.1111/j.1740-9713.2004.00050.x>
-* Schneider, S. H. (2002). Can we Estimate the Likelihood of Climatic Changes at 2100? *Climatic Change*, 52(4), 441–451. <https://doi.org/10.1023/A:1014276210717>
-* Kennedy, M. C., & O'Hagan, A. (2001). Bayesian calibration of computer models. *Journal of the Royal Statistical Society. Series B, Statistical Methodology*, 63(3), 425–464. <https://doi.org/10.1111/1467-9868.00294>
-* Brynjarsdóttir, J., & O'Hagan, A. (2014). Learning about physical parameters: the importance of model discrepancy. *Inverse Problems*, 30, 114007. <https://doi.org/10.1088/0266-5611/30/11/114007>
-* Gelman, A., & Shalizi, C. R. (2013). Philosophy and the practice of Bayesian statistics. *The British Journal of Mathematical and Statistical Psychology*, 66(1), 8–38. <https://doi.org/10.1111/j.2044-8317.2011.02037.x>
+* Brynjarsdóttir, J., & O'Hagan, A. (2014). Learning about physical parameters: the importance of model discrepancy. *Inverse Problems*, 30(11), 114007. <https://doi.org/10.1088/0266-5611/30/11/114007>
+* Gelman, A., Vehtari, A., Simpson, D., Margossian, C. C., Carpenter, B., Yao, Y., et al. (2020). Bayesian Workflow. arXiv:2011.01808. <https://doi.org/10.48550/arXiv.2011.01808>
 * Reed, P. M., Hadjimichael, A., Malek, K., Karimi, T., Vernon, C. R., Srikrishnan, V., et al. (2022–). *Addressing Uncertainty in Multisector Dynamics Research*. Zenodo. <https://doi.org/10.5281/zenodo.6110623>. Read it at <https://uc-ebook.org>.
 
-## Structural Uncertainty in Practice
+### Scenarios and Sources of Uncertainty {#scenarios}
 
-The previous section gives you the theory of model discrepancy; these papers apply it to the group's own models. Wong et al. (2018) and Yoon et al. (2023) find, for storm-surge hazard and for agent-based models of household flood decisions, that *how the model is structured* can matter more than *what values its parameters take*, so that an analysis propagating only parametric uncertainty understates risk, often in the upper tail. Hosseini-Shakib et al. (2024) uses Sobol' sensitivity analysis to rank the sources of uncertainty in a riverine flood risk model, and finds the projected risk most sensitive to hazard factors (upstream discharge, river bed elevation, channel roughness, and the resolution of the elevation model).
+Emission scenarios are usually published without probabilities, though the people who use them often want probabilities. Ho et al. (2019) elicit expert judgments about emissions in 2100. The experts' estimates vary widely, but they don't treat the whole range of future emissions as equally likely.
 
-* Wong, T. E., Klufas, A., Srikrishnan, V., & Keller, K. (2018). Neglecting model structural uncertainty underestimates upper tails of flood hazard. *Environmental Research Letters*, 13(7), 074019. <https://doi.org/10.1088/1748-9326/aacb3d>
+The other papers ask which source of uncertainty contributes most to a particular output. Darnell et al. (2025) find that, for sea-level rise and without negative-emissions technologies, the emissions trajectory becomes the main driver of variability in sea-level projections only after 2075. Lafferty and Sriver (2023) find that downscaling and bias correction often add substantial uncertainty to local climate projections. Yoon et al. (2023) find that in agent-based flood models, structural choices about how households respond to flood hazards change the conclusions about how flood risk evolves, and regularly matter more than parametric uncertainty. Hosseini-Shakib et al. (2024) find projected riverine flood risk most sensitive to hazard factors (upstream discharge, river bed elevation, channel roughness, and the resolution of the elevation model). Bhaduri et al. (2026, a preprint) ask which uncertainties drive flood risk outcomes for different income groups, using an agent-based model of household relocation in Philadelphia.
+
+* Ho, E., Budescu, D. V., Bosetti, V., van Vuuren, D. P., & Keller, K. (2019). Not all carbon dioxide emission scenarios are equally likely: a subjective expert assessment. *Climatic Change*, 155(4), 545–561. <https://doi.org/10.1007/s10584-019-02500-y>
+* Darnell, C., Rennels, L., Errickson, F., Wong, T., & Srikrishnan, V. (2025). The interplay of future emissions and geophysical uncertainties for projections of sea-level rise. *Nature Climate Change*, 15(11), 1205–1211. <https://doi.org/10.1038/s41558-025-02457-0>
+* Lafferty, D. C., & Sriver, R. L. (2023). Downscaling and bias-correction contribute considerable uncertainty to local climate projections in CMIP6. *npj Climate and Atmospheric Science*, 6(1), 158. <https://doi.org/10.1038/s41612-023-00486-0>
 * Yoon, J., Wan, H., Daniel, B., Srikrishnan, V., & Judi, D. (2023). Structural model choices regularly overshadow parametric uncertainty in agent-based simulations of household flood risk outcomes. *Computers, Environment and Urban Systems*, 103, 101979. <https://doi.org/10.1016/j.compenvurbsys.2023.101979>
 * Hosseini-Shakib, I., Alipour, A., Lee, B. S., Srikrishnan, V., Nicholas, R. E., Keller, K., & Sharma, S. (2024). What drives uncertainty surrounding riverine flood risks? *Journal of Hydrology*, 634, 131055. <https://doi.org/10.1016/j.jhydrol.2024.131055>
+* Bhaduri, P., Pollack, A., Son, Y., Yoon, J., Daniel, B., & Srikrishnan, V. (2026). Human Behavior and Hazard Uncertainties Shape Distributional Flood Risk Outcomes. Preprint, SSRN. <https://doi.org/10.2139/ssrn.6701898>
 
-## From Uncertainty to Decisions
+### Decisions Under Deep Uncertainty {#decisions}
 
-We characterize uncertainty in order to inform decisions. These papers cover what to do once you have characterized it: how to frame a decision problem, how the framing shapes the answer, and what a good strategy means when probabilities are not available.
+When the parties to a decision can't agree on probabilities, the question becomes which strategies perform acceptably across many plausible futures. Chapter 1 of Marchau et al. (2019) introduces decision making under deep uncertainty. Chapter 2, by Lempert, describes robust decision making, which uses exploratory modeling to stress-test strategies and then identifies the scenarios that matter for policy. Herman et al. (2020) review studies that treat adaptation as a control problem, with policies that map future observations to actions, and argue that characterizing uncertainty is the main obstacle to applying control methods. Estevez et al. (2026) apply a regret-based criterion to coastal adaptation worldwide. Across the cases they compare, it lowers flood damage by 3–50% relative to minimizing cost, at a comparable total cost.
 
-* Walker, W. E., Haasnoot, M., & Kwakkel, J. H. (2013). Adapt or Perish: A Review of Planning Approaches for Adaptation under Deep Uncertainty. *Sustainability*, 5(3), 955–979. <https://doi.org/10.3390/su5030955>
-* Quinn, J. D., Reed, P. M., Giuliani, M., & Castelletti, A. (2017). Rival framings: A framework for discovering how problem formulation uncertainties shape risk management trade-offs in water resources systems. *Water Resources Research*, 53(8), 7208–7233. <https://doi.org/10.1002/2017WR020524>
+* Marchau, V. A. W. J., Walker, W. E., Bloemen, P. J. T. M., & Popper, S. W. (Eds.). (2019). *Decision Making under Deep Uncertainty: From Theory to Practice*. Springer. Open access. Read chapter 1, "Introduction" (Marchau, Walker, Bloemen, & Popper), and chapter 2, "Robust Decision Making (RDM)" (Lempert). <https://doi.org/10.1007/978-3-030-05252-2>
 * Herman, J. D., Quinn, J. D., Steinschneider, S., Giuliani, M., & Fletcher, S. (2020). Climate Adaptation as a Control Problem: Review and Perspectives on Dynamic Water Resources Planning Under Uncertainty. *Water Resources Research*, 56(2). <https://doi.org/10.1029/2019WR025502>
-* Oddo, P. C., Lee, B. S., Garner, G. G., Srikrishnan, V., Reed, P. M., Forest, C. E., & Keller, K. (2020). Deep Uncertainties in Sea-Level Rise and Storm Surge Projections: Implications for Coastal Flood Risk Management. *Risk Analysis*, 40(1), 153–168. <https://doi.org/10.1111/risa.12888>
-* Anderies, J. M., Rodriguez, A. A., Janssen, M. A., & Cifdaloz, O. (2007). Panaceas, uncertainty, and the robust control framework in sustainability science. *Proceedings of the National Academy of Sciences of the United States of America*, 104(39), 15194–15199. <https://doi.org/10.1073/pnas.0702655104>
+* Estevez, C., Feke, K., Srikrishnan, V., & Wong, T. E. (2026). Regret-based global coastal adaptation decision-making under sea level uncertainty. *PLOS Climate*, 5(8), e0000947. <https://doi.org/10.1371/journal.pclm.0000947>
 
-## Values, People, and Risk
+### Values and Equity {#values}
 
-Every step above involves choices that the data do not settle: which outcomes to model, whose losses count, what counts as an acceptable risk. These papers treat those as choices, including the ones modelers make without noticing.
+Pollack et al. (2024) survey 167 flood-risk studies that state an interest in equity and build a taxonomy of how equity has been, and can be, defined and measured. They find that most of the quantitative studies don't motivate or defend the value judgments their findings depend on.
 
-* Kunreuther, H., Novemsky, N., & Kahneman, D. (2001). Making Low Probabilities Useful. *Journal of Risk and Uncertainty*, 23(2), 103–120. <https://doi.org/10.1023/A:1011111601406>
-* Wong-Parodi, G. (2020). When climate change adaptation becomes a "looming threat" to society: Exploring views and responses to California wildfires and public safety power shutoffs. *Energy Research & Social Science*, 70, 101757. <https://doi.org/10.1016/j.erss.2020.101757>
-* Mayer, L. A., Loa, K., Cwik, B., Tuana, N., Keller, K., Gonnerman, C., et al. (2017). Understanding scientists' computational modeling decisions about climate risk management strategies using values-informed mental models. *Global Environmental Change: Human and Policy Dimensions*, 42, 107–116. <https://doi.org/10.1016/j.gloenvcha.2016.12.007>
-* Bessette, D. L., Mayer, L. A., Cwik, B., Vezér, M., Keller, K., Lempert, R. J., & Tuana, N. (2017). Building a Values-Informed Mental Model for New Orleans Climate Risk Management. *Risk Analysis*, 37(10), 1993–2004. <https://doi.org/10.1111/risa.12743>
+* Pollack, A. B., Helgeson, C., Kousky, C., & Keller, K. (2024). Developing more useful equity measurements for flood-risk management. *Nature Sustainability*, 7(6), 823–832. <https://doi.org/10.1038/s41893-024-01345-3>

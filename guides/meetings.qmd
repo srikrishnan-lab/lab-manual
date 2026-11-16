@@ -44,7 +44,7 @@ Journal club is on Mondays from 2:30 to 3:30pm in Riley-Robb 319, directly after
 
 One person presents one paper each week. The presenter picks the paper, which doesn't have to be new or something you already understand. Papers you found hard, or that you disagree with, often lead to a better discussion than papers you can summarize cleanly.
 
-The [reading list](readinglist.qmd) is a reasonable source of candidates, particularly the foundational papers everyone in the group is expected to have read.
+The [reading list](readinglist.qmd) is a reasonable source of candidates, particularly the [core papers](readinglist.qmd#general) everyone in the group is expected to have read.
 
 ### Claiming a Slot
 
