@@ -13,7 +13,7 @@ They are working definitions for this group, and other fields may use the terms 
 ## Kinds of Uncertainty
 
 Deep uncertainty
-:   The situation where the parties to a decision don't know, or can't agree on, the system model, the probability distributions of its inputs, or how to value the outcomes. It is different from a large amount of ordinary uncertainty: you can't write down an agreed probability distribution, which is why [expected-value methods are no longer the obvious tool](../guides/readinglist.qmd). The term also names a research community, decision-making under deep uncertainty.
+:   The situation where the parties to a decision don't know, or can't agree on, the system model, the probability distributions of its inputs, or how to value the outcomes. It is different from a large amount of ordinary uncertainty: you can't write down an agreed probability distribution, which is why [expected-value methods are no longer the obvious tool](../guides/readinglist.qmd#decisions). The term also names a research community, decision-making under deep uncertainty.
 
 Parametric uncertainty
 :   Uncertainty about the values of a model's parameters, with its structure held fixed. Most analyses propagate this kind, because a Monte Carlo ensemble over a fixed model captures it.
@@ -38,7 +38,7 @@ Epistemic and aleatory uncertainty
 ## Risk
 
 Risk
-:   Commonly broken into hazard, exposure, and vulnerability, which interact instead of simply multiplying. Which of the three contributes the most uncertainty depends on the analysis. Hosseini-Shakib et al. (2024, on the [reading list](../guides/readinglist.qmd)) found projected riverine flood risk most sensitive to hazard factors, while other group work has found that uncertainty in how buildings are described and valued can be large enough to change which management option looks best.
+:   Commonly broken into hazard, exposure, and vulnerability, which interact instead of simply multiplying. Which of the three contributes the most uncertainty depends on the analysis. Hosseini-Shakib et al. (2024, on the [reading list](../guides/readinglist.qmd#scenarios)) found projected riverine flood risk most sensitive to hazard factors, while other group work has found that uncertainty in how buildings are described and valued can be large enough to change which management option looks best.
 
 Hazard
 :   The physical event and its characteristics over space and time: the flood, the storm surge, the heat wave.
@@ -58,7 +58,7 @@ In careful use, hazard is one of the three parts of risk. In looser use, includi
 ## Models and Their Evaluation
 
 Exploratory modeling
-:   Using ensembles of plausible models to map what *could* happen and which possibilities matter, instead of treating one model as a stand-in for the system and asking what *will* happen. The alternative is called consolidative modeling. Exploratory modeling is the group's basic epistemic stance, and [Bankes](../guides/readinglist.qmd) is the reading-list entry that explains it.
+:   Using ensembles of plausible models to map what *could* happen and which possibilities matter, instead of treating one model as a stand-in for the system and asking what *will* happen. The alternative is called consolidative modeling. Exploratory modeling is the group's basic epistemic stance, and [Bankes](../guides/readinglist.qmd#general) is the reading-list entry that explains it.
 
 Emulator
 :   A fast statistical approximation of an expensive model (also called a surrogate), fitted to a sample of the model's runs. Emulators are used when the full model is too slow for the number of evaluations an analysis needs.
