@@ -63,7 +63,7 @@ Check every reference against the paper itself. A search snippet isn't enough, a
 
 ## The Group's Skills
 
-The group maintains [`claude-research-skills`](https://github.com/srikrishnan-lab/claude-research-skills), a set of Claude Agent Skills built around our workflow: adversarial reading, paper planning, literature review, figure design, code review, and revision response.
+The group maintains [`claude-research-skills`](https://github.com/srikrishnan-lab/claude-research-skills) (private to the group), a set of Claude Agent Skills built around our workflow: adversarial reading, paper planning, literature review, figure design, code review, and revision response.
 
 The skills review and help plan work that you're doing; they don't write it for you. The repository's design notes put it this way for the paper-planning skill:
 
